@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-import styles from "./NavBar.module.css"
+import "./NavBar.css"
 
 import misc7 from "@image/misc/misc-7.webp"
 import misc12 from "@image/misc/misc-12.webp"
@@ -8,7 +8,7 @@ import misc5 from "@image/misc/misc-5.webp"
 
 export default function NavBar() {
 	return (
-		<div className="branding d-flex align-items-cente">
+		<div className="branding d-flex align-items-center">
 			<div className="container position-relative d-flex align-items-center justify-content-between">
 				<a href="index.html" className="logo d-flex align-items-center">
 				{/* -- Uncomment the line below if you also wish to use an image logo -- */}
@@ -16,7 +16,7 @@ export default function NavBar() {
 				<h1 className="sitename">Passion</h1>
 				</a>
 
-				<nav id="navmenu" className={styles.navmenu}>
+				<nav id="navmenu" className="navmenu">
 					<ul>
 						<li><a href="#hero" className="active">Home</a></li>
 						<li><a href="#about">About</a></li>
@@ -42,10 +42,10 @@ export default function NavBar() {
 						</li>
 
 						{/* <!-- Megamenu 2 --> */}
-						<li className="megamenu-2"><a href="#"><span>Megamenu</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>
+						<li className='megamenu-2'><a href="#"><span>Megamenu</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>
 
 						{/* <!-- Mobile Megamenu --> */}
-						<ul className="mobile-megamenu">
+						<ul className='mobile-megamenu'>
 							<li><a href="#">Product Analytics</a></li>
 							<li><a href="#">Customer Insights</a></li>
 							<li><a href="#">Market Research</a></li>
@@ -95,35 +95,35 @@ export default function NavBar() {
 						</ul> {/*<!-- End Mobile Megamenu --> */}
 
 						{/* <!-- Desktop Megamenu --> */}
-						<div className="desktop-megamenu">
-							<div className="tab-navigation">
-								<ul className="nav nav-tabs flex-column" id="2190-megamenu-tabs" role="tablist">
-									<li className="nav-item" role="presentation">
-										<button className="nav-link active" id="2190-tab-1-tab" data-bs-toggle="tab" data-bs-target="#2190-tab-1" type="button" role="tab" aria-controls="2190-tab-1" aria-selected="true">
-											<i className="bi bi-building-gear"></i>
-											<span>Enterprise Software</span>
-										</button>
-									</li>
-									<li className="nav-item" role="presentation">
-										<button className="nav-link" id="2190-tab-2-tab" data-bs-toggle="tab" data-bs-target="#2190-tab-2" type="button" role="tab" aria-controls="2190-tab-2" aria-selected="false">
-											<i className="bi bi-code-slash"></i>
-											<span>Development Tools</span>
-										</button>
-									</li>
-									<li className="nav-item" role="presentation">
-										<button className="nav-link" id="2190-tab-3-tab" data-bs-toggle="tab" data-bs-target="#2190-tab-3" type="button" role="tab" aria-controls="2190-tab-3" aria-selected="false">
-											<i className="bi bi-palette"></i>
-											<span>Creative Suite</span>
-										</button>
-									</li>
-									<li className="nav-item" role="presentation">
-										<button className="nav-link" id="2190-tab-4-tab" data-bs-toggle="tab" data-bs-target="#2190-tab-4" type="button" role="tab" aria-controls="2190-tab-4" aria-selected="false">
-											<i className="bi bi-journal-text"></i>
-											<span>Resources</span>
-										</button>
-									</li>
-								</ul>
-							</div>
+						<div className='desktop-megamenu'>
+								<div className="tab-navigation">
+                  <ul className="nav nav-tabs flex-column" id="2190-megamenu-tabs" role="tablist">
+                    <li className="nav-item" role="presentation">
+                      <button className="nav-link active" id="2190-tab-1-tab" data-bs-toggle="tab" data-bs-target="#2190-tab-1" type="button" role="tab" aria-controls="2190-tab-1" aria-selected="true">
+                        <i className="bi bi-building-gear"></i>
+                        <span>Enterprise Software</span>
+                      </button>
+                    </li>
+                    <li className="nav-item" role="presentation">
+                      <button className="nav-link" id="2190-tab-2-tab" data-bs-toggle="tab" data-bs-target="#2190-tab-2" type="button" role="tab" aria-controls="2190-tab-2" aria-selected="false">
+                        <i className="bi bi-code-slash"></i>
+                        <span>Development Tools</span>
+                      </button>
+                    </li>
+                    <li className="nav-item" role="presentation">
+                      <button className="nav-link" id="2190-tab-3-tab" data-bs-toggle="tab" data-bs-target="#2190-tab-3" type="button" role="tab" aria-controls="2190-tab-3" aria-selected="false">
+                        <i className="bi bi-palette"></i>
+                        <span>Creative Suite</span>
+                      </button>
+                    </li>
+                    <li className="nav-item" role="presentation">
+                      <button className="nav-link" id="2190-tab-4-tab" data-bs-toggle="tab" data-bs-target="#2190-tab-4" type="button" role="tab" aria-controls="2190-tab-4" aria-selected="false">
+                        <i className="bi bi-journal-text"></i>
+                        <span>Resources</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
 
 							<div className="tab-content">
 

@@ -3,10 +3,10 @@
 import { useEffect } from "react"
 
 export default function BootstrapProvider () {
-	  useEffect(()=>{
-      import( "bootstrap/dist/js/bootstrap.bundle.min")
-    },[])
+		useEffect(()=>{
+			import( "bootstrap/dist/js/bootstrap.bundle.min")
+		},[])
 
-  return null;
+	return null;
 
 }
