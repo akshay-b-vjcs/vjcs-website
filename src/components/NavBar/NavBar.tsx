@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-import style from "./NavBar.module.css"
+import styles from "./NavBar.module.css"
 
 import misc7 from "@image/misc/misc-7.webp"
 import misc12 from "@image/misc/misc-12.webp"
@@ -16,7 +16,7 @@ export default function NavBar() {
 				<h1 className="sitename">Passion</h1>
 				</a>
 
-				<nav id="navmenu" className="navmenu">
+				<nav id="navmenu" className={styles.navmenu}>
 					<ul>
 						<li><a href="#hero" className="active">Home</a></li>
 						<li><a href="#about">About</a></li>

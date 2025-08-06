@@ -1,3 +1,11 @@
+/**
+* Template Name: Passion
+* Template URL: https://bootstrapmade.com/passion-bootstrap-template/
+* Updated: Jul 21 2025 with Bootstrap v5.3.7
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
 @charset "UTF-8";
 
 /*--------------------------------------------------------------
@@ -2428,6 +2436,7 @@ section,
   left: 0;
   right: 0;
   bottom: 0;
+  background: url("../img/abstract-bg-3.webp") center/cover;
   opacity: 0.03;
   z-index: 1;
 }
