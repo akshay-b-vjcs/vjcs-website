@@ -1,6 +1,7 @@
 "use client";
 
-import { BsAward } from "react-icons/bs";
+import ButtonLink from "../Button/Button";
+
 
 export default function AboutSection() {
   return (
@@ -82,20 +83,11 @@ export default function AboutSection() {
               </div>
 
               {/* CTA Buttons */}
-              <div className="d-flex gap-3 flex-wrap">
-                <a
-                  href="#portfolio"
-                  className="btn btn-success rounded-pill px-4 py-2 text-uppercase fw-semibold"
-                >
-                  Discover Our Work
-                </a>
-                <a
-                  href="#team"
-                  className="btn btn-outline-success rounded-pill px-4 py-2 text-uppercase fw-semibold"
-                >
-                  Meet Our Team
-                </a>
-              </div>
+            
+    <div className="d-flex gap-3 flex-wrap">
+      <ButtonLink href="#portfolio" label="Discover Our Work" />
+      <ButtonLink href="#team" label="Meet Our Team" outline />
+    </div>
             </div>
           </div>
 
@@ -125,7 +117,7 @@ export default function AboutSection() {
                     height: "56px",
                   }}
                 >
-                  <BsAward size={28} color="#0F5132" />
+                  <i className="bi bi-award " style={{fontSize:"30px" , color:"#0ca678"}}></i>
                 </div>
                 <div>
                   <h6 className="mb-1 fw-semibold text-dark">
