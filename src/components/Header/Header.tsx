@@ -1,5 +1,6 @@
 import './Header.css'
 import NavBar from "../NavBar/NavBar"
+import Footer from '../Footer/Footer'
 
 export default function Header() {
 	return  (
@@ -18,7 +19,8 @@ export default function Header() {
 					</div>
 				</div>
 			</div> 
-			<NavBar />			
+			<NavBar />	
+			<Footer/>		
 		</header>
 	)
 }
