@@ -9,6 +9,7 @@ import "bootstrap-icons/font/bootstrap-icons.css"
 import "@styles/globals.css";
 
 import Header from "@components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 
 
 export const metadata: Metadata = {
@@ -47,6 +48,7 @@ export default function RootLayout({
         {/* <GlightboxProvider /> */}
         <Header />
         {children}
+        <Footer/>
       </body>
     </html>
   );
