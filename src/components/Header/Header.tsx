@@ -18,7 +18,7 @@ export default function Header() {
 					</div>
 				</div>
 			</div> 
-			<NavBar />			
+			<NavBar />		
 		</header>
 	)
 }
