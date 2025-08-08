@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import BootstrapProvider from "../provider/BootstrapProvider";
 // import GlightboxProvider from "../provider/GlightboxProvider";
-import "@styles/variables.css";
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap-icons/font/bootstrap-icons.css"
 
+import "@styles/variables.css";
 import "@styles/globals.css";
 
 import Header from "@components/Header/Header";
