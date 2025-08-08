@@ -1,7 +1,7 @@
-"use client";
+import Image from "next/image"
+import "./About.css"
 
-import ButtonLink from "../Button/Button";
-
+import aboutImage from "@image/about/about-square-8.webp"
 
 export default function AboutSection() {
   return (
@@ -81,21 +81,14 @@ export default function AboutSection() {
                   </div>
                 </div>
               </div>
-
-              {/* CTA Buttons */}
-            
-    <div className="d-flex gap-3 flex-wrap">
-      <ButtonLink href="#portfolio" label="Discover Our Work" />
-      <ButtonLink href="#team" label="Meet Our Team" outline />
-    </div>
             </div>
           </div>
 
           {/* Right Image Column */}
           <div className="col-lg-6 mt-5">
             <div className="position-relative">
-              <img
-                src="https://bootstrapmade.com/content/demo/Passion/assets/img/about/about-square-8.webp"
+              <Image
+                src={aboutImage}
                 alt="About Us"
                 className="img-fluid rounded-4 shadow"
               />
