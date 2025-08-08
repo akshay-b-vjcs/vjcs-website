@@ -1,7 +1,5 @@
-"bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
 import "./Service.css";
-import ServiceCard from "../Card/Card";
+import Card from "../Card/Card";
 export default function Service() {
   return (
     <section
@@ -16,12 +14,12 @@ export default function Service() {
       <div className="container">
         <div className="row gy-4">
           <div className="col-lg-6 col-md-6 ">
-            <ServiceCard
+            <Card
               icon="bi-code-slash"
               title="Web Development"
               description="Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec rutrum congue leo eget malesuada."
               linkText="Get Started"
-              linkUrl="service-details.html"
+              linkUrl="Service-Details"
               badge="Most Popular"
               price="Starting at $2,999"
               featured={true}
@@ -29,7 +27,7 @@ export default function Service() {
           </div>
 
           <div className="col-lg-6 col-md-6">
-            <ServiceCard
+            <Card
               icon="bi-palette"
               title="UI/UX Design"
               description="Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar."
@@ -40,7 +38,7 @@ export default function Service() {
           </div>
 
           <div className="col-lg-4 col-md-6">
-            <ServiceCard
+            <Card
               icon="bi-graph-up-arrow"
               title="Digital Marketing"
               description="Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus."
@@ -51,7 +49,7 @@ export default function Service() {
           </div>
 
           <div className="col-lg-4 col-md-6">
-            <ServiceCard
+            <Card
               icon="bi-shield-check"
               title="Security Solutions"
               description="Mauris blandit aliquet elit, eget tincidunt nibh pulvinar vel. Sed porttitor lectus nibh vestibulum ac diam sit."
@@ -62,7 +60,7 @@ export default function Service() {
           </div>
 
           <div className="col-lg-4 col-md-6">
-            <ServiceCard
+            <Card
               icon="bi-cloud-upload"
               title="Cloud Services"
               description="Pellentesque in ipsum id orci porta dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.."

@@ -1,6 +1,6 @@
 // components/ButtonLink.tsx
 
-import React from 'react';
+import React from "react";
 
 interface ButtonLinkProps {
   href: string;
@@ -9,7 +9,7 @@ interface ButtonLinkProps {
 }
 
 const ButtonLink: React.FC<ButtonLinkProps> = ({ href, label, outline }) => {
-  const baseClass = 'btn rounded-pill px-4 py-2 text-uppercase fw-semibold';
+  const baseClass = "btn rounded-pill px-4 py-2 text-uppercase fw-semibold";
   const buttonClass = outline
     ? `${baseClass} btn-outline-success`
     : `${baseClass} btn-success`;

@@ -46,7 +46,7 @@
     var(--surface-color),
     color-mix(in srgb, var(--accent-color), transparent 95%)
   );
-  border: 2px solid var(--accent-color);
+  border: 2px solid var(--accent-color) !important;
   transform: scale(1.02);
 }
 

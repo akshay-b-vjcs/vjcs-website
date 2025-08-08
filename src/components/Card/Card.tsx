@@ -1,6 +1,6 @@
 // components/ServiceCard.tsx
 import React from "react";
-import './Card.css';
+import "./Card.css";
 
 interface ServiceCardProps {
   icon: string;
@@ -14,7 +14,7 @@ interface ServiceCardProps {
   compact?: boolean;
 }
 
-export default function ServiceCard({
+export default function Card({
   icon,
   title,
   description,
@@ -26,17 +26,19 @@ export default function ServiceCard({
   compact = false,
 }: ServiceCardProps) {
   const cardClass = [
-    'service-card',
-    price ? 'featured' : '',
-    compact ? 'compact' : '',
-    'h-100',
-    'p-4',
-    'rounded-4',
-    'border',
-    'position-relative',
-    'overflow-hidden',
-    (featured || compact) ? 'transition-hover' : ''
-  ].join(' ').trim();
+    "service-card",
+    featured ? "featured" : "",
+    compact ? "compact" : "",
+    "h-100",
+    "p-4",
+    "rounded-4",
+    "border",
+    "position-relative",
+    "overflow-hidden",
+    featured || compact ? "transition-hover" : "",
+  ]
+    .join(" ")
+    .trim();
   return (
     <div className={cardClass}>
       <div className="service-icon d-flex align-items-center justify-content-center mb-4 rounded">
@@ -58,7 +60,10 @@ export default function ServiceCard({
           </div>
         )}
 
-        <a href={linkUrl} className="btn-cta d-inline-flex align-items-center gap-2">
+        <a
+          href={linkUrl}
+          className="btn-cta d-inline-flex align-items-center gap-2"
+        >
           <span>{linkText}</span>
           <i className="bi bi-arrow-right"></i>
         </a>
