@@ -2,7 +2,6 @@ import Image from "next/image";
 import "./About.css";
 
 import aboutImage from "@image/about/about-square-8.webp";
-import CountUp from "../Count/Count";
 
 export default function About() {
   return (
@@ -63,25 +62,19 @@ export default function About() {
               <div className="my-4 py-4 border-top border-bottom">
                 <div className="row text-center">
                   <div className="col-md-4 mb-3 mb-md-0">
-                    <h3 className="fw-bold text-success">
-                      <CountUp target={8} />
-                    </h3>
+                    <h3 className="fw-bold text-success">8+ </h3>
                     <p className="text-uppercase text-muted small mb-0">
                       Years Experience
                     </p>
                   </div>
                   <div className="col-md-4 mb-3 mb-md-0">
-                    <h3 className="fw-bold text-success">
-                      <CountUp target={450} />+
-                    </h3>
+                    <h3 className="fw-bold text-success">450+ </h3>
                     <p className="text-uppercase text-muted small mb-0">
                       Projects Completed
                     </p>
                   </div>
                   <div className="col-md-4">
-                    <h3 className="fw-bold text-success">
-                      <CountUp target={25} />
-                    </h3>
+                    <h3 className="fw-bold text-success">25+ </h3>
                     <p className="text-uppercase text-muted small mb-0">
                       Team Members
                     </p>
