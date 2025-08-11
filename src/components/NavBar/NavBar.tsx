@@ -33,7 +33,7 @@ export default function NavBar() {
               <a href="#portfolio">Portfolio</a>
             </li>
             <li>
-              <a href="#team">Team</a>
+              <a href="/team">Team</a>
             </li>
             <li className="dropdown">
               <a href="#">

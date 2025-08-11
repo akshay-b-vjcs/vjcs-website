@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+
 import serviceImage from "@image/services/services-7.webp";
 import service2Image from "@image/services/services-2.webp";
 import service8Image from "@image/services/services-8.webp";
 import service11Image from "@image/services/services-11.webp";
 
-import Link from "next/link";
-import React from "react";
 import "./Service-Details.css";
 export default function ServiceDetail() {
   return (

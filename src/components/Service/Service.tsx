@@ -1,5 +1,7 @@
 import "./Service.css";
 import Card from "../Card/Card";
+import CountUp from "../Count/Count";
+
 export default function Service() {
   return (
     <section
@@ -19,7 +21,7 @@ export default function Service() {
               title="Web Development"
               description="Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec rutrum congue leo eget malesuada."
               linkText="Get Started"
-              linkUrl="Service-Details"
+              linkUrl="service-details"
               badge="Most Popular"
               price="Starting at $2,999"
               featured={true}
@@ -75,7 +77,9 @@ export default function Service() {
           <div className="row text-center position-relative z-2">
             <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
               <div className="stat-item text-white">
-                <div className="stat-number fs-1 fw-bold">500+</div>
+                <div className="stat-number fs-1 fw-bold">
+                     <CountUp target={500} duration={3000}/> +                  
+                  </div>
                 <div className="stat-label">Projects Completed</div>
               </div>
             </div>
@@ -93,7 +97,10 @@ export default function Service() {
             </div>
             <div className="col-lg-3 col-md-6">
               <div className="stat-item text-white">
-                <div className="stat-number fs-1 fw-bold">5+</div>
+                <div className="stat-number fs-1 fw-bold">
+                     <CountUp target={5} duration={3000}/> +
+
+                  </div>
                 <div className="stat-label">Years Experience</div>
               </div>
             </div>
