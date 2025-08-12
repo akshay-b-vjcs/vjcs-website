@@ -24,7 +24,7 @@ export default function NavBar() {
               </a>
             </li>
             <li>
-              <a href="/about">About</a>
+              <a href="/about2">About</a>
             </li>
             <li>
               <a href="/service">Services</a>
@@ -33,7 +33,7 @@ export default function NavBar() {
               <a href="#portfolio">Portfolio</a>
             </li>
             <li>
-              <a href="/team">Team</a>
+              <a href="/career">Career</a>
             </li>
             <li className="dropdown">
               <a href="#">
