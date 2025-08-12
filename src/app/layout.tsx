@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import BootstrapProvider from "../provider/BootstrapProvider";
-// import GlightboxProvider from "../provider/GlightboxProvider";
+import GlightboxProvider from "../provider/GlightboxProvider";
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap-icons/font/bootstrap-icons.css"
@@ -15,7 +15,7 @@ import Footer from "@/components/Footer/Footer";
 export const metadata: Metadata = {
 	title: "VJCS",
   description: "V J Coresoft Pvt. Ltd.",
-  keywords: ["vcoresoft", "engineering", "services"], //product design services, engineering services, cad software india, plm software india, cad services india, cae services india, 3d printers india, stratasys 3d printers, slm 3d printers, ptc, altair engineering, mathworks, esi
+  keywords: ["vcoresoft", "engineering", "services", "product design services", "engineering services", "cad software india", "plm software india", "cad services india", "cae services india", "3d printers india", "stratasys 3d printers", "slm 3d printers", "ptc", "altair engineering", "mathworks", "esi" ],
   icons: {
     // icon: "../public/img/favicon.png",
     // apple: "../public/img/apple-touch-icon.png",
@@ -45,7 +45,7 @@ export default function RootLayout({
       </head>
       <body>
         <BootstrapProvider />
-        {/* <GlightboxProvider /> */}
+        <GlightboxProvider />
         <Header />
         {children}
         <Footer/>
