@@ -13,7 +13,7 @@ export default function Contact() {
       <div className="container">
         <div className="contact-main-wrapper">
           <div className="map-wrapper">
-            {/* <iframe src="https://www.google.com/maps/place/VJ+Coresoft+Pvt.+Ltd./@18.605028,73.79215,11z/data=!4m6!3m5!1s0x3bc2bbb92cf02f65:0x655f5694ce2e18fa!8m2!3d18.5800123!4d73.7383987!16s%2Fg%2F11h2lk0dxp?hl=en&entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D" width="100%" height="100%"  style={{ border: 0 }}  loading="lazy" ></iframe>  */}
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.8673674646707!2d73.73621001436962!3d18.580017372203947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bbb92cf02f65%3A0x655f5694ce2e18fa!2sVJ%20Coresoft%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1670319117912!5m2!1sen!2sin" width="100%" height="100%"  style={{ border: 0 }}  loading="lazy" ></iframe> 
           </div>
 
           <div className="contact-content">
