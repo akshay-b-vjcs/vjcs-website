@@ -3,7 +3,6 @@ import Image from "next/image";
 import "./Career.css";
 import aboutImage from "@image/about/about-square-8.webp";
 import { useState } from "react";
-import CountUp from "../Count/Count";
 
 export default function Career() {
   const [activeIndex, setActiveIndex] = useState(null); // <-- allow null
@@ -11,7 +10,8 @@ export default function Career() {
   const careers = [
     {
       title: "CAD Testers 2D Sketch",
-      requirements: "No of Requirements – 5 | Experience: 2–3 years OR 5–7 years",
+      requirements:
+        "No of Requirements – 5 | Experience: 2–3 years OR 5–7 years",
       jobProfile: [
         "Manual testing of 2D Sketch for CAD software on Desktop, Mobile, and Browser",
         "Documentation testing",
@@ -21,7 +21,8 @@ export default function Career() {
     },
     {
       title: "CAD Testers SolidEdge",
-      requirements: "No of Requirements – 2 | Experience: 3–4 years with SolidEdge + 1 year with manual CAD software testing",
+      requirements:
+        "No of Requirements – 2 | Experience: 3–4 years with SolidEdge + 1 year with manual CAD software testing",
       jobProfile: [
         "QA Testing (Manual) of Solid Edge integration with CAM software",
         "Carrying out all types of testing activities like Installation / Uninstallation, Accuracy testing, Performance testing",
@@ -31,7 +32,8 @@ export default function Career() {
     },
     {
       title: "Automation Testing using Cypress Tool",
-      requirements: "No of Posts – 2 | Qualification: Engineering Graduate / MCA / MCS with 4–7 years’ experience",
+      requirements:
+        "No of Posts – 2 | Qualification: Engineering Graduate / MCA / MCS with 4–7 years’ experience",
       jobProfile: [
         "Development for Test Framework, Automation Testing Scripts using Cypress Test Tool",
         "Automation testing of requirements, able to design frameworks for new applications",
@@ -58,9 +60,9 @@ export default function Career() {
         {/* About Section */}
         <div className="row align-items-center">
           <div className="col-lg-6 mb-4 mb-lg-0">
-                <h2 className="h1 fw-bold mb-4 mt-5" style={{ color: "#293a34" }}>
-                Transforming Ideas Into Reality Since 2015
-              </h2>
+            <h2 className="h1 fw-bold mb-4 mt-5" style={{ color: "#293a34" }}>
+              CAREER
+            </h2>
             <p
               className="mb-4"
               style={{
@@ -75,34 +77,6 @@ export default function Career() {
               part of our culture. Working on advanced CAx Technologies, we
               specialize in tackling complex challenges.
             </p>
-                 <div className="my-4 py-4 border-top border-bottom">
-                            <div className="row text-center">
-                              <div className="col-md-4 mb-3 mb-md-0">
-                                <h3 className="fw-bold text-success">
-                                  {" "}
-                                  <CountUp target={8}></CountUp> +
-                                </h3>
-            
-                                <p className="text-uppercase text-muted small mb-0">
-                                  Years Experience
-                                </p>
-                              </div>
-                              <div className="col-md-4 mb-3 mb-md-0">
-                                <h3 className="fw-bold text-success">
-                                  <CountUp target={450}></CountUp> +
-                                </h3>
-                                <p className="text-uppercase text-muted small mb-0">
-                                  Projects Completed
-                                </p>
-                              </div>
-                              <div className="col-md-4">
-                                <h3 className="fw-bold text-success">                      <CountUp target={100}></CountUp> +</h3>
-                                <p className="text-uppercase text-muted small mb-0">
-                                  Team Members
-                                </p>
-                              </div>
-                            </div>
-                          </div>
           </div>
 
           {/* Image */}
@@ -113,60 +87,35 @@ export default function Career() {
                 alt="About Us"
                 className="img-fluid rounded-4 shadow"
               />
-              <div
-                className="position-absolute bg-white rounded-4 p-3 shadow d-flex align-items-center gap-3"
-                style={{
-                  left: "-40px",
-                  bottom: "20px",
-                  maxWidth: "300px",
-                }}
-              >
-                <div
-                  className="d-flex align-items-center justify-content-center rounded-3"
-                  style={{
-                    backgroundColor: "#E6F4EA",
-                    width: "56px",
-                    height: "56px",
-                  }}
-                >
-                  <i
-                    className="bi bi-award"
-                    style={{ fontSize: "30px", color: "#0ca678" }}
-                  ></i>
-                </div>
-                <div>
-                  <h6 className="mb-1 fw-semibold text-dark">
-                    Excellence Award
-                  </h6>
-                  <small className="text-muted">
-                    Digital Innovation 2023
-                  </small>
-                </div>
-              </div>
             </div>
           </div>
         </div>
-
-        {/* Career Opportunities FAQ Style */}
+        <div className="container text-center mb-5 mt-5 section-title">
+          <h2 className="fw-bold">Open Position</h2>
+          <p className="text-dark">
+            For expansion plans, company is looking for following professionals{" "}
+          </p>
+        </div>
         <div className="row mt-5">
-          <div className="col-12">
-            
-
-            <div className="faq-wrapper">
+          <div className="col-2"></div>
+          <div className="col-8 ">
+            <div className="faq-wrapper ">
               {careers.map((job, index) => (
                 <div
                   key={index}
-                  className={`faq-item ${activeIndex === index ? "faq-active" : ""}`}
+                  className={`faq-item ${
+                    activeIndex === index ? "faq-active" : ""
+                  }`}
                 >
                   <div
-                    className="faq-header"
+                    className="faq-header p-3"
                     onClick={() =>
                       setActiveIndex(activeIndex === index ? null : index)
                     }
                     style={{ cursor: "pointer" }}
                   >
                     <div className="faq-icon">
-                      <i className="bi bi-question-circle"></i>
+                      <i className="bi-megaphone"></i>
                     </div>
                     <h4>{job.title}</h4>
                     <div className="faq-toggle faq-icon">
@@ -201,6 +150,7 @@ export default function Career() {
               ))}
             </div>
           </div>
+          <div className="col-2"></div>
         </div>
       </div>
     </section>

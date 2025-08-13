@@ -1,33 +1,78 @@
+"use client";
+import React from "react";
 import Image from "next/image";
 import "./About.css";
 
 import aboutImage from "@image/about/about-square-8.webp";
-import CountUp from "../Count/Count";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default function About() {
+  const services = [
+    {
+      icon: "bi bi-eye",
+      title: "VISION",
+      desc: "To grow as Reliable solution centric business entity.",
+      num: "01",
+    },
+    {
+      icon: "bi bi-bullseye",
+      title: "MISSION",
+      desc: "To work on reasonable services for clients with precision ",
+      num: "02",
+    },
+  ];
+
   return (
-    <section id="about" className="py-5 mt-5">
-      <div className="container ">
-        <div className="row align-items-center ">
-          {/* Left Content Column */}
+    <section
+      id="featured-services"
+      className="featured-services section light-background"
+    >
+      <div className="container">
+        <div className="row mt-5">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="col-md-5 m-5 service-card"
+              data-aos="fade-up"
+            >
+              <div className="icon-box">
+                <i className={service.icon}></i>
+              </div>
+              <a href="#" className="arrow-link">
+                <i className="bi bi-arrow-right"></i>
+              </a>
+              <div className="content">
+                <h4>
+                  <a href="#">{service.title}</a>
+                </h4>
+                <p>{service.desc}</p>
+                <div className="service-number">{service.num}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="row m-4">
           <div className="col-lg-6 mb-4 mb-lg-0">
             <div>
-              <h2 className="h1 fw-bold mb-4 mt-5" style={{ color: "#293a34" }}>
-                Transforming Ideas Into Reality Since 2015
+              <h2 className="h1 fw-bold mb-4 " style={{ color: "#293a34" }}>
+                Management
               </h2>
 
               <p
                 className="mb-4"
                 style={{
                   color: "#384943",
-                  fontSize: "20px",
-                  fontWeight: 500,
+                  fontSize: "16px",
+                  fontWeight: 400,
                   lineHeight: "1.6",
                 }}
               >
-                We are a passionate team of innovators dedicated to creating
-                exceptional digital experiences that drive meaningful results
-                for businesses worldwide.
+                VJ Coresoft Pvt. Ltd. (VJCS) founded in 1998, is a leading
+                global IT company engaged in Engineering Services, Software
+                Testing and Software Development. VJCS is located in Pune,
+                India. The city of Pune is a nerve center for
+                telecommunications, engineering, automobile, manufacturing and a
+                rapidly growing information technology services industry.
               </p>
 
               <p
@@ -39,13 +84,13 @@ export default function About() {
                   lineHeight: "1.6",
                 }}
               >
-                Our journey began with a simple vision: to bridge the gap
-                between cutting-edge technology and human-centered design.
-                Today, we’ve grown into a trusted partner for companies seeking
-                to transform their digital presence and accelerate their growth.
+                We are growing and strongly consolidating our existing portfolio
+                of solutions in Cax Software Development/QA, PLM, Engineering
+                Services and Digitization for smart manufacturing.
               </p>
+
               <p
-                className="text-muted mb-4"
+                className="text-muted mb-3"
                 style={{
                   color: "#384943",
                   fontSize: "16px",
@@ -53,86 +98,112 @@ export default function About() {
                   lineHeight: "1.6",
                 }}
               >
-                Through collaborative partnerships and innovative solutions,
-                we’ve helped hundreds of organizations achieve their goals while
-                building lasting relationships founded on trust, transparency,
-                and exceptional results.
+                The company management has extensive experience in multiple
+                areas including computer algorithms, engineering, optimization,
+                databases, software, CAD, CAM and CAE. Focus is on efficient,
+                reliable and robust planning, implementation and execution.
+                Several management and staff personnel hold advanced degrees
+                including PhD and have a wide knowledge base with focus on
+                engineering and computing disciplines. Senior management
+                personnel have seminal publications in computational and
+                engineering sciences and have held faculty positions at world
+                renowned institutions.
               </p>
 
-              {/* Stats */}
-              <div className="my-4 py-4 border-top border-bottom">
-                <div className="row text-center">
-                  <div className="col-md-4 mb-3 mb-md-0">
-                    <h3 className="fw-bold text-success">
-                      {" "}
-                      <CountUp target={8}></CountUp> +
-                    </h3>
+              {/* Affiliates Section */}
+              <h4 className="fw-bold mt-4" style={{ color: "#293a34" }}>
+                VJCS Affiliates
+              </h4>
 
-                    <p className="text-uppercase text-muted small mb-0">
-                      Years Experience
-                    </p>
-                  </div>
-                  <div className="col-md-4 mb-3 mb-md-0">
-                    <h3 className="fw-bold text-success">
-                      <CountUp target={450}></CountUp> +
-                    </h3>
-                    <p className="text-uppercase text-muted small mb-0">
-                      Projects Completed
-                    </p>
-                  </div>
-                  <div className="col-md-4">
-                    <h3 className="fw-bold text-success">                      <CountUp target={100}></CountUp> +</h3>
-                    <p className="text-uppercase text-muted small mb-0">
-                      Team Members
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <h5 className="fw-bold mt-3 text-muted" style={{ color: "#384943" }}>
+                Computational Applications and System Integration (CASI)
+              </h5>
+              <p
+                style={{
+                  color: "#384943",
+                  fontSize: "16px",
+                  fontWeight: 400,
+                  lineHeight: "1.6",
+                }}
+              >
+                CASI, an affiliate of VJCS, is located at Champaign – IL in
+                North America. CASI is a technology and business services
+                company delivering robust solutions for multiple industries
+                since 1993. With offices in Champaign and Chicago, Illinois,
+                serves companies of all sizes around the globe.
+              </p>
+              <p
+                style={{
+                  color: "#384943",
+                  fontSize: "16px",
+                  fontWeight: 400,
+                  lineHeight: "1.6",
+                }}
+              >
+                CASI has been developing and licensing mission–critical solvers
+                for solution of linear systems for over a decade. These are
+                widely used in the areas of Engineering Analysis and VLSI
+                Simulation. These solvers are used by over a million users
+                worldwide.
+              </p>
+              <p>
+                For more information visit{" "}
+                <a
+                  href="http://www.casicorp.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  http://www.casicorp.com
+                </a>
+              </p>
+
+              
             </div>
           </div>
-
-          {/* Right Image Column */}
-          <div className="col-lg-6 mt-5">
+          <div className="col-lg-6 mb-4 mb-lg-0">
             <div className="position-relative">
               <Image
                 src={aboutImage}
                 alt="About Us"
                 className="img-fluid rounded-4 shadow"
+                
               />
-
-              {/* Floating Award Card */}
-              <div
-                className="position-absolute bg-white rounded-4 p-3 shadow d-flex align-items-center gap-3"
+            </div>
+            <div className="">
+              <h5 className="fw-bold mt-3 text-muted" style={{ color: "#384943" }}>
+                Primove Engineering Pvt Ltd
+              </h5>
+              <p
                 style={{
-                  left: "-40px", // move outside the image
-                  bottom: "20px",
-                  maxWidth: "300px",
+                  color: "#384943",
+                  fontSize: "16px",
+                  fontWeight: 400,
+                  lineHeight: "1.6",
                 }}
               >
-                <div
-                  className="d-flex align-items-center justify-content-center rounded-3"
-                  style={{
-                    backgroundColor: "#E6F4EA",
-                    width: "56px",
-                    height: "56px",
-                  }}
+                Primove Engineering Pvt. Ltd., a subsidiary of VJCS, is a
+                nationally recognized technology company in the domain of
+                gaseous fuels and energy. Primove has developed disruptive
+                technology for the conversion of agricultural residue and waste
+                into BioCNG for transportation and industrial applications.
+              </p>
+              <p>
+                For more information visit{" "}
+                <a
+                  href="http://www.primove.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <i
-                    className="bi bi-award "
-                    style={{ fontSize: "30px", color: "#0ca678" }}
-                  ></i>
-                </div>
-                <div>
-                  <h6 className="mb-1 fw-semibold text-dark">
-                    Excellence Award
-                  </h6>
-                  <small className="text-muted">Digital Innovation 2023</small>
-                </div>
-              </div>
+                  http://www.primove.in
+                </a>
+              </p>
             </div>
+           
           </div>
+         
         </div>
       </div>
     </section>
   );
 }
+
