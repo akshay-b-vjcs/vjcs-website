@@ -1,12 +1,11 @@
-/* FAQ Wrapper */
-.faq-wrapper {
+.career-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem; /* 20px */
+  gap: 1.25rem; 
 }
 
-/* FAQ Item */
-.faq-item {
+
+.career-item {
   background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
@@ -15,27 +14,25 @@
   border-left: 4px solid transparent;
 }
 
-.faq-item:hover {
+.career-item:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  border-left-color: #2ca56f;
+  border-left-color:var(--accent-color);
 }
 
-.faq-item.faq-active {
-  border-left-color: #2ca56f;
+.career-item.career-active {
+  border-left-color: var(--accent-color);
 }
 
-/* FAQ Header */
-.faq-header {
+.career-header {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 
-/* Question Mark Icon */
-.faq-icon {
-  background: rgba(44, 165, 111, 0.15); /* हलका हिरवा */
-  color: #2ca56f;
+.career-icon {
+  background: rgba(198, 200, 199, 0.15); 
+  color:var(--accent-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -48,13 +45,12 @@
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Active झाल्यावर full green */
-.faq-item.faq-active .faq-icon {
-  background: #2ca56f;
+.career-item.career-active .career-icon {
+  background:var(--accent-color);
   color: #fff;
 }
 
-.faq-header h4 {
+.career-header h4 {
   flex: 1;
   margin: 0;
   font-size: 16px;
@@ -62,8 +58,7 @@
   color: #222;
 }
 
-/* FAQ Toggle Icons */
-.faq-toggle {
+.career-toggle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,31 +66,28 @@
   height: 25px;
 }
 
-.faq-toggle i {
+.career-toggle i {
   font-size: 18px;
-  color: #2ca56f;
+  color: var(--accent-color);
   display: none;
   transition: transform 0.3s ease;
 }
 
-/* Show minus when active */
-.faq-item.faq-active .faq-toggle .bi-dash {
+.career-item.career-active .career-toggle .bi-dash {
   display: inline;
 }
 
-/* Show plus when not active */
-.faq-item:not(.faq-active) .faq-toggle .bi-plus {
+.career-item:not(.career-active) .career-toggle .bi-plus {
   display: inline;
 }
 
-/* FAQ Content */
-.faq-content {
+.career-content {
   display: none;
   margin-top: 10px;
   animation: fadeIn 0.3s ease;
 }
 
-.faq-item.faq-active .faq-content {
+.career-item.career-active .career-content {
   display: block;
 }
 
@@ -106,7 +98,6 @@
   line-height: 1.5;
 }
 
-/* Smooth Fade Animation */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-5px); }
   to { opacity: 1; transform: translateY(0); }

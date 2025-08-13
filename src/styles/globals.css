@@ -2051,27 +2051,27 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Faq Section
+# Career Section
 --------------------------------------------------------------*/
-.faq .section-header h2 {
+.career .section-header h2 {
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--heading-color);
   margin-bottom: 1rem;
 }
 
-.faq .section-header .lead {
+.career .section-header .lead {
   font-size: 1.1rem;
   color: color-mix(in srgb, var(--default-color), transparent 25%);
   line-height: 1.6;
 }
 
-.faq .faq-wrapper {
+.career .career-wrapper {
   max-width: 800px;
   margin: 0 auto;
 }
 
-.faq .faq-item {
+.career .career-item {
   border-left: 4px solid transparent;
   border-radius: 10px;
   background: var(--surface-color);
@@ -2081,57 +2081,57 @@ section,
   overflow: hidden;
 }
 
-.faq .faq-item:last-child {
+.career .career-item:last-child {
   margin-bottom: 0;
 }
 
-.faq .faq-item:hover {
+.career .career-item:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   border-left-color: color-mix(in srgb, var(--accent-color), transparent 50%);
 }
 
-.faq .faq-item.faq-active {
+.career .career-item.career-active {
   border-left-color: var(--accent-color);
 }
 
-.faq .faq-item.faq-active .faq-header .faq-icon {
+.career .career-item.career-active .career-header .career-icon {
   background: var(--accent-color);
   color: var(--contrast-color);
 }
 
-.faq .faq-item.faq-active .faq-header h4 {
+.career .career-item.career-active .career-header h4 {
   color: var(--accent-color);
 }
 
-.faq .faq-item.faq-active .faq-header .faq-toggle {
+.career .career-item.career-active .career-header .career-toggle {
   background: var(--accent-color);
   color: var(--contrast-color);
 }
 
-.faq .faq-item.faq-active .faq-header .faq-toggle i.bi-plus {
+.career .career-item.career-active .career-header .career-toggle i.bi-plus {
   display: none;
 }
 
-.faq .faq-item.faq-active .faq-header .faq-toggle i.bi-dash {
+.career .career-item.career-active .career-header .career-toggle i.bi-dash {
   display: block;
 }
 
-.faq .faq-item.faq-active .faq-content {
+.career .career-item.career-active .career-content {
   grid-template-rows: 1fr;
   visibility: visible;
   opacity: 1;
 }
 
-.faq .faq-item:not(.faq-active) .faq-header .faq-toggle i.bi-plus {
+.career .career-item:not(.career-active) .career-header .career-toggle i.bi-plus {
   display: block;
 }
 
-.faq .faq-item:not(.faq-active) .faq-header .faq-toggle i.bi-dash {
+.career .career-item:not(.career-active) .career-header .career-toggle i.bi-dash {
   display: none;
 }
 
-.faq .faq-item .faq-header {
+.career .career-item .career-header {
   display: flex;
   align-items: center;
   padding: 25px;
@@ -2139,7 +2139,7 @@ section,
   gap: 20px;
 }
 
-.faq .faq-item .faq-header .faq-icon {
+.career .career-item .career-header .career-icon {
   flex-shrink: 0;
   width: 50px;
   height: 50px;
@@ -2153,7 +2153,7 @@ section,
   transition: all 0.3s ease;
 }
 
-.faq .faq-item .faq-header h4 {
+.career .career-item .career-header h4 {
   flex: 1;
   margin: 0;
   font-size: 1.1rem;
@@ -2163,7 +2163,7 @@ section,
   line-height: 1.4;
 }
 
-.faq .faq-item .faq-header .faq-toggle {
+.career .career-item .career-header .career-toggle {
   flex-shrink: 0;
   width: 35px;
   height: 35px;
@@ -2178,17 +2178,17 @@ section,
   position: relative;
 }
 
-.faq .faq-item .faq-header .faq-toggle i {
+.career .career-item .career-header .career-toggle i {
   position: absolute;
   transition: all 0.3s ease;
 }
 
-.faq .faq-item .faq-header .faq-toggle:hover {
+.career .career-item .career-header .career-toggle:hover {
   background: var(--accent-color);
   color: var(--contrast-color);
 }
 
-.faq .faq-item .faq-content {
+.career .career-item .career-content {
   display: grid;
   grid-template-rows: 0fr;
   transition: 0.3s ease-in-out;
@@ -2196,12 +2196,12 @@ section,
   opacity: 0;
 }
 
-.faq .faq-item .faq-content .content-inner {
+.career .career-item .career-content .content-inner {
   padding: 0 25px 25px 25px;
   overflow: hidden;
 }
 
-.faq .faq-item .faq-content .content-inner p {
+.career .career-item .career-content .content-inner p {
   margin: 0;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   line-height: 1.6;
@@ -2210,32 +2210,32 @@ section,
 }
 
 @media (max-width: 768px) {
-  .faq .faq-item .faq-header {
+  .career .career-item .career-header {
     padding: 20px;
     gap: 15px;
   }
 
-  .faq .faq-item .faq-header .faq-icon {
+  .career .career-item .career-header .career-icon {
     width: 40px;
     height: 40px;
     font-size: 18px;
   }
 
-  .faq .faq-item .faq-header h4 {
+  .career .career-item .career-header h4 {
     font-size: 1rem;
   }
 
-  .faq .faq-item .faq-header .faq-toggle {
+  .career .career-item .career-header .career-toggle {
     width: 30px;
     height: 30px;
     font-size: 14px;
   }
 
-  .faq .faq-item .faq-content .content-inner {
+  .career .career-item .career-content .content-inner {
     padding: 0 20px;
   }
 
-  .faq .faq-item.faq-active .faq-content .content-inner {
+  .career .career-item.career-active .career-content .content-inner {
     padding-bottom: 20px;
   }
 }

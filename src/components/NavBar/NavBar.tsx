@@ -25,7 +25,7 @@ export default function NavBar() {
               </a>
             </li>
             <li>
-              <a href="/about2">About</a>
+              <a href="/about">About</a>
             </li>
             <li>
               <a href="/service">Services</a>

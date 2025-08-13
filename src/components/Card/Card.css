@@ -181,8 +181,11 @@
 }
 
 .services .service-card .service-meta .badge.popular {
-  background: linear-gradient(135deg, #28a745, #20c997);
-}
+background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--accent-color), transparent 10%),
+    var(--accent-color)
+  );}
 
 .services .service-card .service-meta .price {
   color: var(--accent-color);
@@ -219,7 +222,13 @@
 .services .service-card .btn-cta i {
   transition: all 0.3s ease;
 }
-
+.badgeg{
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--accent-color), transparent 10%),
+    var(--accent-color)
+  );
+}
 .services .stats-highlight {
   background: var(--accent-color);
   border-radius: 25px;

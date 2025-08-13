@@ -99,37 +99,37 @@ export default function Career() {
         <div className="row mt-5">
           <div className="col-2"></div>
           <div className="col-8 ">
-            <div className="faq-wrapper ">
+            <div className="career-wrapper ">
               {careers.map((job, index) => (
                 <div
                   key={index}
-                  className={`faq-item ${
-                    activeIndex === index ? "faq-active" : ""
+                  className={`career-item ${
+                    activeIndex === index ? "career-active" : ""
                   }`}
                 >
                   <div
-                    className="faq-header p-3"
+                    className="career-header p-3"
                     onClick={() =>
                       setActiveIndex(activeIndex === index ? null : index)
                     }
                     style={{ cursor: "pointer" }}
                   >
-                    <div className="faq-icon">
+                    <div className="career-icon">
                       <i className="bi-megaphone"></i>
                     </div>
                     <h4>{job.title}</h4>
-                    <div className="faq-toggle faq-icon">
+                    <div className="career-toggle career-icon">
                       <i className="bi bi-plus"></i>
                       <i className="bi bi-dash text-white"></i>
                     </div>
                   </div>
 
-                  <div className="faq-content">
+                  <div className="career-content">
                     <div className="content-inner">
-                      <h6 className="fw-semibold text-success">Requirements</h6>
+                      <h6 className="fw-semibold ">Requirements</h6>
                       <p>{job.requirements}</p>
 
-                      <h6 className="fw-semibold text-success mt-3">
+                      <h6 className="fw-semibold  mt-3">
                         Job Profile
                       </h6>
                       <ul>
@@ -138,7 +138,7 @@ export default function Career() {
                         ))}
                       </ul>
 
-                      <h6 className="fw-semibold text-success mt-3">Skills</h6>
+                      <h6 className="fw-semibold  mt-3">Skills</h6>
                       <ul>
                         {job.skills.map((item, i) => (
                           <li key={i}>{item}</li>
