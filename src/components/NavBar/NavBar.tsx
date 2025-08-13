@@ -2,19 +2,20 @@ import Image from "next/image";
 
 import "./NavBar.css";
 
-import misc7 from "@image/misc/misc-7.webp";
-import misc12 from "@image/misc/misc-12.webp";
-import misc5 from "@image/misc/misc-5.webp";
+import logo from "@image/logo_1.png"
+import misc7 from "@image/misc/misc-7.webp"
+import misc12 from "@image/misc/misc-12.webp"
+import misc5 from "@image/misc/misc-5.webp"
 
 export default function NavBar() {
-  return (
-    <div className="branding d-flex align-items-center">
-      <div className="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" className="logo d-flex align-items-center">
-          {/* -- Uncomment the line below if you also wish to use an image logo -- */}
-          {/* <!-- <Image src="assets/img/logo.webp" alt=""> --> */}
-          <h1 className="sitename">Passion</h1>
-        </a>
+	return (
+		<div className="branding d-flex align-items-center">
+			<div className="container position-relative d-flex align-items-center justify-content-between">
+				<a href="index.html" className="logo d-flex align-items-center">
+				{/* -- Uncomment the line below if you also wish to use an image logo -- */}
+				<Image src={logo} alt="V J Coresoft Pvt. Ltd." />
+				{/* <h1 className="sitename">Passion</h1> */}
+				</a>
 
         <nav id="navmenu" className="navmenu">
           <ul>
