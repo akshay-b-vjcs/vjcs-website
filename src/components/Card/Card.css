@@ -16,7 +16,8 @@
   box-shadow: 0 25px 60px
     color-mix(in srgb, var(--accent-color), transparent 80%);
 }
-
+.service-card:hover{  border: 2px solid var(--accent-color) !important;
+}
 .services .service-card:hover .service-bg {
   opacity: 1;
   transform: scale(1.2) rotate(15deg);

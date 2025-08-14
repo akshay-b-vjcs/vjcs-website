@@ -90,13 +90,13 @@ export default function Career() {
             </div>
           </div>
         </div>
-        <div className="container text-center mb-5 mt-5 section-title">
+        <div className="container text-center  mt-5 section-title">
           <h2 className="fw-bold">Open Position</h2>
           <p className="text-dark">
             For expansion plans, company is looking for following professionals{" "}
           </p>
         </div>
-        <div className="row mt-5">
+        <div className="row ">
           <div className="col-2"></div>
           <div className="col-8 ">
             <div className="career-wrapper ">
@@ -129,9 +129,7 @@ export default function Career() {
                       <h6 className="fw-semibold ">Requirements</h6>
                       <p>{job.requirements}</p>
 
-                      <h6 className="fw-semibold  mt-3">
-                        Job Profile
-                      </h6>
+                      <h6 className="fw-semibold  mt-3">Job Profile</h6>
                       <ul>
                         {job.jobProfile.map((item, i) => (
                           <li key={i}>{item}</li>
