@@ -1,7 +1,4 @@
-// components/ButtonLink.tsx
-
 import React from "react";
-
 interface ButtonLinkProps {
   href: string;
   label: string;

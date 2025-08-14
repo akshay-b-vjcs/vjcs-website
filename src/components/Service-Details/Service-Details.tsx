@@ -8,32 +8,12 @@ import service8Image from "@image/services/services-8.webp";
 import service11Image from "@image/services/services-11.webp";
 
 import "./Service-Details.css";
+import PageBaner from "../PageBaner/PageBaner";
+
 export default function ServiceDetail() {
   return (
     <>
-      {/* Page Title */}
-      <div
-        className="page-title dark-background"
-        style={{
-          backgroundImage:
-            "url('https://www.shutterstock.com/image-photo/high-rises-building-black-white-260nw-772540216.jpg')",
-        }}
-      >
-        <div className="container position-relative">
-          <h1>Service Details</h1>
-          <p>
-            Esse dolorum voluptatum ullam est sint nemo et est ipsa porro
-            placeat quibusdam quia assumenda numquam molestias.
-          </p>
-          <nav className="breadcrumbs">
-            <ol>
-              <li className="text-success">Home</li>
-              <li className="current">Service Details</li>
-            </ol>
-          </nav>
-        </div>
-      </div>
-
+      <PageBaner heading="Service Details" description="Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias." />
       {/* Service Details Section */}
       <section id="service-details" className="service-details section mt-5">
         <div className="container">

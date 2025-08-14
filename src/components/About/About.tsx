@@ -1,10 +1,9 @@
-"use client";
 import React from "react";
+
 import Image from "next/image";
 import "./About.css";
 
 import aboutImage from "@image/about/about-square-8.webp";
-import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default function About() {
   const services = [
