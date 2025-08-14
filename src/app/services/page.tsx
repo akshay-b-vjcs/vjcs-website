@@ -1,6 +1,6 @@
 import Service from "@/components/Service/Service";
 
-export default function service(){
+export default function ServicesPage(){
   return(
     <Service/>
   )
