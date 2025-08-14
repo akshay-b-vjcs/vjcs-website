@@ -1,6 +1,6 @@
 import About from "@/components/About/About";
 
-export default function AboutUs() {
+export default function AboutPage() {
   return (
     <About />
   )
