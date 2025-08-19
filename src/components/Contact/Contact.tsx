@@ -1,19 +1,11 @@
 import Card from "../Card/Card";
+import PageBaner from "../PageBaner/PageBaner";
 import "./Contact.css";
 const Contact: React.FC = () => {
   return (
     <>
+      <PageBaner heading="Contact"></PageBaner>
       <section id="contact" className="contact section">
-        {/* <!-- Section Title --> */}
-        <div className="container mt-5 section-title">
-          <h2>Contact</h2>
-          <p>
-            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-            consectetur velit
-          </p>
-        </div>
-        {/* <!-- End Section Title --> */}
-
         <div className="container">
           <div className="contact-main-wrapper">
             <div className="map-wrapper">
