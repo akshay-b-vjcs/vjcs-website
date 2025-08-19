@@ -1,9 +1,8 @@
 import Card from "../Card/Card";
 import "./Contact.css";
-
-export default function Contact() {
+const Contact: React.FC = () => {
   return (
-    <div>
+    <>
       <section id="contact" className="contact section">
         {/* <!-- Section Title --> */}
         <div className="container mt-5 section-title">
@@ -134,14 +133,18 @@ export default function Contact() {
                       3rd floor, Sr.No.128/A, Kailaschandra Building, Paud Road,
                       Kothrud, Pune, Maharashtra (India) – 411 038
                       <br />
+                      <i className="bi bi-telephone-fill pe-2"></i>
                       Phone: +91-20-66840000(Board)
                       <br />
                       +91-20-66840017 (Reception)
                       <br />
+                      <i className="bi bi-chat-left-dots-fill  pe-2"></i>
                       Fax: +91-20-66840017
                       <br />
+                      <i className="bi bi-envelope-fill  pe-2"></i>
                       E-mail: info@vjcs.com
                       <br />
+                      <i className="bi bi-envelope-fill  pe-2"></i>
                       E-mail: accounts@vjcs.com
                       <br />
                       CIN: U74900PN2010PTC137589
@@ -166,12 +169,15 @@ export default function Contact() {
                       Gandhi Infotech Park, Phase-1, Hinjewadi, Pune,
                       Maharashtra(india) - 411057.
                       <br />
+                      <i className="bi bi-telephone-fill  pe-2"></i>
                       Phone: +91-20-66756800
                       <br />
                       +91-20-66756801
                       <br />
+                      <i className="bi bi-chat-left-dots-fill  pe-2"></i>
                       Fax: +91-20-66756888
                       <br />
+                      <i className="bi bi-envelope-fill  pe-2"></i>
                       E-mail: info@vjcs.com
                     </span>
                   </>
@@ -192,8 +198,10 @@ export default function Contact() {
                     <span>
                       CASI, 2001 South First Street, Champaign, IL 61820, USA
                       <br />
+                      <i className="bi bi-telephone-fill  pe-2"></i>
                       Phone: +1 217 531 0704
                       <br />
+                      <i className="bi bi-chat-left-dots-fill  pe-2"></i>
                       Fax: +1 217 531 0705
                       <br />
                       Website: http://www.casicorp.com
@@ -205,6 +213,7 @@ export default function Contact() {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
-}
+};
+export default Contact;
