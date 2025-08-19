@@ -1,7 +1,9 @@
+import React from 'react'
+
 import './Header.css'
 import NavBar from "../NavBar/NavBar"
 
-export default function Header() {
+const Header:React.FC = () => {
 	return  (
 		<header id="header" className="header fixed-top">
 			<div className="topbar d-flex align-items-center dark-background">
@@ -22,3 +24,5 @@ export default function Header() {
 		</header>
 	)
 }
+
+export default Header;
