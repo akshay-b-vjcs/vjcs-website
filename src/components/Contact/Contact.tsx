@@ -1,18 +1,20 @@
 import Card from "../Card/Card";
+import PageBaner from "@components/PageBaner/PageBaner";
 import "./Contact.css";
 
 export default function Contact() {
   return (
-    <div>
+    <>
+      <PageBaner heading="Contact"/>
       <section id="contact" className="contact section">
         {/* <!-- Section Title --> */}
-        <div className="container mt-5 section-title">
+        {/* <div className="container mt-5 section-title">
           <h2>Contact</h2>
           <p>
             Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
             consectetur velit
           </p>
-        </div>
+        </div> */}
         {/* <!-- End Section Title --> */}
 
         <div className="container">
@@ -37,7 +39,7 @@ export default function Contact() {
                 </p>
 
                 <form
-                  action="forms/contact.php"
+                  action=""
                   method="post"
                   className="php-email-form"
                 >
@@ -205,6 +207,6 @@ export default function Contact() {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 }
