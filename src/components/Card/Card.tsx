@@ -1,13 +1,13 @@
 // components/ServiceCard.tsx
-import React from "react";
+import React, { ReactNode } from "react";
 import "./Card.css";
 
 interface ServiceCardProps {
   icon: string;
-  title: string;
-  description: string;
-  linkText: string;
-  linkUrl: string;
+  title: ReactNode;
+  description: ReactNode;
+  linkText?: string;
+  linkUrl?: string;
   badge?: string;
   price?: string;
   featured?: boolean;
@@ -47,8 +47,13 @@ export default function Card({
 
       <div className="service-content">
         <h3>
-          <a href={linkUrl}>{title}</a>
+          {linkUrl ? (
+            <a href={linkUrl}>{title}</a>
+          ) : (
+            <>{title}</> // fallback if no link
+          )}
         </h3>
+
         <p>{description}</p>
 
         {(badge || price) && (
@@ -60,13 +65,15 @@ export default function Card({
           </div>
         )}
 
-        <a
-          href={linkUrl}
-          className="btn-cta d-inline-flex align-items-center gap-2"
-        >
-          <span>{linkText}</span>
-          <i className="bi bi-arrow-right"></i>
-        </a>
+        {linkUrl && (
+          <a
+            href={linkUrl}
+            className="btn-cta d-inline-flex align-items-center gap-2"
+          >
+            <span>{linkText || "Learn More"}</span>
+            <i className="bi bi-arrow-right"></i>
+          </a>
+        )}
       </div>
 
       <div className="service-bg position-absolute"></div>

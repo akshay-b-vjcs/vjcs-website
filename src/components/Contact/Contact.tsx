@@ -1,3 +1,4 @@
+import Card from "../Card/Card";
 import "./Contact.css";
 
 export default function Contact() {
@@ -5,7 +6,7 @@ export default function Contact() {
     <div>
       <section id="contact" className="contact section">
         {/* <!-- Section Title --> */}
-        <div className="container section-title">
+        <div className="container mt-5 section-title">
           <h2>Contact</h2>
           <p>
             Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
@@ -113,23 +114,25 @@ export default function Contact() {
           </div>
         </div>
       </section>
-      <section id="services" className="services section light-background">
+      <section
+        id="services"
+        className="services py-5 bg-light position-relative overflow-hidden mt-5"
+      >
         <div className="container">
           <div className="row gy-4">
             <div className="col-lg-4 col-md-6">
-              <div className="service-card compact">
-                <div className="service-icon">
-                  <i className="bi bi-geo-alt-fill"></i>
-                </div>
-                <div className="service-content">
-                  <h3>
-                    <a href="service-details.html">Registered office, Pune</a>
-                  </h3>
-                  <p>VJ Coresoft Pvt. Ltd.</p>
-                  <a href="service-details.html" className="btn-cta">
+              <Card
+                icon="bi-geo-alt-fill"
+                title={
+                  <>
+                    Registered office, Pune <span>VJ Coresoft Pvt. Ltd.</span>
+                  </>
+                }
+                description={
+                  <>
                     <span>
                       3rd floor, Sr.No.128/A, Kailaschandra Building, Paud Road,
-                      Kothrud, Pune, Maharashtra(india) – 411 038
+                      Kothrud, Pune, Maharashtra (India) – 411 038
                       <br />
                       Phone: +91-20-66840000(Board)
                       <br />
@@ -143,23 +146,21 @@ export default function Contact() {
                       <br />
                       CIN: U74900PN2010PTC137589
                     </span>
-                  </a>
-                </div>
-                <div className="service-bg"></div>
-              </div>
+                  </>
+                }
+              />
             </div>
 
             <div className="col-lg-4 col-md-6">
-              <div className="service-card compact">
-                <div className="service-icon">
-                  <i className="bi bi-geo-alt-fill"></i>
-                </div>
-                <div className="service-content">
-                  <h3>
-                    <a href="service-details.html">Corporate Office, Pune</a>
-                  </h3>
-                  <p> VJ Coresoft Pvt. Ltd.</p>
-                  <a href="service-details.html" className="btn-cta">
+              <Card
+                icon="bi-geo-alt-fill"
+                title={
+                  <>
+                    Corporate Office, Pune<span>VJ Coresoft Pvt. Ltd.</span>
+                  </>
+                }
+                description={
+                  <>
                     <span>
                       Ground Floor, IT-6 Building, Qubix Business Park, Rajiv
                       Gandhi Infotech Park, Phase-1, Hinjewadi, Pune,
@@ -173,23 +174,21 @@ export default function Contact() {
                       <br />
                       E-mail: info@vjcs.com
                     </span>
-                  </a>
-                </div>
-                <div className="service-bg"></div>
-              </div>
+                  </>
+                }
+              />
             </div>
 
             <div className="col-lg-4 col-md-6">
-              <div className="service-card compact">
-                <div className="service-icon">
-                  <i className="bi bi-geo-alt-fill"></i>
-                </div>
-                <div className="service-content">
-                  <h3>
-                    <a href="service-details.html">Affiliate Office, USA</a>
-                  </h3>
-                  <p>VJ Coresoft Pvt. Ltd.</p>
-                  <a href="service-details.html" className="btn-cta">
+              <Card
+                icon="bi-geo-alt-fill"
+                title={
+                  <>
+                    Affiliate Office, USA<span>VJ Coresoft Pvt. Ltd.</span>
+                  </>
+                }
+                description={
+                  <>
                     <span>
                       CASI, 2001 South First Street, Champaign, IL 61820, USA
                       <br />
@@ -199,10 +198,9 @@ export default function Contact() {
                       <br />
                       Website: http://www.casicorp.com
                     </span>
-                  </a>
-                </div>
-                <div className="service-bg"></div>
-              </div>
+                  </>
+                }
+              />
             </div>
           </div>
         </div>

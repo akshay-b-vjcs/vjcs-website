@@ -544,7 +544,7 @@ export default function NavBar() {
             </li>{" "}
             {/*<!-- End Megamenu 2 --> */}
             <li>
-              <a href="#contact">Contact</a>
+              <a href="contact">Contact</a>
             </li>
           </ul>
           <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
