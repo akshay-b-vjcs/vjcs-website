@@ -153,11 +153,10 @@ export default function ServiceDetail() {
                   <h4>Our Services</h4>
                   <div className="menu-list">
                     {[
-                      "Digital Marketing",
-                      "Web Development",
-                      "Brand Strategy",
-                      "Content Creation",
-                      "SEO Optimization",
+                      "CAx Software Services",
+                      "PLM",
+                      "Engineering Design Services",
+                      "Digitization Services",
                     ].map((service, idx) => (
                       <Link
                         href="#"

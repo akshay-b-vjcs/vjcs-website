@@ -1,8 +1,13 @@
-import "./Service.css";
-import Card from "../Card/Card";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import CountUp from "../Count/Count";
+import Card from "../Card/Card";
 
 export default function Service() {
+ 
+
   return (
     <section
       id="services"
@@ -17,91 +22,88 @@ export default function Service() {
         <div className="row gy-4">
           <div className="col-lg-6 col-md-6 ">
             <Card
-              icon="bi-code-slash"
-              title="Web Development"
-              description="Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec rutrum congue leo eget malesuada."
-              linkText="Get Started"
-              linkUrl="service-details"
-              badge="Most Popular"
-              price="Starting at $2,999"
-              featured={true}
+              icon="bi-gear"
+              title="CAx Software Services"
+              description="Comprehensive CAD/CAM solutions to streamline workflows."
+             
+              links={[
+                { text: "CAD/CAM Development", url: "/Service-Details" },
+                { text: "CAE Development", url: "/contact" },
+                { text: "CAx Software QA & Testing", url: "/case-study/cad" },
+              ]}
             />
           </div>
 
           <div className="col-lg-6 col-md-6">
             <Card
               icon="bi-palette"
-              title="UI/UX Design"
+              title="PLM"
               description="Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar."
-              linkText="Learn More"
-              linkUrl="service-details.html"
+              links={[
+                { text: "Learn More", url: "/services/cad-cam" },
+             
+              ]}
+            />
+          </div>
+
+          <div className="col-lg-6 col-md-6 ">
+            <Card
+              icon="bi-code-slash"
+              title="Engineering Design Services"
+              description="Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec rutrum congue leo eget malesuada."
+               links={[
+                { text: "Product Design", url: "/services/cad-cam" },
+                { text: "BIM Modelling Services", url: "/contact" },
+                { text: "Marine Engineering", url: "/case-study/cad" },
+              ]}
+             
+            />
+          </div>
+
+          <div className="col-lg-6 col-md-6">
+            <Card
+              icon="bi-palette"
+              title="Digitization Services"
+              description="Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar."
+              links={[
+                { text: "Virtual Manufacturing", url: "/services/cad-cam" },
+                { text: "Industrial Internet of Things", url: "/contact" },
+                { text: "AI Solutions & Services", url: "/case-study/cad" },
+                { text: "Enterprise web & mobile", url: "/contact" },
+                { text: "Augmented & Virtual Reality Apps", url: "/case-study/cad" },
+              ]}
               price="Starting at $1,899"
             />
           </div>
 
-          <div className="col-lg-4 col-md-6">
-            <Card
-              icon="bi-graph-up-arrow"
-              title="Digital Marketing"
-              description="Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus."
-              linkText="Explore"
-              linkUrl="service-details.html"
-              compact
-            />
-          </div>
-
-          <div className="col-lg-4 col-md-6">
-            <Card
-              icon="bi-shield-check"
-              title="Security Solutions"
-              description="Mauris blandit aliquet elit, eget tincidunt nibh pulvinar vel. Sed porttitor lectus nibh vestibulum ac diam sit."
-              linkText="Discover"
-              linkUrl="service-details.html"
-              compact
-            />
-          </div>
-
-          <div className="col-lg-4 col-md-6">
-            <Card
-              icon="bi-cloud-upload"
-              title="Cloud Services"
-              description="Pellentesque in ipsum id orci porta dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.."
-              linkText="Get Quote"
-              linkUrl="service-details.html"
-              compact
-            />
-          </div>
+        
         </div>
 
+        {/* Stats Section */}
         <div className="stats-highlight text-dark-green rounded-4 py-5 px-3 mt-5 position-relative overflow-hidden">
           <div className="row text-center position-relative z-2">
-            <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <div className="col-lg-4 col-md-4 mb-4 mb-lg-0">
               <div className="stat-item text-white">
                 <div className="stat-number fs-1 fw-bold">
-                     <CountUp target={500} duration={3000}/> +                  
-                  </div>
-                <div className="stat-label">Projects Completed</div>
+                  <CountUp target={90} duration={3000} /> +
+                </div>
+                <div className="stat-label">Happy Client</div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
-              <div className="stat-item text-white">
-                <div className="stat-number fs-1 fw-bold">98%</div>
-                <div className="stat-label">Client Satisfaction</div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <div className="stat-item text-white">
-                <div className="stat-number fs-1 fw-bold">24/7</div>
-                <div className="stat-label">Support Available</div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-4 col-md-4 mb-4 mb-lg-0">
               <div className="stat-item text-white">
                 <div className="stat-number fs-1 fw-bold">
-                     <CountUp target={5} duration={3000}/> +
-
-                  </div>
-                <div className="stat-label">Years Experience</div>
+                  <CountUp target={22} duration={3000} /> +
+                </div>
+                <div className="stat-label">Years of proven expertise</div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-4 mb-4 mb-md-0">
+              <div className="stat-item text-white">
+                <div className="stat-number fs-1 fw-bold">
+                  <CountUp target={18} duration={3000} /> +
+                </div>
+                <div className="stat-label">Countries serving</div>
               </div>
             </div>
           </div>

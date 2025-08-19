@@ -1,13 +1,16 @@
-// components/ServiceCard.tsx
-import React, { ReactNode } from "react";
+import React from "react";
 import "./Card.css";
+
+interface ServiceLink {
+  text: string;
+  url: string;
+}
 
 interface ServiceCardProps {
   icon: string;
-  title: ReactNode;
-  description: ReactNode;
-  linkText?: string;
-  linkUrl?: string;
+  title: string;
+  description: string;
+  links?: ServiceLink[]; // optional now
   badge?: string;
   price?: string;
   featured?: boolean;
@@ -18,10 +21,8 @@ export default function Card({
   icon,
   title,
   description,
-  linkText,
-  linkUrl,
-  badge,
-  price,
+  links = [], // default empty array
+
   featured = false,
   compact = false,
 }: ServiceCardProps) {
@@ -39,6 +40,7 @@ export default function Card({
   ]
     .join(" ")
     .trim();
+
   return (
     <div className={cardClass}>
       <div className="service-icon d-flex align-items-center justify-content-center mb-4 rounded">
@@ -46,33 +48,23 @@ export default function Card({
       </div>
 
       <div className="service-content">
-        <h3>
-          {linkUrl ? (
-            <a href={linkUrl}>{title}</a>
-          ) : (
-            <>{title}</> // fallback if no link
-          )}
-        </h3>
-
+        <h3>{title}</h3>
         <p>{description}</p>
 
-        {(badge || price) && (
-          <div className="service-meta d-flex align-items-center flex-wrap gap-2 mb-3">
-            {badge && (
-              <span className="badge popular text-uppercase">{badge}</span>
-            )}
-            {price && <span className="price fw-bold">{price}</span>}
-          </div>
-        )}
-
-        {linkUrl && (
-          <a
-            href={linkUrl}
-            className="btn-cta d-inline-flex align-items-center gap-2"
-          >
-            <span>{linkText || "Learn More"}</span>
-            <i className="bi bi-arrow-right"></i>
-          </a>
+        {/* Multiple Links dynamically render (only if available) */}
+        {links && links.length > 0 && (
+          <ul className="mt-3">
+            {links.map((link, idx) => (
+              <li key={idx} className="mb-2">
+                <a
+                  href={link.url}
+                  className="align-items-center gap-2 text-decoration-none"
+                >
+                  <span>{link.text}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
         )}
       </div>
 
@@ -80,3 +72,4 @@ export default function Card({
     </div>
   );
 }
+
