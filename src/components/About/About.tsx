@@ -4,6 +4,7 @@ import Image from "next/image";
 import "./About.css";
 
 import aboutImage from "@image/about/about-square-8.webp";
+import illustration from "@image/illustration/illustration-3.webp";
 
 export default function About() {
   const services = [
@@ -211,7 +212,7 @@ export default function About() {
         <div className="col-lg-6">
           <div className="cta-image-container position-relative">
             {/* Add Image if needed */}
-            <img src="https://bootstrapmade.com/content/demo/Passion/assets/img/illustration/illustration-3.webp" alt="Illustration" className="img-fluid main-image" width={500} height={500}/>
+            <Image src={illustration} alt="Illustration" className="img-fluid main-image" width={500} height={500} />
             
             
             <div className="pattern-dots"></div>
