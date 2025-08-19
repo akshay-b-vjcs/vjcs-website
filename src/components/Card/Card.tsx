@@ -1,5 +1,6 @@
 import React from "react";
 import "./Card.css";
+import Link from "next/link";
 
 interface ServiceLink {
   text: string;
@@ -56,12 +57,12 @@ export default function Card({
           <ul className="mt-3">
             {links.map((link, idx) => (
               <li key={idx} className="mb-2">
-                <a
+                <Link
                   href={link.url}
                   className="align-items-center gap-2 text-decoration-none"
                 >
                   <span>{link.text}</span>
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

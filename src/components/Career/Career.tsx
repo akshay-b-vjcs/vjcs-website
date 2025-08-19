@@ -3,6 +3,7 @@ import Image from "next/image";
 import "./Career.css";
 import aboutImage from "@image/about/about-square-8.webp";
 import { useState } from "react";
+import PageBaner from "../PageBaner/PageBaner";
 
 export default function Career() {
   const [activeIndex, setActiveIndex] = useState(null); // <-- allow null
@@ -55,7 +56,9 @@ export default function Career() {
   ];
 
   return (
-    <section id="about" className="py-5 mt-5">
+    <section id="about" className="py-5 ">
+            <PageBaner heading="Career" description="Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias." />
+
       <div className="container">
         {/* About Section */}
         <div className="row align-items-center">
@@ -67,8 +70,8 @@ export default function Career() {
               className="mb-4"
               style={{
                 color: "#384943",
-                fontSize: "20px",
-                fontWeight: 300,
+                fontSize: "16px",
+                fontWeight: 400,
                 lineHeight: "1.6",
               }}
             >
@@ -85,7 +88,7 @@ export default function Career() {
               <Image
                 src={aboutImage}
                 alt="About Us"
-                className="img-fluid rounded-4 shadow"
+                className=" rounded-4 shadow custom-about-img"
               />
             </div>
           </div>
@@ -98,7 +101,7 @@ export default function Career() {
         </div>
         <div className="row ">
           <div className="col-2"></div>
-          <div className="col-8 ">
+          <div className="col-lg-8 col-sm-10 ">
             <div className="career-wrapper ">
               {careers.map((job, index) => (
                 <div

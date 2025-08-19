@@ -5,6 +5,7 @@ import "./About.css";
 
 import aboutImage from "@image/about/about-square-8.webp";
 import illustration from "@image/illustration/illustration-3.webp";
+import PageBaner from "../PageBaner/PageBaner";
 
 export default function About() {
   const services = [
@@ -21,30 +22,33 @@ export default function About() {
   ];
 
   return (
+    
     <section
       id="featured-services"
-      className="featured-services section mt-5 light-background"
-    >
+      className="featured-services section  light-background"
+    >      <PageBaner heading="About" description="Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias." />
+
       <div className="container mt-5">
         <div className="row mx-1  justify-content-between">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="col-md-5 col-lg-5  service-card"
-              data-aos="fade-up"
-            >
-              <div className="icon-box">
-                <i className={service.icon}></i>
-              </div>
-              
-              <div className="content">
-                <h4>
-                  <a href="#">{service.title}</a>
-                </h4>
-                <p>{service.desc}</p>
-              </div>
-            </div>
-          ))}
+        {services.map((service, index) => (
+  <div
+    key={index}
+    className="col-md-5 col-lg-5 service-card mt-3 mt-md-0"
+    data-aos="fade-up"
+  >
+    <div className="icon-box">
+      <i className={service.icon}></i>
+    </div>
+
+    <div className="content">
+      <h4>
+        <a href="#">{service.title}</a>
+      </h4>
+      <p>{service.desc}</p>
+    </div>
+  </div>
+))}
+
         </div>
         <div className="row mt-5">
           <div className="col-lg-6 mb-4 mb-lg-0">

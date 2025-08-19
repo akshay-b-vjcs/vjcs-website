@@ -1,9 +1,9 @@
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import CountUp from "../Count/Count";
 import Card from "../Card/Card";
+import PageBaner from "../PageBaner/PageBaner";
 
 export default function Service() {
  
@@ -13,6 +13,11 @@ export default function Service() {
       id="services"
       className="services py-5 bg-light position-relative overflow-hidden mt-5"
     >
+      <PageBaner
+        heading="Services"
+        description="Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias."
+      />
+
       <div className="container text-center mb-5 mt-5 section-title">
         <h2 className="fw-bold">Services</h2>
         <p className="text-dark">CHECK OUR SERVICES</p>
@@ -25,7 +30,6 @@ export default function Service() {
               icon="bi-gear"
               title="CAx Software Services"
               description="Comprehensive CAD/CAM solutions to streamline workflows."
-             
               links={[
                 { text: "CAD/CAM Development", url: "/Service-Details" },
                 { text: "CAE Development", url: "/contact" },
@@ -39,10 +43,7 @@ export default function Service() {
               icon="bi-palette"
               title="PLM"
               description="Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar."
-              links={[
-                { text: "Learn More", url: "/services/cad-cam" },
-             
-              ]}
+              links={[{ text: "Learn More", url: "/services/cad-cam" }]}
             />
           </div>
 
@@ -51,7 +52,7 @@ export default function Service() {
               icon="bi-code-slash"
               title="Engineering Design Services"
               description="Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec rutrum congue leo eget malesuada."
-               links={[
+              links={[
                 { text: "Product Design", url: "/services/cad-cam" },
                 { text: "BIM Modelling Services", url: "/contact" },
                 { text: "Marine Engineering", url: "/case-study/cad" },
@@ -70,13 +71,14 @@ export default function Service() {
                 { text: "Industrial Internet of Things", url: "/contact" },
                 { text: "AI Solutions & Services", url: "/case-study/cad" },
                 { text: "Enterprise web & mobile", url: "/contact" },
-                { text: "Augmented & Virtual Reality Apps", url: "/case-study/cad" },
+                {
+                  text: "Augmented & Virtual Reality Apps",
+                  url: "/case-study/cad",
+                },
               ]}
               price="Starting at $1,899"
             />
           </div>
-
-        
         </div>
 
         {/* Stats Section */}

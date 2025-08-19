@@ -141,3 +141,12 @@
 .section-title p {
   margin-bottom: 0;
 }
+.custom-about-img {
+  max-width: 100%;
+  height: auto;
+}@media (max-width: 767.98px) {
+  .custom-about-img {
+    margin-top: 30px;   /* mobile view sathi margin top */
+    border-radius: 10px; /* dusra property pan add karu shakto */
+  }
+}
