@@ -3,6 +3,7 @@ import "./Card.css";
 import Link from "next/link";
 
 interface ServiceLink {
+  icon: string | undefined;
   text: string;
   url: string;
 }
@@ -52,20 +53,21 @@ export default function Card({
         <h3>{title}</h3>
         <p>{description}</p>
 
-        {/* Multiple Links dynamically render (only if available) */}
         {links && links.length > 0 && (
-          <ul className="mt-3">
-            {links.map((link, idx) => (
-              <li key={idx} className="mb-2">
-                <Link
-                  href={link.url}
-                  className="align-items-center gap-2 text-decoration-none"
-                >
-                  <span>{link.text}</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
+
+         <ul className="mt-3 list-unstyled">
+      {links.map((link, idx) => (
+        <li key={idx} className="mb-2">
+          <Link
+            href={link.url}
+            className="d-flex align-items-center gap-2 text-decoration-none"
+          >
+            <i className={link.icon}></i>
+            <span>{link.text}</span>
+          </Link>
+        </li>
+      ))}
+    </ul>
         )}
       </div>
 

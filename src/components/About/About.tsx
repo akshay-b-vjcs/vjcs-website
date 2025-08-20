@@ -164,9 +164,8 @@ export default function About() {
               <Image
                 src={aboutImage}
                 alt="About Us"
-                className="rounded-4 shadow"
-                height={500}
-                width={630}
+                className="rounded-4 shadow custom-about-img"
+               
               />
             </div>
             {/* <div className="">
