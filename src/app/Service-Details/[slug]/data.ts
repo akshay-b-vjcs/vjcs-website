@@ -1,0 +1,537 @@
+
+export const services = [
+  {
+    slug: "cad-cam-development",
+    title: "CAD/CAM Development",
+    intro:
+      "We deliver advanced CAD/CAM development solutions for efficient engineering workflows.",
+    features: [
+      {
+        id: 1,
+        title: "Geometry Kernel",
+        subtitle: "CAD/CAM Core Capabilities",
+        icon: "bi bi-cpu",
+        contentTitle: "Geometry Kernel & CAD/CAM Features",
+        content:
+          "We provide core CAD/CAM functionalities like geometry kernel, advanced FE analysis, and geometric manipulation.",
+        highlight:
+          "Our expertise helps enhance engineering workflows with advanced CAD/CAM capabilities.",
+        points: [
+          "Basic CAD/CAM Features",
+          "Advanced Functionalities for FE Analysis",
+          "Geometric Manipulation",
+        ],
+        image: "/assets/img/misc/misc-square-6.webp",
+      },
+      {
+        id: 2,
+        title: "Interfaces",
+        subtitle: "Translators & Plug-ins",
+        icon: "bi bi-diagram-3",
+        contentTitle: "Interfaces & Translators",
+        content:
+          "We build translators and plug-ins to connect CAD/CAM tools with neutral and 3rd party software formats.",
+        highlight:
+          "Our solutions enable seamless data exchange between multiple CAD/CAM platforms.",
+        points: [
+          "Translators for Neutral Formats: STEP, VRML, STL, IGES, DXF, Parasolid, Granite, ACIS, JT Open",
+          "Plug-in Development: Pro/ENGINEER, SolidWorks, CATIA V5/V6, Autodesk Inventor, SpaceClaim",
+        ],
+        image: "/assets/img/misc/misc-square-13.webp",
+      },
+      {
+        id: 3,
+        title: "Integration Projects",
+        subtitle: "Client Software in 3rd Party Tools",
+        icon: "bi bi-diagram-2",
+        contentTitle: "Integration Projects",
+        content:
+          "We integrate client software into leading CAD/CAM platforms like Pro/ENGINEER, SolidWorks, CATIA, and AI.",
+        highlight:
+          "Our integration adds custom features and extends CAD tool capabilities.",
+        points: [
+          "Integrating client software in Pro/ENGINEER, SolidWorks, CATIA V5/V6, AI, SpaceClaim",
+        ],
+        image: "/assets/img/misc/misc-square-3.webp",
+      },
+      {
+        id: 4,
+        title: "Application Development",
+        subtitle: "CAD SDK Customization",
+        icon: "bi bi-app-indicator",
+        contentTitle: "Application Development",
+        content:
+          "We use SDKs of CAD software to customize tools, add features, and improve UI/UX with automation.",
+        highlight:
+          "From GUI changes to macro automation, we deliver CAD applications tailored to client needs.",
+        points: [
+          "Use SDK's to customize and develop new tools",
+          "Enhance existing CAD features",
+          "Changing GUI, Adding Menus, Developing Macros",
+          "SolidWorks: VB.NET, VC++/CLI, C# .NET, VC++ 6.0",
+          "CATIA V5/V6: CAA, Macros, CATScript, VB Script, C++",
+          "UG NX: C, C++, NX Open API",
+          "AutoDesk: API, Inventor SDK, VBA, C++",
+          "ProE (Creo): ProToolkit, Web.Link, JLink",
+        ],
+        image: "/assets/img/misc/misc-square-5.webp",
+      },
+      {
+        id: 5,
+        title: "Graphics & Visualization",
+        subtitle: "3D Rendering & Modeling",
+        icon: "bi bi-eye",
+        contentTitle: "Graphics and Visualization",
+        content:
+          "We provide high-quality visualization tools for CAD software including shaded views, transparency, and wireframe support.",
+        highlight:
+          "Our visualization expertise improves CAD usability and precision.",
+        points: [
+          "Shaded Exterior and Edges",
+          "Wireframe",
+          "Body Transparency",
+          "Rotation Modes",
+        ],
+        image: "/assets/img/misc/misc-square-8.webp",
+      },
+      {
+        id: 6,
+        title: ".NET Development",
+        subtitle: "Custom Software Solutions",
+        icon: "bi bi-code-slash",
+        contentTitle: ".NET Development Services",
+        content:
+          "We specialize in .NET solutions: desktop, web, mobile, cloud apps, and legacy migrations.",
+        highlight:
+          "From product lifecycle to architecture design, we provide complete .NET development support.",
+        points: [
+          "Strong expertise in C#, ASP.NET, VB.NET, WinForms",
+          "End-to-end product lifecycle management",
+          "Custom .NET Web & Desktop Applications",
+          "Migration of Legacy Applications",
+          "Mobile Apps with .NET Compact Framework",
+          "Consulting & Architecture Planning",
+        ],
+        image: "/assets/img/misc/misc-square-3.webp",
+      },
+      {
+        id: 7,
+        title: "Cloud & Web Apps",
+        subtitle: "Azure & Modern Web Stack",
+        icon: "bi bi-cloud",
+        contentTitle: "Cloud & Web Application Development",
+        content:
+          "We deliver scalable cloud and web solutions using Microsoft Azure, .NET, C++, Java, and modern frameworks.",
+        highlight:
+          "Secure, scalable, and future-ready enterprise applications built with cloud technologies.",
+        points: [
+          "Windows Azure (VM, Services, Web Role, Worker Role, SQL Azure)",
+          "C/C++/.NET/Java, .NET Framework 4.0, C#.NET, ASP.NET, ADO.NET",
+          "AJAX, Microsoft Enterprise Library, Silverlight, WPF, LINQ, Entity Framework",
+          "WCF, Web Services, ASP",
+          "SQL Server 2012/2008, MySQL",
+        ],
+        image: "/assets/img/misc/misc-square-13.webp",
+      },
+      {
+        id: 8,
+        title: "Technologies",
+        subtitle: "Core Tools & Libraries",
+        icon: "bi bi-tools",
+        contentTitle: "Technologies We Use",
+        content:
+          "We leverage modern programming languages, geometry toolkits, and CAD SDKs to deliver powerful solutions.",
+        highlight:
+          "Expertise in multiple programming environments and CAD toolkits.",
+        points: [
+          "Languages: C, C++, C#, Visual Basic, Java",
+          "Graphic Libraries: Qt, Coin3D, OpenGL, OpenCascade, VTK, WebQL",
+          "Geometry Toolkits: ACIS/Parasolid, Geometric Algorithms",
+          "CAD SDKs: CATIA CAA V5/V6, Pro/TOOLKIT, SolidWorks API",
+        ],
+        image: "/assets/img/misc/misc-square-9.webp",
+      },
+      {
+        id: 9,
+        title: "NC Programming",
+        subtitle: "CNC Machining Expertise",
+        icon: "bi bi-gear-wide-connected",
+        contentTitle: "NC Programming Services",
+        content:
+          "We provide CNC programming for complex geometries, multi-axis operations, and process optimization.",
+        highlight:
+          "Our expertise in CNC programming ensures reduced errors and faster production cycles.",
+        points: [
+          "CNC programming for complex geometries & profiles",
+          "Multi-axis milling, drilling, turning, grinding",
+          "CNC program verification (VeriCut, NCVerify)",
+          "Integration with Fanuc, Siemens, Fagor",
+          "Tool Path Generation",
+          "APT Programming",
+          "CNC Program Optimization",
+          "Post-Processor Development",
+          "Adaptive Programming for Repair & Salvage",
+          "Virtual Machine Modeling & Simulation",
+          "5 Axis Milling, Waterjet Programming, CMM Programming",
+          "Process Improvement",
+        ],
+        image: "/assets/img/misc/misc-square-6.webp",
+      },
+    ],
+  },
+  {
+    slug: "cae-development",
+    title: "CAE Development",
+    intro:
+      "We provide robust CAE development services for simulation and analysis.",
+    features: [
+      {
+        id: 1,
+        title: "Interfaces",
+        subtitle: "Translators & Plug-ins",
+        icon: "bi bi-diagram-3",
+        contentTitle: "Interfaces & Translators",
+        content:
+          "We build translators and plug-ins to connect CAD/CAM tools with neutral and 3rd party software formats.",
+        highlight:
+          "Our solutions enable seamless data exchange between multiple CAD/CAM platforms.",
+        points: [
+          "Translators for Neutral CAD Formats: STEP, VEML, STL, IGES, DXF, Parasolid, Granite, ACIS, JT Open, etc.",
+          "Plug-in Development for 3rd party software: Pro/ENGINEER, SolidWorks, CATIA V5/V6, AI, SpaceClaim",
+          "Import/Export Translators for CAE software: ANSYS, MSC Nastran, LS-Dyna, HyperMesh, Abaqus, RADIOSS",
+        ],
+        image: "/assets/img/misc/misc-square-13.webp",
+      },
+      {
+        id: 2,
+        title: "Integration Projects",
+        subtitle: "Client Software in 3rd Party Tools",
+        icon: "bi bi-diagram-2",
+        contentTitle: "Integration Projects",
+        content:
+          "We integrate client software into leading CAD/CAM platforms like Pro/ENGINEER, SolidWorks, CATIA, and AI.",
+        highlight:
+          "Our integration adds custom features and extends CAD tool capabilities.",
+        points: [
+          "Integrating client software in Pro/ENGINEER, SolidWorks, CATIA V5/V6, AI, SpaceClaim",
+        ],
+        image: "/assets/img/misc/misc-square-3.webp",
+      },
+      {
+        id: 3,
+        title: "Application Development",
+        subtitle: "CAD SDK Customization",
+        icon: "bi bi-app-indicator",
+        contentTitle: "Application Development",
+        content:
+          "We use SDKs of CAD software to customize tools, add features, and improve UI/UX with automation.",
+        highlight:
+          "From GUI changes to macro automation, we deliver CAD applications tailored to client needs.",
+        points: [
+          "Application Development using CAE Software SDKs",
+          "Abaqus: Abaqus Scripting (Python) and Abaqus GUI Tool Kit",
+          "Ansys: ANSYS Workbench SDK, ADPL",
+          "Hypermesh: Tcl, Tk, C#, C++",
+          "LS-Dyna: Tcl, Tk, C#, C++",
+        ],
+        image: "/assets/img/misc/misc-square-5.webp",
+      },
+      {
+        id: 4,
+        title: "Pre/Post Development",
+        subtitle: "Analysis Setup & Post-processing",
+        icon: "bi bi-bar-chart",
+        contentTitle: "Pre/Post Development",
+        content:
+          "We handle material models, contact modeling, load & boundary setup, meshing, and post-processing of data.",
+        highlight:
+          "Comprehensive pre/post processing ensures accurate and reliable simulation results.",
+        points: [
+          "Material models, Contact modelling, Loads and Boundary Conditions, Analysis Setup",
+          "Integration with meshing software",
+          "Post-processing & Rendering of data and charts",
+        ],
+        image: "/assets/img/misc/misc-square-6.webp",
+      },
+      {
+        id: 5,
+        title: "Analysis Modules",
+        subtitle: "Complete Multi-physics Modules",
+        icon: "bi bi-kanban",
+        contentTitle: "Analysis Modules",
+        content:
+          "We provide structural, thermal, fluids, electromagnetic, and multi-physics analysis modules.",
+        highlight:
+          "Modules are developed and customized per client requirements and available on licensing basis.",
+        points: [
+          "Complete Analysis Modules: Structural, Thermal, Fluids, Electromagnetic",
+          "Types: Linear/Nonlinear, Transient, Modal Dynamics, Multi-physics",
+        ],
+        image: "/assets/img/misc/misc-square-8.webp",
+      },
+      {
+        id: 6,
+        title: "Solvers",
+        subtitle: "Fast Iterative Direct Solvers",
+        icon: "bi bi-lightning",
+        contentTitle: "Solver Technology",
+        content:
+          "High-performance solvers available on licensing basis, used by leading vendors.",
+        highlight:
+          "Trusted by ANSYS Inc, MSC Software, UGS-Siemens, Noran Engineering, SolidWorks/Cosmos.",
+        points: [
+          "Fast Iterative Direct Solvers available on licensing basis",
+          "Used by premier vendors: ANSYS Inc, MSC Software, UGS-Siemens, Noran Engineering, SolidWorks/Cosmos",
+        ],
+        image: "/assets/img/misc/misc-square-9.webp",
+      },
+      {
+        id: 7,
+        title: "Design Optimization",
+        subtitle: "Optimization & Post-processing",
+        icon: "bi bi-diagram-3-fill",
+        contentTitle: "Design Optimization",
+        content:
+          "We develop optimization algorithms, plug-ins, and provide advanced post-processing visualizations.",
+        highlight:
+          "Enables robust and efficient design exploration and analysis.",
+        points: [
+          "Plug-in development",
+          "Optimization Algorithm Development",
+          "Post-processing: RSMS, Surface Plots, Pie Charts, etc.",
+        ],
+        image: "/assets/img/misc/misc-square-10.webp",
+      },
+      {
+        id: 8,
+        title: "Graphics & Visualization",
+        subtitle: "3D Rendering & Modeling",
+        icon: "bi bi-eye",
+        contentTitle: "Graphics and Visualization",
+        content:
+          "We provide high-quality visualization tools for CAD software including shaded views, transparency, and wireframe support.",
+        highlight:
+          "Our visualization expertise improves CAD usability and precision.",
+        points: [
+          "GUI to display geometric results",
+          "Specifications Results Displays",
+          "Q-Slice and Iso-surface visualization",
+          "Controlling particle flow or charged particle trace",
+        ],
+        image: "/assets/img/misc/misc-square-8.webp",
+      },
+      {
+        id: 9,
+        title: "Technologies",
+        subtitle: "Programming Languages & CAD SDKs",
+        icon: "bi bi-tools",
+        contentTitle: "Core Tools & Libraries",
+        content:
+          "We leverage modern programming languages, geometry toolkits, and CAD SDKs to deliver powerful solutions.",
+        highlight:
+          "Expertise in multiple programming environments and CAD toolkits.",
+        points: [
+          "Languages: C & C++, C#, Visual Basic, Java, .NET, VC++",
+          "Graphic Libraries: Qt, Coin3D, OpenGL, OpenCascade, VTK",
+          "Parasolid geometry toolkit and geometric algorithms",
+          "CATIA CAA V5/V6, Pro/TOOLKIT, SolidWorks API, Tcl/Tk",
+        ],
+        image: "/assets/img/misc/misc-square-9.webp",
+      },
+      {
+        id: 10,
+        title: "CAx Data Management",
+        subtitle: "Big Data & AI-driven Analytics",
+        icon: "bi bi-cloud-arrow-up",
+        contentTitle: "Data Management & AI Analytics",
+        content:
+          "We provide big data solutions for storing, managing, and processing CAx data efficiently.",
+        highlight:
+          "AI-driven CAE platform enables design explorations, sensitivity analysis, MOO, MDO, and reliability studies.",
+        points: [
+          "Big Data solution to store, manage, and process CAx data efficiently",
+          "Design of Experiments (DoE) explorations",
+          "Sensitivity analysis",
+          "Multi-objective Optimization (MOO) & Multi-disciplinary Optimization (MDO)",
+          "Reliability studies",
+          "Helps identify optimal robust models economically without constraints",
+        ],
+        image: "/assets/img/misc/misc-square-10.webp",
+      },
+    ],
+  },
+  {
+    slug: "cax-software-testing",
+    title: "CAx Software QA & Testing",
+    intro:
+      "We ensure quality assurance and testing for CAx software to achieve reliable performance.",
+    features: [
+      {
+        id: 1,
+        title: "CAE Software Testing",
+        subtitle: "Accuracy & Automation",
+        icon: "bi bi-check2-square",
+        contentTitle: "CAE Software Testing Capabilities",
+        content:
+          "We provide comprehensive testing of CAD/CAE software including accuracy, automation, platform support, and real-life user scenario simulation.",
+        highlight:
+          "Over 500 man-years of experience ensure high-quality testing and uncover bugs unseen in development.",
+        points: [
+          "Accuracy testing for standard and non-standard engineering problems using exact solutions",
+          "Creation of test plans covering positive and negative scenarios, continuously updated",
+          "Unit, Component, and Integration Testing",
+          "Coverage analysis to identify use cases and test cases",
+          "Regression management",
+          "Automation tools: Rational Visual Test, Silk Test, XRunner, WinRunner",
+          "Scripting languages: VB Script, JavaScript, Perl, Shell",
+          "Development of APIs",
+          "Localization testing",
+        ],
+        image: "/assets/img/misc/misc-square-11.webp",
+      },
+      {
+        id: 2,
+        title: "Supported Platforms",
+        subtitle: "Cross-platform Testing",
+        icon: "bi bi-laptop",
+        contentTitle: "Supported Platforms",
+        content:
+          "Our testing services cover all major platforms to ensure software reliability across environments.",
+        highlight: "No additional cost for testing on Unix or Mac platforms.",
+        points: [
+          "Windows",
+          "Apple Macintosh",
+          "Linux",
+          "HP-UX",
+          "Sun Solaris",
+          "IBM AIX",
+        ],
+        image: "/assets/img/misc/misc-square-12.webp",
+      },
+      {
+        id: 3,
+        title: "Why V J Coresoft Testing?",
+        subtitle: "Experience & Expertise",
+        icon: "bi bi-star",
+        contentTitle: "Why Choose Us",
+        content:
+          "Our testing team combines deep domain knowledge with extensive software testing experience to deliver exceptional quality.",
+        highlight:
+          "Simulating first-user environment to uncover hidden bugs, testing integrations, and providing cost-effective, high-value services.",
+        points: [
+          "Over 500 man-years of CAD/CAE software testing experience",
+          "Testers possess an eye for detail and a 'test-to-break' attitude",
+          "Testing includes install/uninstall, licensing, report generation, localization",
+          "Strong capabilities in testing integration and interfaces with 3rd party software",
+          "Support testing activities on all platforms (Windows, Linux, Apple Mac, Unix) at no extra cost",
+          "Expertise in testing real-life user scenarios for every software release",
+        ],
+        image: "/assets/img/misc/misc-square-13.webp",
+      },
+      {
+        id: 4,
+        title: "CAD Testing",
+        subtitle: "CAD Module Verification",
+        icon: "bi bi-pencil-square",
+        contentTitle: "CAD Testing Expertise",
+        content:
+          "We test CAD functionalities including geometry, modeling, assemblies, and domain-specific design features.",
+        highlight: "Ensures accuracy and reliability in CAD design operations.",
+        points: [
+          "Geometry transfer",
+          "Sketching, detailing/drawing",
+          "Assembly modeling, 3D modeling features",
+          "Expertise on UG, ProE, CATIA, SolidWorks, SolidEdge",
+          "Mold design and casting",
+          "Sheet metal and welding design",
+        ],
+        image: "/assets/img/misc/misc-square-14.webp",
+      },
+      {
+        id: 5,
+        title: "CAE Testing",
+        subtitle: "Simulation & Analysis",
+        icon: "bi bi-bar-chart-line",
+        contentTitle: "CAE Testing Expertise",
+        content:
+          "We perform multi-domain system simulations, structural and thermal analysis, dynamics, CFD, and other CAE testing.",
+        highlight:
+          "Ensures simulations, solvers, and optimization modules function correctly.",
+        points: [
+          "Multi-domain system simulation",
+          "Electromagnetic analysis",
+          "Structural and thermal analysis",
+          "Multibody dynamics",
+          "Acoustics",
+          "Transmission system design and analysis",
+          "Design optimization",
+          "Multiphysics including AC/DC, Chemical Engineering",
+          "Computational Fluid Dynamics (CFD)",
+          "Crash and explicit solvers",
+          "Durability analysis",
+          "Product lifecycle management (PLM)",
+          "Injection molding simulation",
+          "Extended Finite Element Method (XFEM)",
+          "Manufacturing process simulation: welding, machining, sheet metal forming",
+        ],
+        image: "/assets/img/misc/misc-square-15.webp",
+      },
+    ],
+  },
+
+  {
+    slug: "plm",
+    title: "PLM",
+    intro:
+      "We deliver advanced CAD/CAM development solutions for efficient engineering workflows.",
+  },
+
+  {
+    slug: "product-design",
+    title: "Product Design",
+    intro:
+      "We offer complete product design services from concept to prototype.",
+  },
+  {
+    slug: "bim-modelling",
+    title: "BIM Modelling Services",
+    intro:
+      "We provide BIM modeling solutions for architecture, engineering, and construction projects.",
+  },
+  {
+    slug: "marine-engineering",
+    title: "Marine Engineering",
+    intro:
+      "We design and develop solutions for marine engineering and offshore industries.",
+  },
+  {
+    slug: "virtual-manufacturing",
+    title: "Virtual Manufacturing",
+    intro:
+      "We create virtual manufacturing environments to optimize production processes.",
+  },
+  {
+    slug: "industrial-iot",
+    title: "Industrial Internet of Things",
+    intro:
+      "We build IIoT solutions for connected, smart, and efficient industries.",
+  },
+  {
+    slug: "ai-solutions",
+    title: "AI Solutions & Services",
+    intro:
+      "We provide AI-powered solutions and services tailored to business needs.",
+  },
+  {
+    slug: "enterprise-web-mobile",
+    title: "Enterprise Web & Mobile",
+    intro:
+      "We develop enterprise-grade web and mobile applications for digital transformation.",
+  },
+  {
+    slug: "ar-vr-apps",
+    title: "Augmented & Virtual Reality Apps",
+    intro:
+      "We create immersive AR and VR applications for industries and businesses.",
+  },
+];
