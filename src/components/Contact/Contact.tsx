@@ -1,10 +1,10 @@
 import Card from "../Card/Card";
-import PageBaner from "../PageBaner/PageBaner";
+import PageBaner from "@components/PageBaner/PageBaner";
 import "./Contact.css";
 const Contact: React.FC = () => {
   return (
     <>
-      <PageBaner heading="Contact"></PageBaner>
+      <PageBaner heading="Contact"/>
       <section id="contact" className="contact section">
         <div className="container">
           <div className="contact-main-wrapper">
@@ -28,7 +28,7 @@ const Contact: React.FC = () => {
                 </p>
 
                 <form
-                  action="forms/contact.php"
+                  action=""
                   method="post"
                   className="php-email-form"
                 >
