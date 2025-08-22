@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import "./Card.css";
 import Link from "next/link";
 
@@ -10,8 +10,8 @@ interface ServiceLink {
 
 interface ServiceCardProps {
   icon: string;
-  title: string;
-  description: string;
+  title: ReactNode;
+  description: ReactNode;
   links?: ServiceLink[]; // optional now
   badge?: string;
   price?: string;
