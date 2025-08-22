@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound, usePathname } from "next/navigation";
 import PageBaner from "@/components/PageBaner/PageBaner";
-import { services } from "@/app/service-details/data";
+import { services } from "../data";
 import "./page.css";
 import serviceImage from "@image/services/services-7.webp";
 
