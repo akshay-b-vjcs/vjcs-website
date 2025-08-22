@@ -10,7 +10,7 @@ import service11Image from "@image/services/services-11.webp";
 import "./Service-Details.css";
 import PageBaner from "../PageBaner/PageBaner";
 
-export default function ServiceDetail() {
+const ServiceDetail = () => {
   return (
     <>
       <PageBaner heading="Service Details" description="Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias." />
@@ -219,3 +219,5 @@ export default function ServiceDetail() {
     </>
   );
 }
+
+export default ServiceDetail ;

@@ -483,8 +483,97 @@ export const services = [
     slug: "plm",
     title: "PLM",
     intro:
-      "We deliver advanced CAD/CAM development solutions for efficient engineering workflows.",
+      "VJCS has multi years of practical expertise in PDM/PLM domain in the areas of Aerospace, Automotive, Heavy Industries etc.",
+    features: [
+      {
+        id: 1,
+        title: "Service Offerings",
+        subtitle: "PLM Systems & CAD Customization",
+        icon: "bi bi-briefcase",
+        contentTitle: "End-to-End Service Offerings",
+        content:
+          "We provide comprehensive PLM system commissioning, CAD customization, integrations, upgrades, and support services.",
+        highlight:
+          "From implementations to training and CAD customization, we cover the complete service lifecycle.",
+        points: [
+          "New implementations",
+          "Migrations and upgrades",
+          "Integration",
+          "Performance tuning",
+          "User training and adaptability",
+          "Customized applications and frameworks",
+          "Support and sustenance",
+          "CAD Customization using NX Open API, CATIA CAA, Pro/Toolkit, Autodesk Inventor API, SolidWorks API, JLink, Pro/Program",
+        ],
+        image: "/assets/img/misc/misc-square-11.webp",
+      },
+      {
+        id: 2,
+        title: "PLM Tools Expertise",
+        subtitle: "Industry Leading PLM Platforms",
+        icon: "bi bi-tools",
+        contentTitle: "PLM Tools We Specialize In",
+        content:
+          "Our expertise spans across leading PLM tools used worldwide for managing product lifecycles.",
+        highlight:
+          "We have in-depth knowledge and hands-on experience with major PLM systems.",
+        points: [
+          "Teamcenter",
+          "Windchill",
+          "Areas",
+          "Enovia",
+          "eMatrix",
+          "SAP PLM",
+          "Smarteam",
+          "Agile",
+        ],
+        image: "/assets/img/misc/misc-square-12.webp",
+      },
+      {
+        id: 3,
+        title: "Integration Strengths",
+        subtitle: "Connecting PLM Systems Seamlessly",
+        icon: "bi bi-diagram-3",
+        contentTitle: "Integration Capabilities",
+        content:
+          "We deliver strong integration capabilities across multiple enterprise and PLM platforms.",
+        highlight:
+          "Proven expertise in connecting diverse systems for smooth data exchange.",
+        points: [
+          "X-PLM",
+          "PDX",
+          "PLM-XML",
+          "Biztalk",
+          "TIBCO",
+          "Informatica",
+          "SOA",
+          "BPEL",
+        ],
+        image: "/assets/img/misc/misc-square-13.webp",
+      },
+      {
+        id: 4,
+        title: "PLM Services & Solutions Framework",
+        subtitle: "Comprehensive PLM Services",
+        icon: "bi bi-grid",
+        contentTitle: "Framework for PLM Services",
+        content:
+          "Our PLM service framework ensures efficiency, flexibility, and robust support for global enterprises.",
+        highlight:
+          "Covering business processes, customization, testing, upgrades, and support under one framework.",
+        points: [
+          "Business Process Services",
+          "Integrations and Visualizations",
+          "CAD Customization",
+          "Independent QA/Testing",
+          "Migration and Upgrades",
+          "Support",
+        ],
+        image: "/assets/img/misc/misc-square-14.webp",
+      },
+    ],
   },
+
 
   {
     slug: "product-design",

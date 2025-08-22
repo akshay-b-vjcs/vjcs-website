@@ -5,7 +5,7 @@ import aboutImage from "@image/about/about-square-8.webp";
 import { useState } from "react";
 import PageBaner from "../PageBaner/PageBaner";
 
-export default function Career() {
+const  Career = () => {
   const [activeIndex, setActiveIndex] = useState(null); // <-- allow null
 
   const careers = [
@@ -157,3 +157,4 @@ export default function Career() {
     </section>
   );
 }
+export default Career ;

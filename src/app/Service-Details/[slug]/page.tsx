@@ -3,17 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound, usePathname } from "next/navigation";
 import PageBaner from "@/components/PageBaner/PageBaner";
-import { services } from "@/app/Service-Details/[slug]/data";
-
+import { services } from "@/app/Service-Details/data";
+import "./page.css";
 import serviceImage from "@image/services/services-7.webp";
 
 import React, { useState, useRef, use } from "react";
 
-export default function ServiceDetail({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
+const ServiceDetail = ({ params }: { params: Promise<{ slug: string }> }) => {
   const { slug } = use(params);
   const pathname = usePathname();
 
@@ -91,11 +87,7 @@ export default function ServiceDetail({
                   <h2>{service.title}</h2>
                   <p className="service-intro">{service.intro}</p>
                 </div>
-                <section
-                  id="features"
-                  className="features section py-5"
-                  ref={featuresRef}
-                >
+                <section id="features" className="features section py-5 " >
                   <div className="container">
                     <div className="row g-4">
                       {/* Left Tabs */}
@@ -128,7 +120,7 @@ export default function ServiceDetail({
                       </div>
 
                       {/* Right Content */}
-                      <div className="col-lg-8">
+                      <div className="col-lg-8 scroll-offset mt-5" ref={featuresRef} >
                         <div className="tab-content">
                           {service.features?.map((feature, idx) => (
                             <div
@@ -193,7 +185,7 @@ export default function ServiceDetail({
                 </div>
 
                 {/* Info */}
-                <div className="service-info">
+                {/* <div className="service-info">
                   <h4>Service Details</h4>
                   <div className="info-list">
                     {[
@@ -208,7 +200,7 @@ export default function ServiceDetail({
                       </div>
                     ))}
                   </div>
-                </div>
+                </div> */}
 
                 {/* Contact Card */}
                 <div className="contact-card">
@@ -240,9 +232,5 @@ export default function ServiceDetail({
       </section>
     </>
   );
-}
-
-// static params for build (optional)
-// export function generateStaticParams() {
-//   return services.map((s) => ({ slug: s.slug }));
-// }
+};
+export default ServiceDetail;

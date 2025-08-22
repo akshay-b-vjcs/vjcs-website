@@ -7,7 +7,7 @@ import aboutImage from "@image/about/about-square-8.webp";
 import illustration from "@image/illustration/illustration-3.webp";
 import PageBaner from "../PageBaner/PageBaner";
 
-export default function About() {
+const  About = () => {
   const services = [
     {
       icon: "bi bi-eye",
@@ -109,52 +109,6 @@ export default function About() {
                 renowned institutions.
               </p>
 
-              {/* Affiliates Section */}
-              {/* <h4 className="fw-bold mt-4" style={{ color: "#293a34" }}>
-                VJCS Affiliates
-              </h4>
-
-              <h5 className="fw-bold mt-3 text-muted" style={{ color: "#384943" }}>
-                Computational Applications and System Integration (CASI)
-              </h5>
-              <p
-                style={{
-                  color: "#384943",
-                  fontSize: "16px",
-                  fontWeight: 400,
-                  lineHeight: "1.6",
-                }}
-              >
-                CASI, an affiliate of VJCS, is located at Champaign – IL in
-                North America. CASI is a technology and business services
-                company delivering robust solutions for multiple industries
-                since 1993. With offices in Champaign and Chicago, Illinois,
-                serves companies of all sizes around the globe.
-              </p>
-              <p
-                style={{
-                  color: "#384943",
-                  fontSize: "16px",
-                  fontWeight: 400,
-                  lineHeight: "1.6",
-                }}
-              >
-                CASI has been developing and licensing mission–critical solvers
-                for solution of linear systems for over a decade. These are
-                widely used in the areas of Engineering Analysis and VLSI
-                Simulation. These solvers are used by over a million users
-                worldwide.
-              </p>
-              <p>
-                For more information visit{" "}
-                <a
-                  href="http://www.casicorp.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  http://www.casicorp.com
-                </a>
-              </p> */}
 
               
             </div>
@@ -168,35 +122,7 @@ export default function About() {
                
               />
             </div>
-            {/* <div className="">
-              <h5 className="fw-bold mt-3 text-muted" style={{ color: "#384943" }}>
-                Primove Engineering Pvt Ltd
-              </h5>
-              <p
-                style={{
-                  color: "#384943",
-                  fontSize: "16px",
-                  fontWeight: 400,
-                  lineHeight: "1.6",
-                }}
-              >
-                Primove Engineering Pvt. Ltd., a subsidiary of VJCS, is a
-                nationally recognized technology company in the domain of
-                gaseous fuels and energy. Primove has developed disruptive
-                technology for the conversion of agricultural residue and waste
-                into BioCNG for transportation and industrial applications.
-              </p>
-              <p>
-                For more information visit{" "}
-                <a
-                  href="http://www.primove.in"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  http://www.primove.in
-                </a>
-              </p>
-            </div> */}
+           
            
           </div>
          
@@ -302,3 +228,4 @@ export default function About() {
   );
 }
 
+export default About ;

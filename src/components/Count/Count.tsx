@@ -4,7 +4,7 @@
 import { useEffect } from "react";
 // import PureCounter from "@srexi/purecounterjs";
 
-export default function CountUp({ target = 100, duration = 2000, start = 0, }) {
+const  CountUp =({ target = 100, duration = 2000, start = 0, }) => {
   
   useEffect(() => {
     const PureCounter = require("@srexi/purecounterjs");
@@ -21,3 +21,4 @@ export default function CountUp({ target = 100, duration = 2000, start = 0, }) {
     ></span>
   );
 }
+export default CountUp ;

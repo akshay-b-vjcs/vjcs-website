@@ -5,9 +5,7 @@ import CountUp from "../Count/Count";
 import Card from "../Card/Card";
 import PageBaner from "../PageBaner/PageBaner";
 
-export default function Service() {
- 
-
+const Service = () => {
   return (
     <section
       id="services"
@@ -159,4 +157,5 @@ export default function Service() {
       </div>
     </section>
   );
-}
+};
+export default Service;

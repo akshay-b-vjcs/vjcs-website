@@ -19,7 +19,7 @@ interface ServiceCardProps {
   compact?: boolean;
 }
 
-export default function Card({
+const  Card = ({
   icon,
   title,
   description,
@@ -27,7 +27,7 @@ export default function Card({
 
   featured = false,
   compact = false,
-}: ServiceCardProps) {
+}: ServiceCardProps) =>{
   const cardClass = [
     "service-card",
     featured ? "featured" : "",
@@ -76,3 +76,4 @@ export default function Card({
   );
 }
 
+export default Card;
