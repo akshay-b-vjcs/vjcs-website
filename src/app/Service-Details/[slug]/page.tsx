@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound, usePathname } from "next/navigation";
 import PageBaner from "@/components/PageBaner/PageBaner";
-import { services } from "@/app/Service-Details/data";
+import { services } from "@/app/service-details/data";
 import "./page.css";
 import serviceImage from "@image/services/services-7.webp";
 
@@ -26,36 +26,36 @@ const ServiceDetail = ({ params }: { params: Promise<{ slug: string }> }) => {
   const data = [
     {
       name: "CAx Software Services",
-      href: "/Service-Details/cad-cam-development",
+      href: "/service-details/cad-cam-development",
       subservices: [
-        "/Service-Details/cad-cam-development",
-        "/Service-Details/cae-development",
-        "/Service-Details/cax-software-qa-testing",
+        "/service-details/cad-cam-development",
+        "/service-details/cae-development",
+        "/service-details/cax-software-qa-testing",
       ],
     },
     {
       name: "PLM",
-      href: "/Service-Details/plm",
-      subservices: ["/Service-Details/plm"],
+      href: "/service-details/plm",
+      subservices: ["/service-details/plm"],
     },
     {
       name: "Engineering Design Services",
-      href: "/Service-Details/product-design",
+      href: "/service-details/product-design",
       subservices: [
-        "/Service-Details/product-design",
-        "/Service-Details/bim-modelling-services",
-        "/Service-Details/marine-engineering",
+        "/service-details/product-design",
+        "/service-details/bim-modelling",
+        "/service-details/marine-engineering",
       ],
     },
     {
       name: "Digitization Services",
-      href: "/Service-Details/virtual-manufacturing",
+      href: "/service-details/virtual-manufacturing",
       subservices: [
-        "/Service-Details/virtual-manufacturing",
-        "/Service-Details/industrial-internet-of-things",
-        "/Service-Details/ai-solutions",
-        "/Service-Details/enterprise-web-mobile",
-        "/Service-Details/ar-vr-apps",
+        "/service-details/virtual-manufacturing",
+        "/service-details/industrial-iot",
+        "/service-details/ai-solutions",
+        "/service-details/enterprise-web-mobile",
+        "/service-details/ar-vr-apps",
       ],
     },
   ];
@@ -91,7 +91,7 @@ const ServiceDetail = ({ params }: { params: Promise<{ slug: string }> }) => {
                   <div className="container">
                     <div className="row g-4">
                       {/* Left Tabs */}
-                      <div className="col-lg-4">
+                      <div className="col-lg-4 scroll-offset">
                         <ul className="nav nav-tabs flex-column" role="tablist">
                           {service.features?.map((feature, idx) => (
                             <li className="nav-item mb-3" key={idx}>
@@ -120,7 +120,7 @@ const ServiceDetail = ({ params }: { params: Promise<{ slug: string }> }) => {
                       </div>
 
                       {/* Right Content */}
-                      <div className="col-lg-8 scroll-offset mt-5" ref={featuresRef} >
+                      <div className="col-lg-8 scroll-offset " ref={featuresRef} >
                         <div className="tab-content">
                           {service.features?.map((feature, idx) => (
                             <div

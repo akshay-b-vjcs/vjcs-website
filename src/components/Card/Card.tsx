@@ -19,7 +19,7 @@ interface ServiceCardProps {
   compact?: boolean;
 }
 
-const  Card = ({
+const Card:React.FC<ServiceCardProps>  = ({
   icon,
   title,
   description,

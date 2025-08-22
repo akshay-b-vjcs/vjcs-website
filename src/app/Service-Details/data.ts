@@ -575,11 +575,77 @@ export const services = [
   },
 
 
-  {
+   {
     slug: "product-design",
     title: "Product Design",
     intro:
       "We offer complete product design services from concept to prototype.",
+    features: [
+      {
+        id: 1,
+        title: "Concept / Design / Prototype / Production",
+        subtitle: "End-to-End Product Development",
+        icon: "bi bi-layers",
+        contentTitle: "Concept to Production Support",
+        content:
+          "We provide complete support from initial concept and design through prototype development and final production.",
+        highlight:
+          "Covering layout, 3D representation, engineering, prototyping, validation, and production sourcing.",
+        points: [
+          "Layout",
+          "3D Representation of Concept",
+          "Packaging",
+          "Marker study, benchmark and ergonomics",
+          "Product design - conceptual design / styling",
+          "Product Engineering - Electrical, Mechanical, Hydraulics systems",
+          "Prototype Build - Prototype sourcing POC, Alpha 1.4 T, Alpha 1.6 T",
+          "Testing & Validation - Third party",
+          "Design modification and documentation",
+          "Beta prototypes",
+          "Production sourcing",
+          "Tooling & Fixtures",
+          "Estimation for production quantities",
+        ],
+        image: "/assets/img/misc/misc-square-21.webp",
+      },
+      {
+        id: 2,
+        title: "Product Design Support",
+        subtitle: "Detailed CAD Design & Engineering",
+        icon: "bi bi-pencil-square",
+        contentTitle: "Comprehensive Product Design Support",
+        content:
+          "Our product design services ensure detailed modeling, assembly, and reverse engineering for robust product development.",
+        highlight:
+          "Expertise in 3D modeling, GD&T, assemblies, and tolerance stack-up analysis.",
+        points: [
+          "3D Solid & Surface Modeling, Detailing",
+          "Piping, Layout Design (for process industries)",
+          "GD & T",
+          "Assembly Modeling & Detailing",
+          "Tolerance Stack-up",
+          "Reverse Engineering",
+        ],
+        image: "/assets/img/misc/misc-square-22.webp",
+      },
+      {
+        id: 3,
+        title: "Automation & Customization Expertise",
+        subtitle: "CAD, CAE & NC Programming",
+        icon: "bi bi-cpu",
+        contentTitle: "Automation and Customization Skills",
+        content:
+          "We specialize in CAD/CAE automation, customization, and NC programming to accelerate product development.",
+        highlight:
+          "Hands-on expertise across leading CAD and CAE platforms with programming services.",
+        points: [
+          "CAD: NX, ProE, SolidWorks, Catia (using CAA), Spaceclaim",
+          "CAE: Ansa, LSDyna, NX Simulation, Hypermesh, Abaqus, Ansys, MSC Nastran, SolidWorks Simulation",
+          "NC Programming Services",
+        ],
+        image: "/assets/img/misc/misc-square-23.webp",
+      },
+    ],
   },
   {
     slug: "bim-modelling",

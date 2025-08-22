@@ -31,17 +31,17 @@ const Service = () => {
               links={[
                 {
                   text: "CAD/CAM Development",
-                  url: "/Service-Details/cad-cam-development",
+                  url: "/service-details/cad-cam-development",
                   icon: "bi bi-cpu",
                 },
                 {
                   text: "CAE Development",
-                  url: "/Service-Details/cae-development",
+                  url: "/service-details/cae-development",
                   icon: "bi bi-cpu",
                 },
                 {
                   text: "CAx Software QA & Testing",
-                  url: "/Service-Details/cax-software-testing",
+                  url: "/service-details/cax-software-testing",
                   icon: "bi bi-cpu",
                 },
               ]}
@@ -56,7 +56,7 @@ const Service = () => {
               links={[
                 {
                   text: "Learn More",
-                  url: "/Service-Details/plm",
+                  url: "/service-details/plm",
                   icon: "bi bi-diagram-3",
                 },
               ]}
@@ -71,17 +71,17 @@ const Service = () => {
               links={[
                 {
                   text: "Product Design",
-                  url: "/Service-Details/product-design",
+                  url: "/service-details/product-design",
                   icon: "bi bi-gear-wide-connected",
                 },
                 {
                   text: "BIM Modelling Services",
-                  url: "/Service-Details/bim-modelling",
+                  url: "/service-details/bim-modelling",
                   icon: "bi bi-gear-wide-connected",
                 },
                 {
                   text: "Marine Engineering",
-                  url: "/Service-Details/marine-engineering",
+                  url: "/service-details/marine-engineering",
                   icon: "bi bi-gear-wide-connected",
                 },
               ]}
@@ -96,27 +96,27 @@ const Service = () => {
               links={[
                 {
                   text: "Virtual Manufacturing",
-                  url: "/Service-Details/virtual-manufacturing",
+                  url: "/service-details/virtual-manufacturing",
                   icon: "bi bi-layers",
                 },
                 {
                   text: "Industrial Internet of Things",
-                  url: "/Service-Details/industrial-iot",
+                  url: "/service-details/industrial-iot",
                   icon: "bi bi-layers",
                 },
                 {
                   text: "AI Solutions & Services",
-                  url: "/Service-Details/ai-solutions",
+                  url: "/service-details/ai-solutions",
                   icon: "bi bi-layers",
                 },
                 {
                   text: "Enterprise web & mobile",
-                  url: "/Service-Details/enterprise-web-mobile",
+                  url: "/service-details/enterprise-web-mobile",
                   icon: "bi bi-layers",
                 },
                 {
                   text: "Augmented & Virtual Reality Apps",
-                  url: "/Service-Details/ar-vr-apps",
+                  url: "/service-details/ar-vr-apps",
                   icon: "bi bi-layers",
                 },
               ]}

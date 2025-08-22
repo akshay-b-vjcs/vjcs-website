@@ -6,7 +6,7 @@ import { useState } from "react";
 import PageBaner from "../PageBaner/PageBaner";
 
 const  Career = () => {
-  const [activeIndex, setActiveIndex] = useState(null); // <-- allow null
+const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const careers = [
     {
