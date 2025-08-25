@@ -793,13 +793,56 @@ export const services = [
     title: "Virtual Manufacturing",
     intro:
       "We create virtual manufacturing environments to optimize production processes.",
+    features: [
+      {
+        id: 2,
+        title: "Virtual Manufacturing Services",
+        subtitle: "Simulation & Automation",
+        icon: "bi bi-cpu",
+        contentTitle: "Virtual Manufacturing Services",
+        content:
+          "We offer end-to-end virtual manufacturing solutions including simulation, validation, and programming for automated systems, robots, and machining processes.",
+        highlight:
+          "Comprehensive expertise in simulation, automation, ergonomics, and CNC programming with strong software development skills.",
+        points: [
+          "Virtual commissioning, validating PLC code and HMI",
+          "Plant simulation",
+          "Human simulation and ergonomics",
+          "Robot simulation, validation & offline programming (OLP) for various applications",
+          "Machining simulation via CNC programming, tool and path generation",
+          "Skill sets: C, C++, Java, Tecnomatix, .NET API, XML",
+        ],
+        image: "/assets/img/misc/misc-square-12.webp",
+      },
+    ],
   },
   {
     slug: "industrial-iot",
     title: "Industrial Internet of Things",
     intro:
-      "We build IIoT solutions for connected, smart, and efficient industries.",
+      "VJCS end-to-end IoT solutions empower smart industries, smart living and smart enterprises and deliver connected experiences by connecting assets, operations/logistics, and services. We focus predominantly on the segments mentioned below. we bring expertise with platforms like Hitachi Lumada, AWS IoT, and Azure IoT, further combined with technologies like Augmented Reality (AR), and Artificial Intelligence (AI) to open new possibilities and help generate business value for enterprises in innovative ways.",
+    features: [
+      {
+        id: 2,
+        title: "Industrial Internet of Things",
+        subtitle: "Next-Gen Industry Solutions",
+        icon: "bi bi-cpu",
+        contentTitle: "Industrial Internet of Things",
+        content:
+          "We provide innovative solutions for smart manufacturing, facilities, equipment, and connected car applications to enable digital transformation.",
+        highlight:
+          "Our expertise drives Industry 4.0 adoption with advanced smart systems for manufacturing and automotive sectors.",
+        points: [
+          "Smart manufacturing",
+          "Smart facilities",
+          "Smart equipment",
+          "Apps for connected cars",
+        ],
+        image: "/assets/img/misc/misc-square-12.webp",
+      },
+    ],
   },
+
   {
     slug: "ai-solutions",
     title: "AI Solutions & Services",
