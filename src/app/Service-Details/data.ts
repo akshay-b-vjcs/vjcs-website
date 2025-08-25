@@ -647,17 +647,146 @@ export const services = [
       },
     ],
   },
-  {
+   {
     slug: "bim-modelling",
     title: "BIM Modelling Services",
     intro:
-      "We provide BIM modeling solutions for architecture, engineering, and construction projects.",
+      "VJ Coresoft offers customized BIM Modelling services and solutions that suits clients Building Information Modelling (BIM) requirements. Bringing years of experience in various BIM Software we offer BIM modeling services for the Architectural, Structural, MEP, HVAC, Façade, Mechanical and Plumbing & Fire protection domains.",
+    features: [
+      {
+        id: 1,
+        title: "BIM Modelling Services",
+        subtitle: "Customized BIM Solutions",
+        icon: "bi bi-building",
+        contentTitle: "Comprehensive BIM Modelling",
+        content:
+          "We provide customized BIM Modelling services across multiple domains including architectural, structural, MEP, and smart building solutions.",
+        highlight:
+          "From design to clash detection and energy simulation, we cover end-to-end BIM services.",
+        points: [
+          "Architectural BIM Modelling",
+          "Structural BIM Modelling",
+          "MEP BIM Modelling",
+          "Scan to BIM Modelling",
+          "BIM Content Creation",
+          "Steel Shop Drawings",
+          "BIM Clash Detection",
+          "Construction Management Software Development and Smart Building",
+          "Energy Simulation",
+        ],
+        image: "/assets/img/misc/misc-square-24.webp",
+      },
+    ],
   },
   {
     slug: "marine-engineering",
     title: "Marine Engineering",
     intro:
-      "We design and develop solutions for marine engineering and offshore industries.",
+      "We provide high end innovative design & technical solutions to marine and offshore industry. By utilizing our proficiency in engineering & extensive design experience we have successfully delivered range of marine design and engineering services. We offer a complete set of design and consultancy services, starting with the earlier design stages up to production information.We are internationally renowned provider of ship design and system solutions for ship & yacht building. For ship design we provide quality basic & detail design engineering services for production. Where the hull structure, outfit and systems are detailed to achieve a cost and time effective production life cycle.",
+    features: [
+      {
+        id: 1,
+        title: "Basic Design",
+        subtitle: "Safe and Efficient Vessel Designs",
+        icon: "bi bi-diagram-3",
+        contentTitle: "In-depth Basic Design Capabilities",
+        content:
+          "VJ Coresoft has developed strong capabilities in carrying out basic ship design, leveraging experience from shipyards, vessel operators, and equipment manufacturers.",
+        highlight:
+          "We focus on creating safe and efficient vessel designs tailored to industry needs.",
+        points: [
+          "Developed in-depth basic design capabilities",
+          "Experience from shipyards, vessel operators & equipment manufacturers",
+          "Focus on safe and efficient vessel designs",
+        ],
+        image: "/assets/img/misc/misc-square-1.webp",
+      },
+      {
+        id: 2,
+        title: "Production Design",
+        subtitle: "Hull and Production Expertise",
+        icon: "bi bi-gear",
+        contentTitle: "Substantial Hull Design and Production Experience",
+        content:
+          "We offer expertise in hull design, 3D modelling, production drawings, and nesting to support ship production processes.",
+        highlight:
+          "Substantial experience in delivering high-quality production designs.",
+        points: [
+          "Hull design expertise",
+          "3D modelling for ship structures",
+          "Production drawings & nesting",
+        ],
+        image: "/assets/img/misc/misc-square-2.webp",
+      },
+      {
+        id: 3,
+        title: "Detail Design & Production Documentation",
+        subtitle: "Comprehensive Detailing",
+        icon: "bi bi-journal-text",
+        contentTitle: "Detailed Documentation and Layouts",
+        content:
+          "Based on basic and production designs, we prepare detailed deliverables aligned with shipyard practices and methodologies.",
+        highlight:
+          "Expertise in 3D models and layouts for all ship components and systems.",
+        points: [
+          "Equipment detailing",
+          "Structures detailing",
+          "Machinery parts",
+          "Piping",
+          "Cable trays",
+          "HVAC systems",
+        ],
+        image: "/assets/img/misc/misc-square-3.webp",
+      },
+      {
+        id: 4,
+        title: "Interior & Exterior Design",
+        subtitle: "Accommodation & Deck Services",
+        icon: "bi bi-house",
+        contentTitle: "Interior and Exterior Ship Design",
+        content:
+          "We provide specialized interior and exterior design services tailored for the shipbuilding industry, covering accommodation and deck areas.",
+        highlight: "Intricate design services for inner and outer ship areas.",
+        points: ["Accommodation areas", "Inner deck areas", "Outer deck areas"],
+        image: "/assets/img/misc/misc-square-4.webp",
+      },
+      {
+        id: 5,
+        title: "3D Modeling",
+        subtitle: "Visualization and Detailing",
+        icon: "bi bi-box",
+        contentTitle: "Comprehensive 3D Modeling Services",
+        content:
+          "Our 3D modeling services cover both interior and exterior visualization, ensuring intricate detailing for ship design.",
+        highlight: "High-quality 3D visualization for interiors and exteriors.",
+        points: [
+          "Interior 3D visualization",
+          "Exterior 3D visualization",
+          "Intricate detailing for ship design",
+        ],
+        image: "/assets/img/misc/misc-square-5.webp",
+      },
+      {
+        id: 6,
+        title: "CAE Analysis",
+        subtitle: "Simulation and Optimization",
+        icon: "bi bi-graph-up",
+        contentTitle: "Robust CAE Analysis for Ships",
+        content:
+          "We use CAE tools for simulation, validation, and optimization to ensure robustness and performance of ship components and assemblies.",
+        highlight:
+          "Advanced CAE analysis covering strength, vibration, thermal, and fluid dynamics.",
+        points: [
+          "Local Structure Strength Analysis",
+          "Global Ship Vibration Analysis",
+          "Global Ship Structure Strength Analysis",
+          "Thermal Analysis",
+          "Local Structure Vibration Analysis",
+          "Computational Fluid Dynamics (CFD) Analysis",
+        ],
+        image: "/assets/img/misc/misc-square-6.webp",
+      },
+    ],
   },
   {
     slug: "virtual-manufacturing",
