@@ -1,4 +1,4 @@
-import ServiceDetails from "@/components/Service-Details/Service-Details";
+import ServiceDetails from "@/components/ServiceDetails/ServiceDetails";
 
 export default function ServiceDetailPage(){
   return(
