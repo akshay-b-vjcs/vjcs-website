@@ -908,11 +908,206 @@ export const services = [
     title: "Enterprise Web & Mobile",
     intro:
       "We develop enterprise-grade web and mobile applications for digital transformation.",
+    features: [
+      {
+        id: 1,
+        title: "Optimize Factory Maintenance",
+        subtitle: "Enterprise Mobility for Manufacturing",
+        icon: "bi bi-wrench-adjustable",
+        contentTitle: "Smart Factory Operations",
+        content:
+          "With enterprise mobility solutions for operations, clients can access workshop safety details, operational information, and undergo tasks on the go, helping them stay incident-free and achieve operational efficiency.",
+        highlight:
+          "Ensures access to factory and quality systems anywhere, improving efficiency and safety.",
+        points: [
+          "Access to Factory Information System on the go with a mobile app",
+          "Access to Quality Management Systems on the go with a mobile app",
+          "Get access to workshop equipment safety & security with enterprise mobile apps",
+          "Production planning & scheduling on the go",
+        ],
+        image: "/assets/img/misc/misc-square-16.webp",
+      },
+      {
+        id: 2,
+        title: "Monitor Equipment Health in Real-time",
+        subtitle: "Preventive & Predictive Maintenance",
+        icon: "bi bi-speedometer2",
+        contentTitle: "Real-time Equipment Monitoring",
+        content:
+          "With VJCS enterprise mobility solutions, track equipment efficiency and monitor their health on mobile devices. Conduct preventive maintenance checks at regular intervals to reduce downtime.",
+        highlight:
+          "Empowers factories with real-time data access and preventive maintenance capabilities.",
+        points: [
+          "Access equipment-related critical data from the mobile app and take action instantly",
+          "Prevent material wastage and reduce input overheads of manufacturing costs",
+          "Eliminate redundant activities and improve collaboration between SBUs",
+          "Maintain product quality through scheduled equipment maintenance",
+        ],
+        image: "/assets/img/misc/misc-square-17.webp",
+      },
+      {
+        id: 3,
+        title: "Reduce Time-to-Market for New Products",
+        subtitle: "Enterprise Mobility in Supply Chain",
+        icon: "bi bi-truck",
+        contentTitle: "Accelerated Product Launch & Supply Chain Management",
+        content:
+          "Enterprise mobility solutions for supply chain help overcome issues of production planning, material tracking, and dispatch to ensure uninterrupted production lines.",
+        highlight:
+          "Improves resource management and streamlines communication across stakeholders.",
+        points: [
+          "High-level view of material availability for uninterrupted production",
+          "High employee visibility on shop floor enabling smarter resource management",
+          "Smooth data flow across stakeholders including customers, vendors & suppliers",
+          "Operational efficiency through fleet management",
+        ],
+        image: "/assets/img/misc/misc-square-18.webp",
+      },
+    ],
   },
   {
     slug: "ar-vr-apps",
     title: "Augmented & Virtual Reality Apps",
     intro:
-      "We create immersive AR and VR applications for industries and businesses.",
+      "At VJCS, we use a well-balanced set of technologies to create incredible solutions that will make you stand out from the crowd. Our team focuses on custom solutions for the top virtual reality platforms, including HTC Vive and Windows Mixed Reality. We also offer state-of-the-art game development, through platforms, such as Unity and Unreal Engine. Our extensive experience is put to good use, ensuring that our clients have the highest-value technical solution for their particular business challenge.",
+    features: [
+      {
+        id: 1,
+        title: "3D Modeling",
+        subtitle: "Immersive VR Experiences",
+        icon: "bi bi-cube",
+        contentTitle: "Interactive 3D Content Creation",
+        content:
+          "We provide the absolute best VR experience for your branding and corporate vision. Our team creates content, animations, and special effects for interactive VR/AR projects.",
+        highlight:
+          "Delivering next-level 3D experiences that bring your vision to life.",
+        points: [
+          "VR-based branding and corporate vision experiences",
+          "Creation of 3D content, animations, and special effects",
+          "Interactive VR/AR project development",
+        ],
+        image: "/assets/img/misc/misc-square-19.webp",
+      },
+      {
+        id: 2,
+        title: "AR App Development",
+        subtitle: "Augmented Reality Solutions",
+        icon: "bi bi-phone-vibrate",
+        contentTitle: "AR Applications for Multiple Industries",
+        content:
+          "We build AR solutions for retail, e-commerce, healthcare, and other industries. We also combine AR with other technologies to create captivating experiences.",
+        highlight:
+          "Cutting-edge AR apps designed for impactful customer engagement.",
+        points: [
+          "AR solutions for retail, e-commerce, healthcare, and more",
+          "Seamless integration of AR with other technologies",
+          "Enhanced user engagement with AR-driven experiences",
+        ],
+        image: "/assets/img/misc/misc-square-20.webp",
+      },
+      {
+        id: 3,
+        title: "VR App Development",
+        subtitle: "Virtual Reality Experiences",
+        icon: "bi bi-vr",
+        contentTitle: "Next-gen VR Applications",
+        content:
+          "Our in-house team creates mind-blowing VR experiences across multiple platforms and industries.",
+        highlight:
+          "Immersive VR applications built for business and entertainment.",
+        points: [
+          "Custom VR apps for diverse industries",
+          "Support for multiple VR platforms",
+          "Engaging and immersive virtual experiences",
+        ],
+        image: "/assets/img/misc/misc-square-21.webp",
+      },
+      {
+        id: 4,
+        title: "MR App Development",
+        subtitle: "Mixed Reality for Business Productivity",
+        icon: "bi bi-collection-play",
+        contentTitle: "Business-focused MR Interfaces",
+        content:
+          "With the help of Unity, our developers build mixed reality interfaces to manage business activities and facilitate productivity from anywhere.",
+        highlight:
+          "Empowering businesses with MR-enabled productivity solutions.",
+        points: [
+          "Mixed reality app development using Unity",
+          "Business activity management through MR interfaces",
+          "Enhanced productivity from anywhere",
+        ],
+        image: "/assets/img/misc/misc-square-22.webp",
+      },
+      {
+        id: 5,
+        title: "Multi-Platform Solutions",
+        subtitle: "Support for Leading VR/AR Devices",
+        icon: "bi bi-hdd-network",
+        contentTitle: "Custom VR/AR for Multiple Platforms",
+        content:
+          "We focus on custom solutions for a wide range of top virtual reality headsets and platforms, including HTC Vive, Windows Mixed Reality, and more.",
+        highlight:
+          "One solution, multiple platforms — optimized VR/AR experiences everywhere.",
+        points: [
+          "Custom VR/AR solutions for HTC Vive, Windows Mixed Reality, and more",
+          "Cross-platform compatibility",
+          "Optimized experiences across devices",
+        ],
+        image: "/assets/img/misc/misc-square-23.webp",
+      },
+      {
+        id: 6,
+        title: "Geo-location AR Apps",
+        subtitle: "Location-based AR Experiences",
+        icon: "bi bi-geo-alt",
+        contentTitle: "Next-gen Location-aware AR Applications",
+        content:
+          "We build geo-location-based AR apps that give businesses an edge by leveraging location-based touch for immersive engagement.",
+        highlight:
+          "Stay ahead of the competition with location-powered AR solutions.",
+        points: [
+          "Geo-location based AR app development",
+          "Interactive location-aware AR experiences",
+          "Cross-industry applications with AR and maps",
+        ],
+        image: "/assets/img/misc/misc-square-24.webp",
+      },
+      {
+        id: 7,
+        title: "360° Video",
+        subtitle: "Immersive Video Experiences",
+        icon: "bi bi-camera-reels",
+        contentTitle: "Custom 360° Video Applications",
+        content:
+          "Our team develops custom apps on every major platform delivering seamless 360° video experiences to our customers.",
+        highlight:
+          "Delivering stunning 360° immersive video apps for all platforms.",
+        points: [
+          "Custom 360° video app development",
+          "Support for all major platforms",
+          "Immersive experiences with high-quality video",
+        ],
+        image: "/assets/img/misc/misc-square-25.webp",
+      },
+      {
+        id: 8,
+        title: "Support & Maintenance",
+        subtitle: "Reliable AR/VR Product Stability",
+        icon: "bi bi-life-preserver",
+        contentTitle: "Ongoing AR/VR Support & Maintenance",
+        content:
+          "Our team ensures product stability and optimized business processes by providing continuous support and maintenance for AR/VR/MR applications.",
+        highlight:
+          "Dedicated support to keep your AR/VR solutions running seamlessly.",
+        points: [
+          "Ongoing support for AR/VR/MR applications",
+          "Ensuring product stability",
+          "Optimized business processes through maintenance",
+        ],
+        image: "/assets/img/misc/misc-square-26.webp",
+      },
+    ],
   },
+
 ];
