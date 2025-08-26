@@ -10,7 +10,7 @@ import service11Image from "@image/services/services-11.webp";
 import "./Service-Details.css";
 import PageBaner from "../PageBaner/PageBaner";
 
-export default function ServiceDetail() {
+const ServiceDetail = () => {
   return (
     <>
       <PageBaner heading="Service Details" description="Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias." />
@@ -153,11 +153,10 @@ export default function ServiceDetail() {
                   <h4>Our Services</h4>
                   <div className="menu-list">
                     {[
-                      "Digital Marketing",
-                      "Web Development",
-                      "Brand Strategy",
-                      "Content Creation",
-                      "SEO Optimization",
+                      "CAx Software Services",
+                      "PLM",
+                      "Engineering Design Services",
+                      "Digitization Services",
                     ].map((service, idx) => (
                       <Link
                         href="#"
@@ -220,3 +219,5 @@ export default function ServiceDetail() {
     </>
   );
 }
+
+export default ServiceDetail ;

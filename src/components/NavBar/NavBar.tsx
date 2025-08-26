@@ -21,9 +21,9 @@ export default function NavBar() {
         <nav id="navmenu" className="navmenu">
           <ul>
             <li>
-              <a href="#hero" className="active">
+              <Link href="/" className="active">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
               <Link href="/about">About</Link>
@@ -544,7 +544,7 @@ export default function NavBar() {
             </li>{" "}
             {/*<!-- End Megamenu 2 --> */}
             <li>
-              <a href="contact">Contact</a>
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
           <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
