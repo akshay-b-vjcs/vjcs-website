@@ -1,4 +1,3 @@
-
 export const services = [
   {
     slug: "cad-cam-development",
@@ -574,8 +573,7 @@ export const services = [
     ],
   },
 
-
-   {
+  {
     slug: "product-design",
     title: "Product Design",
     intro:
@@ -647,7 +645,7 @@ export const services = [
       },
     ],
   },
-   {
+  {
     slug: "bim-modelling",
     title: "BIM Modelling Services",
     intro:
@@ -847,8 +845,64 @@ export const services = [
     slug: "ai-solutions",
     title: "AI Solutions & Services",
     intro:
-      "We provide AI-powered solutions and services tailored to business needs.",
+      "At VJ Coresoft, we’re working with forward thinking businesses in developing solutions for the workforce of the future using AI and combining it with technologies such Augmented Reality (AR), Artificial Intelligence (AI), Cloud, Analytics and Industrial IoT to help businesses successfully undergo digital transformation initiatives.",
+    features: [
+      {
+        id: 1,
+        title: "Manufacturing",
+        subtitle: "AI in Manufacturing",
+        icon: "bi bi-gear",
+        contentTitle: "AI-powered Manufacturing Solutions",
+        content:
+          "We enable smarter factories with AI solutions for predictive maintenance, quality control, and demand forecasting.",
+        highlight:
+          "Our AI-driven early warning systems and predictive analytics improve efficiency and reduce downtime.",
+        points: [
+          "Predictive maintenance",
+          "Visual quality control",
+          "Demand forecasting",
+          "Early-warning systems",
+        ],
+        image: "/assets/img/misc/misc-square-13.webp",
+      },
+      {
+        id: 2,
+        title: "Automotive",
+        subtitle: "AI in Automotive",
+        icon: "bi bi-car-front",
+        contentTitle: "AI-driven Automotive Solutions",
+        content:
+          "We revolutionize the automotive industry with AI-powered recognition, predictive maintenance, infotainment, and autonomous driving.",
+        highlight:
+          "From image and speech recognition to AI driver assist, we help enable the future of mobility.",
+        points: [
+          "Image recognition, speech recognition, gesture recognition",
+          "Predictive maintenance",
+          "AI-based in-vehicle infotainment systems",
+          "AI Driver Assist and autonomous vehicles",
+        ],
+        image: "/assets/img/misc/misc-square-14.webp",
+      },
+      {
+        id: 3,
+        title: "Sports Fitness",
+        subtitle: "AI in Sports & Fitness",
+        icon: "bi bi-activity",
+        contentTitle: "AI-powered Sports & Fitness Solutions",
+        content:
+          "We bring AI and AR into sports and fitness, from gesture recognition to immersive virtual experiences.",
+        highlight:
+          "Our solutions enhance training, fitness, and retail with virtual fitting rooms and in-store assistance.",
+        points: [
+          "Computer vision and gesture recognition",
+          "Virtual fitting rooms and mirrors using AI and AR",
+          "In-store assistance",
+        ],
+        image: "/assets/img/misc/misc-square-15.webp",
+      },
+    ],
   },
+
   {
     slug: "enterprise-web-mobile",
     title: "Enterprise Web & Mobile",
