@@ -3,7 +3,7 @@ import type { NextRequest } from "next/server";
 import nodemailer from "nodemailer";
 
 export async function POST(req: NextRequest) {
-  const { name, email, subject, message } = await req.json();
+  const { name, email, subject, message, token } = await req.json();
 
   console.log("API hit:");
   console.log("SMTP_USER:", process.env.SMTP_USER);
@@ -13,6 +13,34 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ message: "Missing fields" }, { status: 400 });
   }
 
+  // 2. Verify reCAPTCHA
+  const secretKey = process.env.RECAPTCHA_SECRET_KEY;
+  const captchaVerifyUrl = "https://www.google.com/recaptcha/api/siteverify";
+
+  try {
+    const captchaRes = await fetch(captchaVerifyUrl, {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: `secret=${secretKey}&response=${token}`,
+    });
+
+    const captchaData = await captchaRes.json();
+
+    if (!captchaData.success) {
+      return NextResponse.json(
+        { message: "CAPTCHA verification failed" },
+        { status: 400 }
+      );
+    }
+  } catch (error) {
+    console.error("CAPTCHA verification error:", error);
+    return NextResponse.json(
+      { message: "Failed to verify CAPTCHA" },
+      { status: 500 }
+    );
+  }
+
+  // 3. Send email
   try {
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",

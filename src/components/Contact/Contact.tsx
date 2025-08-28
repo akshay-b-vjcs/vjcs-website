@@ -1,9 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { SetStateAction, useState } from "react";
 import Card from "../Card/Card";
 import PageBaner from "@components/PageBaner/PageBaner";
 import "./Contact.css";
+import ReCAPTCHA from "react-google-recaptcha";
+
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -12,6 +14,8 @@ const Contact: React.FC = () => {
     message: "",
   });
 
+  const [captchaToken, setCaptchaToken] = useState(null);
+  const [message, setMessage] = useState("");
   const [status, setStatus] = useState("");
 
   const handleChange = (
@@ -20,19 +24,33 @@ const Contact: React.FC = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const handleCaptchaChange = (token: any) => {
+    setCaptchaToken(token);
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("loading");
 
+    // Check if CAPTCHA is completed
+    if (!captchaToken) {
+      setStatus("error");
+      alert("Please complete the CAPTCHA.");
+      return;
+    }
     const res = await fetch("/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
+      body: JSON.stringify({
+        ...formData,
+        token: captchaToken, // Add the CAPTCHA token here
+      }),
     });
 
     if (res.ok) {
       setStatus("success");
       setFormData({ name: "", email: "", subject: "", message: "" });
+      setCaptchaToken(null); // Reset CAPTCHA token
     } else {
       setStatus("error");
     }
@@ -116,7 +134,12 @@ const Contact: React.FC = () => {
                       required
                     ></textarea>
                   </div>
-
+                  <div className="form-group mt-3">
+                    <ReCAPTCHA
+                      sitekey="YOUR_SITE_KEY"
+                      onChange={handleCaptchaChange}
+                    />
+                  </div>
                   <div className="my-3">
                     <div className="loading">Loading</div>
                     <div className="error-message"></div>
