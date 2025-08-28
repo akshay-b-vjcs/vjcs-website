@@ -1,10 +1,64 @@
+"use client";
+
+import { SetStateAction, useState } from "react";
 import Card from "../Card/Card";
 import PageBaner from "@components/PageBaner/PageBaner";
 import "./Contact.css";
+import ReCAPTCHA from "react-google-recaptcha";
+
 const Contact: React.FC = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const [captchaToken, setCaptchaToken] = useState(null);
+  const [message, setMessage] = useState("");
+  const [status, setStatus] = useState("");
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleCaptchaChange = (token: any) => {
+    setCaptchaToken(token);
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("loading");
+
+    // Check if CAPTCHA is completed
+    if (!captchaToken) {
+      setStatus("error");
+      alert("Please complete the CAPTCHA.");
+      return;
+    }
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        ...formData,
+        token: captchaToken, // Add the CAPTCHA token here
+      }),
+    });
+
+    if (res.ok) {
+      setStatus("success");
+      setFormData({ name: "", email: "", subject: "", message: "" });
+      setCaptchaToken(null); // Reset CAPTCHA token
+    } else {
+      setStatus("error");
+    }
+  };
+
   return (
     <>
-      <PageBaner heading="Contact"/>
+      <PageBaner heading="Contact" />
       <section id="contact" className="contact section">
         <div className="container">
           <div className="contact-main-wrapper">
@@ -26,10 +80,9 @@ const Contact: React.FC = () => {
                   eiusmod tempor incididunt ut labore et dolore magna aliqua
                   consectetur adipiscing.
                 </p>
-
                 <form
-                  action=""
-                  method="post"
+                  onSubmit={handleSubmit}
+                  method="POST"
                   className="php-email-form"
                 >
                   <div className="row">
@@ -40,6 +93,8 @@ const Contact: React.FC = () => {
                         className="form-control"
                         id="name"
                         placeholder="Your Name"
+                        value={formData.name}
+                        onChange={handleChange}
                         required
                       />
                     </div>
@@ -50,6 +105,8 @@ const Contact: React.FC = () => {
                         name="email"
                         id="email"
                         placeholder="Your Email"
+                        value={formData.email}
+                        onChange={handleChange}
                         required
                       />
                     </div>
@@ -61,6 +118,8 @@ const Contact: React.FC = () => {
                       name="subject"
                       id="subject"
                       placeholder="Subject"
+                      value={formData.subject}
+                      onChange={handleChange}
                       required
                     />
                   </div>
@@ -70,10 +129,17 @@ const Contact: React.FC = () => {
                       name="message"
                       rows={5}
                       placeholder="Message"
+                      value={formData.message}
+                      onChange={handleChange}
                       required
                     ></textarea>
                   </div>
-
+                  <div className="form-group mt-3">
+                    <ReCAPTCHA
+                      sitekey="YOUR_SITE_KEY"
+                      onChange={handleCaptchaChange}
+                    />
+                  </div>
                   <div className="my-3">
                     <div className="loading">Loading</div>
                     <div className="error-message"></div>
