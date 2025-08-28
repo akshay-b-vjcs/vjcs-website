@@ -32,9 +32,7 @@ interface Props {
 const ServiceDetails:React.FC<Props> = ({ service }: Props) => {
   const pathname = usePathname();
 
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [activeTab, setActiveTab] = useState(0);
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const featuresRef = useRef<HTMLDivElement>(null);
   const scrollToFeatures = () => {
     featuresRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
