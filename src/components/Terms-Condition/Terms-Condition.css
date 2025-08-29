@@ -1,0 +1,110 @@
+/* Container styling */
+.terms-section {
+  padding: 80px 0;
+  background: #f9f9f7;
+  color: #384943;
+  font-family: 'Poppins', sans-serif;
+}
+
+.terms-text {
+  padding-right: 40px;
+}
+
+.subtitle {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6c757d;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.site-url {
+  font-size: 32px;
+  font-weight: 700;
+  color: #293a34;
+  margin-bottom: 20px;
+}
+
+.terms-text p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.terms-text p.highlight {
+  font-weight: 500;
+  background: #e9f3ef;
+  padding: 10px 15px;
+  border-left: 4px solid #28a745;
+}
+
+.terms-text h5 {
+  color: #293a34;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* Custom bullets with ► symbol */
+.terms-text ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  list-style: none; /* remove default bullets */
+}
+
+.terms-text ul li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px; /* space for symbol */
+}
+
+/* Add ► symbol */
+.terms-text ul li::before {
+  content: "►";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #080808; /* green color */
+  font-size: 16px;
+}
+
+/* Button styling */
+.btn-accept {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 25px;
+  background-color: #28a745;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+.btn-accept i {
+  margin-left: 8px;
+}
+
+.btn-accept:hover {
+  background-color: #218838;
+}
+
+/* Image styling */
+.terms-image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .terms-text {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+  .terms-section {
+    padding: 60px 20px;
+  }
+}
