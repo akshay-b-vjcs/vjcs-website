@@ -14,8 +14,8 @@ const Contact: React.FC = () => {
     message: "",
   });
 
-  const [captchaToken, setCaptchaToken] = useState(null);
-  const [message, setMessage] = useState("");
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+  // const [message, setMessage] = useState("");
   const [status, setStatus] = useState("");
 
   const handleChange = (
@@ -24,7 +24,7 @@ const Contact: React.FC = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleCaptchaChange = (token: any) => {
+  const handleCaptchaChange = (token: string | null) => {
     setCaptchaToken(token);
   };
 
