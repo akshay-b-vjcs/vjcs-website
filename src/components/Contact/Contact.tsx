@@ -10,8 +10,11 @@ const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    subject: "",
     message: "",
+    companyName: "",
+    companyNumber: "",
+    city: "",
+    natureOfService: [] as string[],
   });
 
   const [captchaToken, setCaptchaToken] = useState(null);
@@ -26,6 +29,19 @@ const Contact: React.FC = () => {
 
   const handleCaptchaChange = (token: any) => {
     setCaptchaToken(token);
+  };
+  const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { value, checked } = e.target;
+    setFormData((prevFormData) => {
+      const updatedServices = checked
+        ? [...prevFormData.natureOfService, value]
+        : prevFormData.natureOfService.filter((item) => item !== value);
+
+      return {
+        ...prevFormData,
+        natureOfService: updatedServices,
+      };
+    });
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -49,7 +65,16 @@ const Contact: React.FC = () => {
 
     if (res.ok) {
       setStatus("success");
-      setFormData({ name: "", email: "", subject: "", message: "" });
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+        companyName: "",
+        companyNumber: "",
+        city: "",
+        natureOfService: [],
+      });
+
       setCaptchaToken(null); // Reset CAPTCHA token
     } else {
       setStatus("error");
@@ -86,7 +111,7 @@ const Contact: React.FC = () => {
                   className="php-email-form"
                 >
                   <div className="row">
-                    <div className="col-md-6 form-group">
+                    <div className="col-md-6 form-group pt-3">
                       <input
                         type="text"
                         name="name"
@@ -98,7 +123,7 @@ const Contact: React.FC = () => {
                         required
                       />
                     </div>
-                    <div className="col-md-6 form-group mt-3 mt-md-0">
+                    <div className="col-md-6 form-group pt-3 mt-md-0">
                       <input
                         type="email"
                         className="form-control"
@@ -111,35 +136,130 @@ const Contact: React.FC = () => {
                       />
                     </div>
                   </div>
-                  <div className="form-group mt-3">
-                    <input
-                      type="text"
-                      className="form-control"
-                      name="subject"
-                      id="subject"
-                      placeholder="Subject"
-                      value={formData.subject}
-                      onChange={handleChange}
-                      required
-                    />
+                  <div className="row">
+                    <div className="col-md-6 form-group pt-3">
+                      <input
+                        type="text"
+                        className="form-control"
+                        name="companyName"
+                        placeholder="Company Name"
+                        value={formData.companyName}
+                        onChange={handleChange}
+                      />
+                    </div>
+                    <div className="col-md-6 form-group pt-3 mt-md-0">
+                      <input
+                        type="text"
+                        className="form-control"
+                        name="companyNumber"
+                        placeholder="Company Number"
+                        value={formData.companyNumber}
+                        onChange={handleChange}
+                      />
+                    </div>
                   </div>
-                  <div className="form-group mt-3">
-                    <textarea
-                      className="form-control"
-                      name="message"
-                      rows={5}
-                      placeholder="Message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
-                    ></textarea>
+                  <div className="row">
+                    <div className="col-md-6 form-group pt-3">
+                      <input
+                        type="text"
+                        className="form-control"
+                        name="city"
+                        placeholder="City"
+                        value={formData.city}
+                        onChange={handleChange}
+                      />
+                    </div>
+                    <div className="col-md-6 form-group pt-3 mt-md-0">
+                      <textarea
+                        className="form-control"
+                        name="message"
+                        rows={1}
+                        placeholder="Enquiry"
+                        value={formData.message}
+                        onChange={handleChange}
+                        required
+                      ></textarea>
+                    </div>
                   </div>
-                  <div className="form-group mt-3">
-                    <ReCAPTCHA
-                      sitekey="YOUR_SITE_KEY"
-                      onChange={handleCaptchaChange}
-                    />
+                  <div className="row">
+                    <div className="col-md-6 form-group pt-3">
+                      <label>Nature of Service</label>
+                      <div className="form-check">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          name="natureOfService"
+                          value="CAx Software Services"
+                          checked={formData.natureOfService.includes(
+                            "CAx Software Services"
+                          )}
+                          onChange={handleCheckboxChange}
+                        />
+                        <label className="form-check-label">
+                          CAx Software Services
+                        </label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          name="natureOfService"
+                          value="PLM"
+                          checked={formData.natureOfService.includes("PLM")}
+                          onChange={handleCheckboxChange}
+                        />
+                        <label className="form-check-label">PLM</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          name="natureOfService"
+                          value="Engineering Design Services"
+                          checked={formData.natureOfService.includes(
+                            "Engineering Design Services"
+                          )}
+                          onChange={handleCheckboxChange}
+                        />
+                        <label className="form-check-label">
+                          Engineering Design Services
+                        </label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          name="natureOfService"
+                          value="Digitization Services"
+                          checked={formData.natureOfService.includes(
+                            "Digitization Services"
+                          )}
+                          onChange={handleCheckboxChange}
+                        />
+                        <label className="form-check-label">
+                          Digitization Services
+                        </label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          name="natureOfService"
+                          value="Other"
+                          checked={formData.natureOfService.includes("Other")}
+                          onChange={handleCheckboxChange}
+                        />
+                        <label className="form-check-label">Other</label>
+                      </div>
+                    </div>
+                    <div className="col-md-6 form-group pt-3 mt-md-0">
+                      <ReCAPTCHA
+                        sitekey="YOUR_SITE_KEY"
+                        onChange={handleCaptchaChange}
+                      />
+                    </div>
                   </div>
+
                   <div className="my-3">
                     <div className="loading">Loading</div>
                     <div className="error-message"></div>

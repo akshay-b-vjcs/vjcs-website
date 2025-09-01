@@ -3,13 +3,30 @@ import type { NextRequest } from "next/server";
 import nodemailer from "nodemailer";
 
 export async function POST(req: NextRequest) {
-  const { name, email, subject, message, token } = await req.json();
+  const {
+    name,
+    email,
+    message,
+    token,
+    companyName,
+    companyNumber,
+    city,
+    natureOfService,
+  } = await req.json();
 
   console.log("API hit:");
   console.log("SMTP_USER:", process.env.SMTP_USER);
   console.log("SMTP_PASS exists:", !!process.env.SMTP_PASS);
 
-  if (!name || !email || !subject || !message) {
+  if (
+    !name ||
+    !email ||
+    !message ||
+    !companyName ||
+    !companyNumber ||
+    !city ||
+    !natureOfService
+  ) {
     return NextResponse.json({ message: "Missing fields" }, { status: 400 });
   }
 
@@ -55,12 +72,19 @@ export async function POST(req: NextRequest) {
     await transporter.sendMail({
       from: `"Portfolio Contact" <${process.env.SMTP_USER}>`,
       to: process.env.SMTP_USER, // send to your inbox
-      subject,
+
       html: `
-        <p><strong>From:</strong> ${name} (${email})</p>
-        <p><strong>Subject:</strong> ${subject}</p>
-        <p>${message}</p>
-      `,
+  <p><strong>From:</strong> ${name} (${email})</p>
+  <p><strong>Company Name:</strong> ${companyName}</p>
+  <p><strong>Company Number:</strong> ${companyNumber}</p>
+  <p><strong>City:</strong> ${city}</p>
+  <p><strong>Nature of Service:</strong> ${
+    Array.isArray(natureOfService)
+      ? natureOfService.join(", ")
+      : natureOfService
+  }</p>
+  <p><strong>Message:</strong> ${message}</p>
+`,
     });
 
     return NextResponse.json(
