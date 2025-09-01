@@ -1,4 +1,3 @@
-
 export const services = [
   {
     slug: "cad-cam-development",
@@ -574,8 +573,7 @@ export const services = [
     ],
   },
 
-
-   {
+  {
     slug: "product-design",
     title: "Product Design",
     intro:
@@ -651,42 +649,465 @@ export const services = [
     slug: "bim-modelling",
     title: "BIM Modelling Services",
     intro:
-      "We provide BIM modeling solutions for architecture, engineering, and construction projects.",
+      "VJ Coresoft offers customized BIM Modelling services and solutions that suits clients Building Information Modelling (BIM) requirements. Bringing years of experience in various BIM Software we offer BIM modeling services for the Architectural, Structural, MEP, HVAC, Façade, Mechanical and Plumbing & Fire protection domains.",
+    features: [
+      {
+        id: 1,
+        title: "BIM Modelling Services",
+        subtitle: "Customized BIM Solutions",
+        icon: "bi bi-building",
+        contentTitle: "Comprehensive BIM Modelling",
+        content:
+          "We provide customized BIM Modelling services across multiple domains including architectural, structural, MEP, and smart building solutions.",
+        highlight:
+          "From design to clash detection and energy simulation, we cover end-to-end BIM services.",
+        points: [
+          "Architectural BIM Modelling",
+          "Structural BIM Modelling",
+          "MEP BIM Modelling",
+          "Scan to BIM Modelling",
+          "BIM Content Creation",
+          "Steel Shop Drawings",
+          "BIM Clash Detection",
+          "Construction Management Software Development and Smart Building",
+          "Energy Simulation",
+        ],
+        image: "/assets/img/misc/misc-square-24.webp",
+      },
+    ],
   },
   {
     slug: "marine-engineering",
     title: "Marine Engineering",
     intro:
-      "We design and develop solutions for marine engineering and offshore industries.",
+      "We provide high end innovative design & technical solutions to marine and offshore industry. By utilizing our proficiency in engineering & extensive design experience we have successfully delivered range of marine design and engineering services. We offer a complete set of design and consultancy services, starting with the earlier design stages up to production information.We are internationally renowned provider of ship design and system solutions for ship & yacht building. For ship design we provide quality basic & detail design engineering services for production. Where the hull structure, outfit and systems are detailed to achieve a cost and time effective production life cycle.",
+    features: [
+      {
+        id: 1,
+        title: "Basic Design",
+        subtitle: "Safe and Efficient Vessel Designs",
+        icon: "bi bi-diagram-3",
+        contentTitle: "In-depth Basic Design Capabilities",
+        content:
+          "VJ Coresoft has developed strong capabilities in carrying out basic ship design, leveraging experience from shipyards, vessel operators, and equipment manufacturers.",
+        highlight:
+          "We focus on creating safe and efficient vessel designs tailored to industry needs.",
+        points: [
+          "Developed in-depth basic design capabilities",
+          "Experience from shipyards, vessel operators & equipment manufacturers",
+          "Focus on safe and efficient vessel designs",
+        ],
+        image: "/assets/img/misc/misc-square-1.webp",
+      },
+      {
+        id: 2,
+        title: "Production Design",
+        subtitle: "Hull and Production Expertise",
+        icon: "bi bi-gear",
+        contentTitle: "Substantial Hull Design and Production Experience",
+        content:
+          "We offer expertise in hull design, 3D modelling, production drawings, and nesting to support ship production processes.",
+        highlight:
+          "Substantial experience in delivering high-quality production designs.",
+        points: [
+          "Hull design expertise",
+          "3D modelling for ship structures",
+          "Production drawings & nesting",
+        ],
+        image: "/assets/img/misc/misc-square-2.webp",
+      },
+      {
+        id: 3,
+        title: "Detail Design & Production Documentation",
+        subtitle: "Comprehensive Detailing",
+        icon: "bi bi-journal-text",
+        contentTitle: "Detailed Documentation and Layouts",
+        content:
+          "Based on basic and production designs, we prepare detailed deliverables aligned with shipyard practices and methodologies.",
+        highlight:
+          "Expertise in 3D models and layouts for all ship components and systems.",
+        points: [
+          "Equipment detailing",
+          "Structures detailing",
+          "Machinery parts",
+          "Piping",
+          "Cable trays",
+          "HVAC systems",
+        ],
+        image: "/assets/img/misc/misc-square-3.webp",
+      },
+      {
+        id: 4,
+        title: "Interior & Exterior Design",
+        subtitle: "Accommodation & Deck Services",
+        icon: "bi bi-house",
+        contentTitle: "Interior and Exterior Ship Design",
+        content:
+          "We provide specialized interior and exterior design services tailored for the shipbuilding industry, covering accommodation and deck areas.",
+        highlight: "Intricate design services for inner and outer ship areas.",
+        points: ["Accommodation areas", "Inner deck areas", "Outer deck areas"],
+        image: "/assets/img/misc/misc-square-4.webp",
+      },
+      {
+        id: 5,
+        title: "3D Modeling",
+        subtitle: "Visualization and Detailing",
+        icon: "bi bi-box",
+        contentTitle: "Comprehensive 3D Modeling Services",
+        content:
+          "Our 3D modeling services cover both interior and exterior visualization, ensuring intricate detailing for ship design.",
+        highlight: "High-quality 3D visualization for interiors and exteriors.",
+        points: [
+          "Interior 3D visualization",
+          "Exterior 3D visualization",
+          "Intricate detailing for ship design",
+        ],
+        image: "/assets/img/misc/misc-square-5.webp",
+      },
+      {
+        id: 6,
+        title: "CAE Analysis",
+        subtitle: "Simulation and Optimization",
+        icon: "bi bi-graph-up",
+        contentTitle: "Robust CAE Analysis for Ships",
+        content:
+          "We use CAE tools for simulation, validation, and optimization to ensure robustness and performance of ship components and assemblies.",
+        highlight:
+          "Advanced CAE analysis covering strength, vibration, thermal, and fluid dynamics.",
+        points: [
+          "Local Structure Strength Analysis",
+          "Global Ship Vibration Analysis",
+          "Global Ship Structure Strength Analysis",
+          "Thermal Analysis",
+          "Local Structure Vibration Analysis",
+          "Computational Fluid Dynamics (CFD) Analysis",
+        ],
+        image: "/assets/img/misc/misc-square-6.webp",
+      },
+    ],
   },
   {
     slug: "virtual-manufacturing",
     title: "Virtual Manufacturing",
     intro:
       "We create virtual manufacturing environments to optimize production processes.",
+    features: [
+      {
+        id: 2,
+        title: "Virtual Manufacturing Services",
+        subtitle: "Simulation & Automation",
+        icon: "bi bi-cpu",
+        contentTitle: "Virtual Manufacturing Services",
+        content:
+          "We offer end-to-end virtual manufacturing solutions including simulation, validation, and programming for automated systems, robots, and machining processes.",
+        highlight:
+          "Comprehensive expertise in simulation, automation, ergonomics, and CNC programming with strong software development skills.",
+        points: [
+          "Virtual commissioning, validating PLC code and HMI",
+          "Plant simulation",
+          "Human simulation and ergonomics",
+          "Robot simulation, validation & offline programming (OLP) for various applications",
+          "Machining simulation via CNC programming, tool and path generation",
+          "Skill sets: C, C++, Java, Tecnomatix, .NET API, XML",
+        ],
+        image: "/assets/img/misc/misc-square-12.webp",
+      },
+    ],
   },
   {
     slug: "industrial-iot",
     title: "Industrial Internet of Things",
     intro:
-      "We build IIoT solutions for connected, smart, and efficient industries.",
+      "VJCS end-to-end IoT solutions empower smart industries, smart living and smart enterprises and deliver connected experiences by connecting assets, operations/logistics, and services. We focus predominantly on the segments mentioned below. we bring expertise with platforms like Hitachi Lumada, AWS IoT, and Azure IoT, further combined with technologies like Augmented Reality (AR), and Artificial Intelligence (AI) to open new possibilities and help generate business value for enterprises in innovative ways.",
+    features: [
+      {
+        id: 2,
+        title: "Industrial Internet of Things",
+        subtitle: "Next-Gen Industry Solutions",
+        icon: "bi bi-cpu",
+        contentTitle: "Industrial Internet of Things",
+        content:
+          "We provide innovative solutions for smart manufacturing, facilities, equipment, and connected car applications to enable digital transformation.",
+        highlight:
+          "Our expertise drives Industry 4.0 adoption with advanced smart systems for manufacturing and automotive sectors.",
+        points: [
+          "Smart manufacturing",
+          "Smart facilities",
+          "Smart equipment",
+          "Apps for connected cars",
+        ],
+        image: "/assets/img/misc/misc-square-12.webp",
+      },
+    ],
   },
+
   {
     slug: "ai-solutions",
     title: "AI Solutions & Services",
     intro:
-      "We provide AI-powered solutions and services tailored to business needs.",
+      "At VJ Coresoft, we’re working with forward thinking businesses in developing solutions for the workforce of the future using AI and combining it with technologies such Augmented Reality (AR), Artificial Intelligence (AI), Cloud, Analytics and Industrial IoT to help businesses successfully undergo digital transformation initiatives.",
+    features: [
+      {
+        id: 1,
+        title: "Manufacturing",
+        subtitle: "AI in Manufacturing",
+        icon: "bi bi-gear",
+        contentTitle: "AI-powered Manufacturing Solutions",
+        content:
+          "We enable smarter factories with AI solutions for predictive maintenance, quality control, and demand forecasting.",
+        highlight:
+          "Our AI-driven early warning systems and predictive analytics improve efficiency and reduce downtime.",
+        points: [
+          "Predictive maintenance",
+          "Visual quality control",
+          "Demand forecasting",
+          "Early-warning systems",
+        ],
+        image: "/assets/img/misc/misc-square-13.webp",
+      },
+      {
+        id: 2,
+        title: "Automotive",
+        subtitle: "AI in Automotive",
+        icon: "bi bi-car-front",
+        contentTitle: "AI-driven Automotive Solutions",
+        content:
+          "We revolutionize the automotive industry with AI-powered recognition, predictive maintenance, infotainment, and autonomous driving.",
+        highlight:
+          "From image and speech recognition to AI driver assist, we help enable the future of mobility.",
+        points: [
+          "Image recognition, speech recognition, gesture recognition",
+          "Predictive maintenance",
+          "AI-based in-vehicle infotainment systems",
+          "AI Driver Assist and autonomous vehicles",
+        ],
+        image: "/assets/img/misc/misc-square-14.webp",
+      },
+      {
+        id: 3,
+        title: "Sports Fitness",
+        subtitle: "AI in Sports & Fitness",
+        icon: "bi bi-activity",
+        contentTitle: "AI-powered Sports & Fitness Solutions",
+        content:
+          "We bring AI and AR into sports and fitness, from gesture recognition to immersive virtual experiences.",
+        highlight:
+          "Our solutions enhance training, fitness, and retail with virtual fitting rooms and in-store assistance.",
+        points: [
+          "Computer vision and gesture recognition",
+          "Virtual fitting rooms and mirrors using AI and AR",
+          "In-store assistance",
+        ],
+        image: "/assets/img/misc/misc-square-15.webp",
+      },
+    ],
   },
+
   {
     slug: "enterprise-web-mobile",
     title: "Enterprise Web & Mobile",
     intro:
       "We develop enterprise-grade web and mobile applications for digital transformation.",
+    features: [
+      {
+        id: 1,
+        title: "Optimize Factory Maintenance",
+        subtitle: "Enterprise Mobility for Manufacturing",
+        icon: "bi bi-wrench-adjustable",
+        contentTitle: "Smart Factory Operations",
+        content:
+          "With enterprise mobility solutions for operations, clients can access workshop safety details, operational information, and undergo tasks on the go, helping them stay incident-free and achieve operational efficiency.",
+        highlight:
+          "Ensures access to factory and quality systems anywhere, improving efficiency and safety.",
+        points: [
+          "Access to Factory Information System on the go with a mobile app",
+          "Access to Quality Management Systems on the go with a mobile app",
+          "Get access to workshop equipment safety & security with enterprise mobile apps",
+          "Production planning & scheduling on the go",
+        ],
+        image: "/assets/img/misc/misc-square-16.webp",
+      },
+      {
+        id: 2,
+        title: "Monitor Equipment Health in Real-time",
+        subtitle: "Preventive & Predictive Maintenance",
+        icon: "bi bi-speedometer2",
+        contentTitle: "Real-time Equipment Monitoring",
+        content:
+          "With VJCS enterprise mobility solutions, track equipment efficiency and monitor their health on mobile devices. Conduct preventive maintenance checks at regular intervals to reduce downtime.",
+        highlight:
+          "Empowers factories with real-time data access and preventive maintenance capabilities.",
+        points: [
+          "Access equipment-related critical data from the mobile app and take action instantly",
+          "Prevent material wastage and reduce input overheads of manufacturing costs",
+          "Eliminate redundant activities and improve collaboration between SBUs",
+          "Maintain product quality through scheduled equipment maintenance",
+        ],
+        image: "/assets/img/misc/misc-square-17.webp",
+      },
+      {
+        id: 3,
+        title: "Reduce Time-to-Market for New Products",
+        subtitle: "Enterprise Mobility in Supply Chain",
+        icon: "bi bi-truck",
+        contentTitle: "Accelerated Product Launch & Supply Chain Management",
+        content:
+          "Enterprise mobility solutions for supply chain help overcome issues of production planning, material tracking, and dispatch to ensure uninterrupted production lines.",
+        highlight:
+          "Improves resource management and streamlines communication across stakeholders.",
+        points: [
+          "High-level view of material availability for uninterrupted production",
+          "High employee visibility on shop floor enabling smarter resource management",
+          "Smooth data flow across stakeholders including customers, vendors & suppliers",
+          "Operational efficiency through fleet management",
+        ],
+        image: "/assets/img/misc/misc-square-18.webp",
+      },
+    ],
   },
   {
     slug: "ar-vr-apps",
     title: "Augmented & Virtual Reality Apps",
     intro:
-      "We create immersive AR and VR applications for industries and businesses.",
+      "At VJCS, we use a well-balanced set of technologies to create incredible solutions that will make you stand out from the crowd. Our team focuses on custom solutions for the top virtual reality platforms, including HTC Vive and Windows Mixed Reality. We also offer state-of-the-art game development, through platforms, such as Unity and Unreal Engine. Our extensive experience is put to good use, ensuring that our clients have the highest-value technical solution for their particular business challenge.",
+    features: [
+      {
+        id: 1,
+        title: "3D Modeling",
+        subtitle: "Immersive VR Experiences",
+        icon: "bi bi-cube",
+        contentTitle: "Interactive 3D Content Creation",
+        content:
+          "We provide the absolute best VR experience for your branding and corporate vision. Our team creates content, animations, and special effects for interactive VR/AR projects.",
+        highlight:
+          "Delivering next-level 3D experiences that bring your vision to life.",
+        points: [
+          "VR-based branding and corporate vision experiences",
+          "Creation of 3D content, animations, and special effects",
+          "Interactive VR/AR project development",
+        ],
+        image: "/assets/img/misc/misc-square-19.webp",
+      },
+      {
+        id: 2,
+        title: "AR App Development",
+        subtitle: "Augmented Reality Solutions",
+        icon: "bi bi-phone-vibrate",
+        contentTitle: "AR Applications for Multiple Industries",
+        content:
+          "We build AR solutions for retail, e-commerce, healthcare, and other industries. We also combine AR with other technologies to create captivating experiences.",
+        highlight:
+          "Cutting-edge AR apps designed for impactful customer engagement.",
+        points: [
+          "AR solutions for retail, e-commerce, healthcare, and more",
+          "Seamless integration of AR with other technologies",
+          "Enhanced user engagement with AR-driven experiences",
+        ],
+        image: "/assets/img/misc/misc-square-20.webp",
+      },
+      {
+        id: 3,
+        title: "VR App Development",
+        subtitle: "Virtual Reality Experiences",
+        icon: "bi bi-vr",
+        contentTitle: "Next-gen VR Applications",
+        content:
+          "Our in-house team creates mind-blowing VR experiences across multiple platforms and industries.",
+        highlight:
+          "Immersive VR applications built for business and entertainment.",
+        points: [
+          "Custom VR apps for diverse industries",
+          "Support for multiple VR platforms",
+          "Engaging and immersive virtual experiences",
+        ],
+        image: "/assets/img/misc/misc-square-21.webp",
+      },
+      {
+        id: 4,
+        title: "MR App Development",
+        subtitle: "Mixed Reality for Business Productivity",
+        icon: "bi bi-collection-play",
+        contentTitle: "Business-focused MR Interfaces",
+        content:
+          "With the help of Unity, our developers build mixed reality interfaces to manage business activities and facilitate productivity from anywhere.",
+        highlight:
+          "Empowering businesses with MR-enabled productivity solutions.",
+        points: [
+          "Mixed reality app development using Unity",
+          "Business activity management through MR interfaces",
+          "Enhanced productivity from anywhere",
+        ],
+        image: "/assets/img/misc/misc-square-22.webp",
+      },
+      {
+        id: 5,
+        title: "Multi-Platform Solutions",
+        subtitle: "Support for Leading VR/AR Devices",
+        icon: "bi bi-hdd-network",
+        contentTitle: "Custom VR/AR for Multiple Platforms",
+        content:
+          "We focus on custom solutions for a wide range of top virtual reality headsets and platforms, including HTC Vive, Windows Mixed Reality, and more.",
+        highlight:
+          "One solution, multiple platforms — optimized VR/AR experiences everywhere.",
+        points: [
+          "Custom VR/AR solutions for HTC Vive, Windows Mixed Reality, and more",
+          "Cross-platform compatibility",
+          "Optimized experiences across devices",
+        ],
+        image: "/assets/img/misc/misc-square-23.webp",
+      },
+      {
+        id: 6,
+        title: "Geo-location AR Apps",
+        subtitle: "Location-based AR Experiences",
+        icon: "bi bi-geo-alt",
+        contentTitle: "Next-gen Location-aware AR Applications",
+        content:
+          "We build geo-location-based AR apps that give businesses an edge by leveraging location-based touch for immersive engagement.",
+        highlight:
+          "Stay ahead of the competition with location-powered AR solutions.",
+        points: [
+          "Geo-location based AR app development",
+          "Interactive location-aware AR experiences",
+          "Cross-industry applications with AR and maps",
+        ],
+        image: "/assets/img/misc/misc-square-24.webp",
+      },
+      {
+        id: 7,
+        title: "360° Video",
+        subtitle: "Immersive Video Experiences",
+        icon: "bi bi-camera-reels",
+        contentTitle: "Custom 360° Video Applications",
+        content:
+          "Our team develops custom apps on every major platform delivering seamless 360° video experiences to our customers.",
+        highlight:
+          "Delivering stunning 360° immersive video apps for all platforms.",
+        points: [
+          "Custom 360° video app development",
+          "Support for all major platforms",
+          "Immersive experiences with high-quality video",
+        ],
+        image: "/assets/img/misc/misc-square-25.webp",
+      },
+      {
+        id: 8,
+        title: "Support & Maintenance",
+        subtitle: "Reliable AR/VR Product Stability",
+        icon: "bi bi-life-preserver",
+        contentTitle: "Ongoing AR/VR Support & Maintenance",
+        content:
+          "Our team ensures product stability and optimized business processes by providing continuous support and maintenance for AR/VR/MR applications.",
+        highlight:
+          "Dedicated support to keep your AR/VR solutions running seamlessly.",
+        points: [
+          "Ongoing support for AR/VR/MR applications",
+          "Ensuring product stability",
+          "Optimized business processes through maintenance",
+        ],
+        image: "/assets/img/misc/misc-square-26.webp",
+      },
+    ],
   },
+
 ];
