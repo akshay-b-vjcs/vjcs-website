@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import "./Carousel.css"
-const BgCarousel = () => {
+const Carousel = () => {
   const slides = [
     {
       src: "https://www.vjcs.com/vjcs/images/updated-images/CAx%20Software%20Development.jpg",
@@ -151,4 +151,4 @@ const BgCarousel = () => {
   );
 };
 
-export default BgCarousel;
+export default Carousel;
