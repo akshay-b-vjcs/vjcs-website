@@ -74,10 +74,10 @@ export async function POST(req: NextRequest) {
       to: process.env.SMTP_USER, // send to your inbox
 
       html: `
- <table border="1" cellspacing="0" cellpadding="8" style="border-collapse: collapse; width: 100%;">
+ <table border="1" cellspacing="0" cellpadding="8" >
   <tr>
-    <td><strong>From:</strong></td>
-    <td>${name} (${email})</td>
+    <td>Name</td>
+    <td>${name}(${email})</td>
   </tr>
   <tr>
     <td><strong>Company Name:</strong></td>
