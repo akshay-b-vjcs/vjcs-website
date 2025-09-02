@@ -74,16 +74,39 @@ export async function POST(req: NextRequest) {
       to: process.env.SMTP_USER, // send to your inbox
 
       html: `
-  <p><strong>From:</strong> ${name} (${email})</p>
-  <p><strong>Company Name:</strong> ${companyName}</p>
-  <p><strong>Company Number:</strong> ${companyNumber}</p>
-  <p><strong>City:</strong> ${city}</p>
-  <p><strong>Nature of Service:</strong> ${
-    Array.isArray(natureOfService)
-      ? natureOfService.join(", ")
-      : natureOfService
-  }</p>
-  <p><strong>Message:</strong> ${message}</p>
+ <table border="1" cellspacing="0" cellpadding="8" style="border-collapse: collapse; width: 100%;">
+  <tr>
+    <td><strong>From:</strong></td>
+    <td>${name} (${email})</td>
+  </tr>
+  <tr>
+    <td><strong>Company Name:</strong></td>
+    <td>${companyName}</td>
+  </tr>
+  <tr>
+    <td><strong>Company Number:</strong></td>
+    <td>${companyNumber}</td>
+  </tr>
+  <tr>
+    <td><strong>City:</strong></td>
+    <td>${city}</td>
+  </tr>
+  <tr>
+    <td><strong>Nature of Service:</strong></td>
+    <td>
+      ${
+        Array.isArray(natureOfService)
+          ? natureOfService.join(", ")
+          : natureOfService
+      }
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Message:</strong></td>
+    <td>${message}</td>
+  </tr>
+</table>
+
 `,
     });
 
