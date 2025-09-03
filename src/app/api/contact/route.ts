@@ -114,11 +114,13 @@ export async function POST(req: NextRequest) {
       { message: "Email sent successfully" },
       { status: 200 }
     );
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error("Email error:", error);
-    return NextResponse.json(
-      { message: "Failed to send email", error: error.message },
-      { status: 500 }
-    );
+    if (error instanceof Error) {
+      return NextResponse.json(
+        { message: "Failed to send email", error: error.message },
+        { status: 500 }
+      );
+    }
   }
 }

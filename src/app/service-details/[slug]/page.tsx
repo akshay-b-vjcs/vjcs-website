@@ -18,7 +18,7 @@ interface Service {
 }
 
 interface PageProps {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
@@ -37,8 +37,10 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
   ];
 }
 
-export default function ServiceDetailPage({ params }: PageProps) {
-  const service = services.find((s) => s.slug === params.slug) as Service | undefined;
+export default async function ServiceDetailPage({ params }: PageProps) {
+  const { slug } = await params;
+
+  const service = services.find((s) => s.slug === slug) as Service | undefined;
 
   if (!service) return notFound();
 
