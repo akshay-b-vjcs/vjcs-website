@@ -12,11 +12,7 @@ const Footer: React.FC = () => {
             <Link href="/" className="logo d-flex align-items-center">
               <span className="sitename">V J Coresoft Pvt. Ltd.</span>
             </Link>
-            <p>
-              Cras fermentum odio eu feugiat lide par naso tierra. Justo eget
-              nada terra videa magna derita valies darta donna mare fermentum
-              iaculis eu non diam phasellus.
-            </p>
+            <p>All trademarks and copyrights of the 3D Printers / CAD and CAE Services / Software / other software and services mentioned on this website are the properties of their respective owners and are acknowledged as such.</p>
             <div className="social-links d-flex mt-4">
               <Link href="">
                 <i className="bi bi-twitter-x"></i>
