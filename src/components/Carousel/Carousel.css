@@ -1,7 +1,33 @@
-.title {
-  color: #ffffff;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
-  background-color: rgba(9, 9, 9, 0.3); 
-  padding: 10px 20px;
-  border-radius: 5px;
+.service-buttons {
+  display: flex;
+  flex-wrap: nowrap; /* prevent wrapping */
+  gap: 12px;
+  margin-top: 10px;
+  overflow-x: auto; /* allow horizontal scrolling if buttons overflow */
+  padding-bottom: 5px; /* optional: spacing from bottom */
+}
+
+.service-buttons::-webkit-scrollbar {
+  display: none; /* hide scrollbar for cleaner look */
+}
+
+.service-btn {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: #fff !important;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 18px;
+  border-radius: 25px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  white-space: nowrap; /* prevent text from breaking inside button */
+  flex: 0 0 auto; /* keep each button's width fixed */
+}
+
+.service-btn:hover {
+  background: linear-gradient(135deg, #0056b3, #004099);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4);
 }

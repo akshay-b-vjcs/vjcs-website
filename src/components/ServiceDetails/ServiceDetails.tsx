@@ -1,12 +1,32 @@
 "use client";
-import React, { useState, useRef} from "react";
+import React, { useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import PageBaner from "@/components/PageBaner/PageBaner";
-import serviceImage from "@image/services/services-7.webp";
+import "./ServiceDetails.css";
 
-import './ServiceDetails.css';
+// Import all images
+import imgCax from "@image/services/Home-carousel-cax.png";
+import imgPlm from "@image/services/Home-carousel-plm.png";
+import imgEds from "@image/services/Home-carousel-eds.png";
+import imgEds1 from "@image/services/Home-carousel-eds-1.png";
+
+const serviceBannerMap: Record<string, typeof imgCax> = {
+  "cad-cam-development": imgCax,
+  "cae-development": imgCax,
+  "cax-software-testing": imgCax,
+  plm: imgPlm,
+  "product-design": imgEds,
+  "bim-modelling": imgEds,
+  "marine-engineering": imgEds,
+  "virtual-manufacturing": imgEds1,
+  "industrial-iot": imgEds1,
+  "ai-solutions": imgEds1,
+  "enterprise-web-mobile": imgEds1,
+  "ar-vr-apps": imgEds1,
+};
+
 
 interface Feature {
   icon: string;
@@ -27,11 +47,13 @@ interface Service {
 
 interface Props {
   service: Service;
+  serviceName: string;
 }
 
-const ServiceDetails:React.FC<Props> = ({ service }: Props) => {
+const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
+  const banner = serviceBannerMap[serviceName];
+  console.log("banner", banner);
   const pathname = usePathname();
-
   const [activeTab, setActiveTab] = useState(0);
   const featuresRef = useRef<HTMLDivElement>(null);
   const scrollToFeatures = () => {
@@ -74,6 +96,7 @@ const ServiceDetails:React.FC<Props> = ({ service }: Props) => {
       ],
     },
   ];
+  if (!banner) return <p>Service not found</p>;
 
   return (
     <>
@@ -84,16 +107,29 @@ const ServiceDetails:React.FC<Props> = ({ service }: Props) => {
           <div className="row gy-5">
             <div className="col-lg-8">
               <div className="service-hero">
-                <Image
+                {/* <Image
                   src={serviceImage}
                   width={800}
                   height={500}
                   alt=""
                   className="img-fluid"
+                /> */}
+                <Image
+                  src={banner}
+                  alt={serviceName}
+                  width={1200}
+                  height={500}
+                  className="img-fluid rounded-4 shadow img"
+                  style={{
+                    objectFit: "contain",
+                    width: "100%", 
+                    height: "auto", 
+                  }}
                 />
-                <div className="service-badge">
+
+                {/* <div className="service-badge">
                   <span>Premium Service</span>
-                </div>
+                </div> */}
               </div>
 
               <div className="service-content">
@@ -102,7 +138,7 @@ const ServiceDetails:React.FC<Props> = ({ service }: Props) => {
                   <h2>{service.title}</h2>
                   <p className="service-intro">{service.intro}</p>
                 </div>
-                <section id="features" className="features section py-5 " >
+                <section id="features" className="features section py-5 ">
                   <div className="container">
                     <div className="row g-4">
                       {/* Left Tabs */}
@@ -135,7 +171,10 @@ const ServiceDetails:React.FC<Props> = ({ service }: Props) => {
                       </div>
 
                       {/* Right Content */}
-                      <div className="col-lg-8 scroll-offset " ref={featuresRef} >
+                      <div
+                        className="col-lg-8 scroll-offset "
+                        ref={featuresRef}
+                      >
                         <div className="tab-content">
                           {service.features?.map((feature, idx) => (
                             <div

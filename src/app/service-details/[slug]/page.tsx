@@ -31,6 +31,7 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
     { slug: "bim-modelling" },
     { slug: "marine-engineering" },
     { slug: "virtual-manufacturing" },
+    { slug: "industrial-iot" },
     { slug: "ai-solutions" },
     { slug: "enterprise-web-mobile" },
     { slug: "ar-vr-apps" },
@@ -39,10 +40,10 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
 
 export default async function ServiceDetailPage({ params }: PageProps) {
   const { slug } = await params;
-
+  
   const service = services.find((s) => s.slug === slug) as Service | undefined;
 
   if (!service) return notFound();
 
-  return <ServiceDetails service={service} />;
+  return <ServiceDetails serviceName={slug} service={service} />;
 }

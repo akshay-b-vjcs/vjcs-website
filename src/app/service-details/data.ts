@@ -20,7 +20,6 @@ export const services = [
           "Advanced Functionalities for FE Analysis",
           "Geometric Manipulation",
         ],
-        image: "/assets/img/misc/misc-square-6.webp",
       },
       {
         id: 2,
@@ -36,7 +35,6 @@ export const services = [
           "Translators for Neutral Formats: STEP, VRML, STL, IGES, DXF, Parasolid, Granite, ACIS, JT Open",
           "Plug-in Development: Pro/ENGINEER, SolidWorks, CATIA V5/V6, Autodesk Inventor, SpaceClaim",
         ],
-        image: "/assets/img/misc/misc-square-13.webp",
       },
       {
         id: 3,
@@ -51,7 +49,6 @@ export const services = [
         points: [
           "Integrating client software in Pro/ENGINEER, SolidWorks, CATIA V5/V6, AI, SpaceClaim",
         ],
-        image: "/assets/img/misc/misc-square-3.webp",
       },
       {
         id: 4,
@@ -73,7 +70,6 @@ export const services = [
           "AutoDesk: API, Inventor SDK, VBA, C++",
           "ProE (Creo): ProToolkit, Web.Link, JLink",
         ],
-        image: "/assets/img/misc/misc-square-5.webp",
       },
       {
         id: 5,
@@ -91,7 +87,6 @@ export const services = [
           "Body Transparency",
           "Rotation Modes",
         ],
-        image: "/assets/img/misc/misc-square-8.webp",
       },
       {
         id: 6,
@@ -111,7 +106,6 @@ export const services = [
           "Mobile Apps with .NET Compact Framework",
           "Consulting & Architecture Planning",
         ],
-        image: "/assets/img/misc/misc-square-3.webp",
       },
       {
         id: 7,
@@ -130,7 +124,6 @@ export const services = [
           "WCF, Web Services, ASP",
           "SQL Server 2012/2008, MySQL",
         ],
-        image: "/assets/img/misc/misc-square-13.webp",
       },
       {
         id: 8,
@@ -148,7 +141,6 @@ export const services = [
           "Geometry Toolkits: ACIS/Parasolid, Geometric Algorithms",
           "CAD SDKs: CATIA CAA V5/V6, Pro/TOOLKIT, SolidWorks API",
         ],
-        image: "/assets/img/misc/misc-square-9.webp",
       },
       {
         id: 9,
@@ -174,7 +166,6 @@ export const services = [
           "5 Axis Milling, Waterjet Programming, CMM Programming",
           "Process Improvement",
         ],
-        image: "/assets/img/misc/misc-square-6.webp",
       },
     ],
   },
@@ -199,7 +190,6 @@ export const services = [
           "Plug-in Development for 3rd party software: Pro/ENGINEER, SolidWorks, CATIA V5/V6, AI, SpaceClaim",
           "Import/Export Translators for CAE software: ANSYS, MSC Nastran, LS-Dyna, HyperMesh, Abaqus, RADIOSS",
         ],
-        image: "/assets/img/misc/misc-square-13.webp",
       },
       {
         id: 2,
@@ -214,7 +204,6 @@ export const services = [
         points: [
           "Integrating client software in Pro/ENGINEER, SolidWorks, CATIA V5/V6, AI, SpaceClaim",
         ],
-        image: "/assets/img/misc/misc-square-3.webp",
       },
       {
         id: 3,
@@ -233,7 +222,6 @@ export const services = [
           "Hypermesh: Tcl, Tk, C#, C++",
           "LS-Dyna: Tcl, Tk, C#, C++",
         ],
-        image: "/assets/img/misc/misc-square-5.webp",
       },
       {
         id: 4,
@@ -250,7 +238,6 @@ export const services = [
           "Integration with meshing software",
           "Post-processing & Rendering of data and charts",
         ],
-        image: "/assets/img/misc/misc-square-6.webp",
       },
       {
         id: 5,
@@ -266,7 +253,6 @@ export const services = [
           "Complete Analysis Modules: Structural, Thermal, Fluids, Electromagnetic",
           "Types: Linear/Nonlinear, Transient, Modal Dynamics, Multi-physics",
         ],
-        image: "/assets/img/misc/misc-square-8.webp",
       },
       {
         id: 6,
@@ -282,7 +268,6 @@ export const services = [
           "Fast Iterative Direct Solvers available on licensing basis",
           "Used by premier vendors: ANSYS Inc, MSC Software, UGS-Siemens, Noran Engineering, SolidWorks/Cosmos",
         ],
-        image: "/assets/img/misc/misc-square-9.webp",
       },
       {
         id: 7,
@@ -299,7 +284,6 @@ export const services = [
           "Optimization Algorithm Development",
           "Post-processing: RSMS, Surface Plots, Pie Charts, etc.",
         ],
-        image: "/assets/img/misc/misc-square-10.webp",
       },
       {
         id: 8,
@@ -317,7 +301,6 @@ export const services = [
           "Q-Slice and Iso-surface visualization",
           "Controlling particle flow or charged particle trace",
         ],
-        image: "/assets/img/misc/misc-square-8.webp",
       },
       {
         id: 9,
@@ -335,7 +318,6 @@ export const services = [
           "Parasolid geometry toolkit and geometric algorithms",
           "CATIA CAA V5/V6, Pro/TOOLKIT, SolidWorks API, Tcl/Tk",
         ],
-        image: "/assets/img/misc/misc-square-9.webp",
       },
       {
         id: 10,
@@ -355,7 +337,6 @@ export const services = [
           "Reliability studies",
           "Helps identify optimal robust models economically without constraints",
         ],
-        image: "/assets/img/misc/misc-square-10.webp",
       },
     ],
   },
@@ -386,7 +367,6 @@ export const services = [
           "Development of APIs",
           "Localization testing",
         ],
-        image: "/assets/img/misc/misc-square-11.webp",
       },
       {
         id: 2,
@@ -405,7 +385,6 @@ export const services = [
           "Sun Solaris",
           "IBM AIX",
         ],
-        image: "/assets/img/misc/misc-square-12.webp",
       },
       {
         id: 3,
@@ -425,7 +404,6 @@ export const services = [
           "Support testing activities on all platforms (Windows, Linux, Apple Mac, Unix) at no extra cost",
           "Expertise in testing real-life user scenarios for every software release",
         ],
-        image: "/assets/img/misc/misc-square-13.webp",
       },
       {
         id: 4,
@@ -444,7 +422,6 @@ export const services = [
           "Mold design and casting",
           "Sheet metal and welding design",
         ],
-        image: "/assets/img/misc/misc-square-14.webp",
       },
       {
         id: 5,
@@ -473,7 +450,6 @@ export const services = [
           "Extended Finite Element Method (XFEM)",
           "Manufacturing process simulation: welding, machining, sheet metal forming",
         ],
-        image: "/assets/img/misc/misc-square-15.webp",
       },
     ],
   },
@@ -504,7 +480,6 @@ export const services = [
           "Support and sustenance",
           "CAD Customization using NX Open API, CATIA CAA, Pro/Toolkit, Autodesk Inventor API, SolidWorks API, JLink, Pro/Program",
         ],
-        image: "/assets/img/misc/misc-square-11.webp",
       },
       {
         id: 2,
@@ -526,7 +501,6 @@ export const services = [
           "Smarteam",
           "Agile",
         ],
-        image: "/assets/img/misc/misc-square-12.webp",
       },
       {
         id: 3,
@@ -548,7 +522,6 @@ export const services = [
           "SOA",
           "BPEL",
         ],
-        image: "/assets/img/misc/misc-square-13.webp",
       },
       {
         id: 4,
@@ -568,7 +541,6 @@ export const services = [
           "Migration and Upgrades",
           "Support",
         ],
-        image: "/assets/img/misc/misc-square-14.webp",
       },
     ],
   },
@@ -604,7 +576,6 @@ export const services = [
           "Tooling & Fixtures",
           "Estimation for production quantities",
         ],
-        image: "/assets/img/misc/misc-square-21.webp",
       },
       {
         id: 2,
@@ -624,7 +595,6 @@ export const services = [
           "Tolerance Stack-up",
           "Reverse Engineering",
         ],
-        image: "/assets/img/misc/misc-square-22.webp",
       },
       {
         id: 3,
@@ -641,7 +611,6 @@ export const services = [
           "CAE: Ansa, LSDyna, NX Simulation, Hypermesh, Abaqus, Ansys, MSC Nastran, SolidWorks Simulation",
           "NC Programming Services",
         ],
-        image: "/assets/img/misc/misc-square-23.webp",
       },
     ],
   },
@@ -672,7 +641,6 @@ export const services = [
           "Construction Management Software Development and Smart Building",
           "Energy Simulation",
         ],
-        image: "/assets/img/misc/misc-square-24.webp",
       },
     ],
   },
@@ -697,7 +665,6 @@ export const services = [
           "Experience from shipyards, vessel operators & equipment manufacturers",
           "Focus on safe and efficient vessel designs",
         ],
-        image: "/assets/img/misc/misc-square-1.webp",
       },
       {
         id: 2,
@@ -714,7 +681,6 @@ export const services = [
           "3D modelling for ship structures",
           "Production drawings & nesting",
         ],
-        image: "/assets/img/misc/misc-square-2.webp",
       },
       {
         id: 3,
@@ -734,7 +700,6 @@ export const services = [
           "Cable trays",
           "HVAC systems",
         ],
-        image: "/assets/img/misc/misc-square-3.webp",
       },
       {
         id: 4,
@@ -746,7 +711,6 @@ export const services = [
           "We provide specialized interior and exterior design services tailored for the shipbuilding industry, covering accommodation and deck areas.",
         highlight: "Intricate design services for inner and outer ship areas.",
         points: ["Accommodation areas", "Inner deck areas", "Outer deck areas"],
-        image: "/assets/img/misc/misc-square-4.webp",
       },
       {
         id: 5,
@@ -762,7 +726,6 @@ export const services = [
           "Exterior 3D visualization",
           "Intricate detailing for ship design",
         ],
-        image: "/assets/img/misc/misc-square-5.webp",
       },
       {
         id: 6,
@@ -782,7 +745,6 @@ export const services = [
           "Local Structure Vibration Analysis",
           "Computational Fluid Dynamics (CFD) Analysis",
         ],
-        image: "/assets/img/misc/misc-square-6.webp",
       },
     ],
   },
@@ -810,7 +772,6 @@ export const services = [
           "Machining simulation via CNC programming, tool and path generation",
           "Skill sets: C, C++, Java, Tecnomatix, .NET API, XML",
         ],
-        image: "/assets/img/misc/misc-square-12.webp",
       },
     ],
   },
@@ -836,7 +797,6 @@ export const services = [
           "Smart equipment",
           "Apps for connected cars",
         ],
-        image: "/assets/img/misc/misc-square-12.webp",
       },
     ],
   },
@@ -881,7 +841,6 @@ export const services = [
           "AI-based in-vehicle infotainment systems",
           "AI Driver Assist and autonomous vehicles",
         ],
-        image: "/assets/img/misc/misc-square-14.webp",
       },
       {
         id: 3,
@@ -898,7 +857,6 @@ export const services = [
           "Virtual fitting rooms and mirrors using AI and AR",
           "In-store assistance",
         ],
-        image: "/assets/img/misc/misc-square-15.webp",
       },
     ],
   },
@@ -925,7 +883,6 @@ export const services = [
           "Get access to workshop equipment safety & security with enterprise mobile apps",
           "Production planning & scheduling on the go",
         ],
-        image: "/assets/img/misc/misc-square-16.webp",
       },
       {
         id: 2,
@@ -943,7 +900,6 @@ export const services = [
           "Eliminate redundant activities and improve collaboration between SBUs",
           "Maintain product quality through scheduled equipment maintenance",
         ],
-        image: "/assets/img/misc/misc-square-17.webp",
       },
       {
         id: 3,
@@ -961,7 +917,6 @@ export const services = [
           "Smooth data flow across stakeholders including customers, vendors & suppliers",
           "Operational efficiency through fleet management",
         ],
-        image: "/assets/img/misc/misc-square-18.webp",
       },
     ],
   },
@@ -986,7 +941,6 @@ export const services = [
           "Creation of 3D content, animations, and special effects",
           "Interactive VR/AR project development",
         ],
-        image: "/assets/img/misc/misc-square-19.webp",
       },
       {
         id: 2,
@@ -1003,7 +957,6 @@ export const services = [
           "Seamless integration of AR with other technologies",
           "Enhanced user engagement with AR-driven experiences",
         ],
-        image: "/assets/img/misc/misc-square-20.webp",
       },
       {
         id: 3,
@@ -1020,7 +973,6 @@ export const services = [
           "Support for multiple VR platforms",
           "Engaging and immersive virtual experiences",
         ],
-        image: "/assets/img/misc/misc-square-21.webp",
       },
       {
         id: 4,
@@ -1037,7 +989,6 @@ export const services = [
           "Business activity management through MR interfaces",
           "Enhanced productivity from anywhere",
         ],
-        image: "/assets/img/misc/misc-square-22.webp",
       },
       {
         id: 5,
@@ -1054,7 +1005,6 @@ export const services = [
           "Cross-platform compatibility",
           "Optimized experiences across devices",
         ],
-        image: "/assets/img/misc/misc-square-23.webp",
       },
       {
         id: 6,
@@ -1071,7 +1021,6 @@ export const services = [
           "Interactive location-aware AR experiences",
           "Cross-industry applications with AR and maps",
         ],
-        image: "/assets/img/misc/misc-square-24.webp",
       },
       {
         id: 7,
@@ -1088,7 +1037,6 @@ export const services = [
           "Support for all major platforms",
           "Immersive experiences with high-quality video",
         ],
-        image: "/assets/img/misc/misc-square-25.webp",
       },
       {
         id: 8,
@@ -1105,7 +1053,6 @@ export const services = [
           "Ensuring product stability",
           "Optimized business processes through maintenance",
         ],
-        image: "/assets/img/misc/misc-square-26.webp",
       },
     ],
   },

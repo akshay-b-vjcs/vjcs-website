@@ -207,7 +207,9 @@
 .service-details .service-gallery img:hover {
   transform: scale(1.05);
 }
-
+.img{
+  background-size: cover;
+}
 .service-details .service-sidebar .service-menu {
   background: var(--surface-color);
   padding: 30px;
