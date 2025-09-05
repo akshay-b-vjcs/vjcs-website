@@ -1,18 +1,25 @@
 "use client";
-import React, { useState, useRef } from "react";
-import Image from "next/image";
+import React, { useState, useRef, useEffect } from "react";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import PageBaner from "@/components/PageBaner/PageBaner";
 import "./ServiceDetails.css";
 
-// Import all images
+// Desktop images
 import imgCax from "@image/services/Home-carousel-cax.png";
 import imgPlm from "@image/services/Home-carousel-plm.png";
 import imgEds from "@image/services/Home-carousel-eds.png";
 import imgEds1 from "@image/services/Home-carousel-eds-1.png";
 
-const serviceBannerMap: Record<string, typeof imgCax> = {
+// Mobile images
+import imgCaxMob from "@image/services/mob/Home-carousel-cax.png";
+import imgPlmMob from "@image/services/mob/Home-carousel-plm.png";
+import imgEdsMob from "@image/services/mob/Home-carousel-eds.png";
+import imgEds1Mob from "@image/services/mob/Home-carousel-eds-2.png";
+
+// Map desktop banners
+const serviceBannerMap: Record<string, StaticImageData> = {
   "cad-cam-development": imgCax,
   "cae-development": imgCax,
   "cax-software-testing": imgCax,
@@ -27,6 +34,21 @@ const serviceBannerMap: Record<string, typeof imgCax> = {
   "ar-vr-apps": imgEds1,
 };
 
+// Map mobile banners
+const serviceBannerMapMob: Record<string, StaticImageData> = {
+  "cad-cam-development": imgCaxMob,
+  "cae-development": imgCaxMob,
+  "cax-software-testing": imgCaxMob,
+  plm: imgPlmMob,
+  "product-design": imgEdsMob,
+  "bim-modelling": imgEdsMob,
+  "marine-engineering": imgEdsMob,
+  "virtual-manufacturing": imgEds1Mob,
+  "industrial-iot": imgEds1Mob,
+  "ai-solutions": imgEds1Mob,
+  "enterprise-web-mobile": imgEds1Mob,
+  "ar-vr-apps": imgEds1Mob,
+};
 
 interface Feature {
   icon: string;
@@ -51,11 +73,26 @@ interface Props {
 }
 
 const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
-  const banner = serviceBannerMap[serviceName];
-  console.log("banner", banner);
   const pathname = usePathname();
   const [activeTab, setActiveTab] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
   const featuresRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const banner = isMobile
+    ? serviceBannerMapMob[serviceName]
+    : serviceBannerMap[serviceName];
+
+  if (!banner) return <p>Service not found</p>;
+
   const scrollToFeatures = () => {
     featuresRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
@@ -96,7 +133,6 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
       ],
     },
   ];
-  if (!banner) return <p>Service not found</p>;
 
   return (
     <>
@@ -105,15 +141,9 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
       <section id="service-details" className="service-details section mt-5">
         <div className="container">
           <div className="row gy-5">
+            {/* Left Column */}
             <div className="col-lg-8">
               <div className="service-hero">
-                {/* <Image
-                  src={serviceImage}
-                  width={800}
-                  height={500}
-                  alt=""
-                  className="img-fluid"
-                /> */}
                 <Image
                   src={banner}
                   alt={serviceName}
@@ -121,24 +151,21 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
                   height={500}
                   className="img-fluid rounded-4 shadow img"
                   style={{
-                    objectFit: "contain",
-                    width: "100%", 
-                    height: "auto", 
+                    objectFit: "cover",
+                    width: "100%",
+                    height: "auto",
                   }}
                 />
-
-                {/* <div className="service-badge">
-                  <span>Premium Service</span>
-                </div> */}
               </div>
 
               <div className="service-content">
-                {/* Header */}
                 <div className="service-header">
                   <h2>{service.title}</h2>
                   <p className="service-intro">{service.intro}</p>
                 </div>
-                <section id="features" className="features section py-5 ">
+
+                {/* Features */}
+                <section id="features" className="features section py-5">
                   <div className="container">
                     <div className="row g-4">
                       {/* Left Tabs */}
@@ -172,7 +199,7 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
 
                       {/* Right Content */}
                       <div
-                        className="col-lg-8 scroll-offset "
+                        className="col-lg-8 scroll-offset"
                         ref={featuresRef}
                       >
                         <div className="tab-content">
@@ -218,7 +245,6 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
             {/* Right Column */}
             <div className="col-lg-4">
               <div className="service-sidebar">
-                {/* Services Menu */}
                 <div className="service-menu">
                   <h4>Our Services</h4>
                   <div className="menu-list">
@@ -237,13 +263,14 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
                     })}
                   </div>
                 </div>
+
                 {/* Contact Card */}
                 <div className="contact-card">
                   <div className="contact-content">
                     <h4>Need Help?</h4>
                     <p>
-                      Sed porttitor lectus nibh. Vestibulum ac diam sit amet
-                      quam vehicula elementum sed sit amet dui.
+                      Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam
+                      vehicula elementum sed sit amet dui.
                     </p>
                     <div className="contact-info">
                       <div className="contact-item">
