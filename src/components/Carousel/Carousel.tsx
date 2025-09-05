@@ -10,10 +10,16 @@ import imgPlm from "@image/services/Home-carousel-plm.png";
 import imgEds from "@image/services/Home-carousel-eds.png";
 import imgEds1 from "@image/services/Home-carousel-eds-1.png";
 
+import imgCaxMob from "@image/services/mob/Home-carousel-cax-1.png";
+import imgPlmMob from "@image/services/mob/Home-carousel-plm-1.png";
+import imgEdsMob from "@image/services/mob/Home-carousel-eds-1.png";
+import imgEds1Mob from "@image/services/mob/Home-carousel-eds-3.png";
+
 const Carousel = () => {
   const slides = [
     {
-      src: imgCax,
+      desktop: imgCax,
+      mobile: imgCaxMob,
       title: "CAx Software Services",
       buttons: [
         {
@@ -28,12 +34,14 @@ const Carousel = () => {
       ],
     },
     {
-      src: imgPlm,
+      desktop: imgPlm,
+      mobile: imgPlmMob,
       title: "PLM",
       buttons: [{ text: "Learn More", link: "/service-details/plm" }],
     },
     {
-      src: imgEds,
+      desktop: imgEds,
+      mobile: imgEdsMob,
       title: "Engineering Design Services",
       buttons: [
         { text: "Product Design", link: "/service-details/product-design" },
@@ -48,7 +56,8 @@ const Carousel = () => {
       ],
     },
     {
-      src: imgEds1,
+      desktop: imgEds1,
+      mobile: imgEds1Mob,
       title: "Digitization Services",
       buttons: [
         {
@@ -86,19 +95,15 @@ const Carousel = () => {
       <div className="carousel-inner">
         {slides.map((s, i) => (
           <div key={i} className={`carousel-item ${i === 0 ? "active" : ""}`}>
-            <div
-              className="d-block w-100 position-relative"
-              style={{ height: "600px" }}
-            >
-              <Image
-                src={s.src}
-                alt={s.title}
-                fill
-                priority={i === 0}
-                style={{ objectFit: "cover" }}
-              />
-              <div className="carousel-caption d-flex flex-column justify-content-end align-items-start h-100">
-                <div className="service-buttons ">
+            <div className="d-block w-100 position-relative mt-5 carousel-image-wrapper">
+              <picture>
+                <source srcSet={s.mobile.src} media="(max-width: 768px)" />
+                <Image src={s.desktop} alt={s.title} fill priority={i === 0} />
+              </picture>
+
+      <div className="carousel-caption d-flex flex-column align-items-start h-100 custom-caption">
+
+                <div className="service-buttons">
                   {s.buttons.map((btn, idx) => (
                     <Link key={idx} href={btn.link} className="service-btn">
                       {btn.text}

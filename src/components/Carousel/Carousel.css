@@ -1,14 +1,24 @@
 .service-buttons {
   display: flex;
-  flex-wrap: nowrap; /* prevent wrapping */
+  flex-wrap: wrap; 
   gap: 12px;
   margin-top: 10px;
-  overflow-x: auto; /* allow horizontal scrolling if buttons overflow */
-  padding-bottom: 5px; /* optional: spacing from bottom */
+  overflow-x: auto;      /* mobile वर horizontal scroll */
+  padding-bottom: 5px; 
 }
 
 .service-buttons::-webkit-scrollbar {
-  display: none; /* hide scrollbar for cleaner look */
+  display: none; 
+}
+.custom-caption {
+  justify-content: start; 
+  margin-top: 40px;/* default mobile */
+}
+
+@media (min-width: 768px) {
+  .custom-caption {
+    justify-content: flex-end; /* desktop */
+  }
 }
 
 .service-btn {
@@ -22,12 +32,35 @@
   box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
   transition: all 0.3s ease;
   border: 1px solid transparent;
-  white-space: nowrap; /* prevent text from breaking inside button */
-  flex: 0 0 auto; /* keep each button's width fixed */
+  white-space: nowrap; 
+  flex: 0 0 auto;        /* buttons ek line madhe scroll hotil */
 }
 
 .service-btn:hover {
   background: linear-gradient(135deg, #0056b3, #004099);
   transform: translateY(-2px);
   box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4);
+}
+
+.carousel-image-wrapper {
+  height: 650px;       /* default desktop height */
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .carousel-image-wrapper {
+    height: 770px;     /* mobile height */
+  }
+
+  .service-buttons {
+    gap: 30px;
+    margin-top: 100px; 
+    margin-left: 40px;
+    text-align: center;  /* mobile वर spacing कमी */
+  }
+
+  .service-btn {
+    font-size: 13px;
+    padding: 8px 16px; /* छोटं button mobile साठी */
+  }
 }
