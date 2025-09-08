@@ -1,12 +1,13 @@
 "use client";
 
-import PageBaner from "../PageBaner/PageBaner";
+import PageBaner from "@components/PageBaner/PageBaner";
 import "./Disclaimer.css";
 
 const Disclaimer = () => {
   return (
+  <>
+    <PageBaner heading={"Disclaimer"} />
     <section className="terms-section">
-      <PageBaner heading={"Disclaimer"} description={" "}></PageBaner>
       <div className="container mt-3">
         <div className="row justify-content-center">
           <div className="col-lg-8 terms-text p-4 rounded-3  shadow ">
@@ -118,6 +119,7 @@ const Disclaimer = () => {
         </div>
       </div>
     </section>
+  </>
   );
 };
 

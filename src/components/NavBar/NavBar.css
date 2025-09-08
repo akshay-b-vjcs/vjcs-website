@@ -294,7 +294,7 @@
   }
 
   .navmenu .megamenu-2 .tab-navigation {
-    width: 250px;
+    width: 280px;
     background-color: color-mix(in srgb, var(--accent-color), transparent 97%);
     border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
     padding: 25px 0;
@@ -366,8 +366,8 @@
 
   .navmenu .megamenu-2 .tab-content .content-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    /* grid-template-columns: 1fr 1fr; */
+    /* gap: 40px; */
     margin-bottom: 30px;
     align-items: start;
   }
@@ -382,8 +382,10 @@
   }
 
   .navmenu .megamenu-2 .tab-content .content-grid .product-section .product-list {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 5px;
   }
 

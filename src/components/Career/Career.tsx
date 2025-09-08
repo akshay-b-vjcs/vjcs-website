@@ -3,7 +3,7 @@ import Image from "next/image";
 import "./Career.css";
 import aboutImage from "@image/about/about-square-8.webp";
 import { useState } from "react";
-import PageBaner from "../PageBaner/PageBaner";
+import PageBaner from "@components/PageBaner/PageBaner";
 
 const  Career = () => {
 const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -56,9 +56,9 @@ const [activeIndex, setActiveIndex] = useState<number | null>(null);
   ];
 
   return (
+  <>
+    <PageBaner heading="Career"/>
     <section id="about" className="py-5 ">
-            <PageBaner heading="Career" description="Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias." />
-
       <div className="container">
         {/* About Section */}
         <div className="row align-items-center">
@@ -155,6 +155,7 @@ const [activeIndex, setActiveIndex] = useState<number | null>(null);
         </div>
       </div>
     </section>
+  </>
   );
 }
 export default Career ;

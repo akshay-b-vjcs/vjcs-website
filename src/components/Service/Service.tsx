@@ -1,63 +1,42 @@
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import CountUp from "../Count/Count";
-import Card from "../Card/Card";
-import PageBaner from "../PageBaner/PageBaner";
+import CountUp from "@components/Count/Count"
+import Card from "@components/Card/Card";
+import PageBaner from "@components/PageBaner/PageBaner";
 
 const Service = () => {
   return (
+  <>
+    <PageBaner
+      heading="Services"
+    />
     <section
       id="services"
-      className="services py-5 bg-light position-relative overflow-hidden mt-5"
+      className="services"
     >
-      <PageBaner
-        heading="Services"
-        description="Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias."
-      />
-
-      <div className="container text-center mb-5 mt-5 section-title">
-        <h2 className="fw-bold">Services</h2>
-        <p className="text-dark">CHECK OUR SERVICES</p>
-      </div>
-
       <div className="container">
         <div className="row gy-4">
           <div className="col-lg-6 col-md-6 ">
             <Card
-              icon="bi bi-cpu"
+              icon="bi bi-building-gear"
               title="CAx Software Services"
-              description="Comprehensive CAD/CAM solutions to streamline workflows."
+              description="Delivering advanced CAD/CAM and CAE development solutions with rigorous QA & testing to power precision engineering and digital innovation."
               links={[
                 {
                   text: "CAD/CAM Development",
                   url: "/service-details/cad-cam-development",
-                  icon: "bi bi-cpu",
+                  icon: "bi bi-code-square",
                 },
                 {
                   text: "CAE Development",
                   url: "/service-details/cae-development",
-                  icon: "bi bi-cpu",
+                  icon: "bi bi-bounding-box",
                 },
                 {
                   text: "CAx Software QA & Testing",
                   url: "/service-details/cax-software-testing",
-                  icon: "bi bi-cpu",
-                },
-              ]}
-            />
-          </div>
-
-          <div className="col-lg-6 col-md-6">
-            <Card
-              icon="bi bi-diagram-3"
-              title="PLM"
-              description="Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar."
-              links={[
-                {
-                  text: "Learn More",
-                  url: "/service-details/plm",
-                  icon: "bi bi-diagram-3",
+                  icon: "bi bi-check2-square",
                 },
               ]}
             />
@@ -67,17 +46,17 @@ const Service = () => {
             <Card
               icon="bi bi-gear-wide-connected"
               title="Engineering Design Services"
-              description="Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec rutrum congue leo eget malesuada."
+              description="Empowering innovation through precision-driven Product Design, intelligent BIM Modeling, and specialized Marine Engineering solutions tailored for modern industry."
               links={[
                 {
                   text: "Product Design",
                   url: "/service-details/product-design",
-                  icon: "bi bi-gear-wide-connected",
+                  icon: "bi bi-box",
                 },
                 {
                   text: "BIM Modelling Services",
                   url: "/service-details/bim-modelling",
-                  icon: "bi bi-gear-wide-connected",
+                  icon: "bi bi-building-fill-gear",
                 },
                 {
                   text: "Marine Engineering",
@@ -90,37 +69,51 @@ const Service = () => {
 
           <div className="col-lg-6 col-md-6">
             <Card
-              icon="bi bi-layers"
+              icon="bi bi-cpu"
               title="Digitization Services"
-              description="Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar."
+              description="Accelerating industrial innovation through Virtual Manufacturing, smart IIoT connectivity, AI-powered solutions, scalable enterprise applications, and immersive Augmented & Virtual Reality experiences."
               links={[
                 {
                   text: "Virtual Manufacturing",
                   url: "/service-details/virtual-manufacturing",
-                  icon: "bi bi-layers",
+                  icon: "bi bi-cpu",
                 },
                 {
                   text: "Industrial Internet of Things",
                   url: "/service-details/industrial-iot",
-                  icon: "bi bi-layers",
+                  icon: "bi bi-wifi",
                 },
                 {
                   text: "AI Solutions & Services",
                   url: "/service-details/ai-solutions",
-                  icon: "bi bi-layers",
+                  icon: "bi bi-robot",
                 },
                 {
                   text: "Enterprise web & mobile",
                   url: "/service-details/enterprise-web-mobile",
-                  icon: "bi bi-layers",
+                  icon: "bi bi-phone",
                 },
                 {
                   text: "Augmented & Virtual Reality Apps",
                   url: "/service-details/ar-vr-apps",
-                  icon: "bi bi-layers",
+                  icon: "bi bi-vr",
                 },
               ]}
-              price="Starting at $1,899"
+            />
+          </div>
+
+          <div className="col-lg-6 col-md-6">
+            <Card
+              icon="bi bi-diagram-3"
+              title="PLM"
+              description="Comprehensive PLM solutions covering global system commissioning, CAD customization, seamless tool integration, and end-to-end support—empowering businesses to streamline product development from concept to sustainment."
+              links={[
+                {
+                  text: "Learn More",
+                  url: "/service-details/plm",
+                  icon: "bi bi-diagram-3",
+                },
+              ]}
             />
           </div>
         </div>
@@ -156,6 +149,7 @@ const Service = () => {
         </div>
       </div>
     </section>
+  </>
   );
 };
 export default Service;
