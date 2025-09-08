@@ -1,13 +1,13 @@
 "use client";
 
-import PageBaner from "../PageBaner/PageBaner";
+import PageBaner from "@components/PageBaner/PageBaner";
 import "./Terms-Condition.css";
 
-const TermsCondition = () => {
+const TermsCondition:React.FC = () => {
   return (
+  <>
+    <PageBaner heading={"Terms Of Use"} />
     <section className="terms-section">
-      <PageBaner heading={"Terms Of Use"} description={" "} />
-
       <div className="container mt-5">
         <div className="row g-4">
           {/* Left Column */}
@@ -112,6 +112,7 @@ const TermsCondition = () => {
         </div>
       </div>
     </section>
+  </>
   );
 };
 

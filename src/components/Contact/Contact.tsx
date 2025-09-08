@@ -1,7 +1,7 @@
 "use client";
 
 import { SetStateAction, useState } from "react";
-import Card from "../Card/Card";
+import Card from "@components/Card/Card"
 import PageBaner from "@components/PageBaner/PageBaner";
 import "./Contact.css";
 import ReCAPTCHA from "react-google-recaptcha";
@@ -194,8 +194,9 @@ const Contact: React.FC = () => {
                             "CAx Software Services"
                           )}
                           onChange={handleCheckboxChange}
+                          id="CAx_Software_Services"
                         />
-                        <label className="form-check-label">
+                        <label className="form-check-label" htmlFor="CAx_Software_Services">
                           CAx Software Services
                         </label>
                       </div>
@@ -207,8 +208,9 @@ const Contact: React.FC = () => {
                           value="PLM"
                           checked={formData.natureOfService.includes("PLM")}
                           onChange={handleCheckboxChange}
+                          id="PLM"
                         />
-                        <label className="form-check-label">PLM</label>
+                        <label className="form-check-label" htmlFor="PLM">PLM</label>
                       </div>
                       <div className="form-check">
                         <input
@@ -220,8 +222,9 @@ const Contact: React.FC = () => {
                             "Engineering Design Services"
                           )}
                           onChange={handleCheckboxChange}
+                          id="Engineering_Design_Services"
                         />
-                        <label className="form-check-label">
+                        <label className="form-check-label" htmlFor="Engineering_Design_Services">
                           Engineering Design Services
                         </label>
                       </div>
@@ -235,8 +238,9 @@ const Contact: React.FC = () => {
                             "Digitization Services"
                           )}
                           onChange={handleCheckboxChange}
+                          id="Digitization_Services"
                         />
-                        <label className="form-check-label">
+                        <label className="form-check-label" htmlFor="Digitization_Services">
                           Digitization Services
                         </label>
                       </div>
@@ -248,8 +252,9 @@ const Contact: React.FC = () => {
                           value="Other"
                           checked={formData.natureOfService.includes("Other")}
                           onChange={handleCheckboxChange}
+                          id="Other"
                         />
-                        <label className="form-check-label">Other</label>
+                        <label className="form-check-label" htmlFor="Other">Other</label>
                       </div>
                     </div>
                     <div className="col-md-6 form-group pt-3 mt-md-0">
