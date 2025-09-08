@@ -57,7 +57,7 @@ const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
     <section id="about" className="py-5 ">
-            <PageBaner heading="Career" description="Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias." />
+            <PageBaner heading="Career" description="At VJ Coresoft Pvt. Ltd. employees are important asset of the company. Honesty, ethics, value and our commitments are part of our culture. Working on advance CAx Technologies, we are specialist in tackling complex challenges." />
 
       <div className="container">
         {/* About Section */}

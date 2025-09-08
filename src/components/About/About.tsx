@@ -26,7 +26,7 @@ const  About = () => {
     <section
       id="featured-services"
       className="featured-services section  light-background"
-    >      <PageBaner heading="About" description="Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias." />
+    >      <PageBaner heading="About" description="VJ Coresoft delivers advanced engineering solutions in CAD, CAM, CAE, and digitization for smarter manufacturing. With global expertise and innovative technology, we help businesses enhance efficiency and drive growth." />
 
       <div className="container mt-5">
         <div className="row mx-1  justify-content-between">

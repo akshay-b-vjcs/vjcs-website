@@ -13,7 +13,7 @@ const Service = () => {
     >
       <PageBaner
         heading="Services"
-        description="Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias."
+        description="VJCS offers expert services in software development, testing, and engineering solutions for CAD, CAM, CAE, and PLM. We empower industries with smart manufacturing, digitization, and innovative technology solutions."
       />
 
       <div className="container text-center mb-5 mt-5 section-title">
@@ -52,7 +52,7 @@ const Service = () => {
             <Card
               icon="bi bi-diagram-3"
               title="PLM"
-              description="Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar."
+              description="VJCS brings years of expertise in PLM solutions across Aerospace, Automotive, and Heavy Industries. We deliver end-to-end services from implementation and integration to customization, testing, and support for global PLM systems."
               links={[
                 {
                   text: "Learn More",
@@ -67,7 +67,7 @@ const Service = () => {
             <Card
               icon="bi bi-gear-wide-connected"
               title="Engineering Design Services"
-              description="Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec rutrum congue leo eget malesuada."
+              description="VJCS offers comprehensive engineering design services to support product development across industries. From concept design to detailed modeling, we deliver precise and efficient solutions tailored to client needs."
               links={[
                 {
                   text: "Product Design",
@@ -92,7 +92,7 @@ const Service = () => {
             <Card
               icon="bi bi-layers"
               title="Digitization Services"
-              description="Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar."
+              description="VJCS provides advanced digitization solutions to transform engineering and manufacturing processes. We specialize in virtual manufacturing, IoT integration, AI-driven insights, and AR/VR applications for smarter operations."
               links={[
                 {
                   text: "Virtual Manufacturing",
