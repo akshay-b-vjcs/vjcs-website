@@ -1,7 +1,7 @@
 "use client";
 
 import { SetStateAction, useState } from "react";
-import Card from "../Card/Card";
+import Card from "@components/Card/Card"
 import PageBaner from "@components/PageBaner/PageBaner";
 import "./Contact.css";
 import ReCAPTCHA from "react-google-recaptcha";

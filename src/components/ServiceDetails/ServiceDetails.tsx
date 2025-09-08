@@ -49,11 +49,6 @@ const ServiceDetails:React.FC<Props> = ({ service }: Props) => {
       ],
     },
     {
-      name: "PLM",
-      href: "/service-details/plm",
-      subservices: ["/service-details/plm"],
-    },
-    {
       name: "Engineering Design Services",
       href: "/service-details/product-design",
       subservices: [
@@ -73,13 +68,17 @@ const ServiceDetails:React.FC<Props> = ({ service }: Props) => {
         "/service-details/ar-vr-apps",
       ],
     },
+    {
+      name: "PLM",
+      href: "/service-details/plm",
+      subservices: ["/service-details/plm"],
+    },
   ];
 
   return (
     <>
-      <PageBaner heading={service.title} description={""} />
-
-      <section id="service-details" className="service-details section mt-5">
+      <PageBaner heading={service.title} />
+      <section id="service-details" className="service-details section">
         <div className="container">
           <div className="row gy-5">
             <div className="col-lg-8">

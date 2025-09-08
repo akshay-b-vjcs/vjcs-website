@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import "./page.css";
 
@@ -10,21 +11,16 @@ export default function Home() {
       <div className="hero-background">
         <Image src={bg14} alt="" data-aos-duration="1000" />
         <div className="overlay"></div>
-      </div>
-
+      </div> 
       <div className="container">
-        <div className="row align-items-center">
+         <div className="row align-items-center">
           <div className="col-lg-6">
             <div className="hero-content">
               <span className="hero-badge">Innovative Solutions</span>
               <h1>Transform Your Business with Modern Technology</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud.</p>
               <div className="hero-actions">
-                <a href="/services" className="btn-primary">Explore Services</a>
-                {/* <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" className="btn-secondary glightbox">
-                  <i className="bi bi-play-circle"></i>
-                  <span>Watch Demo</span>
-                </a> */}
+                <Link href="/services" className="btn-primary">Explore Services</Link>
               </div>
               <div className="hero-stats">
                 <div className="stat-item">
@@ -68,9 +64,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> 
       </div>
-
     </section>
   )
 }

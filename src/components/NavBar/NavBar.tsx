@@ -21,135 +21,127 @@ export default function NavBar() {
         <nav id="navmenu" className="navmenu">
           <ul>
             <li>
-              <Link href="/" className="active">
-                Home
-              </Link>
+              <Link href="/" className="active">Home</Link>
             </li>
             <li>
               <Link href="/about">About</Link>
             </li>
-            <li>
-              <Link href="/services">Services</Link>
-            </li>
-            <li>
-              <Link href="/career">Career</Link>
-            </li>
             {/* <!-- Megamenu 2 --> */}
             <li className="megamenu-2">
-              <a href="#">
-                <span>Megamenu</span>{" "}
+              <Link href="/services">
+                <span>Services</span>{" "}
                 <i className="bi bi-chevron-down toggle-dropdown"></i>
-              </a>
+              </Link>
               {/* <!-- Mobile Megamenu --> */}
               <ul className="mobile-megamenu">
                 <li>
-                  <a href="#">Product Analytics</a>
+                  <Link href="#">Product Analytics</Link>
                 </li>
                 <li>
-                  <a href="#">Customer Insights</a>
+                  <Link href="#">Customer Insights</Link>
                 </li>
                 <li>
-                  <a href="#">Market Research</a>
+                  <Link href="#">Market Research</Link>
                 </li>
 
                 <li className="dropdown">
-                  <a href="#">
+                  <Link href="#">
                     <span>Enterprise Software</span>{" "}
                     <i className="bi bi-chevron-down toggle-dropdown"></i>
-                  </a>
+                  </Link>
                   <ul>
                     <li>
-                      <a href="#">CRM Solutions</a>
+                      <Link href="#">CRM Solutions</Link>
                     </li>
                     <li>
-                      <a href="#">ERP Systems</a>
+                      <Link href="#">ERP Systems</Link>
                     </li>
                     <li>
-                      <a href="#">Workflow Automation</a>
+                      <Link href="#">Workflow Automation</Link>
                     </li>
                     <li>
-                      <a href="#">Document Management</a>
+                      <Link href="#">Document Management</Link>
                     </li>
                     <li>
-                      <a href="#">Business Intelligence</a>
+                      <Link href="#">Business Intelligence</Link>
                     </li>
                     <li>
-                      <a href="#">Integration Platform</a>
+                      <Link href="#">Integration Platform</Link>
                     </li>
                   </ul>
                 </li>
 
                 <li className="dropdown">
-                  <a href="#">
+                  <Link href="#">
                     <span>Development Tools</span>{" "}
                     <i className="bi bi-chevron-down toggle-dropdown"></i>
-                  </a>
+                  </Link>
                   <ul>
                     <li>
-                      <a href="#">Code Editors</a>
+                      <Link href="#">Code Editors</Link>
                     </li>
                     <li>
-                      <a href="#">Version Control</a>
+                      <Link href="#">Version Control</Link>
                     </li>
                     <li>
-                      <a href="#">Testing Frameworks</a>
+                      <Link href="#">Testing Frameworks</Link>
                     </li>
                     <li>
-                      <a href="#">Deployment Tools</a>
+                      <Link href="#">Deployment Tools</Link>
                     </li>
                     <li>
-                      <a href="#">API Management</a>
+                      <Link href="#">API Management</Link>
                     </li>
                     <li>
-                      <a href="#">Performance Monitoring</a>
+                      <Link href="#">Performance Monitoring</Link>
                     </li>
                   </ul>
                 </li>
 
                 <li className="dropdown">
-                  <a href="#">
+                  <Link href="#">
                     <span>Creative Suite</span>{" "}
                     <i className="bi bi-chevron-down toggle-dropdown"></i>
-                  </a>
+                  </Link>
                   <ul>
                     <li>
-                      <a href="#">Design Software</a>
+                      <Link href="#">Design Software</Link>
                     </li>
                     <li>
-                      <a href="#">Video Editing</a>
+                      <Link href="#">Video Editing</Link>
                     </li>
                     <li>
-                      <a href="#">Audio Production</a>
+                      <Link href="#">Audio Production</Link>
                     </li>
                     <li>
-                      <a href="#">Animation Tools</a>
+                      <Link href="#">Animation Tools</Link>
                     </li>
                     <li>
-                      <a href="#">Photo Editing</a>
+                      <Link href="#">Photo Editing</Link>
                     </li>
                     <li>
-                      <a href="#">3D Modeling</a>
+                      <Link href="#">3D Modeling</Link>
                     </li>
                   </ul>
                 </li>
 
                 <li className="dropdown">
-                  <a href="#">
+                  <Link href="#">
                     <span>Resources</span>{" "}
                     <i className="bi bi-chevron-down toggle-dropdown"></i>
-                  </a>
+                  </Link>
                   <ul>
                     <li>
-                      <a href="#">Documentation</a>
+                      <Link href="#">Documentation</Link>
                     </li>
                     <li>
-                      <a href="#">Tutorials</a>
+                      <Link href="#">Tutorials</Link>
                     </li>
                     <li>
-                      <a href="#">Community</a>
+                      <Link href="#">Community</Link>
                     </li>
                     <li>
-                      <a href="#">Blog Posts</a>
+                      <Link href="#">Blog Posts</Link>
                     </li>
                   </ul>
                 </li>
@@ -166,374 +158,210 @@ export default function NavBar() {
                     <li className="nav-item" role="presentation">
                       <button
                         className="nav-link active"
-                        id="2190-tab-1-tab"
+                        id="cax-software-services-tab"
                         data-bs-toggle="tab"
-                        data-bs-target="#2190-tab-1"
+                        data-bs-target="#cax-software-services"
                         type="button"
                         role="tab"
-                        aria-controls="2190-tab-1"
+                        aria-controls="cax-software-services"
                         aria-selected="true"
                       >
                         <i className="bi bi-building-gear"></i>
-                        <span>Enterprise Software</span>
+                        <span>CAx Software services</span>
                       </button>
                     </li>
                     <li className="nav-item" role="presentation">
                       <button
                         className="nav-link"
-                        id="2190-tab-2-tab"
+                        id="engineeting-design-services-tab"
                         data-bs-toggle="tab"
-                        data-bs-target="#2190-tab-2"
+                        data-bs-target="#engineeting-design-services"
                         type="button"
                         role="tab"
-                        aria-controls="2190-tab-2"
+                        aria-controls="engineeting-design-services"
                         aria-selected="false"
                       >
-                        <i className="bi bi-code-slash"></i>
-                        <span>Development Tools</span>
+                        <i className="bi bi-gear-wide-connected"></i>
+                        <span>Engineering Design Services</span>
                       </button>
                     </li>
                     <li className="nav-item" role="presentation">
                       <button
                         className="nav-link"
-                        id="2190-tab-3-tab"
+                        id="digitization-services-tab"
                         data-bs-toggle="tab"
-                        data-bs-target="#2190-tab-3"
+                        data-bs-target="#digitization-services"
                         type="button"
                         role="tab"
-                        aria-controls="2190-tab-3"
+                        aria-controls="digitization-services"
                         aria-selected="false"
                       >
-                        <i className="bi bi-palette"></i>
-                        <span>Creative Suite</span>
+                        <i className="bi bi-cpu"></i>
+                        <span>Digitization Services</span>
                       </button>
                     </li>
                     <li className="nav-item" role="presentation">
                       <button
                         className="nav-link"
-                        id="2190-tab-4-tab"
+                        id="plm-tab"
                         data-bs-toggle="tab"
-                        data-bs-target="#2190-tab-4"
+                        data-bs-target="#plm"
                         type="button"
                         role="tab"
-                        aria-controls="2190-tab-4"
+                        aria-controls="plm"
                         aria-selected="false"
                       >
-                        <i className="bi bi-journal-text"></i>
-                        <span>Resources</span>
+                        <i className="bi bi-diagram-3"></i>
+                        <span>PLM</span>
                       </button>
                     </li>
                   </ul>
                 </div>
 
                 <div className="tab-content">
-                  {/* <!-- Enterprise Software Tab --> */}
+                  {/* <!-- CAx Software Services Tab --> */}
                   <div
                     className="tab-pane fade show active"
-                    id="2190-tab-1"
+                    id="cax-software-services"
                     role="tabpanel"
-                    aria-labelledby="2190-tab-1-tab"
+                    aria-labelledby="cax-software-services-tab"
                   >
                     <div className="content-grid">
                       <div className="product-section">
-                        <h4>Core Solutions</h4>
+                        <h4>CAx Software Development and Testing</h4>
                         <div className="product-list">
-                          <a href="#" className="product-link">
-                            <i className="bi bi-people"></i>
-                            <div>
-                              <span>CRM Solutions</span>
-                              <small>
-                                Manage customer relationships effectively
-                              </small>
-                            </div>
-                          </a>
-                          <a href="#" className="product-link">
-                            <i className="bi bi-diagram-3"></i>
-                            <div>
-                              <span>ERP Systems</span>
-                              <small>Integrate all business processes</small>
-                            </div>
-                          </a>
-                          <a href="#" className="product-link">
-                            <i className="bi bi-gear-wide"></i>
-                            <div>
-                              <span>Workflow Automation</span>
-                              <small>Streamline repetitive tasks</small>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-
-                      <div className="product-section">
-                        <h4>Data &amp; Analytics</h4>
-                        <div className="product-list">
-                          <a href="#" className="product-link">
-                            <i className="bi bi-file-earmark-text"></i>
-                            <div>
-                              <span>Document Management</span>
-                              <small>Organize and secure documents</small>
-                            </div>
-                          </a>
-                          <a href="#" className="product-link">
-                            <i className="bi bi-bar-chart"></i>
-                            <div>
-                              <span>Business Intelligence</span>
-                              <small>Make data-driven decisions</small>
-                            </div>
-                          </a>
-                          <a href="#" className="product-link">
-                            <i className="bi bi-share"></i>
-                            <div>
-                              <span>Integration Platform</span>
-                              <small>Connect all your systems</small>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="featured-banner">
-                      <div className="banner-content">
-                        <Image
-                          src={misc7}
-                          alt="Enterprise Solutions"
-                          className="banner-image"
-                        />
-                        <div className="banner-info">
-                          <h5>Enterprise Package</h5>
-                          <p>
-                            Comprehensive business management solution with
-                            advanced features and 24/7 support.
-                          </p>
-                          <a href="#" className="cta-btn">
-                            Get Started <i className="bi bi-arrow-right"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* <!-- Development Tools Tab --> */}
-                  <div
-                    className="tab-pane fade"
-                    id="2190-tab-2"
-                    role="tabpanel"
-                    aria-labelledby="2190-tab-2-tab"
-                  >
-                    <div className="content-grid">
-                      <div className="product-section">
-                        <h4>Code &amp; Build</h4>
-                        <div className="product-list">
-                          <a href="#" className="product-link">
+                          <Link href="/service-details/cad-cam-development" className="product-link">
                             <i className="bi bi-code-square"></i>
                             <div>
-                              <span>Code Editors</span>
-                              <small>Advanced development environment</small>
+                              <span>CAD/CAM Software Development	</span>
+                              <small>Advanced CAD/CAM development solutions.</small>
                             </div>
-                          </a>
-                          <a href="#" className="product-link">
-                            <i className="bi bi-git"></i>
+                          </Link>
+                          <Link href="/service-details/cae-development" className="product-link">
+                            <i className="bi bi-bounding-box"></i>
                             <div>
-                              <span>Version Control</span>
-                              <small>Track changes and collaborate</small>
+                              <span>CAE Development</span>
+                              <small>Robust CAE development services for simulation and analysis.</small>
                             </div>
-                          </a>
-                          <a href="#" className="product-link">
+                          </Link>
+                          <Link href="/service-details/cax-software-testing" className="product-link">
                             <i className="bi bi-check2-square"></i>
                             <div>
-                              <span>Testing Frameworks</span>
-                              <small>Ensure code quality</small>
+                              <span>CAx Software QA and Testing</span>
+                              <small>Streamline repetitive tasks</small>
                             </div>
-                          </a>
-                        </div>
-                      </div>
-
-                      <div className="product-section">
-                        <h4>Deploy &amp; Monitor</h4>
-                        <div className="product-list">
-                          <a href="#" className="product-link">
-                            <i className="bi bi-cloud-upload"></i>
-                            <div>
-                              <span>Deployment Tools</span>
-                              <small>Seamless application deployment</small>
-                            </div>
-                          </a>
-                          <a href="#" className="product-link">
-                            <i className="bi bi-api"></i>
-                            <div>
-                              <span>API Management</span>
-                              <small>Design and manage APIs</small>
-                            </div>
-                          </a>
-                          <a href="#" className="product-link">
-                            <i className="bi bi-speedometer2"></i>
-                            <div>
-                              <span>Performance Monitoring</span>
-                              <small>Track application performance</small>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="featured-banner">
-                      <div className="banner-content">
-                        <Image
-                          src={misc12}
-                          alt="Development Tools"
-                          className="banner-image"
-                        />
-                        <div className="banner-info">
-                          <h5>Developer Suite</h5>
-                          <p>
-                            Complete toolkit for modern development teams with
-                            integrated CI/CD pipelines.
-                          </p>
-                          <a href="#" className="cta-btn">
-                            Explore Tools <i className="bi bi-arrow-right"></i>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  {/* <!-- Creative Suite Tab --> */}
+                  {/* <!-- Engineering Design Services Tab --> */}
                   <div
                     className="tab-pane fade"
-                    id="2190-tab-3"
+                    id="engineeting-design-services"
                     role="tabpanel"
-                    aria-labelledby="2190-tab-3-tab"
+                    aria-labelledby="engineeting-design-services-tab"
+                  >
+                    <div className="content-grid">
+                      <div className="product-section">
+                        <h4>Engineering Design Services</h4>
+                        <div className="product-list">
+                          <Link href="/service-details/product-design" className="product-link">
+                            <i className="bi bi-box"></i>
+                            <div>
+                              <span>Product Design</span>
+                              <small>Concept-Design-Prototype-Production</small>
+                            </div>
+                          </Link>
+                          <Link href="/service-details/bim-modelling" className="product-link">
+                            <i className="bi bi-building-fill-gear"></i>
+                            <div>
+                              <span>BIM Modeling Desing</span>
+                              <small>BIM Modelling services and solutions that suits clients Building Information Modelling</small>
+                            </div>
+                          </Link>
+                          <Link href="/service-details/marine-engineering" className="product-link">
+                            <i className="bi bi-gear-wide-connected"></i>
+                            <div>
+                              <span>Marine Engineering Design</span>
+                              <small>High end innovative design & technical solutions to Marine Industry</small>
+                            </div>
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* <!-- Digitization Services Tab --> */}
+                  <div
+                    className="tab-pane fade"
+                    id="digitization-services"
+                    role="tabpanel"
+                    aria-labelledby="digitization-services-tab"
                   >
                     <div className="content-grid">
                       <div className="product-section">
                         <h4>Design &amp; Visual</h4>
                         <div className="product-list">
-                          <a href="#" className="product-link">
-                            <i className="bi bi-brush"></i>
+                          <Link href="/service-details/virtual-manufacturing" className="product-link">
+                            <i className="bi bi-cpu"></i>
                             <div>
-                              <span>Design Software</span>
-                              <small>Professional graphic design tools</small>
+                              <span>Virtual Manufacturing</span>
+                              <small>Virtual commissioning, Validating PLC code and HMI</small>
                             </div>
-                          </a>
-                          <a href="#" className="product-link">
-                            <i className="bi bi-camera-video"></i>
+                          </Link>
+                          <Link href="/service-details/industrial-iot" className="product-link">
+                            <i className="bi bi-wifi"></i>
                             <div>
-                              <span>Video Editing</span>
-                              <small>Professional video production</small>
+                              <span>Industrial Internet of Things</span>
+                              <small>Smart manufacturing, Smart Facilities, Smart Equipment, Apps for Connected Cars</small>
                             </div>
-                          </a>
-                          <a href="#" className="product-link">
-                            <i className="bi bi-image"></i>
+                          </Link>
+                          <Link href="/service-details/ai-solutions" className="product-link">
+                            <i className="bi bi-robot"></i>
                             <div>
-                              <span>Photo Editing</span>
-                              <small>Advanced image manipulation</small>
+                              <span>AI Solutions & Services</span>
+                              <small>Manufacturing, Automotive, Sports Fitness</small>
                             </div>
-                          </a>
-                        </div>
-                      </div>
-
-                      <div className="product-section">
-                        <h4>Media Production</h4>
-                        <div className="product-list">
-                          <a href="#" className="product-link">
-                            <i className="bi bi-music-note"></i>
+                          </Link>
+                          <Link href="/service-details/enterprise-web-mobile" className="product-link">
+                            <i className="bi bi-phone"></i>
                             <div>
-                              <span>Audio Production</span>
-                              <small>Professional audio editing</small>
+                              <span>Enterprise Web & mobile Applications</span>
+                              <small>Optimize Factory Maintenance, Monitor Equipment Health in Real-time, Reduce Time-to-Market for New Products</small>
                             </div>
-                          </a>
-                          <a href="#" className="product-link">
-                            <i className="bi bi-play-circle"></i>
+                          </Link>
+                          <Link href="/service-details/ar-vr-apps" className="product-link">
+                            <i className="bi bi-vr"></i>
                             <div>
-                              <span>Animation Tools</span>
-                              <small>Create stunning animations</small>
+                              <span>Augumented & Virtual Reality Apps</span>
+                              <small>AR/VR/MR App development</small>
                             </div>
-                          </a>
-                          <a href="#" className="product-link">
-                            <i className="bi bi-box"></i>
-                            <div>
-                              <span>3D Modeling</span>
-                              <small>Advanced 3D design software</small>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="featured-banner">
-                      <div className="banner-content">
-                        <Image
-                          src={misc5}
-                          alt="Creative Suite"
-                          className="banner-image"
-                        />
-                        <div className="banner-info">
-                          <h5>Creative Pro</h5>
-                          <p>
-                            Everything you need for creative projects, from
-                            concept to final production.
-                          </p>
-                          <a href="#" className="cta-btn">
-                            Start Creating <i className="bi bi-arrow-right"></i>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  {/* <!-- Resources Tab --> */}
+                  {/* <!-- PLM Tab --> */}
                   <div
                     className="tab-pane fade"
-                    id="2190-tab-4"
+                    id="plm"
                     role="tabpanel"
-                    aria-labelledby="2190-tab-4-tab"
+                    aria-labelledby="plm-tab"
                   >
-                    <div className="resources-layout">
-                      <div className="resource-categories">
-                        <div className="resource-category">
-                          <i className="bi bi-book"></i>
-                          <h5>Documentation</h5>
-                          <p>
-                            Comprehensive guides and API references for all our
-                            products and services.
-                          </p>
-                          <a href="#" className="resource-link">
-                            Browse Docs <i className="bi bi-arrow-right"></i>
-                          </a>
-                        </div>
-                        <div className="resource-category">
-                          <i className="bi bi-play-circle"></i>
-                          <h5>Video Tutorials</h5>
-                          <p>
-                            Step-by-step video guides to help you get the most
-                            out of our solutions.
-                          </p>
-                          <a href="#" className="resource-link">
-                            Watch Tutorials{" "}
-                            <i className="bi bi-arrow-right"></i>
-                          </a>
-                        </div>
-                        <div className="resource-category">
-                          <i className="bi bi-chat-square-dots"></i>
-                          <h5>Community Forum</h5>
-                          <p>
-                            Connect with other users, share tips, and get
-                            answers to your questions.
-                          </p>
-                          <a href="#" className="resource-link">
-                            Join Community <i className="bi bi-arrow-right"></i>
-                          </a>
-                        </div>
-                        <div className="resource-category">
-                          <i className="bi bi-newspaper"></i>
-                          <h5>Blog &amp; Articles</h5>
-                          <p>
-                            Latest insights, best practices, and industry trends
-                            from our experts.
-                          </p>
-                          <a href="#" className="resource-link">
-                            Read Blog <i className="bi bi-arrow-right"></i>
-                          </a>
+                    <div className="content-grid">
+                      <div className="product-section">
+                        <h4>PLM (Product Lifecycle Management)</h4>
+                        <div className="product-list">
+                          <Link href="/service-details/plm" className="product-link">
+                            <i className="bi bi-diagram-3"></i>
+                            <div>
+                              <span>PLM</span>
+                              <small>PLM Tools Expertise, Supporting End-to-end Global PLM systems Commissioning</small>
+                            </div>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -543,6 +371,9 @@ export default function NavBar() {
               {/*<!-- End Desktop Megamenu --> */}
             </li>{" "}
             {/*<!-- End Megamenu 2 --> */}
+            <li>
+              <Link href="/career">Career</Link>
+            </li>
             <li>
               <Link href="/contact">Contact</Link>
             </li>

@@ -1,15 +1,16 @@
 "use client";
 
-import PageBaner from "../PageBaner/PageBaner";
+import PageBaner from "@components/PageBaner/PageBaner";
 import "./Terms-Condition.css";
 import Image from "next/image";
 import aboutImage from "@image/about/about-square-8.webp";
 
-const TermsCondition = () => {
+const TermsCondition:React.FC = () => {
   return (
+  <>
+    <PageBaner heading={"Terms Of Use"} />
     <section className="terms-section">
-      <PageBaner heading={"Terms Of Use"} description={" "}></PageBaner>
-      <div className="container mt-3">
+      <div className="container">
         <div className="row">
           {/* Text Content */}
           <div className="col-lg-6 terms-text">
@@ -135,8 +136,6 @@ const TermsCondition = () => {
               />
             </div>
             <div className=" mt-5">
-             
-
               <h5>Limitation of Damages</h5>
               <p>
                 In no event shall VJCS and / or its subsidiaries be liable for
@@ -192,13 +191,12 @@ const TermsCondition = () => {
                 and, upon such termination; you shall immediately destroy all
                 Materials.
               </p>
-
-              
             </div>
           </div>
         </div>
       </div>
     </section>
+  </>
   );
 };
 
