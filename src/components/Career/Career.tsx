@@ -5,7 +5,7 @@ import aboutImage from "@image/about/about-square-8.webp";
 import { useState } from "react";
 import PageBaner from "@components/PageBaner/PageBaner";
 
-const  Career = () => {
+const Career:React.FC = () => {
 const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const careers = [
@@ -158,4 +158,4 @@ const [activeIndex, setActiveIndex] = useState<number | null>(null);
   </>
   );
 }
-export default Career ;
+export default Career;

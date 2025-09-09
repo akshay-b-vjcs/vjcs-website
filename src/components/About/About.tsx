@@ -7,7 +7,7 @@ import aboutImage from "@image/about/about-square-8.webp";
 import illustration from "@image/illustration/illustration-3.webp";
 import PageBaner from "@components/PageBaner/PageBaner";
 
-const  About = () => {
+const About:React.FC = () => {
   const services = [
     {
       icon: "bi bi-eye",
@@ -26,7 +26,7 @@ const  About = () => {
     <PageBaner heading="About"/>
     <section
       id="featured-services"
-      className="featured-services section light-background"
+      className="featured-services section light-background pt-5"
     >
       <div className="container">
         <div className="row mx-1  justify-content-between">

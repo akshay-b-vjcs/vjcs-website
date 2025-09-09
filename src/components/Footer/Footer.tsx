@@ -47,10 +47,6 @@ const Footer: React.FC = () => {
               <li>
                 <Link href="/disclaimer">Disclaimer</Link>
               </li>
-
-              <li>
-                <Link href="#">Privacy policy</Link>
-              </li>
             </ul>
           </div>
 

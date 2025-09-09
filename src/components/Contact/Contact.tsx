@@ -84,7 +84,7 @@ const Contact: React.FC = () => {
   return (
     <>
       <PageBaner heading="Contact" />
-      <section id="contact" className="contact section">
+      <section id="contact" className="contact section py-5">
         <div className="container">
           <div className="contact-main-wrapper">
             <div className="map-wrapper">
@@ -101,9 +101,7 @@ const Contact: React.FC = () => {
               <div className="contact-form-container">
                 <h3>Get in Touch</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua
-                  consectetur adipiscing.
+                We welcome your inquiries and will be pleased to assist you. For quotes or further information, kindly submit your request below..
                 </p>
                 <form
                   onSubmit={handleSubmit}
@@ -296,10 +294,7 @@ const Contact: React.FC = () => {
           </div>
         </div>
       </section>
-      <section
-        id="services"
-        className="services py-5 bg-light position-relative overflow-hidden mt-5"
-      >
+      <section id="services" className="services py-5 bg-light position-relative overflow-hidden">
         <div className="container">
           <div className="row gy-4">
             <div className="col-lg-4 col-md-6">
