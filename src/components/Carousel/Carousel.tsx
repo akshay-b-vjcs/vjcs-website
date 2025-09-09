@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
 import "./Carousel.css";
@@ -15,7 +13,7 @@ import imgPlmMob from "@image/services/mob/Home-carousel-plm-1.png";
 import imgEdsMob from "@image/services/mob/Home-carousel-eds-1.png";
 import imgEds1Mob from "@image/services/mob/Home-carousel-eds-3.png";
 
-const Carousel = () => {
+const Carousel:React.FC = () => {
   const slides = [
     {
       desktop: imgCax,
@@ -100,9 +98,7 @@ const Carousel = () => {
                 <source srcSet={s.mobile.src} media="(max-width: 768px)" />
                 <Image src={s.desktop} alt={s.title} fill priority={i === 0} />
               </picture>
-
-      <div className="carousel-caption d-flex flex-column align-items-start h-100 custom-caption">
-
+              <div className="carousel-caption d-flex flex-column align-items-start h-100 custom-caption">
                 <div className="service-buttons">
                   {s.buttons.map((btn, idx) => (
                     <Link key={idx} href={btn.link} className="service-btn">

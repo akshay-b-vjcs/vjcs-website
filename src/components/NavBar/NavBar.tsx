@@ -4,11 +4,8 @@ import Link from "next/link";
 import "./NavBar.css";
 
 import logo from "@image/logo_1.png";
-import misc7 from "@image/misc/misc-7.webp";
-import misc12 from "@image/misc/misc-12.webp";
-import misc5 from "@image/misc/misc-5.webp";
 
-export default function NavBar() {
+const NavBar:React.FC = () => {
   return (
     <div className="branding d-flex align-items-center">
       <div className="container position-relative d-flex align-items-center justify-content-between">
@@ -248,7 +245,7 @@ export default function NavBar() {
                             <i className="bi bi-check2-square"></i>
                             <div>
                               <span>CAx Software QA and Testing</span>
-                              <small>Streamline repetitive tasks</small>
+                              <small>Rigorous QA & testing to power precision engineering.</small>
                             </div>
                           </Link>
                         </div>
@@ -384,3 +381,5 @@ export default function NavBar() {
     </div>
   );
 }
+
+export default NavBar;

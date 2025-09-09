@@ -74,6 +74,7 @@ interface Props {
 
 const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
   const pathname = usePathname();
+  console.log(pathname)
   const [activeTab, setActiveTab] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
   const featuresRef = useRef<HTMLDivElement>(null);
@@ -104,7 +105,7 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
       subservices: [
         "/service-details/cad-cam-development",
         "/service-details/cae-development",
-        "/service-details/cax-software-qa-testing",
+        "/service-details/cax-software-testing",
       ],
     },
     {
@@ -137,7 +138,7 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
   return (
     <>
       <PageBaner heading={service.title} />
-      <section id="service-details" className="service-details section">
+      <section id="service-details" className="service-details section pt-5">
         <div className="container">
           <div className="row gy-5">
             {/* Left Column */}
@@ -268,20 +269,19 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
                   <div className="contact-content">
                     <h4>Need Help?</h4>
                     <p>
-                      Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam
-                      vehicula elementum sed sit amet dui.
+                    Our team’s here to make things easy.
                     </p>
                     <div className="contact-info">
                       <div className="contact-item">
                         <i className="bi bi-telephone"></i>
-                        <span>+1 (555) 123-4567</span>
+                        <span>+91-20-66840017</span>
                       </div>
                       <div className="contact-item">
                         <i className="bi bi-envelope"></i>
-                        <span>info@example.com</span>
+                        <span>info@vjcs.com</span>
                       </div>
                     </div>
-                    <Link href="#" className="btn btn-primary">
+                    <Link href="/contact" className="btn btn-primary">
                       Get Quote
                     </Link>
                   </div>

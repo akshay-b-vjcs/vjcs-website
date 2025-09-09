@@ -1,20 +1,14 @@
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import CountUp from "@components/Count/Count"
 import Card from "@components/Card/Card";
 import PageBaner from "@components/PageBaner/PageBaner";
 
-const Service = () => {
+const Service:React.FC = () => {
   return (
   <>
-    <PageBaner
-      heading="Services"
-    />
-    <section
-      id="services"
-      className="services"
-    >
+    <PageBaner heading="Services"/>
+    <section id="services" className="services py-5" >
       <div className="container">
         <div className="row gy-4">
           <div className="col-lg-6 col-md-6 ">
@@ -115,36 +109,6 @@ const Service = () => {
                 },
               ]}
             />
-          </div>
-        </div>
-
-        {/* Stats Section */}
-        <div className="stats-highlight text-dark-green rounded-4 py-5 px-3 mt-5 position-relative overflow-hidden">
-          <div className="row text-center position-relative z-2">
-            <div className="col-lg-4 col-md-4 mb-4 mb-lg-0">
-              <div className="stat-item text-white">
-                <div className="stat-number fs-1 fw-bold">
-                  <CountUp target={90} duration={3000} /> +
-                </div>
-                <div className="stat-label">Happy Client</div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-4 mb-4 mb-lg-0">
-              <div className="stat-item text-white">
-                <div className="stat-number fs-1 fw-bold">
-                  <CountUp target={22} duration={3000} /> +
-                </div>
-                <div className="stat-label">Years of proven expertise</div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-4 mb-4 mb-md-0">
-              <div className="stat-item text-white">
-                <div className="stat-number fs-1 fw-bold">
-                  <CountUp target={18} duration={3000} /> +
-                </div>
-                <div className="stat-label">Countries serving</div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ import aboutImage from "@image/about/about-square-8.webp";
 import illustration from "@image/illustration/illustration-3.webp";
 import PageBaner from "@components/PageBaner/PageBaner";
 
-const  About = () => {
+const About:React.FC = () => {
   const services = [
     {
       icon: "bi bi-eye",
@@ -26,10 +26,9 @@ const  About = () => {
     <PageBaner heading="About"/>
     <section
       id="featured-services"
-      className="featured-services section  light-background"
-    >      <PageBaner heading="About" description="VJ Coresoft delivers advanced engineering solutions in CAD, CAM, CAE, and digitization for smarter manufacturing. With global expertise and innovative technology, we help businesses enhance efficiency and drive growth." />
-
-      <div className="container mt-5">
+      className="featured-services section light-background pt-5"
+    >
+      <div className="container">
         <div className="row mx-1  justify-content-between">
         { services.map((service, index) => (
           <div

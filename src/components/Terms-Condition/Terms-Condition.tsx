@@ -6,9 +6,9 @@ import "./Terms-Condition.css";
 const TermsCondition:React.FC = () => {
   return (
   <>
-    <PageBaner heading={"Terms Of Use"} />
-    <section className="terms-section">
-      <div className="container mt-5">
+    <PageBaner heading={"Terms of Use"} />
+    <section className="terms-section section py-5">
+      <div className="container">
         <div className="row g-4">
           {/* Left Column */}
           <div className="col-lg-6 terms-text">

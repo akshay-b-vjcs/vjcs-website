@@ -25,7 +25,7 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
   return [
     { slug: "cad-cam-development" },
     { slug: "cae-development" },
-    { slug: "cax-software-qa-testing" },
+    { slug: "cax-software-testing" },
     { slug: "plm" },
     { slug: "product-design" },
     { slug: "bim-modelling" },

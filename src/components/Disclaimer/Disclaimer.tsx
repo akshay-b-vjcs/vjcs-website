@@ -3,12 +3,12 @@
 import PageBaner from "@components/PageBaner/PageBaner";
 import "./Disclaimer.css";
 
-const Disclaimer = () => {
+const Disclaimer:React.FC = () => {
   return (
   <>
     <PageBaner heading={"Disclaimer"} />
-    <section className="terms-section">
-      <div className="container mt-3">
+    <section className="terms-section mt-5">
+      <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-8 terms-text p-4 rounded-3  shadow ">
             <h2 className="site-url">Disclaimer</h2>

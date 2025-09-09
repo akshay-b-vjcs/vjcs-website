@@ -184,6 +184,15 @@
   margin-bottom: 0;
 }
 
+.stats-highlight {
+  background: var(--accent-color);
+  border-radius: 25px;
+  padding: 50px 30px;
+  margin-top: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
 @media (max-width: 992px) {
   .hero .hero-visual {
     margin-top: 60px;
