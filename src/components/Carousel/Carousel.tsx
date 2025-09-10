@@ -8,11 +8,10 @@ import imgPlm from "@image/services/Home-carousel-plm.png";
 import imgEds from "@image/services/Home-carousel-eds.png";
 import imgEds1 from "@image/services/Home-carousel-eds-1.png";
 
-import imgCaxMob from "@image/services/mob/Home-carousel-cax-1.png";
-import imgPlmMob from "@image/services/mob/Home-carousel-plm-1.png";
-import imgEdsMob from "@image/services/mob/Home-carousel-eds-1.png";
-import imgEds1Mob from "@image/services/mob/Home-carousel-eds-3.png";
-
+import imgCaxMob from "@image/services/mob/Home-carousel-cax.png";
+import imgPlmMob from "@image/services/mob/Home-carousel-plm.png";
+import imgEdsMob from "@image/services/mob/Home-carousel-eds.png";
+import imgEds2Mob from "@image/services/mob/Home-carousel-eds-2.png"
 const Carousel:React.FC = () => {
   const slides = [
     {
@@ -55,7 +54,7 @@ const Carousel:React.FC = () => {
     },
     {
       desktop: imgEds1,
-      mobile: imgEds1Mob,
+      mobile: imgEds2Mob,
       title: "Digitization Services",
       buttons: [
         {
@@ -90,7 +89,7 @@ const Carousel:React.FC = () => {
       data-bs-interval="3000"
       data-bs-pause="false"
     >
-      <div className="carousel-inner">
+      <div className="carousel-inner rounded-4 ">
         {slides.map((s, i) => (
           <div key={i} className={`carousel-item ${i === 0 ? "active" : ""}`}>
             <div className="d-block w-100 position-relative mt-5 carousel-image-wrapper">
@@ -98,7 +97,7 @@ const Carousel:React.FC = () => {
                 <source srcSet={s.mobile.src} media="(max-width: 768px)" />
                 <Image src={s.desktop} alt={s.title} fill priority={i === 0} />
               </picture>
-              <div className="carousel-caption d-flex flex-column align-items-start h-100 custom-caption">
+              {/* <div className="carousel-caption d-flex flex-column align-items-start h-100 custom-caption">
                 <div className="service-buttons">
                   {s.buttons.map((btn, idx) => (
                     <Link key={idx} href={btn.link} className="service-btn">
@@ -106,7 +105,7 @@ const Carousel:React.FC = () => {
                     </Link>
                   ))}
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         ))}

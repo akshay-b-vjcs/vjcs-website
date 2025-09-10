@@ -42,25 +42,38 @@
   box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4);
 }
 
+
 .carousel-image-wrapper {
-  height: 550px;       /* default desktop height */
+  position: relative;
+  width: 100%;
+  height: 600px; 
 }
 
-/* Mobile responsive */
+.carousel-image-wrapper picture,
+.carousel-image-wrapper picture img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 768px) {
   .carousel-image-wrapper {
-    height: 770px;     /* mobile height */
+    height: 300px;
   }
-
+  .carousel-image-wrapper picture img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  } 
   .service-buttons {
     gap: 30px;
     margin-top: 100px; 
     margin-left: 40px;
-    text-align: center;  /* mobile वर spacing कमी */
+    text-align: center;  
   }
 
   .service-btn {
     font-size: 13px;
-    padding: 8px 16px; /* छोटं button mobile साठी */
+    padding: 8px 16px; 
   }
 }

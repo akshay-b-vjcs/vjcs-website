@@ -77,7 +77,7 @@ export default function Home() {
     <section id="hero" className="">
       <Carousel/>
       {/* Stats Section */}
-      <div className="stats-highlight text-dark-green rounded-4 py-5 px-3 my-5 position-relative overflow-hidden container">
+      <div className="stats-highlight text-dark-green rounded-4 py-5 px-3 my-3 position-relative overflow-hidden container">
         <div className="row text-center position-relative z-2">
           <div className="col-lg-4 col-md-4 mb-4 mb-lg-0">
             <div className="stat-item text-white">
