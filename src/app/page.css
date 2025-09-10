@@ -68,7 +68,7 @@
   line-height: 1.6;
   margin-bottom: 40px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
-  max-width: 500px;
+  /* max-width: 500px; */
 }
 
 .hero .hero-actions {

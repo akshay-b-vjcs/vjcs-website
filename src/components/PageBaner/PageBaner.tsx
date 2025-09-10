@@ -1,7 +1,8 @@
 import React from "react";
 
 import "./PageBaner.css";
-import banerImage from "@image/bg/bg-14.webp";
+// import banerImage from "@image/bg/bg-14.webp";
+import banerImage from "@image/services/Home.png"
 
 interface PageBanerProps {
   heading: string;

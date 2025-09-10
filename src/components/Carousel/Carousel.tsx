@@ -99,13 +99,13 @@ const Carousel:React.FC = () => {
                 <Image src={s.desktop} alt={s.title} fill priority={i === 0} />
               </picture>
               <div className="carousel-caption d-flex flex-column align-items-start h-100 custom-caption">
-                <div className="service-buttons">
+                {/* <div className="service-buttons">
                   {s.buttons.map((btn, idx) => (
                     <Link key={idx} href={btn.link} className="service-btn">
                       {btn.text}
                     </Link>
                   ))}
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
