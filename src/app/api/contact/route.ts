@@ -74,40 +74,39 @@ export async function POST(req: NextRequest) {
       to: process.env.SMTP_USER, // send to your inbox
 
       html: `
- <table border="1" cellspacing="0" cellpadding="8" >
-  <tr>
-    <td>Name</td>
-    <td>${name}(${email})</td>
-  </tr>
-  <tr>
-    <td><strong>Company Name:</strong></td>
-    <td>${companyName}</td>
-  </tr>
-  <tr>
-    <td><strong>Company Number:</strong></td>
-    <td>${companyNumber}</td>
-  </tr>
-  <tr>
-    <td><strong>City:</strong></td>
-    <td>${city}</td>
-  </tr>
-  <tr>
-    <td><strong>Nature of Service:</strong></td>
-    <td>
-      ${
-        Array.isArray(natureOfService)
-          ? natureOfService.join(", ")
-          : natureOfService
-      }
-    </td>
-  </tr>
-  <tr>
-    <td><strong>Message:</strong></td>
-    <td>${message}</td>
-  </tr>
-</table>
-
-`,
+        <table border="1" cellspacing="0" cellpadding="8" >
+          <tr>
+            <td>Name</td>
+            <td>${name}(${email})</td>
+          </tr>
+          <tr>
+            <td><strong>Company Name:</strong></td>
+            <td>${companyName}</td>
+          </tr>
+          <tr>
+            <td><strong>Company Number:</strong></td>
+            <td>${companyNumber}</td>
+          </tr>
+          <tr>
+            <td><strong>City:</strong></td>
+            <td>${city}</td>
+          </tr>
+          <tr>
+            <td><strong>Nature of Service:</strong></td>
+            <td>
+              ${
+                Array.isArray(natureOfService)
+                  ? natureOfService.join(", ")
+                  : natureOfService
+              }
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Message:</strong></td>
+            <td>${message}</td>
+          </tr>
+        </table>
+        `,
     });
 
     return NextResponse.json(

@@ -99,7 +99,7 @@ const Service:React.FC = () => {
           <div className="col-lg-6 col-md-6">
             <Card
               icon="bi bi-diagram-3"
-              title="PLM"
+              title="PLM (Product Lifecycle Management)"
               description="Comprehensive PLM solutions covering global system commissioning, CAD customization, seamless tool integration, and end-to-end support—empowering businesses to streamline product development from concept to sustainment."
               links={[
                 {

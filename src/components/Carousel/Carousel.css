@@ -2,9 +2,8 @@
   display: flex;
   flex-wrap: wrap; 
   gap: 12px;
-  margin-top: 10px;
-  overflow-x: auto;      /* mobile वर horizontal scroll */
-  padding-bottom: 5px; 
+  padding: 10px 0px 10px 0px;
+  overflow-x: auto;      /* mobile view will show horizontal scroll */
 }
 
 .service-buttons::-webkit-scrollbar {
