@@ -51,10 +51,10 @@ const Header:React.FC = () => {
 					<i className="bi bi-phone d-flex align-items-center ms-4"><span>+91-20-66840017</span></i>
 					</div>
 					<div className="social-links d-none d-md-flex align-items-center">
-					<Link href="#" className="twitter"><i className="bi bi-twitter-x"></i></Link>
+					{/* <Link href="#" className="twitter"><i className="bi bi-twitter-x"></i></Link>
 					<Link href="#" className="facebook"><i className="bi bi-facebook"></i></Link>
-					<Link href="#" className="instagram"><i className="bi bi-instagram"></i></Link>
-					<Link href="#" className="linkedin"><i className="bi bi-linkedin"></i></Link>
+					<Link href="#" className="instagram"><i className="bi bi-instagram"></i></Link> */}
+					<Link href="https://wwww.linkedin.com/company/vj-coresoft-pvt.-ltd/" className="linkedin"><i className="bi bi-linkedin"></i></Link>
 					</div>
 				</div>
 			</div> 

@@ -2,9 +2,11 @@
 
 import { SetStateAction, useEffect, useRef, useState } from "react";
 import Card from "@components/Card/Card";
-import PageBaner from "@components/PageBaner/PageBaner";
-import "./Contact.css";
+
 import ReCAPTCHA from "react-google-recaptcha";
+import PageBaner from "@components/PageBaner/PageBaner";
+
+import "./Contact.css";
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -297,20 +299,6 @@ const Contact: React.FC = () => {
 
                   <div className="form-submit">
                     <button type="submit">Send Message</button>
-                    <div className="social-links">
-                      <a href="#">
-                        <i className="bi bi-twitter"></i>
-                      </a>
-                      <a href="#">
-                        <i className="bi bi-facebook"></i>
-                      </a>
-                      <a href="#">
-                        <i className="bi bi-instagram"></i>
-                      </a>
-                      <a href="#">
-                        <i className="bi bi-linkedin"></i>
-                      </a>
-                    </div>
                   </div>
                 </form>
               </div>
