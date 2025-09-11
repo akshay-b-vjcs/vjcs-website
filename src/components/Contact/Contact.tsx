@@ -1,7 +1,7 @@
 "use client";
 
-import { SetStateAction, useState } from "react";
-import Card from "@components/Card/Card"
+import { SetStateAction, useEffect, useRef, useState } from "react";
+import Card from "@components/Card/Card";
 import PageBaner from "@components/PageBaner/PageBaner";
 import "./Contact.css";
 import ReCAPTCHA from "react-google-recaptcha";
@@ -21,6 +21,14 @@ const Contact: React.FC = () => {
   // const [message, setMessage] = useState("");
   const [status, setStatus] = useState("");
 
+  const nameInputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    // Focus the input when the page loads
+    if (nameInputRef.current) {
+      nameInputRef.current.focus();
+    }
+  }, []);
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -101,7 +109,9 @@ const Contact: React.FC = () => {
               <div className="contact-form-container">
                 <h3>Get in Touch</h3>
                 <p>
-                We welcome your inquiries and will be pleased to assist you. For quotes or further information, kindly submit your request below..
+                  We welcome your inquiries and will be pleased to assist you.
+                  For quotes or further information, kindly submit your request
+                  below..
                 </p>
                 <form
                   onSubmit={handleSubmit}
@@ -111,6 +121,7 @@ const Contact: React.FC = () => {
                   <div className="row">
                     <div className="col-md-6 form-group pt-3">
                       <input
+                        ref={nameInputRef}
                         type="text"
                         name="name"
                         className="form-control"
@@ -194,7 +205,10 @@ const Contact: React.FC = () => {
                           onChange={handleCheckboxChange}
                           id="CAx_Software_Services"
                         />
-                        <label className="form-check-label" htmlFor="CAx_Software_Services">
+                        <label
+                          className="form-check-label"
+                          htmlFor="CAx_Software_Services"
+                        >
                           CAx Software Services
                         </label>
                       </div>
@@ -208,7 +222,9 @@ const Contact: React.FC = () => {
                           onChange={handleCheckboxChange}
                           id="PLM"
                         />
-                        <label className="form-check-label" htmlFor="PLM">PLM</label>
+                        <label className="form-check-label" htmlFor="PLM">
+                          PLM
+                        </label>
                       </div>
                       <div className="form-check">
                         <input
@@ -222,7 +238,10 @@ const Contact: React.FC = () => {
                           onChange={handleCheckboxChange}
                           id="Engineering_Design_Services"
                         />
-                        <label className="form-check-label" htmlFor="Engineering_Design_Services">
+                        <label
+                          className="form-check-label"
+                          htmlFor="Engineering_Design_Services"
+                        >
                           Engineering Design Services
                         </label>
                       </div>
@@ -238,7 +257,10 @@ const Contact: React.FC = () => {
                           onChange={handleCheckboxChange}
                           id="Digitization_Services"
                         />
-                        <label className="form-check-label" htmlFor="Digitization_Services">
+                        <label
+                          className="form-check-label"
+                          htmlFor="Digitization_Services"
+                        >
                           Digitization Services
                         </label>
                       </div>
@@ -252,7 +274,9 @@ const Contact: React.FC = () => {
                           onChange={handleCheckboxChange}
                           id="Other"
                         />
-                        <label className="form-check-label" htmlFor="Other">Other</label>
+                        <label className="form-check-label" htmlFor="Other">
+                          Other
+                        </label>
                       </div>
                     </div>
                     <div className="col-md-6 form-group pt-3 mt-md-0">
@@ -294,7 +318,10 @@ const Contact: React.FC = () => {
           </div>
         </div>
       </section>
-      <section id="services" className="services py-5 bg-light position-relative overflow-hidden">
+      <section
+        id="services"
+        className="services py-5 bg-light position-relative overflow-hidden"
+      >
         <div className="container">
           <div className="row gy-4">
             <div className="col-lg-4 col-md-6">
