@@ -49,7 +49,7 @@ export async function generateMetadata(): Promise<Metadata> {
     pageName.charAt(0).toUpperCase() + pageName.slice(1).replace(/-/g, " ");
 
   return {
-    title: `VJCS / ${formattedPageName}`,
+    title: `${formattedPageName} | VJCS`,
     description: "V J Coresoft Pvt. Ltd.",
     keywords: [
       "vcoresoft",

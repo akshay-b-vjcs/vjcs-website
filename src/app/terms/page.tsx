@@ -3,7 +3,7 @@ import { Metadata } from "next";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "VJCS / TermsCondition",
+    title: "Terms of Use | VJCS",
   };
 }
 

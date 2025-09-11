@@ -3,7 +3,7 @@ import Contact from "@/components/Contact/Contact";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "VJCS / Contact",
+    title: "Contact | VJCS",
   };
 }
 
