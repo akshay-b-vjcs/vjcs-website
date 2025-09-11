@@ -6,7 +6,7 @@ import './Header.css'
 import NavBar from "../NavBar/NavBar"
 
 const Header:React.FC = () => {
-
+  /** To hide/show the top header bar when page scroll to down/up */
 	useEffect(() => {
     const toggleScrolled = () => {
       const selectBody = document.querySelector("body") as HTMLBodyElement | null;
