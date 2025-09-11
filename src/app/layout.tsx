@@ -41,12 +41,11 @@ export async function generateMetadata(): Promise<Metadata> {
   const cleanPath = path.replace(/^\/|\/$/g, "");
 
   // if root => Home
-  let pageName = cleanPath ? cleanPath : "Home";
+  const pageName = cleanPath ? cleanPath : "Home";
 
   // format into Title Case
-  const formattedPageName =
-    pageName.charAt(0).toUpperCase() + pageName.slice(1).replace(/-/g, " ");
-
+  const formattedPageName =  pageName.charAt(0).toUpperCase() + pageName.slice(1).replace(/-/g, " ");
+  console.log(formattedPageName)
   return {
     title: `${formattedPageName} | VJCS`,
     description: "V J Coresoft Pvt. Ltd.",

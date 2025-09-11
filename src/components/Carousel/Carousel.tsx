@@ -88,7 +88,7 @@ const Carousel:React.FC = () => {
       data-bs-interval="3000"
       data-bs-pause="false"
     >
-      <div className="carousel-inner rounded-4 ">
+      <div className="carousel-inner">
         {slides.map((s, i) => (
           <div key={i} className={`carousel-item ${i === 0 ? "active" : ""}`}>
             <div className="d-block w-100 position-relative mt-5 carousel-image-wrapper">
