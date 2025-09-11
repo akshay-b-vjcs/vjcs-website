@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import BootstrapProvider from "../provider/BootstrapProvider";
-import GlightboxProvider from "../provider/GlightboxProvider";
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap-icons/font/bootstrap-icons.css"
@@ -70,7 +69,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${roboto.variable} ${inter.variable} ${barlow.variable}`}>
         <BootstrapProvider />
-        <GlightboxProvider />
         <Header />
         {children}
         <Footer />
