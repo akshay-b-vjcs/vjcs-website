@@ -1,8 +1,27 @@
 "use client;"
 
+import { useState } from "react";
 import Link from "next/link";
 
-const MegaMenu: React.FC = () => {
+interface MegaMenuProps {
+  handleClickOnLink: () => void;
+}
+
+const MegaMenu: React.FC<MegaMenuProps> = ({handleClickOnLink}) => {
+  const [openDropdown, setOpenDropdown] = useState<number | null>(null);
+  const [openSubDropdown, setOpenSubDropdown] = useState<Record<string, boolean>>({});
+
+  const toggleDropdown = (index: number) => {
+    setOpenDropdown((prev) => (prev === index ? null : index));
+  };
+
+  const toggleSubDropdown = (id: string) => {
+    setOpenSubDropdown((prev) => ({
+      ...prev,
+      [id]: !prev[id], // toggle only the clicked dropdown
+    }));
+  };
+
   const data = [
     {
       id:"cax-software-services",
@@ -118,20 +137,35 @@ const MegaMenu: React.FC = () => {
   <>
     {/* <!-- Megamenu 2 --> */}
     <li className="megamenu-2">
-      <Link href="/services">
+      <Link 
+        href="/services" className={`${openDropdown === 1 ? "active" : ""}`}
+        onClick={handleClickOnLink}
+      >
         <span>Services</span>{" "}
-        <i className="bi bi-chevron-down toggle-dropdown"></i>
+        <i 
+          className="bi bi-chevron-down toggle-dropdown"
+          onClick={(e) => {
+            e.preventDefault();
+            toggleDropdown(1);
+          }}
+        ></i>
       </Link>
       {/* <!-- Mobile Megamenu --> */}
-      <ul className="mobile-megamenu">
+      <ul className={`mobile-megamenu ${openDropdown === 1 ? "dropdown-active" : ""}`}>
         { data && data.map(service => {
             return (
               <li key={service.id} className="dropdown">
-                <Link href={service.subservices[0].url}>
+                <Link href={service.subservices[0].url} className={`${openSubDropdown[service.id]  ? "active" : ""}`}>
                   <span>{service.name}</span>{" "}
-                  <i className="bi bi-chevron-down toggle-dropdown"></i>
+                  <i 
+                    className="bi bi-chevron-down toggle-dropdown" 
+                    onClick={(e) => {
+                      e.preventDefault();
+                      toggleSubDropdown(service.id);
+                    }}
+                  ></i>
                 </Link>
-                <ul>
+                <ul className={`${openSubDropdown[service.id]  ? "dropdown-active" : ""}`}>
                   { service.subservices && service.subservices.map( subService =>{
                     return (
                       <li key={subService.text}>
