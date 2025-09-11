@@ -63,11 +63,11 @@ const [activeIndex, setActiveIndex] = useState<number | null>(null);
         {/* About Section */}
         <div className="row align-items-center">
           <div className="col-lg-6 mb-4 mb-lg-0">
-            <h2 className="h1 fw-bold mb-4 mt-5" style={{ color: "#293a34" }}>
+            <h2 className="h1 fw-bold mb-4 mt-2 mt-md-5" style={{ color: "#293a34" }}>
               CAREER
             </h2>
             <p
-              className="mb-4"
+              className="mb-0 mb-md-4"
               style={{
                 color: "#384943",
                 fontSize: "16px",
@@ -83,7 +83,7 @@ const [activeIndex, setActiveIndex] = useState<number | null>(null);
           </div>
 
           {/* Image */}
-          <div className="col-lg-6 mt-5">
+          <div className="col-lg-6 mt-0 mt-md-5">
             <div className="position-relative">
               <Image
                 src={aboutImage}

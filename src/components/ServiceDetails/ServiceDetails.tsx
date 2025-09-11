@@ -149,7 +149,7 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
                   alt={serviceName}
                   width={1200}
                   height={500}
-                  className="img-fluid rounded-4 shadow img"
+                  className="img-fluid rounded-4 shadow img mb-5 mb-md-0"
                   style={{
                     objectFit: "cover",
                     width: "100%",
@@ -159,7 +159,7 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
               </div>
 
               <div className="service-content">
-                <div className="service-header">
+                <div className="service-header mx-3 mx-md-3">
                   <h2>{service.title}</h2>
                   <p className="service-intro">{service.intro}</p>
                 </div>
@@ -244,7 +244,7 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
 
             {/* Right Column */}
             <div className="col-lg-4">
-              <div className="service-sidebar">
+              <div className="service-sidebar mx-2 mx-md-0 mt-0 mt-md-5">
                 <div className="service-menu">
                   <h4>Our Services</h4>
                   <div className="menu-list">

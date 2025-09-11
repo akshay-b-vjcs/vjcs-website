@@ -7,7 +7,7 @@ const Disclaimer:React.FC = () => {
   return (
   <>
     <PageBaner heading={"Disclaimer"} />
-    <section className="terms-section mt-5">
+    <section className="terms-section my-5">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-8 terms-text p-4 rounded-3  shadow ">

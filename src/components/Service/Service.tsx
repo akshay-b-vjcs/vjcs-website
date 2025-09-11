@@ -8,7 +8,7 @@ const Service:React.FC = () => {
   return (
   <>
     <PageBaner heading="Services"/>
-    <section id="services" className="services py-5" >
+    <section id="services" className="services py-4 py-md-5" >
       <div className="container">
         <div className="row gy-4">
           <div className="col-lg-6 col-md-6 ">
