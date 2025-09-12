@@ -8,25 +8,23 @@ interface ServiceLink {
   url: string;
 }
 
-interface ServiceCardProps {
+interface CardProps {
   icon: string;
   title: ReactNode;
   description: ReactNode;
   links?: ServiceLink[];
-  badge?: string;
-  price?: string;
   featured?: boolean;
   compact?: boolean;
 }
 
-const Card: React.FC<ServiceCardProps> = ({
+const Card: React.FC<CardProps> = ({
   icon,
   title,
   description,
-  links = [], 
+  links = [],
   featured = false,
   compact = false,
-}: ServiceCardProps) => {
+}) => {
   const cardClass = [
     "card",
     featured ? "featured" : "",
@@ -52,7 +50,7 @@ const Card: React.FC<ServiceCardProps> = ({
         <h3>{title}</h3>
         <p>{description}</p>
 
-        {links && links.length > 0 && (
+        {links.length > 0 && (
           <ul className="mt-3 list-unstyled">
             {links.map((link, idx) => (
               <li key={idx} className="mb-2">

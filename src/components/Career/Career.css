@@ -1,11 +1,9 @@
-/* Career Wrapper */
 .career-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem; 
+  gap: 1.25rem;
 }
 
-/* Career Item */
 .career-item {
   background: #ffffff;
   border-radius: 10px;
@@ -18,24 +16,22 @@
 .career-item:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-  border-left-color:var(--accent-color);
+  border-left-color: var(--accent-color);
 }
 
 .career-item.career-active {
   border-left-color: var(--accent-color);
 }
 
-/* Career Header */
 .career-header {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 
-/* Career Icon */
 .career-icon {
   background: rgba(198, 200, 199, 0.15);
-  color:var(--accent-color);
+  color: var(--accent-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -49,11 +45,10 @@
 }
 
 .career-item.career-active .career-icon {
-  background:var(--accent-color);
+  background: var(--accent-color);
   color: #fff;
 }
 
-/* Career Title */
 .career-header h4 {
   flex: 1;
   margin: 0;
@@ -62,7 +57,6 @@
   color: #222;
 }
 
-/* Career Toggle */
 .career-toggle {
   display: flex;
   align-items: center;
@@ -75,7 +69,6 @@
   font-size: 18px;
   color: var(--accent-color);
   display: none;
-  transition: transform 0.3s ease;
 }
 
 .career-item.career-active .career-toggle .bi-dash {
@@ -86,7 +79,6 @@
   display: inline;
 }
 
-/* Career Content */
 .career-content {
   display: none;
   margin-top: 10px;
@@ -97,7 +89,6 @@
   display: block;
 }
 
-/* Content Inner */
 .content-inner p {
   margin: 0;
   font-size: 14px;
@@ -109,7 +100,6 @@
   margin-bottom: 10px;
 }
 
-/* Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -121,7 +111,6 @@
   }
 }
 
-/* Section Title */
 .section-title h2 {
   font-size: 32px;
   font-weight: 700;
@@ -154,17 +143,11 @@
   margin: auto;
 }
 
-.section-title p {
-  margin-bottom: 0;
-}
-
-/* career Image Styling */
 .custom-career-img {
   max-width: 100%;
   height: auto;
 }
 
-/* Responsive Styles */
 @media (max-width: 767.98px) {
   .custom-career-img {
     margin-top: 30px;
