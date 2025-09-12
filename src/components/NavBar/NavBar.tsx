@@ -3,12 +3,13 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import MegaMenu from "@components/NavBar/MegaMenu";
 import logo from "@image/logo_1.png";
 import "./NavBar.css";
 
 const NavBar:React.FC = () => {
-
+  const pathname = usePathname();
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleNav = () => {
@@ -46,17 +47,17 @@ const NavBar:React.FC = () => {
         <nav id="navmenu" className="navmenu">
           <ul>
             <li>
-              <Link href="/" className="active" onClick={handleNavLinkClick}>Home</Link>
+              <Link href="/" className={`${pathname === "/" ? "active" : ""}`} onClick={handleNavLinkClick}>Home</Link>
             </li>
             <li>
-              <Link href="/about" onClick={handleNavLinkClick}>About</Link>
+              <Link href="/about" className={`${pathname === "/about" ? "active" : ""}`} onClick={handleNavLinkClick}>About</Link>
             </li>
-            <MegaMenu handleClickOnLink={handleNavLinkClick} />
+            <MegaMenu handleClickOnLink={handleNavLinkClick} pathname={pathname}/>
             <li>
-              <Link href="/career" onClick={handleNavLinkClick}>Career</Link>
+              <Link href="/career" className={`${pathname === "/career" ? "active" : ""}`} onClick={handleNavLinkClick}>Career</Link>
             </li>
             <li>
-              <Link href="/contact" onClick={handleNavLinkClick}>Contact</Link>
+              <Link href="/contact" className={`${pathname === "/contact" ? "active" : ""}`} onClick={handleNavLinkClick}>Contact</Link>
             </li>
           </ul>
 

@@ -5,9 +5,10 @@ import Link from "next/link";
 
 interface MegaMenuProps {
   handleClickOnLink: () => void;
+  pathname : string
 }
 
-const MegaMenu: React.FC<MegaMenuProps> = ({handleClickOnLink}) => {
+const MegaMenu: React.FC<MegaMenuProps> = ({handleClickOnLink, pathname}) => {
   const [openDropdown, setOpenDropdown] = useState<number | null>(null);
   const [openSubDropdown, setOpenSubDropdown] = useState<Record<string, boolean>>({});
 
@@ -122,7 +123,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({handleClickOnLink}) => {
       href: "/service-details/plm",
       subservices: [
         {
-          text: "Learn More",
+          text: "Product Lifecycle Management",
           url: "/service-details/plm",
           icon: "bi bi-diagram-3",
           description:"PLM Tools Expertise, Supporting End-to-end Global PLM systems Commissioning"
@@ -138,7 +139,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({handleClickOnLink}) => {
     {/* <!-- Megamenu 2 --> */}
     <li className="megamenu-2">
       <Link 
-        href="/services" className={`${openDropdown === 1 ? "active" : ""}`}
+        href="/services" className={`${(openDropdown === 1) || (pathname === "/services") ? "active" : ""}`}
         onClick={handleClickOnLink}
       >
         <span>Services</span>{" "}
@@ -147,6 +148,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({handleClickOnLink}) => {
           onClick={(e) => {
             e.preventDefault();
             toggleDropdown(1);
+            e.stopPropagation()
           }}
         ></i>
       </Link>
@@ -155,7 +157,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({handleClickOnLink}) => {
         { data && data.map(service => {
             return (
               <li key={service.id} className="dropdown">
-                <Link href={service.subservices[0].url} className={`${openSubDropdown[service.id]  ? "active" : ""}`}>
+                <Link href="#" className={`${openSubDropdown[service.id]  ? "active" : ""}`}>
                   <span>{service.name}</span>{" "}
                   <i 
                     className="bi bi-chevron-down toggle-dropdown" 
@@ -169,7 +171,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({handleClickOnLink}) => {
                   { service.subservices && service.subservices.map( subService =>{
                     return (
                       <li key={subService.text}>
-                        <Link href={subService.url}>{subService.text}</Link>
+                        <Link href={subService.url} onClick={handleClickOnLink}>{subService.text}</Link>
                       </li>
                     )
                     })

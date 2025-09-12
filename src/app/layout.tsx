@@ -11,7 +11,6 @@ import Header from "@components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 
 import { Roboto, Inter, Barlow } from "next/font/google";
-import { headers } from "next/headers";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -31,23 +30,9 @@ const barlow = Barlow({
   variable: "--font-barlow",
 });
 
-// 🟢 Correct dynamic metadata function
 export async function generateMetadata(): Promise<Metadata> {
-  const url = (await headers()).get("x-url") || "";
-  // fallback to pathname if you prefer
-  const path = new URL(url, "http://localhost:3000").pathname;
-
-  // remove slashes
-  const cleanPath = path.replace(/^\/|\/$/g, "");
-
-  // if root => Home
-  const pageName = cleanPath ? cleanPath : "Home";
-
-  // format into Title Case
-  const formattedPageName =  pageName.charAt(0).toUpperCase() + pageName.slice(1).replace(/-/g, " ");
-  console.log(formattedPageName)
   return {
-    title: `${formattedPageName} | VJCS`,
+    title: "Home | VJCS",
     description: "V J Coresoft Pvt. Ltd.",
     keywords: [
       "vcoresoft",
@@ -68,7 +53,7 @@ export async function generateMetadata(): Promise<Metadata> {
       "esi",
     ],
     openGraph: {
-      title: `VJCS / ${formattedPageName}`,
+      title: `VJCS`,
       description: "Engineering Services",
       url: "https://vjcs.com",
       siteName: "VJCS",
