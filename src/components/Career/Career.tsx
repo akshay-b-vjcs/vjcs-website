@@ -88,7 +88,7 @@ const [activeIndex, setActiveIndex] = useState<number | null>(null);
               <Image
                 src={aboutImage}
                 alt="About Us"
-                className=" rounded-4 shadow custom-about-img"
+                className=" rounded-4 shadow custom-career-img"
               />
             </div>
           </div>

@@ -1,14 +1,12 @@
-Container styling
+/* Terms Section Styling */
 .terms-section {
   background: #f9f9f7;
   color: #384943;
   font-family: 'Poppins', sans-serif;
+  padding: 40px;
 }
 
-/* .terms-text {
-  padding-right: 40px;
-} */
-
+/* Typography */
 .subtitle {
   display: inline-block;
   font-size: 14px;
@@ -45,69 +43,38 @@ Container styling
   margin-bottom: 15px;
 }
 
-/* Custom bullets with ► symbol */
 .terms-text ul {
   padding-left: 20px;
   margin-bottom: 20px;
-  list-style: none; /* remove default bullets */
+  list-style: none;
 }
 
 .terms-text ul li {
-  margin-bottom: 10px;
   position: relative;
-  padding-left: 25px; /* space for symbol */
+  margin-bottom: 10px;
+  padding-left: 25px;
 }
 
-/* Add ► symbol */
 .terms-text ul li::before {
   content: "►";
   position: absolute;
   left: 0;
   top: 0;
-  color: #080808; /* green color */
+  color: #080808;
   font-size: 16px;
 }
 
-/* Button styling */
-.btn-accept {
-  display: inline-flex;
-  align-items: center;
-  padding: 12px 25px;
-  background-color: #28a745;
-  color: #fff;
-  font-weight: 600;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 20px;
-  transition: background 0.3s ease;
-}
-
-.btn-accept i {
-  margin-left: 8px;
-}
-
-.btn-accept:hover {
-  background-color: #218838;
-}
-
-/* Image styling */
-.terms-image img {
-  width: 100%;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive */
+/* Responsive Styling */
 @media (max-width: 991px) {
+  .terms-section {
+    padding: 20px;
+  }
+  
   .terms-text {
     padding-right: 0;
-    /* margin-bottom: 40px; */
   }
+  
   .terms-text h5 {
-    margin-top: 0px;
-
-  }
-  .terms-section {
-    padding: 20px 20px;
+    margin-top: 0;
   }
 }

@@ -12,7 +12,7 @@ interface ServiceCardProps {
   icon: string;
   title: ReactNode;
   description: ReactNode;
-  links?: ServiceLink[]; // optional now
+  links?: ServiceLink[];
   badge?: string;
   price?: string;
   featured?: boolean;
@@ -23,13 +23,12 @@ const Card: React.FC<ServiceCardProps> = ({
   icon,
   title,
   description,
-  links = [], // default empty array
-
+  links = [], 
   featured = false,
   compact = false,
 }: ServiceCardProps) => {
   const cardClass = [
-    "service-card",
+    "card",
     featured ? "featured" : "",
     compact ? "compact" : "",
     "h-100",
@@ -45,11 +44,11 @@ const Card: React.FC<ServiceCardProps> = ({
 
   return (
     <div className={cardClass}>
-      <div className="service-icon d-flex align-items-center justify-content-center mb-4 rounded">
+      <div className="card-icon d-flex align-items-center justify-content-center mb-4 rounded">
         <i className={`bi ${icon}`}></i>
       </div>
 
-      <div className="service-content">
+      <div className="card-content">
         <h3>{title}</h3>
         <p>{description}</p>
 
@@ -70,7 +69,7 @@ const Card: React.FC<ServiceCardProps> = ({
         )}
       </div>
 
-      <div className="service-bg position-absolute"></div>
+      <div className="card-bg position-absolute"></div>
     </div>
   );
 };

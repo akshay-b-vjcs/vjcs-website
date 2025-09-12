@@ -1,14 +1,15 @@
+/* Career Wrapper */
 .career-wrapper {
   display: flex;
   flex-direction: column;
   gap: 1.25rem; 
 }
 
-
+/* Career Item */
 .career-item {
   background: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   padding: 1rem 1.25rem;
   transition: all 0.3s ease;
   border-left: 4px solid transparent;
@@ -16,7 +17,7 @@
 
 .career-item:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
   border-left-color:var(--accent-color);
 }
 
@@ -24,14 +25,16 @@
   border-left-color: var(--accent-color);
 }
 
+/* Career Header */
 .career-header {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 
+/* Career Icon */
 .career-icon {
-  background: rgba(198, 200, 199, 0.15); 
+  background: rgba(198, 200, 199, 0.15);
   color:var(--accent-color);
   border-radius: 50%;
   display: flex;
@@ -50,6 +53,7 @@
   color: #fff;
 }
 
+/* Career Title */
 .career-header h4 {
   flex: 1;
   margin: 0;
@@ -58,6 +62,7 @@
   color: #222;
 }
 
+/* Career Toggle */
 .career-toggle {
   display: flex;
   align-items: center;
@@ -81,6 +86,7 @@
   display: inline;
 }
 
+/* Career Content */
 .career-content {
   display: none;
   margin-top: 10px;
@@ -91,6 +97,7 @@
   display: block;
 }
 
+/* Content Inner */
 .content-inner p {
   margin: 0;
   font-size: 14px;
@@ -98,12 +105,23 @@
   line-height: 1.5;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-5px); }
-  to { opacity: 1; transform: translateY(0); }
+.content-inner h6 {
+  margin-bottom: 10px;
 }
 
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+/* Section Title */
 .section-title h2 {
   font-size: 32px;
   font-weight: 700;
@@ -115,7 +133,6 @@
 .section-title h2:before {
   content: "";
   position: absolute;
-  display: block;
   width: 160px;
   height: 1px;
   background: color-mix(in srgb, var(--default-color), transparent 60%);
@@ -128,7 +145,6 @@
 .section-title h2::after {
   content: "";
   position: absolute;
-  display: block;
   width: 60px;
   height: 3px;
   background: var(--accent-color);
@@ -141,12 +157,17 @@
 .section-title p {
   margin-bottom: 0;
 }
-.custom-about-img {
+
+/* career Image Styling */
+.custom-career-img {
   max-width: 100%;
   height: auto;
-}@media (max-width: 767.98px) {
-  .custom-about-img {
-    margin-top: 30px;   /* mobile view sathi margin top */
-    border-radius: 10px; /* dusra property pan add karu shakto */
+}
+
+/* Responsive Styles */
+@media (max-width: 767.98px) {
+  .custom-career-img {
+    margin-top: 30px;
+    border-radius: 10px;
   }
 }
