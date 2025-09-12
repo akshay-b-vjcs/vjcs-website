@@ -74,7 +74,7 @@ interface Props {
 
 const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
   const pathname = usePathname();
-  console.log(pathname)
+
   const [activeTab, setActiveTab] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
   const featuresRef = useRef<HTMLDivElement>(null);

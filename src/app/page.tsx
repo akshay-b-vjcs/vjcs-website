@@ -3,7 +3,7 @@ import Link from "next/link";
 import Carousel from "@/components/Carousel/Carousel";
 import CountUp from "@components/Count/Count"
 
-import bg14 from "@image/services/Home.png"
+import bg from "@image/bg/Home.png"
 import "./page.css";
 
 const Home: React.FC = () => {
@@ -14,7 +14,7 @@ const Home: React.FC = () => {
     </section>
     <section className="hero section dark-background">
       <div className="hero-background">
-        <Image src={bg14} alt="" data-aos-duration="1000" />
+        <Image src={bg} alt="" data-aos-duration="1000" />
         <div className="overlay"></div>
       </div>
 

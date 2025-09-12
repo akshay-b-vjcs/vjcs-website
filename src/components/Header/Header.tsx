@@ -54,7 +54,7 @@ const Header:React.FC = () => {
 					{/* <Link href="#" className="twitter"><i className="bi bi-twitter-x"></i></Link>
 					<Link href="#" className="facebook"><i className="bi bi-facebook"></i></Link>
 					<Link href="#" className="instagram"><i className="bi bi-instagram"></i></Link> */}
-					<Link href="https://wwww.linkedin.com/company/vj-coresoft-pvt.-ltd/" className="linkedin"><i className="bi bi-linkedin"></i></Link>
+					<Link href="https://wwww.linkedin.com/company/vj-coresoft-pvt.-ltd/" className="linkedin" target="_blank"><i className="bi bi-linkedin"></i></Link>
 					</div>
 				</div>
 			</div> 

@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
             </Link>
             <p>All trademarks and copyrights of the 3D Printers / CAD and CAE Services / Software / other software and services mentioned on this website are the properties of their respective owners and are acknowledged as such.</p>
             <div className="social-links d-flex mt-4">
-              <Link href="https://wwww.linkedin.com/company/vj-coresoft-pvt.-ltd/">
+              <Link href="https://wwww.linkedin.com/company/vj-coresoft-pvt.-ltd/" target="_blank">
                 <i className="bi bi-linkedin"></i>
               </Link>
             </div>
