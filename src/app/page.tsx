@@ -12,18 +12,15 @@ const Home: React.FC = () => {
     <section className="section">
       <Carousel/>
     </section>
-    <section className="hero section dark-background">
-      <div className="hero-background">
-        <Image src={bg} alt="" data-aos-duration="1000" />
-        <div className="overlay"></div>
-      </div>
-
+    <section className="hero section light-background">
       <div className="container">
         <div className="row align-items-center">
+          <div className="col-lg-12">
+            <span className="hero-badge">Innovative Solutions</span>
+            <h1>Welcome to VJ Coresoft Pvt. Ltd.</h1>
+          </div>
           <div className="col-lg-8">
             <div className="hero-content">
-              <span className="hero-badge">Innovative Solutions</span>
-              <h1>Welcome to VJ Coresoft Pvt. Ltd.</h1>
               <p>VJ Coresoft Pvt. Ltd. is global IT company offering software development services in the field of CAD/CAE/CAM/PLM, Web/Mobile Applications,Engineering Design and Smart Manufacturing services. It is a compnay with unique combination of Engineering Domain knowledge and related software development expertise. VJ Coresoft provides services to wide varity of industries inlcuding CAx Software OEMs, Automotive, Aerospace, Ship Design and Marine Engineering, Construction, Heavy Industries etc.<br/><br/>
               VJ Coresoft is headquartered in Hinjewadi, Pune (India), services clients across Europe, USA, Middle East, Asia-Pacific and India. It is a special economical zone unit.
               </p>
@@ -62,7 +59,7 @@ const Home: React.FC = () => {
       </div>
       <div className="stats-highlight text-dark-green py-5 px-3 my-5 position-relative overflow-hidden container">
         <div className="row text-center position-relative z-2">
-          <div className="col-lg-4 col-md-4 mb-4 mb-lg-0">
+          <div className="col-lg-4 col-md-4 mb-4 mb-lg-0 counter-border">
             <div className="stat-item text-white">
               <div className="stat-number fs-1 fw-bold">
                 <CountUp target={90} duration={3000} /> +
@@ -70,7 +67,7 @@ const Home: React.FC = () => {
               <div className="stat-label">Happy Client</div>
             </div>
           </div>
-          <div className="col-lg-4 col-md-4 mb-4 mb-lg-0">
+          <div className="col-lg-4 col-md-4 mb-4 mb-lg-0 counter-border">
             <div className="stat-item text-white">
               <div className="stat-number fs-1 fw-bold">
                 <CountUp target={27} duration={3000} /> +
@@ -87,7 +84,7 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
-        </div>
+      </div>
       </div>
     </section>    
   </>

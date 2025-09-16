@@ -1,11 +1,13 @@
 import React from "react";
 
 import Image from "next/image";
+import PageBaner from "@components/PageBaner/PageBaner";
+
 import "./About.css";
 
-import aboutImage from "@image/about/about-square-8.webp";
-import illustration from "@image/illustration/illustration-3.webp";
-import PageBaner from "@components/PageBaner/PageBaner";
+import bannerImage from "@image/about/about-banner.png"
+import management from "@image/about/management.png";
+import affiliate from "@image/about/affiliate.png"
 
 const About:React.FC = () => {
   const services = [
@@ -23,7 +25,7 @@ const About:React.FC = () => {
 
   return (
     <>
-      <PageBaner heading="About"/>
+      <PageBaner heading="About" image={bannerImage}/>
       <section
         id="featured-services"
         className="featured-services section light-background pt-5"
@@ -53,10 +55,9 @@ const About:React.FC = () => {
           <div className="row mt-5 mx-1">
             <div className="col-lg-6 mb-4 mb-lg-0">
               <div>
-                <h2 className="h1 fw-bold mb-4 " style={{ color: "#293a34" }}>
+                <h1 className="fw-bold mb-4 ">
                   Management
-                </h2>
-
+                </h1>
                 <p
                   className="mb-4"
                   style={{
@@ -113,9 +114,9 @@ const About:React.FC = () => {
             <div className="col-lg-6 mb-4 ml-5 mb-lg-0">
               <div className="position-relative">
                 <Image
-                  src={aboutImage}
+                  src={management}
                   alt="About Us"
-                  className="rounded-4 shadow custom-about-img"
+                  className="shadow custom-about-img"
                 />
               </div>
             </div>
@@ -138,7 +139,7 @@ const About:React.FC = () => {
                     <div className="cta-image-container position-relative">
                       {/* Add Image if needed */}
                       <Image
-                        src={illustration}
+                        src={affiliate}
                         alt="Illustration"
                         className="img-fluid main-image"
                         width={500}

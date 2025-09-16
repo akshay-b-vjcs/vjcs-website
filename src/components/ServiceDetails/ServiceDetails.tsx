@@ -7,16 +7,16 @@ import PageBaner from "@/components/PageBaner/PageBaner";
 import "./ServiceDetails.css";
 
 // Desktop images
-import imgCax from "@image/services/Home-carousel-cax.png";
-import imgPlm from "@image/services/Home-carousel-plm.png";
-import imgEds from "@image/services/Home-carousel-eds.png";
-import imgEds1 from "@image/services/Home-carousel-eds-1.png";
+import imgCax from "@image/services/carousel-cax.png";
+import imgPlm from "@image/services/carousel-plm.png";
+import imgEds from "@image/services/carousel-eds.png";
+import imgEds1 from "@image/services/carousel-ds.png";
 
 // Mobile images
-import imgCaxMob from "@image/services/mob/Home-carousel-cax.png";
-import imgPlmMob from "@image/services/mob/Home-carousel-plm.png";
-import imgEdsMob from "@image/services/mob/Home-carousel-eds.png";
-import imgEds1Mob from "@image/services/mob/Home-carousel-eds-2.png";
+import imgCaxMob from "@image/carousel/mobile/carousel-cax-Sq.png"
+import imgPlmMob from "@image/carousel/mobile/carousel-plm-Sq.png";
+import imgEdsMob from "@image/carousel/mobile/carousel-eds-Sq.png";
+import imgEds1Mob from "@image/carousel/mobile/carousel-ds-Sq.png";
 
 // Map desktop banners
 const serviceBannerMap: Record<string, StaticImageData> = {

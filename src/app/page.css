@@ -149,7 +149,8 @@
 }
 
 .hero .feature-card {
-  background: rgba(255, 255, 255, 0.1);
+  /* background: rgba(255, 255, 255, 0.1); */
+  background: rgba(10, 30, 50, 0.900);;
   border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
   border-radius: 16px;
@@ -177,7 +178,7 @@
 .hero .feature-card span {
   font-size: 14px;
   font-weight: 600;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: color-mix(in srgb, var(--contrast-color), transparent 30%);
 }
 
 .hero .feature-card:last-child {
@@ -185,12 +186,27 @@
 }
 
 .stats-highlight {
-  background: var(--accent-color);
+  background: linear-gradient(#80d7edfc 0%, #011b28 100%);
   border-radius: 25px;
   padding: 50px 30px;
   margin-top: 60px;
   position: relative;
   overflow: hidden;
+}
+.counter-border {
+  position: relative;
+}
+
+/* Desktop view: Right border */
+.counter-border::after {
+  content: "";
+  background-color: #fff;
+  width: 2px;
+  height: 60px;
+  position: absolute;
+  top: 60%;
+  right: 0;
+  transform: translateY(-50%)
 }
 
 @media (max-width: 992px) {
@@ -232,6 +248,16 @@
 
   .hero .feature-card span {
     font-size: 12px;
+  }
+
+  .counter-border::after {
+    width: 100px;
+    height: 2px;
+    margin-top: 20px;
+    top: 90%;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
   }
 }
 
