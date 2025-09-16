@@ -1,11 +1,13 @@
 import React from "react";
 
 import Image from "next/image";
+import PageBaner from "@components/PageBaner/PageBaner";
+
 import "./About.css";
 
-import aboutImage from "@image/about/about-square-8.webp";
-import illustration from "@image/illustration/illustration-3.webp";
-import PageBaner from "@components/PageBaner/PageBaner";
+import bannerImage from "@image/about/about-banner.png"
+import management from "@image/about/management.png";
+import affiliate from "@image/about/affiliate.png"
 
 const About:React.FC = () => {
   const services = [

@@ -2,15 +2,15 @@ import Image from "next/image";
 import "./Carousel.css";
 
 // Import local service banner images
-import imgCax from "@image/services/Home-carousel-cax.png";
-import imgPlm from "@image/services/Home-carousel-plm.png";
-import imgEds from "@image/services/Home-carousel-eds.png";
-import imgEds1 from "@image/services/Home-carousel-eds-1.png";
+import imgCax from "@image/carousel/carousel-cax.png";
+import imgPlm from "@image/carousel/carousel-plm.png";
+import imgEds from "@image/carousel/carousel-eds.png";
+import imgDs from "@image/carousel/carousel-ds.png";
 
-import imgCaxMob from "@image/services/mob/Home-carousel-cax.png";
-import imgPlmMob from "@image/services/mob/Home-carousel-plm.png";
-import imgEdsMob from "@image/services/mob/Home-carousel-eds.png";
-import imgEds2Mob from "@image/services/mob/Home-carousel-eds-2.png"
+import imgCaxMob from "@image/carousel/mobile/carousel-cax-Sq.png";
+import imgPlmMob from "@image/carousel/mobile/carousel-plm-Sq.png";
+import imgEdsMob from "@image/carousel/mobile/carousel-eds-Sq.png";
+import imgDsMob from "@image/carousel/mobile/carousel-ds-Sq.png"
 const Carousel:React.FC = () => {
   const slides = [
     {
@@ -52,8 +52,8 @@ const Carousel:React.FC = () => {
       ],
     },
     {
-      desktop: imgEds1,
-      mobile: imgEds2Mob,
+      desktop: imgDs,
+      mobile: imgDsMob,
       title: "Digitization Services",
       buttons: [
         {
