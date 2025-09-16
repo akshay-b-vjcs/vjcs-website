@@ -60,6 +60,19 @@
     transition: all 0.3s ease-in-out 0s;
   }
 
+  .navmenu>ul a:hover:before,
+  .navmenu li:hover>a:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: var(--hover-color);
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
   .navmenu a:hover:before,
   .navmenu li:hover>a:before,
   .navmenu .active:before {
@@ -107,7 +120,8 @@
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
   .navmenu .dropdown ul li:hover>a {
-    color: var(--nav-dropdown-hover-color);
+    /* color: var(--nav-dropdown-hover-color); */
+    color : var(--hover-color)
   }
 
   .navmenu .dropdown:hover>ul {

@@ -186,12 +186,12 @@
 }
 
 .stats-highlight {
-  background: linear-gradient(#80d7edfc 0%, #011b28 100%);
+  /* background: linear-gradient(#80d7edfc 0%, #011b28 100%); */
+  background-image: url('./../../public/img/bg/dotsbg.png');
+  background-size: contain;
+  /* background-position: center; */
+  background-repeat: repeat;
   border-radius: 25px;
-  padding: 50px 30px;
-  margin-top: 60px;
-  position: relative;
-  overflow: hidden;
 }
 .counter-border {
   position: relative;

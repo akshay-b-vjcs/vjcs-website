@@ -25,7 +25,7 @@ const About:React.FC = () => {
 
   return (
     <>
-      <PageBaner heading="About" image={bannerImage}/>
+      <PageBaner heading="About Us" image={bannerImage}/>
       <section
         id="featured-services"
         className="featured-services section light-background pt-5"
