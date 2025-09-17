@@ -115,7 +115,7 @@ const About:React.FC = () => {
           <div className="col-lg-6 mb-4 ml-5 mb-lg-0">
             <div className="position-relative">
               <Image
-                src={aboutImage}
+                src={management}
                 alt="About Us"
                 className="rounded-4 shadow custom-about-img"               
               />
@@ -136,7 +136,7 @@ const About:React.FC = () => {
                 <div className="col-lg-6">
                   <div className="cta-image-container position-relative">
                     {/* Add Image if needed */}
-                    <Image src={illustration} alt="Illustration" className="img-fluid main-image" width={500} height={500} />
+                    <Image src={affiliate} alt="Illustration" className="img-fluid main-image" width={500} height={500} />
                     
                     
                     <div className="pattern-dots"></div>
