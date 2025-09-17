@@ -24,23 +24,23 @@ const About:React.FC = () => {
   ];
 
   return (
-  <>
-    <PageBaner heading="About"/>
-    <section
-      id="featured-services"
-      className="featured-services section light-background pt-5"
-    >
-      <div className="container">
-        <div className="row mx-1  justify-content-between">
-        { services.map((service, index) => (
-          <div
-            key={index}
-            className="col-md-5 col-lg-5 service-card mt-3 mt-md-0"
-            data-aos="fade-up"
-          >
-            <div className="icon-box">
-              <i className={service.icon}></i>
-            </div>
+    <>
+      <PageBaner heading="About Us" image={bannerImage}/>
+      <section
+        id="featured-services"
+        className="featured-services section light-background pt-5"
+      >
+        <div className="container">
+          <div className="row mx-1  justify-content-between">
+            { services.map((service, index) => (
+              <div
+                key={index}
+                className="col-md-5 col-lg-5 service-card mt-3 mb-5 mb-md-0"
+                data-aos="fade-up"
+              >
+                <div className="icon-box">
+                  <i className={service.icon}></i>
+                </div>
 
             <div className="content">
               <h4>

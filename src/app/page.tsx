@@ -1,9 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 import Carousel from "@/components/Carousel/Carousel";
 import CountUp from "@components/Count/Count"
 
-import bg from "@image/bg/Home.png"
 import "./page.css";
 
 const Home: React.FC = () => {
