@@ -217,3 +217,10 @@
     font-size: 22px;
   }
 }
+
+.dot-image {
+  /* background: linear-gradient(#80d7edfc 0%, #011b28 100%); */
+  background-image: url("../../../public/img/bg/dotsbg.png");
+  background-size: contain;
+  background-repeat: repeat;
+}

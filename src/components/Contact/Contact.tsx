@@ -308,7 +308,7 @@ const Contact: React.FC = () => {
       </section>
       <section
         id="services"
-        className="services py-5 bg-light position-relative overflow-hidden"
+        className="services py-5 bg-light position-relative overflow-hidden dot-image"
       >
         <div className="container">
           <div className="row gy-4">
