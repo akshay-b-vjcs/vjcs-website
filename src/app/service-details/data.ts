@@ -32,7 +32,7 @@ export const services = [
         highlight:
           "Our solutions enable seamless data exchange between multiple CAD/CAM platforms.",
         points: [
-          "Translators for Neutral Formats: STEP, VRML, STL, IGES, DXF, Parasolid, Granite, ACIS, JT Open",
+          "Translators for Neutral Formats: STEP, VRML, STL, IGES, DXF, Parasolid, Granite, ACIS, JT Open etc.",
           "Plug-in Development: Pro/ENGINEER, SolidWorks, CATIA V5/V6, Autodesk Inventor, SpaceClaim",
         ],
       },
@@ -47,7 +47,7 @@ export const services = [
         highlight:
           "Our integration adds custom features and extends CAD tool capabilities.",
         points: [
-          "Integrating client software in Pro/ENGINEER, SolidWorks, CATIA V5/V6, AI, SpaceClaim",
+          "Integrating client software in 3rd party software like Pro/ENGINEER, SolidWorks, CATIA V5/V6, AI, SpaceClaim",
         ],
       },
       {
@@ -57,15 +57,13 @@ export const services = [
         icon: "bi bi-app-indicator",
         contentTitle: "Application Development",
         content:
-          "We use SDKs of CAD software to customize tools, add features, and improve UI/UX with automation.",
+          "We use SDKs available with CAD software to customize and develop new tools and enhance the existing features as per the customer requirements.",
         highlight:
-          "From GUI changes to macro automation, we deliver CAD applications tailored to client needs.",
+          "We have expertise with technologies and SDK’s of following CAD Software.",
         points: [
-          "Use SDK's to customize and develop new tools",
-          "Enhance existing CAD features",
-          "Changing GUI, Adding Menus, Developing Macros",
-          "SolidWorks: VB.NET, VC++/CLI, C# .NET, VC++ 6.0",
-          "CATIA V5/V6: CAA, Macros, CATScript, VB Script, C++",
+          "A software tool developed within the client's existing CAD software is responsible for providing extra features, utilities, or value addition. (E.g., changing GUI, adding menus, or developing macros to perform several steps with a single button click).",
+          "SolidWorks: Visual Basic .NET (VB.NET), Visual C++/CLI, Visual C# .NET, Visual C++ 6.0",
+          "CATIA: CAA (Component Application Architecture) v5/V6, Macro Development, CATScript, VB Script, C++",
           "UG NX: C, C++, NX Open API",
           "AutoDesk: API, Inventor SDK, VBA, C++",
           "ProE (Creo): ProToolkit, Web.Link, JLink",
@@ -95,21 +93,21 @@ export const services = [
         icon: "bi bi-code-slash",
         contentTitle: ".NET Development Services",
         content:
-          "We specialize in .NET solutions: desktop, web, mobile, cloud apps, and legacy migrations.",
-        highlight:
-          "From product lifecycle to architecture design, we provide complete .NET development support.",
+          "VJCS .NET development team has solid experience in software programming using various Microsoft development environments (C#, ASP.NET, VB.NET, WinForms and others). We have experienced software development professionals who are ready to endow their knowledge to development and enhancement of solutions that we offer to our clients.  We offer end-to-end product lifecycle management, test-driven development, and insights into the possibilities and pitfalls of the process as keys to success. An eye for project architecture allows for Custom .NET Development to chart the appropriate course from the beginning",
+        highlight: "Custom .NET development services include:",
         points: [
-          "Strong expertise in C#, ASP.NET, VB.NET, WinForms",
-          "End-to-end product lifecycle management",
-          "Custom .NET Web & Desktop Applications",
-          "Migration of Legacy Applications",
-          "Mobile Apps with .NET Compact Framework",
-          "Consulting & Architecture Planning",
+          "Custom .NET web-based solution development",
+          ".NET desktop applications migration",
+          ".NET web applications migration",
+          ".NET custom software development",
+          "Legacy .NET applications updating, enhancement, and support",
+          ".NET mobile applications development (based on .NET Compact Framework)",
+          ".NET application development consulting",
         ],
       },
       {
         id: 7,
-        title: "Cloud & Web Apps",
+        title: "CLOUD & WEB APPLICATION DEVELOPMENT",
         subtitle: "Azure & Modern Web Stack",
         icon: "bi bi-cloud",
         contentTitle: "Cloud & Web Application Development",
@@ -118,10 +116,12 @@ export const services = [
         highlight:
           "Secure, scalable, and future-ready enterprise applications built with cloud technologies.",
         points: [
-          "Windows Azure (VM, Services, Web Role, Worker Role, SQL Azure)",
-          "C/C++/.NET/Java, .NET Framework 4.0, C#.NET, ASP.NET, ADO.NET",
-          "AJAX, Microsoft Enterprise Library, Silverlight, WPF, LINQ, Entity Framework",
-          "WCF, Web Services, ASP",
+          "Windows Azure (Virtual Machine, Services, Web Role, Worker Role, Storages, SQL Azure)",
+          "C/C++/.NET/Java",
+          ".NET Framework 4.0, C#.NET, ASP.NET, ADO.NET",
+          "AJAX, Microsoft Enterprise Library",
+          "Silverlight, WPF, LINQ, Entity Framework",
+          "Web Services (WCF, ASP)",
           "SQL Server 2012/2008, MySQL",
         ],
       },
@@ -143,27 +143,26 @@ export const services = [
         ],
       },
       {
-        id: 9,
-        title: "NC Programming",
-        subtitle: "CNC Machining Expertise",
-        icon: "bi bi-gear-wide-connected",
+        id: 7,
+        title: "NC Programming Services",
+        subtitle: "CNC Programming & Verification",
+        icon: "bi bi-cpu",
         contentTitle: "NC Programming Services",
         content:
-          "We provide CNC programming for complex geometries, multi-axis operations, and process optimization.",
+          "VJ Core Soft offers companies a way to extend their NC Programming operations to help crunch through large projects, and start the chips flying. Our team has helped major manufacturers reach tight deadlines and expand their capabilities to bring in more work. We have vast experience in CNC programming for complex geometries and profiles. Our manufacturing engineering capabilities help us understand and optimize a variety of machining operations like multi-axis milling, drilling, turning, grinding, etc. For CNC program verification, we use industry-standard tools and techniques such as VeriCut and NCVerify to reduce the likelihood of errors, eliminating production time losses.",
         highlight:
-          "Our expertise in CNC programming ensures reduced errors and faster production cycles.",
+          "capability to integrate various processor environments such as Fanuc, Siemens and Fagor. As a part of CNC programming and verification, we offer:",
         points: [
-          "CNC programming for complex geometries & profiles",
-          "Multi-axis milling, drilling, turning, grinding",
-          "CNC program verification (VeriCut, NCVerify)",
-          "Integration with Fanuc, Siemens, Fagor",
-          "Tool Path Generation",
-          "APT Programming",
-          "CNC Program Optimization",
-          "Post-Processor Development",
-          "Adaptive Programming for Repair & Salvage",
-          "Virtual Machine Modeling & Simulation",
-          "5 Axis Milling, Waterjet Programming, CMM Programming",
+          "Tool path generation",
+          "APT programming",
+          "CNC program optimization",
+          "Post-processor development",
+          "Adaptive programming for repair and salvage of components",
+          "Virtual machine modeling and simulation",
+          "How We Can Help",
+          "5 Axis Milling",
+          "Waterjet Programming",
+          "CMM Programming",
           "Process Improvement",
         ],
       },
@@ -202,7 +201,7 @@ export const services = [
         highlight:
           "Our integration adds custom features and extends CAD tool capabilities.",
         points: [
-          "Integrating client software in Pro/ENGINEER, SolidWorks, CATIA V5/V6, AI, SpaceClaim",
+          "Integrating client software in 3rd party software like Pro/ENGINEER, SolidWorks, CATIA V5/V6, AI, SpaceClaim",
         ],
       },
       {
@@ -213,10 +212,8 @@ export const services = [
         contentTitle: "Application Development",
         content:
           "We use SDKs of CAD software to customize tools, add features, and improve UI/UX with automation.",
-        highlight:
-          "From GUI changes to macro automation, we deliver CAD applications tailored to client needs.",
+        highlight: "Application Development using CAE Software SDKs.",
         points: [
-          "Application Development using CAE Software SDKs",
           "Abaqus: Abaqus Scripting (Python) and Abaqus GUI Tool Kit",
           "Ansys: ANSYS Workbench SDK, ADPL",
           "Hypermesh: Tcl, Tk, C#, C++",
@@ -248,10 +245,10 @@ export const services = [
         content:
           "We provide structural, thermal, fluids, electromagnetic, and multi-physics analysis modules.",
         highlight:
-          "Modules are developed and customized per client requirements and available on licensing basis.",
+          "Complete Analysis Modules - Structural, Thermal, Fluids, Electro Magnetic, linear/Nonlinear/Transient, Modal Dynamics, Multi-physics.",
         points: [
-          "Complete Analysis Modules: Structural, Thermal, Fluids, Electromagnetic",
-          "Types: Linear/Nonlinear, Transient, Modal Dynamics, Multi-physics",
+          "Will be Developed and Customized as per client’s requirements.",
+          "Available on licensing basis as well .",
         ],
       },
       {
@@ -298,7 +295,8 @@ export const services = [
         points: [
           "GUI to display geometric results",
           "Specifications Results Displays",
-          "Q-Slice and Iso-surface visualization",
+          "Q-Slice ",
+          "Iso-surface",
           "Controlling particle flow or charged particle trace",
         ],
       },
@@ -326,7 +324,7 @@ export const services = [
         icon: "bi bi-cloud-arrow-up",
         contentTitle: "Data Management & AI Analytics",
         content:
-          "We provide big data solutions for storing, managing, and processing CAx data efficiently.",
+          "We provide Big Data solution to store, manage and to perform scalable query-driven processing of CAx Data. AI based Data driven CAE platform gives flexibility in carrying out DoE explorations, sensitivity analysis, MOO, MDO and reliability studies more efficiently and economically without any constraints to identify the optimal robust model .",
         highlight:
           "AI-driven CAE platform enables design explorations, sensitivity analysis, MOO, MDO, and reliability studies.",
         points: [
@@ -338,13 +336,28 @@ export const services = [
           "Helps identify optimal robust models economically without constraints",
         ],
       },
+      {
+        id: 11,
+        title: "Graphics & UI",
+        subtitle: "Advanced 3D Rendering & Cross-platform Interfaces",
+        icon: "bi bi-display",
+        contentTitle: "Graphics, UI & Special Feature Development",
+        content:
+          "We deliver cross-platform UI solutions using Qt (C++) and WPF (.NET) combined with high-performance 3D rendering engines — Coin3D / Open Inventor, Open Cascade, OpenGL and VTK. Our stack supports GPU-accelerated rendering, real-time interaction, CAD import/export, parametric model visualization, and complex surface/volume processing. We also implement special graphics features like embossing/debossing, metallic/foil effects, robust folding simulations, adaptive tessellation, mesh optimization, and high-quality texture & material mapping to produce photoreal and engineering-grade visualizations.",
+        highlight:
+          "Cross-platform UIs (Qt, WPF) integrated with high-performance 3D engines (Coin3D/Open Inventor, Open Cascade, OpenGL, VTK) for real-time, feature-rich CAD/CAM/CAE visualization and simulation.",
+        points: [
+          "UI using Qt, WPF in .NET .",
+          "3D rendering via Coin3D / Open Inventor for scene graph workflows",
+          "Special graphic feature development.",
+        ],
+      },
     ],
   },
   {
     slug: "cax-software-testing",
     title: "CAx Software QA & Testing",
-    intro:
-      "We ensure quality assurance and testing for CAx software to achieve reliable performance.",
+
     features: [
       {
         id: 1,
@@ -358,7 +371,7 @@ export const services = [
           "Over 500 man-years of experience ensure high-quality testing and uncover bugs unseen in development.",
         points: [
           "Accuracy testing for standard and non-standard engineering problems using exact solutions",
-          "Creation of test plans covering positive and negative scenarios, continuously updated",
+          "Creation of Test plans covering Positive and Negative test scenarios for expected behaviors and updating continuously to reflect changes.",
           "Unit, Component, and Integration Testing",
           "Coverage analysis to identify use cases and test cases",
           "Regression management",
@@ -397,12 +410,13 @@ export const services = [
         highlight:
           "Simulating first-user environment to uncover hidden bugs, testing integrations, and providing cost-effective, high-value services.",
         points: [
-          "Over 500 man-years of CAD/CAE software testing experience",
-          "Testers possess an eye for detail and a 'test-to-break' attitude",
-          "Testing includes install/uninstall, licensing, report generation, localization",
-          "Strong capabilities in testing integration and interfaces with 3rd party software",
-          "Support testing activities on all platforms (Windows, Linux, Apple Mac, Unix) at no extra cost",
-          "Expertise in testing real-life user scenarios for every software release",
+          "Over 500 Man-Years of CAD/CAE Software Testing Experience",
+          "Just having an experience on software, will not make a good tester. Over years of experience, our testers developed an eye for detailing, test to break attitude and strong desire for quality. Since we test the product as a first user, we could able to un-earth many bugs that are not seen in development environment.",
+          "Virtually we simulate first user environment. Our testing includes, install/uninstall, licensing, report generation, localization testing etc.",
+          "Good capabilities in testing Integration and Interfaces with 3rd Party Software.",
+          "Our service is not just cost beneficial but it also adds value to development. Our testers have good domain knowledge. Combination of Domain knowledge and testing experience is proving very fruitful.",
+          "We support testing activities on all platforms (like Win, Linux, Apple Mac, Unix) - no additional Cost for testing on Unix Platforms.",
+          "Along with accuracy testing, we have good expertise in Testing User Scenarios, where real life customer problems are simulated for every Release.",
         ],
       },
       {
@@ -417,8 +431,10 @@ export const services = [
         points: [
           "Geometry transfer",
           "Sketching, detailing/drawing",
-          "Assembly modeling, 3D modeling features",
-          "Expertise on UG, ProE, CATIA, SolidWorks, SolidEdge",
+          "Assembly modeling, 3D ",
+          "modeling features",
+          "Expertise on UG, ProE, CATIA, ",
+          "SolidWorks, SolidEdge",
           "Mold design and casting",
           "Sheet metal and welding design",
         ],
@@ -434,21 +450,25 @@ export const services = [
         highlight:
           "Ensures simulations, solvers, and optimization modules function correctly.",
         points: [
-          "Multi-domain system simulation",
-          "Electromagnetic analysis",
-          "Structural and thermal analysis",
-          "Multibody dynamics",
+          "Multi Domain System .",
+          "Simulation",
+          "Electromagnetic",
+          "Structural, Thermal",
+          "MultiBody Dynamic",
           "Acoustics",
-          "Transmission system design and analysis",
-          "Design optimization",
-          "Multiphysics including AC/DC, Chemical Engineering",
-          "Computational Fluid Dynamics (CFD)",
-          "Crash and explicit solvers",
-          "Durability analysis",
-          "Product lifecycle management (PLM)",
-          "Injection molding simulation",
-          "Extended Finite Element Method (XFEM)",
+          "Transmission System Design and Analysis",
+          "Design Optimization",
+          "Multiphysics including AC/DC, Chemical Engg.",
+          "CFD",
+          "Crash and Explicit Solvers",
+          "Durability",
+          "PLM",
+          "Injection Molding",
+          "XFEM",
           "Manufacturing process simulation: welding, machining, sheet metal forming",
+          "Interfaces",
+          "Geotechnical",
+          "Energy Simulation",
         ],
       },
     ],
@@ -1056,5 +1076,4 @@ export const services = [
       },
     ],
   },
-
 ];

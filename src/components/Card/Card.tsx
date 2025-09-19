@@ -11,7 +11,7 @@ interface ServiceLink {
 interface CardProps {
   icon: string;
   title: ReactNode;
-  description: ReactNode;
+  description?: ReactNode;
   links?: ServiceLink[];
   featured?: boolean;
   compact?: boolean;

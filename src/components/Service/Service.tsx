@@ -5,8 +5,6 @@ const services = [
   {
     icon: "bi bi-building-gear",
     title: "CAx Software Services",
-    description:
-      "Delivering advanced CAD/CAM and CAE development solutions with rigorous QA & testing to power precision engineering and digital innovation.",
     links: [
       {
         text: "CAD/CAM Development",
@@ -28,8 +26,6 @@ const services = [
   {
     icon: "bi bi-gear-wide-connected",
     title: "Engineering Design Services",
-    description:
-      "Empowering innovation through precision-driven Product Design, intelligent BIM Modeling, and specialized Marine Engineering solutions tailored for modern industry.",
     links: [
       {
         text: "Product Design",
@@ -51,8 +47,6 @@ const services = [
   {
     icon: "bi bi-cpu",
     title: "Digitization Services",
-    description:
-      "Accelerating industrial innovation through Virtual Manufacturing, smart IIoT connectivity, AI-powered solutions, scalable enterprise applications, and immersive Augmented & Virtual Reality experiences.",
     links: [
       {
         text: "Virtual Manufacturing",
@@ -84,8 +78,7 @@ const services = [
   {
     icon: "bi bi-diagram-3",
     title: "PLM (Product Lifecycle Management)",
-    description:
-      "Comprehensive PLM solutions covering global system commissioning, CAD customization, seamless tool integration, and end-to-end support—empowering businesses to streamline product development from concept to sustainment.",
+   
     links: [
       {
         text: "Learn More",
@@ -108,7 +101,6 @@ const Service: React.FC = () => {
                 <Card
                   icon={service.icon}
                   title={service.title}
-                  description={service.description}
                   links={service.links}
                 />
               </div>
