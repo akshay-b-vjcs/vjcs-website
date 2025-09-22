@@ -487,17 +487,11 @@ export const services = [
         icon: "bi bi-briefcase",
         contentTitle: "End-to-End Service Offerings",
         content:
-          "We provide comprehensive PLM system commissioning, CAD customization, integrations, upgrades, and support services.",
+          "Supporting End-to-end Global PLM systems Commissioning – new implementations, migrations and upgrades, integration, performance tuning; user training and adaptability; customized applications and frameworks; support and sustenance.",
         highlight:
           "From implementations to training and CAD customization, we cover the complete service lifecycle.",
         points: [
-          "New implementations",
-          "Migrations and upgrades",
-          "Integration",
-          "Performance tuning",
-          "User training and adaptability",
-          "Customized applications and frameworks",
-          "Support and sustenance",
+        
           "CAD Customization using NX Open API, CATIA CAA, Pro/Toolkit, Autodesk Inventor API, SolidWorks API, JLink, Pro/Program",
         ],
       },
@@ -900,7 +894,7 @@ export const services = [
         points: [
           "Access to Factory Information System on the go with a mobile app",
           "Access to Quality Management Systems on the go with a mobile app",
-          "Get access to workshop equipment safety & security with enterprise mobile apps",
+          "Get an access to workshop equipment safety & security with enterprise mobile apps for manufacturing",
           "Production planning & scheduling on the go",
         ],
       },
@@ -911,14 +905,14 @@ export const services = [
         icon: "bi bi-speedometer2",
         contentTitle: "Real-time Equipment Monitoring",
         content:
-          "With VJCS enterprise mobility solutions, track equipment efficiency and monitor their health on mobile devices. Conduct preventive maintenance checks at regular intervals to reduce downtime.",
+          "With VJCS enterprise mobility solutions, track equipment efficiency and monitor their health on mobile devices. Conduct preventive maintenance checks at regular intervals .",
         highlight:
           "Empowers factories with real-time data access and preventive maintenance capabilities.",
         points: [
-          "Access equipment-related critical data from the mobile app and take action instantly",
-          "Prevent material wastage and reduce input overheads of manufacturing costs",
-          "Eliminate redundant activities and improve collaboration between SBUs",
-          "Maintain product quality through scheduled equipment maintenance",
+          "Access equipment related critical data of factory & take action on it on the go from the mobile app",
+          "Prevent material wastage and reduce input overheads of manufacturing costs by accessing its data from a mobile app .",
+          "Eliminate redundant activities and improve internal collaboration between SBUs with an enterprise mobile app",
+          "Maintain the quality of your products by conducting scheduled equipment maintenance",
         ],
       },
       {
@@ -928,13 +922,13 @@ export const services = [
         icon: "bi bi-truck",
         contentTitle: "Accelerated Product Launch & Supply Chain Management",
         content:
-          "Enterprise mobility solutions for supply chain help overcome issues of production planning, material tracking, and dispatch to ensure uninterrupted production lines.",
+          "Supply Chain enterprise mobility solutions to overcome the issues of production planning, material tracking & dispatch",
         highlight:
           "Improves resource management and streamlines communication across stakeholders.",
         points: [
-          "High-level view of material availability for uninterrupted production",
-          "High employee visibility on shop floor enabling smarter resource management",
-          "Smooth data flow across stakeholders including customers, vendors & suppliers",
+          "Get a high-level view of material available to plan the uninterrupted production line",
+          "High employee visibility on shop floor; enabling smarter resource management",
+          "Smooth flow of data & information to all the stakeholders such as customers, vendors & suppliers",
           "Operational efficiency through fleet management",
         ],
       },
@@ -1033,7 +1027,7 @@ export const services = [
         icon: "bi bi-geo-alt",
         contentTitle: "Next-gen Location-aware AR Applications",
         content:
-          "We build geo-location-based AR apps that give businesses an edge by leveraging location-based touch for immersive engagement.",
+          "Get ahead of the competition with a new VR app using location-based touch.",
         highlight:
           "Stay ahead of the competition with location-powered AR solutions.",
         points: [
@@ -1065,7 +1059,7 @@ export const services = [
         icon: "bi bi-life-preserver",
         contentTitle: "Ongoing AR/VR Support & Maintenance",
         content:
-          "Our team ensures product stability and optimized business processes by providing continuous support and maintenance for AR/VR/MR applications.",
+          "Our team will deliver product stability and optimized business processes by providing ongoing support and maintenance.",
         highlight:
           "Dedicated support to keep your AR/VR solutions running seamlessly.",
         points: [
