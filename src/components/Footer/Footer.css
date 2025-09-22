@@ -96,7 +96,7 @@
 }
 
 .footer .footer-links ul a:hover {
-  color: var(--accent-color);
+  color: var(--hover-color);
 }
 
 .footer .footer-contact p {

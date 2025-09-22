@@ -58,9 +58,10 @@
 
 .hero h1 {
   font-size: 56px;
-  font-weight: 800;
+  font-weight: 650;
   line-height: 1.1;
   margin-bottom: 24px;
+  color: var(--accent-color);
 }
 
 .hero p {
@@ -282,5 +283,8 @@
 
   .hero .feature-card span {
     font-size: 11px;
+  }
+  .stats-highlight {
+    background-size: cover;
   }
 }
