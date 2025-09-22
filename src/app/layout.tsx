@@ -9,6 +9,7 @@ import "@styles/globals.css";
 
 import Header from "@components/Header/Header";
 import Footer from "@/components/Footer/Footer";
+import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
 
 import { Roboto, Inter, Barlow } from "next/font/google";
 
@@ -76,6 +77,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );
