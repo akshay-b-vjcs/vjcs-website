@@ -41,7 +41,7 @@ const About:React.FC = () => {
       id="about-us"
       className="about-us section light-background"
     >
-      <div className="container">
+      <div className="container g-0">
         <div className="card-wrapper ">
             { services.map((service, index) => (
               <div
