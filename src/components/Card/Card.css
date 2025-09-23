@@ -7,12 +7,14 @@
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   border: 1px solid color-mix(in srgb, var(--accent-color), transparent 90%);
-  box-shadow: 0 10px 40px color-mix(in srgb, var(--heading-color), transparent 90%);
+  box-shadow: 0 10px 40px
+    color-mix(in srgb, var(--heading-color), transparent 90%);
 }
 
 .card:hover {
   transform: translateY(-15px);
-  box-shadow: 0 25px 60px color-mix(in srgb, var(--accent-color), transparent 80%);
+  box-shadow: 0 25px 60px
+    color-mix(in srgb, var(--accent-color), transparent 80%);
   border: 2px solid var(--accent-color) !important;
 }
 
@@ -39,8 +41,8 @@
 }
 
 .card .card-icon {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   background: linear-gradient(
     135deg,
     color-mix(in srgb, var(--accent-color), transparent 10%),
@@ -54,7 +56,8 @@
   transition: all 0.3s ease;
   position: relative;
   z-index: 2;
-  box-shadow: 0 8px 25px color-mix(in srgb, var(--accent-color), transparent 70%);
+  box-shadow: 0 8px 25px
+    color-mix(in srgb, var(--accent-color), transparent 70%);
 }
 
 .card:hover .card-icon {
@@ -67,7 +70,7 @@
 }
 
 .card .card-icon i {
-  font-size: 32px;
+  font-size: 25px;
   color: var(--contrast-color);
   transition: all 0.3s ease;
 }
@@ -78,7 +81,7 @@
 }
 
 .card .card-content h3 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   margin-bottom: 15px;
   line-height: 1.3;

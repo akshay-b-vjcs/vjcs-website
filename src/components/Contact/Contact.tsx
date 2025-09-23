@@ -308,7 +308,7 @@ const Contact: React.FC = () => {
       </section>
       <section
         id="services"
-        className="services py-5 bg-light position-relative overflow-hidden"
+        className="services py-5 bg-light position-relative overflow-hidden dot-image"
       >
         <div className="container">
           <div className="row gy-4">
@@ -352,7 +352,7 @@ const Contact: React.FC = () => {
                 icon="bi-geo-alt-fill"
                 title={
                   <>
-                    Corporate Office, Pune<span>VJ Coresoft Pvt. Ltd.</span>
+                    Corporate Office, Pune <span>VJ Coresoft Pvt. Ltd.</span>
                   </>
                 }
                 description={
@@ -381,11 +381,7 @@ const Contact: React.FC = () => {
             <div className="col-lg-4 col-md-6">
               <Card
                 icon="bi-geo-alt-fill"
-                title={
-                  <>
-                    Affiliate Office, USA<span>VJ Coresoft Pvt. Ltd.</span>
-                  </>
-                }
+                title={<>Affiliate Office, USA</>}
                 description={
                   <>
                     <span>
