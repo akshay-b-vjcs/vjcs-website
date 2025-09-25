@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  padding: 120px 0 60px 0;
+  padding-top: 25px;
 }
 
 .hero .hero-background {
@@ -61,7 +61,7 @@
   font-weight: 650;
   line-height: 1.1;
   margin-bottom: 24px;
-  color: var(--accent-color);
+  color: var(--heading-color);
 }
 
 .hero p {
@@ -151,7 +151,7 @@
 
 .hero .feature-card {
   /* background: rgba(255, 255, 255, 0.1); */
-  background: rgba(10, 30, 50, 0.900);;
+  background: var(--heading-color);
   border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
   border-radius: 16px;
@@ -187,13 +187,9 @@
 }
 
 .stats-highlight {
-  /* background: linear-gradient(#80d7edfc 0%, #011b28 100%); */
-  background-image: url('./../../public/img/bg/dotsbg.png');
-  background-size: contain;
-  /* background-position: center; */
-  background-repeat: repeat;
-  border-radius: 25px;
+  border-radius: 1.5rem;
 }
+
 .counter-border {
   position: relative;
 }
@@ -220,7 +216,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .hero h1 {
     font-size: 42px;
   }
@@ -283,8 +279,5 @@
 
   .hero .feature-card span {
     font-size: 11px;
-  }
-  .stats-highlight {
-    background-size: cover;
   }
 }

@@ -1,13 +1,13 @@
-"use client";
-import Image from "next/image";
-import "./Career.css";
-import aboutImage from "@image/about/about-square-8.webp";
+"use client"
 import { useState } from "react";
+import Image from "next/image";
 import PageBaner from "@components/PageBaner/PageBaner";
+import teamImage from "@image/career/team.png";
+import "./Career.css";
 
 const Career: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
-
+  console.log(activeIndex)
   const careers = [
     {
       title: "CAD Testers 2D Sketch",
@@ -69,7 +69,7 @@ const Career: React.FC = () => {
   return (
     <>
       <PageBaner heading="Career" />
-      <section className="py-5">
+      <section className="section light-background py-5">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 mb-4 mb-lg-0">
@@ -93,16 +93,20 @@ const Career: React.FC = () => {
 
             <div className="col-lg-6 mt-0 mt-md-5">
               <Image
-                src={aboutImage}
+                src={teamImage}
                 alt="About Us"
-                className="rounded-4 shadow custom-career-img"
+                className="custom-career-img"
               />
             </div>
           </div>
+        </div>
+      </section>
 
+      <section className="section bg-pattern light-background py-5">
+        <div className="container">
           <div className="text-center mt-5 section-title">
             <h2 className="fw-bold">Open Positions</h2>
-            <p className="text-dark">
+            <p >
               For expansion plans, company is looking for following
               professionals
             </p>

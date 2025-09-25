@@ -1,6 +1,6 @@
 "use client";
 
-import { SetStateAction, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Card from "@components/Card/Card";
 
 import ReCAPTCHA from "react-google-recaptcha";
@@ -94,7 +94,7 @@ const Contact: React.FC = () => {
   return (
     <>
       <PageBaner heading="Contact" />
-      <section id="contact" className="contact section py-5">
+      <section id="contact" className="contact section py-5 light-background">
         <div className="container">
           <div className="contact-main-wrapper">
             <div className="map-wrapper">
@@ -308,7 +308,7 @@ const Contact: React.FC = () => {
       </section>
       <section
         id="services"
-        className="services py-5 bg-light position-relative overflow-hidden dot-image"
+        className="services py-5 bg-light position-relative overflow-hidden bg-pattern"
       >
         <div className="container">
           <div className="row gy-4">

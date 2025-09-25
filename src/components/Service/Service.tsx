@@ -93,7 +93,7 @@ const Service: React.FC = () => {
   return (
     <>
       <PageBaner heading="Services" />
-      <section id="services" className="services py-4 py-md-5">
+      <section id="services" className="services section light-background py-4 py-md-5">
         <div className="container">
           <div className="row gy-4">
             {services.map((service, index) => (

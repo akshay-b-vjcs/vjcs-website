@@ -138,7 +138,7 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
   return (
     <>
       <PageBaner heading={service.title} />
-      <section id="service-details" className="service-details section pt-5">
+      <section id="service-details" className="service-details section light-background pt-5">
         <div className="container">
           <div className="row gy-5">
             {/* Left Column */}
@@ -165,7 +165,7 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
                 </div>
 
                 {/* Features */}
-                <section id="features" className="features section py-5">
+                <section id="features" className="features section py-3">
                   <div className="container">
                     <div className="row g-4">
                       {/* Left Tabs */}
@@ -244,7 +244,7 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
 
             {/* Right Column */}
             <div className="col-lg-4">
-              <div className="service-sidebar mx-2 mx-md-0 mt-0 mt-md-5">
+              <div className="service-sidebar">
                 <div className="service-menu">
                   <h4>Our Services</h4>
                   <div className="menu-list">

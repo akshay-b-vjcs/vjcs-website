@@ -66,7 +66,7 @@ const About:React.FC = () => {
       </div>
     </section>
     
-    <section className="section section-wrapper light-background py-5">
+    <section className="section bg-pattern light-background py-5">
       <div className="container">
         <div className="management">
           <div className="management-wrapper row g-0 mx-1 my-5">

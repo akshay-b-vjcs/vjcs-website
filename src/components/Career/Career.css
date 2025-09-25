@@ -117,6 +117,7 @@
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  color : #ffffff
 }
 
 .section-title h2:before {
@@ -141,6 +142,10 @@
   right: 0;
   bottom: 0;
   margin: auto;
+}
+
+.section-title p {
+  color: #ffffff
 }
 
 .custom-career-img {

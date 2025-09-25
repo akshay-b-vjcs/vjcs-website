@@ -55,7 +55,7 @@ const Home: React.FC = () => {
             </div>
           </div>
       </div>
-      <div className="stats-highlight text-dark-green py-5 px-3 my-5 position-relative overflow-hidden container">
+      <div className="bg-pattern stats-highlight text-dark-green py-5 px-3 my-5 position-relative overflow-hidden container">
         <div className="row text-center position-relative z-2">
           <div className="col-lg-4 col-md-4 mb-4 mb-lg-0 counter-border">
             <div className="stat-item text-white">
