@@ -69,29 +69,19 @@ const Career: React.FC = () => {
   return (
     <>
       <PageBaner heading="Career" />
-      <section className="section light-background py-5">
+      <section className="section career-head-section light-background">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 mb-4 mb-lg-0">
-              <h2 className="h1 fw-bold mb-4" style={{ color: "#293a34" }}>
+              <h1 className="fw-bold">
                 CAREER
-              </h2>
-              <p
-                style={{
-                  color: "#384943",
-                  fontSize: "16px",
-                  fontWeight: 400,
-                  lineHeight: "1.6",
-                }}
-              >
-                At VJ Coresoft Pvt. Ltd., employees are the most important asset
-                of the company. Honesty, ethics, value, and our commitments are
-                part of our culture. Working on advanced CAx Technologies, we
-                specialize in tackling complex challenges.
+              </h1>
+              <p>
+                At VJ Coresoft Pvt. Ltd., employees are the most important asset of the company. Honesty, ethics, value, and our commitments are part of our culture. Working on advanced CAx Technologies, we specialize in tackling complex challenges.
               </p>
             </div>
 
-            <div className="col-lg-6 mt-0 mt-md-5">
+            <div className="col-lg-6 image-wrapper">
               <Image
                 src={teamImage}
                 alt="About Us"
@@ -102,13 +92,12 @@ const Career: React.FC = () => {
         </div>
       </section>
 
-      <section className="section bg-pattern light-background py-5">
+      <section className="section bg-pattern py-5">
         <div className="container">
           <div className="text-center mt-5 section-title">
             <h2 className="fw-bold">Open Positions</h2>
             <p >
-              For expansion plans, company is looking for following
-              professionals
+              For expansion plans, company is looking for following professionals
             </p>
           </div>
 

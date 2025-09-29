@@ -62,7 +62,7 @@ const Home: React.FC = () => {
               <div className="stat-number fs-1 fw-bold">
                 <CountUp target={90} duration={3000} /> +
               </div>
-              <div className="stat-label">Happy Client</div>
+              <div className="stat-label">Valued Clients</div>
             </div>
           </div>
           <div className="col-lg-4 col-md-4 mb-4 mb-lg-0 counter-border">
@@ -70,7 +70,7 @@ const Home: React.FC = () => {
               <div className="stat-number fs-1 fw-bold">
                 <CountUp target={27} duration={3000} /> +
               </div>
-              <div className="stat-label">Years of proven expertise</div>
+              <div className="stat-label">Years of Trusted Excellence</div>
             </div>
           </div>
           <div className="col-lg-4 col-md-4 mb-4 mb-md-0">
@@ -78,7 +78,7 @@ const Home: React.FC = () => {
               <div className="stat-number fs-1 fw-bold">
                 <CountUp target={18} duration={3000} /> +
               </div>
-              <div className="stat-label">Countries serving</div>
+              <div className="stat-label">Countries and Growing</div>
             </div>
           </div>
         </div>

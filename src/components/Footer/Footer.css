@@ -52,8 +52,8 @@
 }
 
 .footer .social-links a:hover {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  color: var(--hover-color);
+  border-color: var(--hover-color);
 }
 
 .footer h4 {

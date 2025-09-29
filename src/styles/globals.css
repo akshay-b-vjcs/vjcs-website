@@ -55,7 +55,7 @@ h6 {
   /* Gradient background */
   background: 
     radial-gradient(circle, rgba(255, 255, 255, 0.5) 1px, transparent 1px),
-    linear-gradient(to bottom,#3c8bad, #09202a);
+    linear-gradient(to bottom,#3c8bad, #0f172a);
 
   /* Dot spacing */
   background-size: 17px 17px, 100% 100%;

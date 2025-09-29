@@ -74,39 +74,15 @@ const About:React.FC = () => {
               <div className="management-content p-5">
                 <h2 className="mb-4" >Management</h2>
 
-                <p
-                  className="mb-4"
-                  style={{
-                    color: "#384943",
-                    fontSize: "16px",
-                    fontWeight: 400,
-                    lineHeight: "1.6",
-                  }}
-                >
+                <p className="mb-4">
                   VJ Coresoft Pvt. Ltd. (VJCS) founded in 1998, is a leading global IT company engaged in Engineering Services, Software Testing and Software Development. VJCS is located in Pune, India. The city of Pune is a nerve center for telecommunications, engineering, automobile, manufacturing and a rapidly growing information technology services industry.
                 </p>
 
-                <p
-                  className="text-muted mb-3"
-                  style={{
-                    color: "#384943",
-                    fontSize: "16px",
-                    fontWeight: 400,
-                    lineHeight: "1.6",
-                  }}
-                >
+                <p className="mb-3">
                   We are growing and strongly consolidating our existing portfolio of solutions in Cax Software Development/QA, PLM, Engineering Services and Digitization for smart manufacturing.
                 </p>
 
-                <p
-                  className="text-muted mb-3"
-                  style={{
-                    color: "#384943",
-                    fontSize: "16px",
-                    fontWeight: 400,
-                    lineHeight: "1.6",
-                  }}
-                >
+                <p className="">
                   The company management has extensive experience in multiple areas including computer algorithms, engineering, optimization, databases, software, CAD, CAM and CAE. Focus is on efficient, reliable and robust planning, implementation and execution. Several management and staff personnel hold advanced degrees including PhD and have a wide knowledge base with focus on engineering and computing disciplines. Senior management personnel have seminal publications in computational and engineering sciences and have held faculty positions at world renowned institutions.
                 </p>
               </div>
@@ -146,31 +122,13 @@ const About:React.FC = () => {
                   <h2 className="mb-4">VJCS Affiliates</h2>
 
                   <h4 className="mb-3">Computational Applications and System Integration (CASI)</h4>
-                  <p className="text-muted mb-3"
-                      style={{
-                        color: "#384943",
-                        fontSize: "16px",
-                        fontWeight: 400,
-                        lineHeight: "1.6",
-                      }}>
+                  <p className="mb-3">
                     CASI, an affiliate of VJCS, is located at Champaign – IL in North America. CASI is a technology and business services company delivering robust solutions for multiple industries since 1993. With offices in Champaign and Chicago, Illinois, CASI serves companies of all sizes around the globe.
                   </p>
-                  <p className="text-muted mb-3"
-                      style={{
-                        color: "#384943",
-                        fontSize: "16px",
-                        fontWeight: 400,
-                        lineHeight: "1.6",
-                      }}>
+                  <p className="mb-3">
                     CASI has been developing and licensing mission–critical solvers for solution of linear systems for over a decade. These are widely used in the areas of Engineering Analysis and VLSI Simulation. These solvers are used by over a million users worldwide.
                   </p>
-                  <p className="text-muted mb-3"
-                      style={{
-                        color: "#384943",
-                        fontSize: "16px",
-                        fontWeight: 400,
-                        lineHeight: "1.6",
-                      }}>
+                  <p className="mb-3" >
                     For more information visit{" "}
                     <a href="http://www.casicorp.com" target="_blank" rel="noopener noreferrer">
                       www.casicorp.com
@@ -178,22 +136,10 @@ const About:React.FC = () => {
                   </p>
 
                   <h5 className="mb-3">Primove Engineering Pvt Ltd</h5>
-                  <p className="text-muted mb-3"
-                      style={{
-                        color: "#384943",
-                        fontSize: "16px",
-                        fontWeight: 400,
-                        lineHeight: "1.6",
-                      }}>
+                  <p className="mb-3">
                     Primove Engineering Pvt. Ltd., a subsidiary of VJCS, is a nationally recognized technology company in the domain of gaseous fuels and energy. Primove has developed disruptive technology for the conversion of agricultural residue and waste into BioCNG for transportation and industrial applications.
                   </p>
-                  <p className="text-muted mb-3"
-                      style={{
-                        color: "#384943",
-                        fontSize: "16px",
-                        fontWeight: 400,
-                        lineHeight: "1.6",
-                      }}>
+                  <p className="mb-3">
                     For more information visit{" "}
                     <a href="http://www.primove.in" target="_blank" rel="noopener noreferrer">
                       www.primove.in
@@ -210,4 +156,4 @@ const About:React.FC = () => {
   );
 }
 
-export default About ;
+export default About;
