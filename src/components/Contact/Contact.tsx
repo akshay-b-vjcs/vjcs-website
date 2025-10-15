@@ -5,7 +5,7 @@ import Card from "@components/Card/Card";
 
 import ReCAPTCHA from "react-google-recaptcha";
 import PageBaner from "@components/PageBaner/PageBaner";
-
+import { Toaster, toast } from "react-hot-toast";
 import "./Contact.css";
 
 const Contact: React.FC = () => {
@@ -20,7 +20,6 @@ const Contact: React.FC = () => {
   });
 
   const [captchaToken, setCaptchaToken] = useState<string | null>(null);
-  // const [message, setMessage] = useState("");
   const [status, setStatus] = useState("");
 
   const nameInputRef = useRef<HTMLInputElement>(null);
@@ -31,6 +30,7 @@ const Contact: React.FC = () => {
       nameInputRef.current.focus();
     }
   }, []);
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -40,6 +40,7 @@ const Contact: React.FC = () => {
   const handleCaptchaChange = (token: string | null) => {
     setCaptchaToken(token);
   };
+
   const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { value, checked } = e.target;
     setFormData((prevFormData) => {
@@ -61,39 +62,51 @@ const Contact: React.FC = () => {
     // Check if CAPTCHA is completed
     if (!captchaToken) {
       setStatus("error");
-      alert("Please complete the CAPTCHA.");
+      toast.error("Please complete the CAPTCHA.");
       return;
     }
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        ...formData,
-        token: captchaToken, // Add the CAPTCHA token here
-      }),
-    });
 
-    if (res.ok) {
-      setStatus("success");
-      setFormData({
-        name: "",
-        email: "",
-        message: "",
-        companyName: "",
-        companyNumber: "",
-        city: "",
-        natureOfService: [],
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...formData,
+          token: captchaToken, // Add the CAPTCHA token here
+        }),
       });
 
-      setCaptchaToken(null); // Reset CAPTCHA token
-    } else {
+      if (res.ok) {
+        setStatus("success");
+        toast.success("Your message has been sent successfully!");
+
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+          companyName: "",
+          companyNumber: "",
+          city: "",
+          natureOfService: [],
+        });
+        setCaptchaToken(null);
+      } else {
+        setStatus("error");
+        toast.error("Failed to send your message. Please try again.");
+      }
+    } catch (error) {
       setStatus("error");
+      toast.error("Something went wrong. Please try again later.");
     }
   };
 
   return (
     <>
+      {/* 🔔 Toast Container */}
+      <Toaster position="bottom-center" reverseOrder={false} />
+
       <PageBaner heading="Contact" />
+
       <section id="contact" className="contact section py-5 light-background">
         <div className="container">
           <div className="contact-main-wrapper">
@@ -113,7 +126,7 @@ const Contact: React.FC = () => {
                 <p>
                   We welcome your inquiries and will be pleased to assist you.
                   For quotes or further information, kindly submit your request
-                  below..
+                  below.
                 </p>
                 <form
                   onSubmit={handleSubmit}
@@ -195,92 +208,33 @@ const Contact: React.FC = () => {
                   <div className="row">
                     <div className="col-md-6 form-group pt-3">
                       <label>Nature of Service</label>
-                      <div className="form-check">
-                        <input
-                          className="form-check-input"
-                          type="checkbox"
-                          name="natureOfService"
-                          value="CAx Software Services"
-                          checked={formData.natureOfService.includes(
-                            "CAx Software Services"
-                          )}
-                          onChange={handleCheckboxChange}
-                          id="CAx_Software_Services"
-                        />
-                        <label
-                          className="form-check-label"
-                          htmlFor="CAx_Software_Services"
-                        >
-                          CAx Software Services
-                        </label>
-                      </div>
-                      <div className="form-check">
-                        <input
-                          className="form-check-input"
-                          type="checkbox"
-                          name="natureOfService"
-                          value="PLM"
-                          checked={formData.natureOfService.includes("PLM")}
-                          onChange={handleCheckboxChange}
-                          id="PLM"
-                        />
-                        <label className="form-check-label" htmlFor="PLM">
-                          PLM
-                        </label>
-                      </div>
-                      <div className="form-check">
-                        <input
-                          className="form-check-input"
-                          type="checkbox"
-                          name="natureOfService"
-                          value="Engineering Design Services"
-                          checked={formData.natureOfService.includes(
-                            "Engineering Design Services"
-                          )}
-                          onChange={handleCheckboxChange}
-                          id="Engineering_Design_Services"
-                        />
-                        <label
-                          className="form-check-label"
-                          htmlFor="Engineering_Design_Services"
-                        >
-                          Engineering Design Services
-                        </label>
-                      </div>
-                      <div className="form-check">
-                        <input
-                          className="form-check-input"
-                          type="checkbox"
-                          name="natureOfService"
-                          value="Digitization Services"
-                          checked={formData.natureOfService.includes(
-                            "Digitization Services"
-                          )}
-                          onChange={handleCheckboxChange}
-                          id="Digitization_Services"
-                        />
-                        <label
-                          className="form-check-label"
-                          htmlFor="Digitization_Services"
-                        >
-                          Digitization Services
-                        </label>
-                      </div>
-                      <div className="form-check">
-                        <input
-                          className="form-check-input"
-                          type="checkbox"
-                          name="natureOfService"
-                          value="Other"
-                          checked={formData.natureOfService.includes("Other")}
-                          onChange={handleCheckboxChange}
-                          id="Other"
-                        />
-                        <label className="form-check-label" htmlFor="Other">
-                          Other
-                        </label>
-                      </div>
+                      {[
+                        "CAx Software Services",
+                        "PLM",
+                        "Engineering Design Services",
+                        "Digitization Services",
+                        "Other",
+                      ].map((service) => (
+                        <div className="form-check" key={service}>
+                          <input
+                            className="form-check-input"
+                            type="checkbox"
+                            name="natureOfService"
+                            value={service}
+                            checked={formData.natureOfService.includes(service)}
+                            onChange={handleCheckboxChange}
+                            id={service.replace(/\s+/g, "_")}
+                          />
+                          <label
+                            className="form-check-label"
+                            htmlFor={service.replace(/\s+/g, "_")}
+                          >
+                            {service}
+                          </label>
+                        </div>
+                      ))}
                     </div>
+
                     <div className="col-md-6 form-group pt-3 mt-md-0">
                       <ReCAPTCHA
                         sitekey="YOUR_SITE_KEY"
@@ -289,16 +243,10 @@ const Contact: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="my-3">
-                    <div className="loading">Loading</div>
-                    <div className="error-message"></div>
-                    <div className="sent-message">
-                      Your message has been sent. Thank you!
-                    </div>
-                  </div>
-
-                  <div className="form-submit">
-                    <button type="submit">Send Message</button>
+                  <div className="form-submit mt-4">
+                    <button type="submit" disabled={status === "loading"}>
+                      {status === "loading" ? "Sending..." : "Send Message"}
+                    </button>
                   </div>
                 </form>
               </div>
@@ -306,6 +254,7 @@ const Contact: React.FC = () => {
           </div>
         </div>
       </section>
+
       <section
         id="services"
         className="services py-5 bg-light position-relative overflow-hidden bg-pattern"
@@ -360,17 +309,17 @@ const Contact: React.FC = () => {
                     <span>
                       Ground Floor, IT-6 Building, Qubix Business Park, Rajiv
                       Gandhi Infotech Park, Phase-1, Hinjewadi, Pune,
-                      Maharashtra(india) - 411057.
+                      Maharashtra (India) - 411057.
                       <br />
-                      <i className="bi bi-telephone-fill  pe-2"></i>
+                      <i className="bi bi-telephone-fill pe-2"></i>
                       Phone: +91-20-66756800
                       <br />
                       +91-20-66756801
                       <br />
-                      <i className="bi bi-chat-left-dots-fill  pe-2"></i>
+                      <i className="bi bi-chat-left-dots-fill pe-2"></i>
                       Fax: +91-20-66756888
                       <br />
-                      <i className="bi bi-envelope-fill  pe-2"></i>
+                      <i className="bi bi-envelope-fill pe-2"></i>
                       E-mail: info@vjcs.com
                     </span>
                   </>
@@ -387,10 +336,10 @@ const Contact: React.FC = () => {
                     <span>
                       CASI, 2001 South First Street, Champaign, IL 61820, USA
                       <br />
-                      <i className="bi bi-telephone-fill  pe-2"></i>
+                      <i className="bi bi-telephone-fill pe-2"></i>
                       Phone: +1 217 531 0704
                       <br />
-                      <i className="bi bi-chat-left-dots-fill  pe-2"></i>
+                      <i className="bi bi-chat-left-dots-fill pe-2"></i>
                       Fax: +1 217 531 0705
                       <br />
                       Website: http://www.casicorp.com
@@ -405,4 +354,5 @@ const Contact: React.FC = () => {
     </>
   );
 };
+
 export default Contact;
