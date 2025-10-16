@@ -88,38 +88,28 @@ const Carousel:React.FC = () => {
       data-bs-interval="3000"
       data-bs-pause="false"
     >
+      <div className="carousel-indicators">
+      {slides.map((s, i) => (
+        <button key={i} type="button" data-bs-target="#bgCarousel" data-bs-slide-to={i} className={`${i === 0 ? "active" : ""}`} aria-current="true" aria-label={s.title}></button>
+      ))}
+      </div>
       <div className="carousel-inner">
         {slides.map((s, i) => (
           <div key={i} className={`carousel-item ${i === 0 ? "active" : ""}`}>
-            <div className="d-block w-100 position-relative mt-5 carousel-image-wrapper">
+            <div className="d-block mt-5 carousel-image-wrapper">
               <picture>
                 <source srcSet={s.mobile.src} media="(max-width: 768px)" />
-                <Image src={s.desktop} alt={s.title} fill priority={i === 0} />
+                <Image
+                  src={s.desktop} alt={s.title}
+                  priority={i === 0}
+                  layout="intrinsic" // This will keep the aspect ratio
+                  placeholder="blur"
+                />
               </picture>
             </div>
           </div>
         ))}
       </div>
-
-      {/* Controls */}
-      <button
-        className="carousel-control-prev"
-        type="button"
-        data-bs-target="#bgCarousel"
-        data-bs-slide="prev"
-      >
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Previous</span>
-      </button>
-      <button
-        className="carousel-control-next"
-        type="button"
-        data-bs-target="#bgCarousel"
-        data-bs-slide="next"
-      >
-        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Next</span>
-      </button>
     </div>
   );
 };

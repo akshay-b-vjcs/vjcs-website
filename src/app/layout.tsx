@@ -11,7 +11,7 @@ import Header from "@components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
 
-import { Roboto, Inter, Barlow } from "next/font/google";
+import { Roboto, Inter, Barlow, Poppins } from "next/font/google";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -29,6 +29,12 @@ const barlow = Barlow({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-barlow",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-poppins",
 });
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -71,7 +77,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.variable} ${inter.variable} ${barlow.variable}`}
+        className={`${roboto.variable} ${inter.variable} ${barlow.variable} ${poppins.variable}`}
       >
         <BootstrapProvider />
         <Header />
