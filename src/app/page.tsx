@@ -19,9 +19,16 @@ const Home: React.FC = () => {
           </div>
           <div className="col-lg-8">
             <div className="hero-content">
-              <p>VJ Coresoft Pvt. Ltd. is global IT company offering software development services in the field of CAD/CAE/CAM/PLM, Web/Mobile Applications,Engineering Design and Smart Manufacturing services. It is a compnay with unique combination of Engineering Domain knowledge and related software development expertise. VJ Coresoft provides services to wide varity of industries inlcuding CAx Software OEMs, Automotive, Aerospace, Ship Design and Marine Engineering, Construction, Heavy Industries etc.<br/><br/>
-              VJ Coresoft is headquartered in Hinjewadi, Pune (India), services clients across Europe, USA, Middle East, Asia-Pacific and India. It is a special economical zone unit.
-              </p>
+              <p>VJ Coresoft Pvt. Ltd. is a global IT company offering expert software development services in key engineering and manufacturing fields. With a unique blend of deep Engineering Domain knowledge and advanced software expertise.</p>
+
+              <p>We deliver powerful solutions in:</p>
+              <ul className="features-list">
+                <li>CAD/CAE/CAM Software Development</li>
+                <li>Engineering Design Services</li>
+                <li>Digitization Services</li>
+                <li>Product Lifecycle Management(PLM) </li>
+              </ul>
+              <p>Based in Hinjewadi, Pune, India, we proudly serve a diverse range of industries, including Automotive, Aerospace, Marine Engineering, Construction, and Heavy Industries, with a client base spanning Europe, USA, the Middle East, Asia-Pacific, and India.</p>
               <div className="hero-actions">
                 <Link href="/services" className="btn-primary">Explore Services</Link>
               </div>
