@@ -37,7 +37,7 @@ const NavBar:React.FC = () => {
 
   return (
     <div className="branding d-flex align-items-cente">
-      <div className="container position-relative d-flex align-items-center justify-content-between">
+      <div className="container-fluid position-relative d-flex align-items-center justify-content-between m-0">
         <Link href="/" className="logo d-flex align-items-center">
           {/* -- Uncomment the line below if you also wish to use an image logo -- */}
           <Image src={logo} alt="V J Coresoft Pvt. Ltd." />
@@ -63,7 +63,7 @@ const NavBar:React.FC = () => {
 
           {/* mobile toggle button */}
           <i
-            className={`mobile-nav-toggle d-xl-none ${isNavOpen ? "bi-x" : "bi-list"}`}
+            className={`mobile-nav-toggle ${isNavOpen ? "bi-x" : "bi-list"}`}
             onClick={toggleNav}
           ></i>
         </nav>
