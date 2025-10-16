@@ -74,15 +74,21 @@ const About:React.FC = () => {
               <div className="management-content p-5">
                 <h2 className="mb-4" >Management</h2>
 
-                <p className="mb-4">
-                  VJ Coresoft Pvt. Ltd. (VJCS) founded in 1998, is a leading global IT company engaged in Engineering Services, Software Testing and Software Development. VJCS is located in Pune, India. The city of Pune is a nerve center for telecommunications, engineering, automobile, manufacturing and a rapidly growing information technology services industry.
+                <p>
+                Since our inception in 1998, VJ Coresoft Pvt. Ltd. has established itself as a global leader in Engineering Services, Software Testing, and Software Development. Our strategic location in Pune, India, a hub for the engineering, IT, and manufacturing sectors, gives us unique insight and access to a vibrant talent pool.
                 </p>
-
-                <p className="mb-3">
-                  We are growing and strongly consolidating our existing portfolio of solutions in Cax Software Development/QA, PLM, Engineering Services and Digitization for smart manufacturing.
+                <h5>Our Core Expertise</h5>
+                <p>
+                We are constantly expanding our portfolio to meet the evolving needs of the industry. Our specialization lies in:
                 </p>
+                <ul className="">
+                  <li>CAx Software Development and QA: Creating cutting-edge solutions from CAD to CAE</li>
+                  <li>PLM (Product Lifecycle Management): Streamlining your product&apos;s journey from concept to market.</li>
+                  <li>Engineering Services: Providing expert support and consultation to solve your most complex challenges.</li>
+                  <li>Digitization for Smart Manufacturing: Helping businesses adopt smart, efficient, and interconnected manufacturing processes.</li>
+                </ul>
 
-                <p className="">
+                <p>
                   The company management has extensive experience in multiple areas including computer algorithms, engineering, optimization, databases, software, CAD, CAM and CAE. Focus is on efficient, reliable and robust planning, implementation and execution. Several management and staff personnel hold advanced degrees including PhD and have a wide knowledge base with focus on engineering and computing disciplines. Senior management personnel have seminal publications in computational and engineering sciences and have held faculty positions at world renowned institutions.
                 </p>
               </div>
