@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import "./Carousel.css";
 
 // Import local service banner images
@@ -10,12 +10,26 @@ import imgDs from "@image/carousel/carousel-ds.png";
 import imgCaxMob from "@image/carousel/mobile/carousel-cax-Sq.png";
 import imgPlmMob from "@image/carousel/mobile/carousel-plm-Sq.png";
 import imgEdsMob from "@image/carousel/mobile/carousel-eds-Sq.png";
-import imgDsMob from "@image/carousel/mobile/carousel-ds-Sq.png"
-const Carousel:React.FC = () => {
-  const slides = [
+import imgDsMob from "@image/carousel/mobile/carousel-ds-Sq.png";
+
+type VideoSlide = {
+  title: string;
+  videoSrc: string;
+};
+
+type ImageSlide = {
+  title: string;
+  desktop: StaticImageData;
+  mobile: StaticImageData;
+};
+
+type Slide = VideoSlide | ImageSlide;
+
+const Carousel: React.FC = () => {
+  const slides: Slide[] = [
     {
       title: "VJCS Video",
-      videoSrc: "/video/vjcs.mp4"
+      videoSrc: "/video/vjcs.mp4",
     },
     {
       desktop: imgCax,
@@ -36,47 +50,47 @@ const Carousel:React.FC = () => {
       desktop: imgDs,
       mobile: imgDsMob,
       title: "Digitization Services",
-    }
+    },
   ];
 
   return (
-    <div
-      id="bgCarousel"
-      className="carousel slide"
-    >
+    <div id="bgCarousel" className="carousel slide">
       <div className="carousel-indicators">
-      {slides.map((s, i) => (
-        <button key={i} type="button" data-bs-target="#bgCarousel" data-bs-slide-to={i} className={`${i === 0 ? "active" : ""}`} aria-current="true" aria-label={s.title}></button>
-      ))}
+        {slides.map((s, i) => (
+          <button
+            key={i}
+            type="button"
+            data-bs-target="#bgCarousel"
+            data-bs-slide-to={i}
+            className={`${i === 0 ? "active" : ""}`}
+            aria-current="true"
+            aria-label={s.title}
+          ></button>
+        ))}
       </div>
       <div className="carousel-inner">
         {slides.map((s, i) => (
           <div key={i} className={`carousel-item ${i === 0 ? "active" : ""}`}>
-            { i === 0 ? 
-            <video
-              className={`d-block w-100`}
-              autoPlay
-              muted
-              loop
-              playsInline
-            >
-              <source src={s.videoSrc} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            : 
-            <div className="d-block carousel-image-wrapper">
-              <picture>
-                <source srcSet={s.mobile?.src} media="(max-width: 768px)" />
-                <Image
-                  src={s.desktop} alt={s.title}
-                  priority={i === 0}
-                  layout="intrinsic" // This will keep the aspect ratio
-                  placeholder="blur"
-                  className="animate-ken-burns"
-                />
-              </picture>
-            </div>
-            }
+            {"videoSrc" in s ? (
+              <video className={`d-block w-100`} autoPlay muted loop playsInline>
+                <source src={s.videoSrc} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            ) : (
+              <div className="d-block carousel-image-wrapper">
+                <picture>
+                  <source srcSet={s.mobile.src} media="(max-width: 768px)" />
+                  <Image
+                    src={s.desktop}
+                    alt={s.title}
+                    priority={i === 0}
+                    layout="intrinsic" // This will keep the aspect ratio
+                    placeholder="blur"
+                    className="animate-ken-burns"
+                  />
+                </picture>
+              </div>
+            )}
           </div>
         ))}
       </div>
