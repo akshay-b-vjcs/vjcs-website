@@ -29,7 +29,7 @@ const Carousel: React.FC = () => {
   const slides: Slide[] = [
     {
       title: "VJCS Video",
-      videoSrc: "/video/vjcs.mp4",
+      videoSrc: "./video/vjcs.mp4",
     },
     {
       desktop: imgCax,
