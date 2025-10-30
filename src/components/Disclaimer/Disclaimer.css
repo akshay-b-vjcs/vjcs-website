@@ -1,6 +1,6 @@
 .disclaimer-section {
   font-family: 'Poppins', sans-serif;
-  color: #384943;
+  color: var(--default-color);
 }
 
 .disclaimer-box p {
@@ -9,10 +9,10 @@
   margin-bottom: 16px;
 }
 
-.site-url {
+.heading {
   font-size: 32px;
   font-weight: 700;
-  color: #293a34;
+  color: var(--heading-color-1);
   margin-bottom: 20px;
 }
 

@@ -14,79 +14,35 @@ import imgDsMob from "@image/carousel/mobile/carousel-ds-Sq.png"
 const Carousel:React.FC = () => {
   const slides = [
     {
+      title: "VJCS Video",
+      videoSrc: "/video/vjcs.mp4"
+    },
+    {
       desktop: imgCax,
       mobile: imgCaxMob,
       title: "CAx Software Services",
-      buttons: [
-        {
-          text: "CAD/CAM Development",
-          link: "/service-details/cad-cam-development",
-        },
-        { text: "CAE Development", link: "/service-details/cae-development" },
-        {
-          text: "CAx Software QA & Testing",
-          link: "/service-details/cax-software-testing",
-        },
-      ],
     },
     {
       desktop: imgPlm,
       mobile: imgPlmMob,
       title: "PLM",
-      buttons: [{ text: "Learn More", link: "/service-details/plm" }],
     },
     {
       desktop: imgEds,
       mobile: imgEdsMob,
       title: "Engineering Design Services",
-      buttons: [
-        { text: "Product Design", link: "/service-details/product-design" },
-        {
-          text: "BIM Modelling Services",
-          link: "/service-details/bim-modelling",
-        },
-        {
-          text: "Marine Engineering",
-          link: "/service-details/marine-engineering",
-        },
-      ],
     },
     {
       desktop: imgDs,
       mobile: imgDsMob,
       title: "Digitization Services",
-      buttons: [
-        {
-          text: "Virtual Manufacturing",
-          link: "/service-details/virtual-manufacturing",
-        },
-        {
-          text: "Industrial Internet of Things",
-          link: "/service-details/industrial-iot",
-        },
-        {
-          text: "AI Solutions & Services",
-          link: "/service-details/ai-solutions",
-        },
-        {
-          text: "Enterprise web & mobile",
-          link: "/service-details/enterprise-web-mobile",
-        },
-        {
-          text: "Augmented & Virtual Reality Apps",
-          link: "/service-details/ar-vr-apps",
-        },
-      ],
-    },
+    }
   ];
 
   return (
     <div
       id="bgCarousel"
-      className="carousel slide mt-5"
-      data-bs-ride="carousel"
-      data-bs-interval="3000"
-      data-bs-pause="false"
+      className="carousel slide"
     >
       <div className="carousel-indicators">
       {slides.map((s, i) => (
@@ -96,17 +52,31 @@ const Carousel:React.FC = () => {
       <div className="carousel-inner">
         {slides.map((s, i) => (
           <div key={i} className={`carousel-item ${i === 0 ? "active" : ""}`}>
-            <div className="d-block mt-5 carousel-image-wrapper">
+            { i === 0 ? 
+            <video
+              className={`d-block w-100`}
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+              <source src={s.videoSrc} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            : 
+            <div className="d-block carousel-image-wrapper">
               <picture>
-                <source srcSet={s.mobile.src} media="(max-width: 768px)" />
+                <source srcSet={s.mobile?.src} media="(max-width: 768px)" />
                 <Image
                   src={s.desktop} alt={s.title}
                   priority={i === 0}
                   layout="intrinsic" // This will keep the aspect ratio
                   placeholder="blur"
+                  className="animate-ken-burns"
                 />
               </picture>
             </div>
+            }
           </div>
         ))}
       </div>

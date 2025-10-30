@@ -14,8 +14,8 @@
 .card:hover {
   transform: translateY(-15px);
   box-shadow: 0 25px 60px
-    color-mix(in srgb, var(--accent-color), transparent 80%);
-  border: 2px solid var(--accent-color) !important;
+    color-mix(in srgb, var(--heading-color-1), transparent 80%);
+  border: 2px solid var(--heading-color-1) !important;
 }
 
 .card .card-bg {
@@ -26,8 +26,8 @@
   height: 200px;
   background: linear-gradient(
     135deg,
-    color-mix(in srgb, var(--accent-color), transparent 85%),
-    color-mix(in srgb, var(--accent-color), transparent 95%)
+    color-mix(in srgb, var(--heading-color-1), transparent 85%),
+    color-mix(in srgb, var(--heading-color-1), transparent 95%)
   );
   border-radius: 50%;
   opacity: 0;
@@ -45,8 +45,8 @@
   height: 50px;
   background: linear-gradient(
     135deg,
-    color-mix(in srgb, var(--accent-color), transparent 10%),
-    var(--accent-color)
+    color-mix(in srgb, var(--heading-color-1), transparent 10%),
+    var(--heading-color-1)
   );
   border-radius: 18px;
   display: flex;
@@ -57,15 +57,15 @@
   position: relative;
   z-index: 2;
   box-shadow: 0 8px 25px
-    color-mix(in srgb, var(--accent-color), transparent 70%);
+    color-mix(in srgb, var(--heading-color-1), transparent 70%);
 }
 
 .card:hover .card-icon {
   transform: scale(1.1) rotate(5deg);
   background: linear-gradient(
     135deg,
-    var(--accent-color),
-    color-mix(in srgb, var(--accent-color), #ff6b35 30%)
+    var(--heading-color-1),
+    color-mix(in srgb, var(--heading-color-1), #ff6b35 30%)
   );
 }
 
@@ -97,4 +97,8 @@
 .card ul {
   padding-left: 0;
   list-style: none;
+}
+
+.card h3 {
+  color: var(--heading-color-1);
 }

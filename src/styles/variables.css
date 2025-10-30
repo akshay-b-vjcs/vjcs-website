@@ -16,11 +16,12 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #1A1A1A; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #0D2B38; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #00AEEF; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #001d60; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
   --hover-color : #F7931E; /* Color used for the links or content background and text highlight only on hover */
-  --div-bg-color : #0000B3; /* Color used for the background of divs */
+  --heading-color-1 : #001d60;
+  --accent-color-1: #00AEEF;
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -42,9 +43,18 @@
 
 /* Dark Section Preset */
 .dark-background {
-  --background-color: #0F172A;   /* Deep navy background */
+  --background-color: #001d60;   /* Deep navy background */
   --default-color: #E2E8F0;      /* Muted light gray text */
   --heading-color: #ffffff;      /* White headings */
-  --surface-color: #1E293B;      /* Dark panels/cards */
+  --surface-color: #ffffff;      /* Dark panels/cards */
+  --contrast-color: #ffffff;     /* Text on accents */
+  --default-dark-color: #1A1A1A;
+}
+
+.dark-div-background {
+  --background-color: #00298B;   /* Darker navy for div backgrounds */
+  --default-color: #E2E8F0;      /* Muted light gray text */
+  --heading-color: #ffffff;      /* White headings */
+  --surface-color: #ffffff;      /* Dark panels/cards */
   --contrast-color: #ffffff;     /* Text on accents */
 }

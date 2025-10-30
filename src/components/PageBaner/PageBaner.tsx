@@ -12,8 +12,8 @@ const PageBaner:React.FC<PageBanerProps> =  ({heading, image}) => {
   const img = image ? image?.src : banerImage.src;
   return (
     <div className="page-title dark-background" style={{ backgroundImage: `url(${img})` }}>
-      <div className="container position-relative">
-        <h1>{heading}</h1>
+      <div className="container position-relative heading-wrapper">
+        <h1 className="m-0 p-1">{heading}</h1>
       </div>
     </div>
   )

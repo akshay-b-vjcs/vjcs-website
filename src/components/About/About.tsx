@@ -5,29 +5,26 @@ import PageBaner from "@components/PageBaner/PageBaner";
 
 import "./About.css";
 
-import bannerImage from "@image/about/about-banner.png"
-import management from "@image/about/management.png";
-import affiliate from "@image/about/affiliate.png"
-import visionImg from "@image/about/vision.png"
-import missionImg from "@image/about/mission.png"
-import valuesImg from "@image/about/values.png"
+import bannerImage from "@image/about/hero-about.png"
+import management from "@image/about/img-management.png";
+import affiliate from "@image/about/img-affiliate.png"
+import visionImg from "@image/about/img-vision.png"
+import missionImg from "@image/about/img-mission.png"
+import valuesImg from "@image/about/img-values.png"
 
 const About:React.FC = () => {
   const services = [
-    {
-      icon: "bi bi-eye",
-      title: "VISION",
-      desc: "To grow as Reliable solution centric business entity.",
-      image : visionImg,
-    },
-    {
-      icon: "bi bi-bullseye",
+      {
       title: "MISSION",
       desc: "To work on reasonable services for clients with precision ",
       image : missionImg,
     },
     {
-      icon: "bi bi-bullseye",
+      title: "VISION",
+      desc: "To grow as Reliable solution centric business entity.",
+      image : visionImg,
+    },
+    {
       title: "VALUES",
       desc: "To work on reasonable services for clients with precision ",
       image : valuesImg,
@@ -39,7 +36,7 @@ const About:React.FC = () => {
     <PageBaner heading="About Us" image={bannerImage}/>
     <section
       id="about-us"
-      className="about-us section light-background"
+      className="about-us section dark-background"
     >
       <div className="container g-0">
         <div className="card-wrapper ">
@@ -49,7 +46,7 @@ const About:React.FC = () => {
                 className="service-card "
                 data-aos="fade-up"
               >
-                <div className="img-box mb-2">
+                <div className="img-box mb-4">
                   <Image src={service.image} alt={service.title} unoptimized />
                 </div>
 
@@ -66,14 +63,13 @@ const About:React.FC = () => {
       </div>
     </section>
     
-    <section className="section bg-pattern light-background py-5">
-      <div className="container">
+    <section className="section light-background py-5">
+      <div className="container-fluid pe-lg-0">
         <div className="management">
-          <div className="management-wrapper row g-0 mx-1 my-5">
-            <div className="col-lg-6 ">
-              <div className="management-content p-5">
+          <div className="management-wrapper row g-0 my-5">
+            <div className="col-lg-6 d-flex justify-content-center">
+              <div className="management-content dark-div-background me-lg-4">
                 <h2 className="mb-4" >Management</h2>
-
                 <p>
                 Since our inception in 1998, VJ Coresoft Pvt. Ltd. has established itself as a global leader in Engineering Services, Software Testing, and Software Development. Our strategic location in Pune, India, a hub for the engineering, IT, and manufacturing sectors, gives us unique insight and access to a vibrant talent pool.
                 </p>
@@ -94,7 +90,7 @@ const About:React.FC = () => {
               </div>
             </div>  
             <div className="col-lg-6">
-              <div className="management-image-container position-relative">
+              <div className="management-image-container position-relative ms-lg-4">
                 <Image
                   src={management}
                   alt="About Us"
@@ -105,26 +101,19 @@ const About:React.FC = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="container-fluid ps-lg-0">
         <div className="affiliates">
-          <div className="affiliate-wrapper">
-            <div className="affiliate-shapes">
-              <div className="shape shape-1"></div>
-              <div className="shape shape-2"></div>
-              <div className="shape shape-3"></div>
-            </div>
-
-            <div className="row g-0">
+          <div className="affiliate-wrapper row g-0">
               {/* Left Column */}
               <div className="col-lg-6">
-                <div className="affiliate-image-container position-relative">
+                <div className="affiliate-image-container position-relative me-lg-4">
                   {/* Add Image if needed */}
                   <Image src={affiliate} alt="Illustration" className="img-fluid main-image" width={500} height={500} />
-
-                  <div className="pattern-dots"></div>
                 </div>
               </div>
-              <div className="col-lg-6">
-                <div className="affiliate-content p-5">
+              <div className="col-lg-6 d-flex justify-content-center">
+                <div className="affiliate-content p-5 dark-div-background ms-lg-4">
                   <h2 className="mb-4">VJCS Affiliates</h2>
 
                   <h4 className="mb-3">Computational Applications and System Integration (CASI)</h4>
@@ -145,7 +134,7 @@ const About:React.FC = () => {
                   <p className="mb-3">
                     Primove Engineering Pvt. Ltd., a subsidiary of VJCS, is a nationally recognized technology company in the domain of gaseous fuels and energy. Primove has developed disruptive technology for the conversion of agricultural residue and waste into BioCNG for transportation and industrial applications.
                   </p>
-                  <p className="mb-3">
+                  <p>
                     For more information visit{" "}
                     <a href="http://www.primove.in" target="_blank" rel="noopener noreferrer">
                       www.primove.in
@@ -153,7 +142,6 @@ const About:React.FC = () => {
                   </p>
                 </div>
               </div>
-            </div>
           </div>
         </div>
       </div>

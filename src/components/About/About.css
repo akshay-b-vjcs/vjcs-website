@@ -35,9 +35,9 @@
 
 .about-us .service-card .content h4 {
   /* font-size: 22px; */
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 15px;
-  color: var(--accent-color);
+  color: var(--heading-color-1);
 }
 
 .about-us .service-card .content h4 a {
@@ -50,6 +50,7 @@
   line-height: 1.6;
   transition: all 0.4s;
   margin-bottom: 0px;
+  color: color-mix(in srgb, #1A1A1A, transparent 10%);
 }
 
 .about-us .service-card:hover {
@@ -58,27 +59,38 @@
 }
 
 .management .management-wrapper {
-  background-color: var(--surface-color);
-  box-shadow: 0 20px 60px color-mix(in srgb, var(--accent-color), transparent 92%);
-  border-radius: 20px;
+  background-color: var(--background-color);
+  /* box-shadow: 0 20px 60px color-mix(in srgb, var(--accent-color), transparent 92%); */
+  /* border-radius: 20px; */
   position: relative;
   overflow: hidden;
+  align-items: center;
+}
+
+.management .management-content {
+  background-color: var(--background-color);
+  border-radius: 45px 0px;
+  padding: 45px;
 }
 
 .management .management-content h2 {
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--heading-color);
-  line-height: 1.2;
+  line-height: 1;
+}
+
+.management .management-content p {
+  line-height: 1.5;
 }
 
 .management-image-container {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+  /* background-color: color-mix(in srgb, var(--accent-color), transparent 95%); */
   z-index: 2;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   height: 100%;
-  padding: 3rem;
+  /* padding: 3rem; */
   display: flex;
   position: relative;
 }
@@ -88,6 +100,11 @@
   z-index: 2;
   /* max-height: 400px; */
   object-fit: contain;
+  width: 100%;
+  border-width: 4px 0px 4px 4px;
+  border-style: solid;
+  border-color: #00298b;
+  border-radius: 87px 0 0 87px;
 }
 
 .management .management-content p, .management .management-content ul li {
@@ -108,9 +125,10 @@
 
 .affiliates .affiliate-wrapper {
   position: relative;
-  border-radius: 20px;
-  background-color: var(--surface-color);
-  box-shadow: 0 20px 60px color-mix(in srgb, var(--accent-color), transparent 92%);
+  align-items: center;
+  /* border-radius: 20px; */
+  background-color: var(--background-color);
+  /* box-shadow: 0 20px 60px color-mix(in srgb, var(--accent-color), transparent 92%); */
   overflow: hidden;
 }
 
@@ -155,6 +173,8 @@
 .affiliates .affiliate-content {
   position: relative;
   z-index: 2;
+  background-color: var(--background-color);
+  border-radius: 45px 0px;
 }
 
 .affiliates .affiliate-content .badge-custom {
@@ -173,14 +193,14 @@
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--heading-color);
-  line-height: 1.2;
+  line-height: 1;
 }
 
 .affiliates .affiliate-content p {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.4;
   text-align: justify;
 }
 
@@ -224,11 +244,10 @@
 .affiliates .affiliate-image-container {
   position: relative;
   height: 100%;
-  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+  /* background-color: color-mix(in srgb, var(--accent-color), transparent 95%); */
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 3rem;
+  justify-content: start;
   z-index: 2;
 }
 
@@ -237,6 +256,11 @@
   z-index: 2;
   /* max-height: 400px; */
   object-fit: contain;
+  width: 100%;
+  border-width: 4px 4px 4px 0px;
+  border-style: solid;
+  border-color: #00298b;
+  border-radius: 0 87px 87px 0;
 }
 
 .affiliates .affiliate-image-container .pattern-dots {
@@ -252,6 +276,27 @@
   opacity: 0.6;
 }
 
+@media only screen and (min-width: 1921px) {
+  .management .management-content, .affiliates .affiliate-content {
+    width: 75%;
+  }
+  .affiliates .affiliate-image-container .main-image, .management-image-container .main-image{
+    width: 75%;
+  }
+}
+
+/* 2K display (2560px width) */
+@media only screen and (min-width: 2560px) {
+  .management .management-content, .affiliates .affiliate-content {
+    width: 80%;
+  }
+  
+  .affiliates .affiliate-image-container .main-image, .management-image-container .main-image{
+    width: 60%;
+  }
+}
+
+
 @media (max-width: 991.98px) {
 
   .about-us .card-wrapper {
@@ -265,16 +310,24 @@
   }
 
   .affiliates {
-    padding: 70px 0;
+    padding: 10px 0;
   }
 
   .affiliates .row {
     flex-direction: column-reverse;
   }
 
-  .management .management-image-container, .affiliates .affiliate-image-container {
+  .affiliates .affiliate-image-container, .management .management-image-container {
     padding: 2rem;
     min-height: 350px;
+    justify-content: center;
+  }
+
+  .affiliates .affiliate-image-container .main-image, .management-image-container .main-image {
+    border-width: 4px;
+    border-radius: 80px 0 80px 0;
+    width: 80%;
+
   }
 
   .management .management-content, .affiliates .affiliate-content {
@@ -326,6 +379,11 @@
 
   .affiliates .shape {
     transform: scale(0.7);
+  }
+
+  .affiliates .affiliate-image-container .main-image, .management-image-container .main-image {
+    width: 100%;
+    border-radius: 60px 0 60px 0;
   }
 }
 

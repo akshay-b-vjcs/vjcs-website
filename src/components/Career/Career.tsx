@@ -3,6 +3,8 @@ import { useState } from "react";
 import Image from "next/image";
 import PageBaner from "@components/PageBaner/PageBaner";
 import teamImage from "@image/career/team.png";
+import bannerImage from "@image/career/hero-career.png"
+
 import "./Career.css";
 
 const Career: React.FC = () => {
@@ -68,31 +70,38 @@ const Career: React.FC = () => {
 
   return (
     <>
-      <PageBaner heading="Career" />
+      <PageBaner heading="Career" image={bannerImage} />
       <section className="section career-head-section light-background">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6 mb-4 mb-lg-0">
-              <h1 className="fw-bold">
-                CAREER
-              </h1>
-              <p>
-                At VJ Coresoft Pvt. Ltd., employees are the most important asset of the company. Honesty, ethics, value, and our commitments are part of our culture. Working on advanced CAx Technologies, we specialize in tackling complex challenges.
-              </p>
+            <div className="col-lg-6 mb-5 mt-5 ">
+              <div className="career-content-wrapper dark-div-background">
+                <p>
+                VJ Coresoft Pvt. Ltd. leverages advanced CAx Technologies to tackle complex challenges, providing innovative solutions for our clients. We operate with a strong commitment to honesty and ethics, ensuring our clients receive exceptional value.
+                </p>
+                <p className="fst-italic">
+                “Our employees are our core strength, and their dedication is the reason we deliver on our promises. By focusing on meticulous attention to detail and a deep understanding of our client&apos;s needs, we transform their ideas into reality.” 
+                </p>
+                <p>
+                  We are always looking for talented, motivated, and passionate individuals to join our team. If you are interested in being part of a dynamic and innovative company, please explore our current job openings below.
+                </p>
+              </div>
             </div>
 
-            <div className="col-lg-6 image-wrapper">
-              <Image
-                src={teamImage}
-                alt="About Us"
-                className="custom-career-img"
-              />
+            <div className="col-lg-6">
+              <div className="image-wrapper d-flex justify-content-center">
+                <Image
+                  src={teamImage}
+                  alt="About Us"
+                  className="custom-career-img"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="section bg-pattern py-5">
+      <section className="section dark-background py-5 ">
         <div className="container">
           <div className="text-center mt-5 section-title">
             <h2 className="fw-bold">Open Positions</h2>

@@ -5,6 +5,8 @@ import Card from "@components/Card/Card";
 
 import ReCAPTCHA from "react-google-recaptcha";
 import PageBaner from "@components/PageBaner/PageBaner";
+import bannerImage from "@image/contact/hero-contact.png"
+
 import { Toaster, toast } from "react-hot-toast";
 import "./Contact.css";
 
@@ -105,9 +107,9 @@ const Contact: React.FC = () => {
       {/* 🔔 Toast Container */}
       <Toaster position="bottom-center" reverseOrder={false} />
 
-      <PageBaner heading="Contact" />
+      <PageBaner heading="Contact" image={bannerImage} />
 
-      <section id="contact" className="contact section py-5 light-background">
+      <section id="contact" className="contact section py-5 dark-background">
         <div className="container">
           <div className="contact-main-wrapper">
             <div className="map-wrapper">
@@ -257,7 +259,7 @@ const Contact: React.FC = () => {
 
       <section
         id="services"
-        className="services py-5 bg-light position-relative overflow-hidden bg-pattern"
+        className="services py-5 bg-light position-relative overflow-hidden light-background"
       >
         <div className="container">
           <div className="row gy-4">

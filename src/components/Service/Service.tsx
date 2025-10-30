@@ -102,6 +102,7 @@ const Service: React.FC = () => {
                   icon={service.icon}
                   title={service.title}
                   links={service.links}
+                  className=""
                 />
               </div>
             ))}

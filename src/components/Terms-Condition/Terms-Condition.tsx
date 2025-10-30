@@ -7,7 +7,7 @@ const TermsCondition: React.FC = () => {
   return (
     <>
       <PageBaner heading="Terms of Use" />
-      <section className="terms-section py-5">
+      <section className="terms-section py-5 light-background">
         <div className="container">
           <div className="row g-4">
             {/* Left Column */}

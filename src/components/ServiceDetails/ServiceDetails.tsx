@@ -7,10 +7,10 @@ import PageBaner from "@/components/PageBaner/PageBaner";
 import "./ServiceDetails.css";
 
 // Desktop images
-import imgCax from "@image/services/carousel-cax.png";
-import imgPlm from "@image/services/carousel-plm.png";
-import imgEds from "@image/services/carousel-eds.png";
-import imgEds1 from "@image/services/carousel-ds.png";
+import imgCax from "@image/services/service-cax.png";
+import imgPlm from "@image/services/service-plm.png";
+import imgEds from "@image/services/service-eds.png";
+import imgEds1 from "@image/services/service-ds.png";
 
 // Mobile images
 import imgCaxMob from "@image/carousel/mobile/carousel-cax-Sq.png"
@@ -155,6 +155,8 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
                     width: "100%",
                     height: "auto",
                   }}
+                  layout="intrinsic" // This will keep the aspect ratio
+                  placeholder="blur"
                 />
               </div>
 

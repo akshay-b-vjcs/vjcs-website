@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: #000a23f5;
   font-size: 14px;
   padding-bottom: 50px;
   position: relative;
@@ -57,7 +57,7 @@
 }
 
 .footer h4 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   position: relative;
   padding-bottom: 12px;
@@ -90,9 +90,10 @@
 }
 
 .footer .footer-links ul a {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, var(--default-color), transparent 0%);
   display: inline-block;
   line-height: 1;
+  font-weight: 400;
 }
 
 .footer .footer-links ul a:hover {

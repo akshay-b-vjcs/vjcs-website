@@ -188,7 +188,6 @@ const MegaMenu: React.FC<MegaMenuProps> = ({handleClickOnLink, pathname}) => {
         <div className="tab-navigation">
           <ul
             className="nav nav-tabs flex-column"
-            id="2190-megamenu-tabs"
             role="tablist"
           >
             { data && data.map( service => {

@@ -35,7 +35,7 @@
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: var(--heading-color);
+  color: var(--heading-color-1);
 }
 
 .service-details .service-content .service-header .service-intro {
@@ -482,7 +482,7 @@
 .features .tab-content .content-box h3 {
   font-size: 28px;
   font-weight: 700;
-  color: var(--heading-color);
+  color: var(--heading-color-1);
   margin-bottom: 20px;
   position: relative;
   padding-bottom: 15px;

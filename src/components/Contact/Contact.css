@@ -1,3 +1,7 @@
+section, .section {
+  color: var(--default-dark-color);
+}
+
 .contact .contact-main-wrapper {
   position: relative;
   display: grid;
@@ -102,7 +106,7 @@
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 15px;
-  color: var(--heading-color);
+  color: var(--heading-color-1);
   position: relative;
   padding-left: 15px;
 }
@@ -122,16 +126,16 @@
   font-size: 15px;
   line-height: 1.6;
   margin-bottom: 25px;
-  color: var(--default-color);
+  color: var(--default-dark-color);
 }
 
 .contact .contact-form-container .php-email-form .form-control {
   height: auto;
   padding: 14px 20px;
   border-radius: 10px;
-  background-color: color-mix(in srgb, var(--background-color), #f5f8fd 30%);
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  color: var(--default-color);
+  background-color: color-mix(in srgb, var(--background-color), #f5f8fd 99%);
+  border: 1px solid color-mix(in srgb, var(--default-dark-color), transparent 60%);
+  color: var(--default-dark-color);
   transition: all 0.3s ease;
 }
 
@@ -142,7 +146,7 @@
 }
 
 .contact .contact-form-container .php-email-form .form-control::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 60%);
+  color: color-mix(in srgb, var(--default-dark-color), transparent 60%);
 }
 
 .contact .contact-form-container .php-email-form textarea.form-control {

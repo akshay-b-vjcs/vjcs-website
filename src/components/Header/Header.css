@@ -2,7 +2,7 @@
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: rgba(0, 0, 0, 0);
+  --background-color:rgb(0 41 139);
   --heading-color: #ffffff;
   --surface-color: rgba(255, 255, 255, 0.085);
   color: var(--default-color);
@@ -61,7 +61,8 @@
 
 .header .branding {
   min-height: 60px;
-  background: linear-gradient(90deg, #d0edf9 0%, rgb(15 23 42) 65%)
+  /* background: linear-gradient(90deg, #d0edf9 0%, rgb(15 23 42) 65%) */
+  background-color: var(--background-color);
 }
 
 .header .logo {
@@ -69,8 +70,10 @@
 }
 
 .header .logo img {
-  max-height: 60px;
+  max-height: 70px;
   margin-right: 8px;
+  max-width: 110px;
+  background: white;
 }
 
 .header .logo h1 {
@@ -92,6 +95,6 @@
 
 /* Global Header on Scroll
 ------------------------------*/
-.scrolled .header {
+/* .scrolled .header {
   --background-color: rgba(7, 12, 16, 0.8);
-}
+} */

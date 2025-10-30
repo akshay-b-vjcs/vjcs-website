@@ -13,7 +13,7 @@
   height: 40vh;
   display: flex;
   align-items: flex-end;
-  margin-top:100px
+  margin-top:110px
 }
 
 .page-title:before {
@@ -23,6 +23,14 @@
   inset: 0;
 }
 
+
+.page-title .heading-wrapper {
+  width:fit-content;
+  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  border-radius: 25px;
+  padding: 10px;
+}
+
 .page-title h1 {
   font-size: 42px;
   font-weight: 700;
@@ -30,7 +38,7 @@
   padding-bottom: 20px; */
 }
 
-.page-title h1:before {
+/* .page-title h1:before {
   content: "";
   position: absolute;
   display: block;
@@ -54,7 +62,7 @@
   right: 0;
   bottom: 0;
   margin: auto;
-}
+} */
 
 .page-title .breadcrumbs ol {
   display: flex;
@@ -76,4 +84,11 @@
   display: inline-block;
   padding-right: 10px;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
+}
+
+@media (max-width: 768px) {
+  .page-title h1 {
+    font-size: 32px;
+    font-weight: 600;
+  }
 }

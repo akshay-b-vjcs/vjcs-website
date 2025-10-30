@@ -1,6 +1,12 @@
 import Link from "next/link";
 import Carousel from "@/components/Carousel/Carousel";
 import CountUp from "@components/Count/Count"
+import Image from "next/image";
+
+import ExpertTeam from "@image/home/expert-team.svg";
+import HighPerformance from "@image/home/high-performance.svg";
+import AwardWinning from "@image/home/award-winning.svg";
+import Security from "@image/home/security.svg";
 
 import "./page.css";
 
@@ -10,11 +16,11 @@ const Home: React.FC = () => {
     <section className="section">
       <Carousel/>
     </section>
-    <section className="hero section light-background">
+    <section className="hero section dark-background">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-12">
-            <span className="hero-badge">Innovative Solutions</span>
+            {/* <span className="hero-badge">Innovative Solutions</span> */}
             <h1>Welcome to VJ Coresoft Pvt. Ltd.</h1>
           </div>
           <div className="col-lg-8">
@@ -22,7 +28,7 @@ const Home: React.FC = () => {
               <p>VJ Coresoft Pvt. Ltd. is a global IT company offering expert software development services in key engineering and manufacturing fields. With a unique blend of deep Engineering Domain knowledge and advanced software expertise.</p>
 
               <p>We deliver powerful solutions in:</p>
-              <ul className="features-list">
+              <ul>
                 <li>CAD/CAE/CAM Software Development</li>
                 <li>Engineering Design Services</li>
                 <li>Digitization Services</li>
@@ -40,49 +46,52 @@ const Home: React.FC = () => {
               <div className="row g-3">
                 <div className="col-6">
                   <div className="feature-card">
-                    <i className="bi bi-shield-check"></i>
-                    <span>Secure &amp; Reliable</span>
+                    <Image src={HighPerformance} alt={"High Performance"} />
+                    <span>High Performance</span>
                   </div>
                   <div className="feature-card">
-                    <i className="bi bi-people"></i>
+                    <Image src={ExpertTeam} alt={"Expert Team"} />
                     <span>Expert Team</span>
                   </div>
                 </div>
                 <div className="col-6">
                   <div className="feature-card">
-                    <i className="bi bi-speedometer2"></i>
-                    <span>High Performance</span>
+                    <Image src={AwardWinning} alt={"Award Winning"} />
+                    <span>Award Winning</span>
                   </div>
                   <div className="feature-card">
-                    <i className="bi bi-award"></i>
-                    <span>Award Winning</span>
+                    <Image src={Security} alt={"Secutiry and Reliable"} />
+                    <span>Secure &amp; Reliable</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
       </div>
-      <div className="bg-pattern stats-highlight text-dark-green py-5 px-3 my-5 position-relative overflow-hidden container">
+      </div>
+    </section>
+    <section className="section hero-stats">
+      <div className="stats-highlight text-dark-green py-5 px-3 my-5 position-relative overflow-hidden container">
         <div className="row text-center position-relative z-2">
           <div className="col-lg-4 col-md-4 mb-4 mb-lg-0 counter-border">
-            <div className="stat-item text-white">
-              <div className="stat-number fs-1 fw-bold">
+            <div className="stat-item">
+              <div className="stat-number fw-bold">
                 <CountUp target={90} duration={3000} /> +
               </div>
               <div className="stat-label">Valued Clients</div>
             </div>
           </div>
           <div className="col-lg-4 col-md-4 mb-4 mb-lg-0 counter-border">
-            <div className="stat-item text-white">
-              <div className="stat-number fs-1 fw-bold">
+            <div className="stat-item">
+              <div className="stat-number fw-bold">
                 <CountUp target={27} duration={3000} /> +
               </div>
               <div className="stat-label">Years of Trusted Excellence</div>
             </div>
           </div>
           <div className="col-lg-4 col-md-4 mb-4 mb-md-0">
-            <div className="stat-item text-white">
-              <div className="stat-number fs-1 fw-bold">
+            <div className="stat-item">
+              <div className="stat-number fw-bold">
                 <CountUp target={18} duration={3000} /> +
               </div>
               <div className="stat-label">Countries and Growing</div>
@@ -90,8 +99,7 @@ const Home: React.FC = () => {
           </div>
         </div>
       </div>
-      </div>
-    </section>    
+    </section>
   </>
   )
 }

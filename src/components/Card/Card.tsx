@@ -15,6 +15,7 @@ interface CardProps {
   links?: ServiceLink[];
   featured?: boolean;
   compact?: boolean;
+  className?: string;
 }
 
 const Card: React.FC<CardProps> = ({
@@ -24,6 +25,7 @@ const Card: React.FC<CardProps> = ({
   links = [],
   featured = false,
   compact = false,
+  className,
 }) => {
   const cardClass = [
     "card",
@@ -36,6 +38,7 @@ const Card: React.FC<CardProps> = ({
     "position-relative",
     "overflow-hidden",
     featured || compact ? "transition-hover" : "",
+    className ? className : "",
   ]
     .join(" ")
     .trim();

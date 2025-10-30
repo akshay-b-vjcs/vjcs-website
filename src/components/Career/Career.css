@@ -2,7 +2,27 @@
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.5;
+}
+
+.career-content-wrapper {
+  background-color: var(--background-color);
+  border-radius: 45px 0px;
+  padding: 2rem;
+  text-align: justify;
+}
+
+.image-wrapper {
+  margin: 2rem;
+}
+
+.custom-career-img {
+  border-radius: 45px 0px;
+  border-color: #00298b;
+  border-style: solid;
+  width: 85%;
+  height: 100%;
+  object-fit: cover; 
 }
 
 .career-wrapper {
@@ -23,11 +43,11 @@
 .career-item:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-  border-left-color: var(--accent-color);
+  border-left-color: var(--accent-color-1);
 }
 
 .career-item.career-active {
-  border-left-color: var(--accent-color);
+  border-left-color: var(--accent-color-1);
 }
 
 .career-item.career-active .career-header .career-icon {
@@ -70,7 +90,7 @@
   margin: 0;
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--heading-color);
+  color: var(--heading-color-1);
   transition: color 0.3s ease;
   line-height: 1.4;
 }
@@ -110,12 +130,17 @@
 .content-inner p {
   margin: 0;
   font-size: 14px;
-  color: #555;
+  color: var(--default-dark-color);
   line-height: 1.5;
 }
 
 .content-inner h6 {
   margin-bottom: 10px;
+  color: var(--heading-color-1);
+}
+
+.content-inner ul li {
+  color: var(--default-dark-color);
 }
 
 @keyframes fadeIn {
@@ -155,7 +180,7 @@
   position: absolute;
   width: 60px;
   height: 3px;
-  background: var(--accent-color);
+  background: var(--accent-color-1);
   left: 0;
   right: 0;
   bottom: 0;
@@ -164,11 +189,6 @@
 
 .section-title p {
   color: #ffffff
-}
-
-.custom-career-img {
-  max-width: 95%;
-  height: auto;
 }
 
 @media (max-width: 991.98px) {
@@ -181,7 +201,6 @@
   }
 
   .image-wrapper .custom-career-img {
-    border-radius: 10px;
     max-width: 75%;
   }
 }
@@ -196,7 +215,6 @@
   }
 
   .image-wrapper .custom-career-img {
-    border-radius: 10px;
-    max-width: 65%;
+    max-width: 100%;
   }
 }

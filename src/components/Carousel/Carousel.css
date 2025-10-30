@@ -1,9 +1,23 @@
+#bgCarousel {
+ 	margin-top: 110px;
+ }
+
 .carousel-image-wrapper {
   height:fit-content
 }
 
 .carousel-image-wrapper picture img {
   position: relative !important;
+}
+
+.animate-ken-burns {
+  animation: ken-burns 30s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;
+}
+
+@keyframes ken-burns {
+  50% {
+    transform: scale(1.1)
+  }
 }
 
 /* Mobile Devices (Portrait) */
