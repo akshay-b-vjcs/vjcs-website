@@ -29,7 +29,7 @@ const Carousel: React.FC = () => {
   const slides: Slide[] = [
     {
       title: "VJCS Video",
-      videoSrc: "./video/vjcs.mp4",
+      videoSrc: "./video/vjcs1080.mp4",
     },
     {
       desktop: imgCax,
@@ -79,7 +79,7 @@ const Carousel: React.FC = () => {
               </video>
             </div>
             ) : (
-              <div className="d-block carousel-image-wrapper">
+              <div className="d-flex justify-content-center carousel-image-wrapper">
                 <picture>
                   <source srcSet={s.mobile.src} media="(max-width: 768px)" />
                   <Image

@@ -2,7 +2,7 @@
 @media (min-width: 769px) {
   .navmenu {
     padding: 0;
-    margin-right: 1rem;
+    margin-right:0rem;
   }
 
   .navmenu ul {

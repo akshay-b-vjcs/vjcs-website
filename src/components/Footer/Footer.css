@@ -118,3 +118,19 @@
   margin-top: 6px;
   font-size: 13px;
 }
+
+.bg-pattern {
+  width: 100%;
+  height: 100%;
+  
+  /* Gradient background */
+  background: 
+    radial-gradient(circle, rgba(255, 255, 255, 0.5) 0px, transparent 1px),
+    #000a23f5;
+
+  /* Dot spacing */
+  background-size: 17px 17px, 100% 100%;
+
+  /* Ensure it scales with div */
+  background-repeat: repeat;
+}

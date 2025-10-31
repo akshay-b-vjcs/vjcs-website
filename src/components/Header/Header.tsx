@@ -44,7 +44,7 @@ const Header:React.FC = () => {
 
 	return  (
 		<header id="header" className="header fixed-top">
-			<div className="topbar d-flex align-items-center dark-background">
+			{/* <div className="topbar d-flex align-items-center dark-background">
 				<div className="container d-flex justify-content-center justify-content-md-between">
 					<div className="contact-info d-flex align-items-center">
 					<i className="bi bi-envelope d-flex align-items-center"><Link href="mailto:info@vjcs.com">info@vjcs.com</Link></i>
@@ -54,7 +54,7 @@ const Header:React.FC = () => {
 					<Link href="https://wwww.linkedin.com/company/vj-coresoft-pvt.-ltd/" className="linkedin" target="_blank"><i className="bi bi-linkedin"></i></Link>
 					</div>
 				</div>
-			</div> 
+			</div>  */}
 			<NavBar />		
 		</header>
 	)

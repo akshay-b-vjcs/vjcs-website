@@ -1,20 +1,22 @@
 #bgCarousel {
- 	margin-top: 95px;
+ 	margin-top: 55px;
  }
 
 .carousel-video-wrapper video {
-  height:90vh;
+  height:95vh;
   object-fit: cover;
 }
 
 .carousel-image-wrapper {
-  height:fit-content
+  height:fit-content;
+  background: linear-gradient(333deg, #001d60 40%, #00288d 40%, #00298f 70%, #001D60 70%);
 }
 
 .carousel-image-wrapper picture img {
   position: relative !important;
   object-fit: fill;
-  height: 90vh !important;
+  height: 95vh !important;
+  width: auto;
 }
 
 .animate-ken-burns {
@@ -27,15 +29,26 @@
   }
 }
 
+/* 2K display (2560px width) */
+@media only screen and (min-width: 2560px) {
+  .carousel-video-wrapper video {
+    height:80vh;
+  }
+  .carousel-image-wrapper picture img{
+    height: 80vh !important;
+    object-fit: cover;
+    width: auto;
+  }
+}
 /* Mobile Devices (Portrait) */
 @media only screen and (max-width: 480px) {
   /* Styles for mobile phones */
   .carousel-video-wrapper video {
-    height:50vh;
+    height:45vh;
     object-fit: cover;
   }
   .carousel-image-wrapper picture img{
-    height: 50vh !important;
+    height: 45vh !important;
   }
 }
 
@@ -43,11 +56,11 @@
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   /* Styles for mobile phones in landscape mode */
   .carousel-video-wrapper video {
-    height:65vh;
+    height:60vh;
     object-fit: cover;
   }
   .carousel-image-wrapper picture img{
-    height: 65vh !important;
+    height: 60vh !important;
   }
 }
 
@@ -55,10 +68,10 @@
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   /* Styles for tablets in portrait mode */
   .carousel-video-wrapper video {
-    height:55vh;
+    height:50vh;
     object-fit: cover;
   }
   .carousel-image-wrapper picture img{
-    height: 55vh !important;
+    height: 50vh !important;
   }
 }

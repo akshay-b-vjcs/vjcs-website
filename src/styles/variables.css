@@ -49,8 +49,7 @@
   --surface-color: #ffffff;      /* Dark panels/cards */
   --contrast-color: #ffffff;     /* Text on accents */
   --default-dark-color: #1A1A1A;
-  --background: linear-gradient(333deg, #001d60 40%, #00288d 40%, #00298f 70%, #001D60 70%)
-
+  --background: linear-gradient(333deg, #001d60 40%, #00288d 40%, #00298f 70%, #001D60 70%);
 }
 
 .dark-div-background {
