@@ -36,7 +36,7 @@ const About:React.FC = () => {
     <PageBaner heading="About Us" image={bannerImage}/>
     <section
       id="about-us"
-      className="about-us section dark-background"
+      className="about-us section dark-background section-with-lines"
     >
       <div className="container g-0">
         <div className="card-wrapper ">

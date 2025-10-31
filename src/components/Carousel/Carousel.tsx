@@ -72,10 +72,12 @@ const Carousel: React.FC = () => {
         {slides.map((s, i) => (
           <div key={i} className={`carousel-item ${i === 0 ? "active" : ""}`}>
             {"videoSrc" in s ? (
+            <div className="carousel-video-wrapper">
               <video className={`d-block w-100`} autoPlay muted loop playsInline>
                 <source src={s.videoSrc} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
+            </div>
             ) : (
               <div className="d-block carousel-image-wrapper">
                 <picture>
@@ -83,7 +85,6 @@ const Carousel: React.FC = () => {
                   <Image
                     src={s.desktop}
                     alt={s.title}
-                    priority={i === 0}
                     layout="intrinsic" // This will keep the aspect ratio
                     placeholder="blur"
                     className="animate-ken-burns"

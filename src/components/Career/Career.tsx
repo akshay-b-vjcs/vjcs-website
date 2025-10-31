@@ -101,7 +101,7 @@ const Career: React.FC = () => {
         </div>
       </section>
 
-      <section className="section dark-background py-5 ">
+      <section className="section dark-background py-5 section-with-lines">
         <div className="container">
           <div className="text-center mt-5 section-title">
             <h2 className="fw-bold">Open Positions</h2>

@@ -13,7 +13,7 @@
   height: 40vh;
   display: flex;
   align-items: flex-end;
-  margin-top:110px
+  margin-top:95px
 }
 
 .page-title:before {
@@ -22,7 +22,6 @@
   position: absolute;
   inset: 0;
 }
-
 
 .page-title .heading-wrapper {
   width:fit-content;

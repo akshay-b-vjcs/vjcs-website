@@ -60,7 +60,7 @@
 }
 
 .header .branding {
-  min-height: 60px;
+  min-height: fit-content;
   /* background: linear-gradient(90deg, #d0edf9 0%, rgb(15 23 42) 65%) */
   background-color: var(--background-color);
 }
@@ -70,9 +70,9 @@
 }
 
 .header .logo img {
-  max-height: 70px;
+  max-height: 55px;
+  max-width: 90px;
   margin-right: 8px;
-  max-width: 110px;
   background: white;
 }
 

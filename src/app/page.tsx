@@ -16,7 +16,7 @@ const Home: React.FC = () => {
     <section className="section">
       <Carousel/>
     </section>
-    <section className="hero section dark-background">
+    <section className="hero section dark-background section-with-lines">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-12">

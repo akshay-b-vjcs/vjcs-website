@@ -650,6 +650,7 @@
     padding-left: 35px;
     font-size: 14px;
     font-weight: 400;
+    white-space: break-spaces;
   }
 
   .navmenu .megamenu-2 .mobile-megamenu.dropdown-active {

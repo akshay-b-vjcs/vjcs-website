@@ -126,6 +126,7 @@ section,
   /* padding: 60px 0; */
   scroll-margin-top: 72px;
   overflow: clip;
+  background: var(--background);
 }
 
 @media (max-width: 1199px) {
@@ -2565,4 +2566,41 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+.section-with-lines {
+  position: relative;
+  /* background: linear-gradient(135deg, #002366, #003b99);
+  color: #fff;
+  padding: 80px 0; */
+  overflow: hidden;
+}
+
+/* Common line styles */
+.section-with-lines::before,
+.section-with-lines::after {
+  content: "";
+  position: absolute;
+  width: 8%;  /* total width of each line group */
+  height: 2px;  /* height of a single line */
+  background: none;
+  box-shadow:
+    0 0 0 1px transparent,
+    0 3px 0 0 #ffffffc7,
+    0 22px 0 0 #ffffffc7,
+    0 44px 0 0 #ffffffc7;
+}
+
+/* Top Right corner lines */
+.section-with-lines::before {
+  top: 40px;
+  right: 0px;
+  transform: rotate(0deg);
+}
+
+/* Bottom Left corner lines */
+.section-with-lines::after {
+  bottom: 90px;
+  left: 0px;
+  transform: rotate(0deg);
 }

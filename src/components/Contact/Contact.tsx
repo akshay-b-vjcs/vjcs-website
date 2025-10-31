@@ -109,7 +109,7 @@ const Contact: React.FC = () => {
 
       <PageBaner heading="Contact" image={bannerImage} />
 
-      <section id="contact" className="contact section py-5 dark-background">
+      <section id="contact" className="contact section py-5 dark-background section-with-lines">
         <div className="container">
           <div className="contact-main-wrapper">
             <div className="map-wrapper">
