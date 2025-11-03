@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer id="footer" className="footer position-relative dark-background bg-pattern ">
+    <footer id="footer" className="footer position-relative dark-background footer-bg-pattern">
       <div className="container footer-top">
         <div className="row gy-4">
           <div className="col-lg-4 col-md-12 footer-about">
