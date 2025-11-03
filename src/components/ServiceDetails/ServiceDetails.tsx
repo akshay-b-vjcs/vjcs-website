@@ -138,7 +138,10 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
   return (
     <>
       <PageBaner heading={service.title} />
-      <section id="service-details" className="service-details section light-background pt-5">
+      <section
+        id="service-details"
+        className="service-details section light-background pt-5"
+      >
         <div className="container">
           <div className="row gy-5">
             {/* Left Column */}
@@ -163,7 +166,8 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
               <div className="service-content">
                 <div className="service-header mx-3 mx-md-3">
                   <h2>{service.title}</h2>
-                  <p className="service-intro">{service.intro}</p>
+                  <p className="service-intro" style={{ whiteSpace: "pre-line" }}>{service.intro}</p>
+                                       
                 </div>
 
                 {/* Features */}
@@ -200,10 +204,7 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
                       </div>
 
                       {/* Right Content */}
-                      <div
-                        className="col-lg-8 scroll-offset"
-                        ref={featuresRef}
-                      >
+                      <div className="col-lg-8 scroll-offset" ref={featuresRef}>
                         <div className="tab-content">
                           {service.features?.map((feature, idx) => (
                             <div
@@ -215,13 +216,19 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
                               <div className="content-box">
                                 <div className="row g-4">
                                   <div className="col-lg-12">
-                                    <h3>{feature.contentTitle}</h3>
-                                    <p>{feature.content}</p>
-                                    <p className="highlight">
-                                      {feature.highlight}
+                                    <h3>{feature?.contentTitle}</h3>
+                                    <p style={{ whiteSpace: "pre-line" }}>
+                                      {feature?.content}
                                     </p>
+
+                                    {feature?.highlight && (
+                                      <p className="highlight">
+                                        {feature.highlight}
+                                      </p>
+                                    )}
+
                                     <ul className="features-list list-unstyled">
-                                      {feature.points.map((point, i) => (
+                                      {feature?.points?.map((point, i) => (
                                         <li
                                           key={i}
                                           className="d-flex align-items-start mb-2"
@@ -270,9 +277,7 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
                 <div className="contact-card">
                   <div className="contact-content">
                     <h4>Need Help?</h4>
-                    <p>
-                    Our team’s here to make things easy.
-                    </p>
+                    <p>Our team’s here to make things easy.</p>
                     <div className="contact-info">
                       <div className="contact-item">
                         <i className="bi bi-telephone"></i>
