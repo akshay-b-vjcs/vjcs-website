@@ -1,6 +1,7 @@
 export const services = [
   {
     slug: "cad-cam-development",
+    title: "CAD/CAM Development",
     features: [
       {
         id: 1,
@@ -136,6 +137,7 @@ export const services = [
   },
   {
     slug: "cae-development",
+    title: "Augmented & Virtual Reality Apps",
     features: [
       {
         id: 1,
@@ -273,6 +275,7 @@ export const services = [
   },
   {
     slug: "cax-software-testing",
+    title: "CAx Software QA & Testing",
     features: [
       {
         id: 1,
@@ -373,7 +376,7 @@ export const services = [
 
   {
     slug: "plm",
-    // title: "PLM",
+    title: "PLM",
     intro:
       "VJCS has multi years of practical expertise in PDM/PLM domain in the areas of Aerospace, Automotive, Heavy Industries etc.",
     features: [
@@ -423,6 +426,7 @@ export const services = [
 
   {
     slug: "product-design",
+    title: "Product Design",
     features: [
       {
         id: 1,
@@ -474,6 +478,7 @@ export const services = [
   },
   {
     slug: "bim-modelling",
+    title: "BIM Modelling Services",
     intro:
       "VJ Coresoft offers customized BIM Modelling services and solutions that suits clients Building Information Modelling (BIM) requirements. Bringing years of experience in various BIM Software we offer BIM modeling services for the Architectural, Structural, MEP, HVAC, Façade, Mechanical and Plumbing & Fire protection domains.",
     features: [
@@ -498,6 +503,7 @@ export const services = [
   },
   {
     slug: "marine-engineering",
+    title: "Marine Engineering",
     intro:
       "We provide high end innovative design & technical solutions to marine and offshore industry. By utilizing our proficiency in engineering & extensive design experience we have successfully delivered range of marine design and engineering services.We offer a complete set of design and consultancy services, starting with the earlier design stages up to production information.\n\nWe are internationally renowned provider of ship design and system solutions for ship & yacht building. For ship design we provide quality basic & detail design engineering services for production. Where the hull structure, outfit and systems are detailed to achieve a cost and time effective production life cycle.\n\nOur Ship Design and Offshore Services Include:",
     features: [
@@ -562,6 +568,7 @@ export const services = [
   },
   {
     slug: "virtual-manufacturing",
+    title: "Virtual Manufacturing",
     features: [
       {
         id: 2,
@@ -581,6 +588,7 @@ export const services = [
   },
   {
     slug: "industrial-iot",
+    title: "Industrial Internet of Things",
     features: [
       {
         id: 2,
@@ -601,6 +609,7 @@ export const services = [
 
   {
     slug: "ai-solutions",
+    title: "AI Solutions & Services",
     intro:
       "At VJ Coresoft, we’re working with forward thinking businesses in developing solutions for the workforce of the future using AI and combining it with technologies such Augmented Reality (AR), Artificial Intelligence (AI), Cloud, Analytics and Industrial IoT to help businesses successfully undergo digital transformation initiatives.",
     features: [
@@ -646,6 +655,7 @@ export const services = [
 
   {
     slug: "enterprise-web-mobile",
+    title: "Enterprise Web & Mobile",
     features: [
       {
         id: 1,
@@ -693,6 +703,7 @@ export const services = [
   },
   {
     slug: "ar-vr-apps",
+    title: "Augmented & Virtual Reality Apps",
     intro:
       "At VJCS, we use a well-balanced set of technologies to create incredible solutions that will make you stand out from the crowd. Our team focuses on custom solutions for the top virtual reality platforms, including HTC Vive and Windows Mixed Reality. We also offer state-of-the-art game development, through platforms, such as Unity and Unreal Engine. Our extensive experience is put to good use, ensuring that our clients have the highest-value technical solution for their particular business challenge.",
     features: [
