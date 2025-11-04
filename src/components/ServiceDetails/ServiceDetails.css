@@ -39,8 +39,8 @@
 }
 
 .service-details .service-content .service-header .service-intro {
-  font-size: 18px;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.5;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
 

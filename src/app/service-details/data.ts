@@ -53,7 +53,7 @@ export const services = [
       },
       {
         id: 5,
-        title: "1D Multi Domain System Simulation",
+        title: "Graphics and Visualization",
         icon: "bi bi-eye",
         contentTitle: "Graphics and Visualization",
         points: [
@@ -137,7 +137,7 @@ export const services = [
   },
   {
     slug: "cae-development",
-    title: "Augmented & Virtual Reality Apps",
+    title: "CAE Development",
     features: [
       {
         id: 1,

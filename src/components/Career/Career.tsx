@@ -4,13 +4,13 @@ import Image from "next/image";
 import PageBaner from "@components/PageBaner/PageBaner";
 import teamImage from "@image/career/team.png";
 import bannerImage from "@image/career/hero-career.png"
+import noPositions from "@image/career/unemployment.png"
 
 import "./Career.css";
 
 const Career: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
-  console.log(activeIndex)
-  const careers = [
+  const careers: Array<object> = [
     {
       title: "CAD Testers 2D Sketch",
       subtitle:
@@ -105,15 +105,26 @@ const Career: React.FC = () => {
         <div className="container">
           <div className="text-center mt-5 section-title">
             <h2 className="fw-bold">Open Positions</h2>
-            <p >
+            { careers.length > 0 && <p >
               For expansion plans, company is looking for following professionals
-            </p>
+            </p> }
+
+            { careers.length == 0 && 
+            <div className="no-open-positions">
+              <Image src={noPositions.src} width={100} height={100} alt="No jobs" />
+              <h3>No Open Positions</h3>
+              <p >
+                Thank you for your interest! While we don&apos;t have any open positions at the moment, we&apos;re always looking for talented individuals.
+              </p>
+              <p>Stay connected with us for future opportunities and updates!</p>
+            </div> 
+            }
           </div>
 
           <div className="row justify-content-center mt-4">
             <div className="col-lg-8">
               <div className="career-wrapper">
-                {careers.map((job, index) => (
+                {careers.length > 0 && careers.map((job, index) => (
                   <div
                     key={index}
                     className={`career-item ${

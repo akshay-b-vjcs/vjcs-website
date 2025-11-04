@@ -167,7 +167,6 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
                 <div className="service-header mx-3 mx-md-3">
                   <h2>{service.title}</h2>
                   <p className="service-intro" style={{ whiteSpace: "pre-line" }}>{service.intro}</p>
-                                       
                 </div>
 
                 {/* Features */}

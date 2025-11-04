@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { Metadata } from "next";
 import { services } from "../data";
 import ServiceDetails from "@components/ServiceDetails/ServiceDetails";
 
@@ -36,6 +37,12 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
     { slug: "enterprise-web-mobile" },
     { slug: "ar-vr-apps" },
   ];
+}
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: "Services | VJCS",
+  };
 }
 
 export default async function ServiceDetailPage({ params }: PageProps) {
