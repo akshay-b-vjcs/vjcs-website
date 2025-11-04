@@ -3,7 +3,7 @@
  }
 
 .carousel-video-wrapper video {
-  height:95vh;
+  height:80vh;
   object-fit: cover;
 }
 
@@ -15,7 +15,7 @@
 .carousel-image-wrapper picture img {
   position: relative !important;
   object-fit: fill;
-  height: 95vh !important;
+  height: 80vh !important;
   width: auto;
 }
 
@@ -29,17 +29,10 @@
   }
 }
 
-/* 2K display (2560px width) */
-@media only screen and (min-width: 2560px) {
-  .carousel-video-wrapper video {
-    height:80vh;
-  }
-  .carousel-image-wrapper picture img{
-    height: 80vh !important;
-    object-fit: cover;
-    width: auto;
-  }
-}
+/* for Full HD+ display */
+/* @media only screen and (min-width: 1921px) {
+  
+} */
 /* Mobile Devices (Portrait) */
 @media only screen and (max-width: 480px) {
   /* Styles for mobile phones */
@@ -61,6 +54,18 @@
   }
   .carousel-image-wrapper picture img{
     height: 60vh !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #bgCarousel {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #bgCarousel {
+    margin-top: 45px;
   }
 }
 

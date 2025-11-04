@@ -93,6 +93,20 @@
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  .header .logo img {
+    max-height: 50px;
+    max-width: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header .logo img {
+    max-height: 45px;
+    max-width: 70px;
+  }
+}
+
 /* Global Header on Scroll
 ------------------------------*/
 /* .scrolled .header {
