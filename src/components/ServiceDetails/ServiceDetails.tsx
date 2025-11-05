@@ -13,7 +13,7 @@ import imgEds from "@image/services/service-eds.png";
 import imgEds1 from "@image/services/service-ds.png";
 
 // Mobile images
-import imgCaxMob from "@image/carousel/mobile/carousel-cax-Sq.png"
+import imgCaxMob from "@image/carousel/mobile/carousel-cax-Sq.png";
 import imgPlmMob from "@image/carousel/mobile/carousel-plm-Sq.png";
 import imgEdsMob from "@image/carousel/mobile/carousel-eds-Sq.png";
 import imgEds1Mob from "@image/carousel/mobile/carousel-ds-Sq.png";
@@ -146,6 +146,7 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
           <div className="row gy-5">
             {/* Left Column */}
             <div className="col-lg-8">
+              {/* Image */}
               <div className="service-hero">
                 <Image
                   src={banner}
@@ -164,85 +165,82 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
               </div>
 
               <div className="service-content">
+                {/* Title */}
                 <div className="service-header mx-3 mx-md-3">
                   <h2>{service.title}</h2>
-                  <p className="service-intro" style={{ whiteSpace: "pre-line" }}>{service.intro}</p>
+                  <p
+                    className="service-intro"
+                    style={{ whiteSpace: "pre-line" }}
+                  >
+                    {service.intro}
+                  </p>
                 </div>
 
                 {/* Features */}
+
                 <section id="features" className="features section py-3">
-                  <div className="container">
+                  <div className="container scroll-offset">
                     <div className="row g-4">
-                      {/* Left Tabs */}
-                      <div className="col-lg-4 scroll-offset">
-                        <ul className="nav nav-tabs flex-column" role="tablist">
-                          {service.features?.map((feature, idx) => (
-                            <li className="nav-item mb-3" key={idx}>
-                              <button
-                                className={`nav-link w-100 p-3 d-flex align-items-start ${
-                                  activeTab === idx ? "active" : ""
-                                }`}
-                                onClick={() => {
-                                  setActiveTab(idx);
-                                  scrollToFeatures();
-                                }}
-                              >
-                                <div className="d-flex align-items-center">
-                                  <div className="icon-box">
-                                    <i className={feature.icon}></i>
-                                  </div>
-                                  <div className="ms-3 text-start">
-                                    <h4>{feature.title}</h4>
-                                    <p>{feature.subtitle}</p>
-                                  </div>
-                                </div>
-                              </button>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-
-                      {/* Right Content */}
-                      <div className="col-lg-8 scroll-offset" ref={featuresRef}>
-                        <div className="tab-content">
-                          {service.features?.map((feature, idx) => (
-                            <div
-                              key={idx}
-                              className={`tab-pane fade ${
-                                activeTab === idx ? "active show" : ""
-                              }`}
-                            >
-                              <div className="content-box">
-                                <div className="row g-4">
-                                  <div className="col-lg-12">
-                                    <h3>{feature?.contentTitle}</h3>
-                                    <p style={{ whiteSpace: "pre-line" }}>
-                                      {feature?.content}
-                                    </p>
-
-                                    {feature?.highlight && (
-                                      <p className="highlight">
-                                        {feature.highlight}
-                                      </p>
-                                    )}
-
-                                    <ul className="features-list list-unstyled">
-                                      {feature?.points?.map((point, i) => (
-                                        <li
-                                          key={i}
-                                          className="d-flex align-items-start mb-2"
-                                        >
-                                          <i className="bi bi-check2-circle me-2"></i>
-                                          <span>{point}</span>
-                                        </li>
-                                      ))}
-                                    </ul>
-                                  </div>
-                                </div>
+                      <div className="col-lg-12">
+                        {service.features?.map((feature, idx) => (
+                          <div
+                            key={idx}
+                            className="feature-box mb-5 rounded-4 shadow-sm"
+                          >
+                            {/* Header */}
+                            <div className="feature-header d-flex align-items-center p-3 rounded-top-4">
+                              <div className="feature-icon me-3">
+                                <i className={`${feature.icon}`}></i>
+                              </div>
+                              <div>
+                                <h4 className="feature-title mb-0">
+                                  {feature.title}
+                                </h4>
+                                {feature?.subtitle && (
+                                  <p className="feature-subtitle mb-0">
+                                    {feature.subtitle}
+                                  </p>
+                                )}
                               </div>
                             </div>
-                          ))}
-                        </div>
+
+                            {/* Body */}
+                            <div className="feature-body p-4">
+                              {feature?.contentTitle && (
+                                <h5 className="feature-content-title mb-2">
+                                  {feature.contentTitle}
+                                </h5>
+                              )}
+
+                              {feature?.content && (
+                                <p
+                                  className="feature-content"
+                                  style={{ whiteSpace: "pre-line" }}
+                                >
+                                  {feature.content}
+                                </p>
+                              )}
+
+                              {feature?.highlight && (
+                                <p className="highlight">{feature.highlight}</p>
+                              )}
+
+                              {feature?.points?.length > 0 && (
+                                <ul className="features-list list-unstyled mt-3">
+                                  {feature.points.map((point, i) => (
+                                    <li
+                                      key={i}
+                                      className="d-flex align-items-start mb-2"
+                                    >
+                                      <i className="bi bi-check2-circle me-2 text-accent"></i>
+                                      <span>{point}</span>
+                                    </li>
+                                  ))}
+                                </ul>
+                              )}
+                            </div>
+                          </div>
+                        ))}
                       </div>
                     </div>
                   </div>
