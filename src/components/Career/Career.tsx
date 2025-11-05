@@ -8,9 +8,17 @@ import noPositions from "@image/career/unemployment.png"
 
 import "./Career.css";
 
+type Job = {
+  title: string;
+  subtitle: string;
+  requirements: string;
+  jobProfile: string[];
+  skills: string[];
+}
+
 const Career: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
-  const careers: Array<object> = [
+  const careers: Job[] = [
     {
       title: "CAD Testers 2D Sketch",
       subtitle:

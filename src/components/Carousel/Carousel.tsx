@@ -2,15 +2,15 @@ import Image, { StaticImageData } from "next/image";
 import "./Carousel.css";
 
 // Import local service banner images
-import imgCax from "@image/carousel/carousel-cax.png";
-import imgPlm from "@image/carousel/carousel-plm.png";
-import imgEds from "@image/carousel/carousel-eds.png";
-import imgDs from "@image/carousel/carousel-ds.png";
+import imgCax from "@image/carousel/2k/carousel-cax.png";
+import imgPlm from "@image/carousel/2k/carousel-plm.png";
+import imgEds from "@image/carousel/2k/carousel-eds.png";
+import imgDs from "@image/carousel/2k/carousel-ds.png";
 
-import imgCaxMob from "@image/carousel/mobile/carousel-cax-Sq.png";
-import imgPlmMob from "@image/carousel/mobile/carousel-plm-Sq.png";
-import imgEdsMob from "@image/carousel/mobile/carousel-eds-Sq.png";
-import imgDsMob from "@image/carousel/mobile/carousel-ds-Sq.png";
+import imgCaxMob from "@image/carousel/mobile/cax-Sq_1200.png";
+import imgPlmMob from "@image/carousel/mobile/plm-Sq_1200.png";
+import imgEdsMob from "@image/carousel/mobile/eds-Sq_1200.png";
+import imgDsMob from "@image/carousel/mobile/ds-Sq_1200.png";
 
 type VideoSlide = {
   title: string;
@@ -81,7 +81,7 @@ const Carousel: React.FC = () => {
             ) : (
               <div className="d-flex justify-content-center carousel-image-wrapper">
                 <picture>
-                  <source srcSet={s.mobile.src} media="(max-width: 768px)" />
+                  <source srcSet={s.mobile.src} media="(max-width: 576px)" />
                   <Image
                     src={s.desktop}
                     alt={s.title}

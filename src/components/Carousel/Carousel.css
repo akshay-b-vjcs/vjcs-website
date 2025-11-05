@@ -14,9 +14,9 @@
 
 .carousel-image-wrapper picture img {
   position: relative !important;
-  object-fit: fill;
+  object-fit: cover;
   height: 80vh !important;
-  width: auto;
+  /* width: auto; */
 }
 
 .animate-ken-burns {
@@ -37,11 +37,11 @@
 @media only screen and (max-width: 480px) {
   /* Styles for mobile phones */
   .carousel-video-wrapper video {
-    height:45vh;
+    height:50vh;
     object-fit: cover;
   }
   .carousel-image-wrapper picture img{
-    height: 45vh !important;
+    height: 50vh !important;
   }
 }
 
@@ -54,6 +54,7 @@
   }
   .carousel-image-wrapper picture img{
     height: 60vh !important;
+    object-fit: fill;
   }
 }
 
@@ -78,5 +79,15 @@
   }
   .carousel-image-wrapper picture img{
     height: 50vh !important;
+  }
+}
+
+@media only screen and (max-height: 600px) and (max-width: 1024px) {
+  .carousel-video-wrapper video {
+    height:85vh;
+    object-fit: cover;
+  }
+  .carousel-image-wrapper picture img{
+    height: 85vh !important;
   }
 }
