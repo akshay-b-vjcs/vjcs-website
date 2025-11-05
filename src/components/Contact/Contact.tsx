@@ -1,11 +1,14 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import Card from "@components/Card/Card";
 
 import ReCAPTCHA from "react-google-recaptcha";
 import PageBaner from "@components/PageBaner/PageBaner";
 import bannerImage from "@image/contact/hero-contact.png"
+import SEZ1 from "@image/contact/sez1.jpg"
+import SEZ2 from "@image/contact/sez2.jpg"
 
 import { Toaster, toast } from "react-hot-toast";
 import "./Contact.css";
@@ -133,7 +136,7 @@ const Contact: React.FC = () => {
                 <form
                   onSubmit={handleSubmit}
                   method="POST"
-                  className="php-email-form"
+                  className="email-form"
                 >
                   <div className="row">
                     <div className="col-md-6 form-group pt-3">
@@ -256,6 +259,22 @@ const Contact: React.FC = () => {
           </div>
         </div>
       </section>
+
+      <section id="sez-facility" className="light-background position-relative overflow-hidden">
+        <div className="container">
+          <div className="text-center mt-5 section-title">
+            <h2 className="fw-bold mb-5">SEZ Facility</h2>
+            <div className="row image-wrapper">
+              <div className="col-lg-6">
+                <Image src={SEZ1.src} alt="SEZ Facility" height={900} width={500} layout="intrinsic"  className="custom-contact-img" />
+              </div>
+              <div className="col-lg-6">
+                <Image src={SEZ2.src} alt="SEZ Facility" height={900} width={500} layout="intrinsic"  className="custom-contact-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>.
 
       <section
         id="services"

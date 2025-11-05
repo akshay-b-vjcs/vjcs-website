@@ -36,6 +36,15 @@ const Footer: React.FC = () => {
               <Link href="https://wwww.linkedin.com/company/vj-coresoft-pvt.-ltd/" target="_blank">
                 <i className="bi bi-linkedin"></i>
               </Link>
+              <Link href="">
+                <i className="bi bi-twitter-x"></i>
+              </Link>
+              <Link href="">
+                <i className="bi bi-facebook"></i>
+              </Link>
+              <Link href="">
+                <i className="bi bi-instagram"></i>
+              </Link>
             </div>
           </div>
 
