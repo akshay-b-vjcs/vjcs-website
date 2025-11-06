@@ -2,11 +2,12 @@
 # Service Details
 --------------------------------------------------------------*/
 .service-details .service-hero {
-  position: relative;
-  margin: 40px 0;
   border-radius: 12px;
+  position: relative;
   overflow: hidden;
+  margin: 40px 0;
 }
+
 
 .service-details .service-hero img {
   width: 100%;
@@ -41,71 +42,285 @@
   font-size: 16px;
   line-height: 1.5;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
+  white-space: pre-line;
 }
 
-.service-details .service-content h4 {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 30px;
-  color: var(--heading-color);
-}
-
-.service-details .service-features {
-  margin-bottom: 50px;
-}
-
-.service-details .service-features .feature-item {
+/* Feature Header */
+.feature-header.d-flex.align-items-center.p-3.rounded-top-4 {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
   display: flex;
-  align-items: flex-start;
-  padding: 20px;
+  align-items: center;
+}
+
+.feature-header .feature-title.mb-0 {
+  color: var(--surface-color);
+}
+
+/* Feature Box - modern feature box */
+.feature-box {
   background: var(--surface-color);
-  border-radius: 8px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 40px;
   transition: all 0.3s ease;
 }
 
-.service-details .service-features .feature-item:hover {
-  box-shadow: 0 8px 25px color-mix(in srgb, var(--default-color), transparent 90%);
-  transform: translateY(-2px);
+.feature-box:hover {
+  box-shadow: 0 8px 25px color-mix(in srgb, var(--default-color), transparent 92%);
+  transform: translateY(-4px);
 }
 
-.service-details .service-features .feature-item .feature-icon {
-  background: color-mix(in srgb, var(--accent-color), transparent 90%);
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+.feature-body {
+  padding: 25px;
+}
+
+.feature-body h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-bottom: 12px;
+}
+
+.feature-body p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  white-space: pre-line;
+}
+
+/* Since feature-content-title <h5> removed, style elements with this class if any */
+.feature-content-title {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Highlight block */
+.feature-body .highlight {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--accent-color), transparent 92%),
+    color-mix(in srgb, var(--accent-color), transparent 95%)
+  );
+  padding: 16px;
+  border-left: 4px solid var(--accent-color);
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* Features List */
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+.features-list li {
+  display: flex;
+  align-items: start;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+}
+
+.features-list li i {
+  color: var(--accent-color);
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.features-list li span {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  transition: color 0.3s ease;
+}
+
+.features-list li:hover span {
+  color: var(--default-color);
+}
+
+/* Features Section - Tabs */
+.features {
+  background-color: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.features .nav-tabs {
+  border: none;
+  background: color-mix(in srgb, var(--surface-color), transparent 50%);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  margin-bottom: 30px;
+}
+
+.features .nav-tabs .nav-item {
+  margin-bottom: 15px;
+}
+
+.features .nav-tabs .nav-item:last-child {
+  margin-bottom: 0;
+}
+
+.features .nav-tabs .nav-link {
+  padding: 20px;
+  border: none;
+  border-radius: 12px;
+  background: var(--surface-color);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.features .nav-tabs .nav-link .icon-box {
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 20px;
-  flex-shrink: 0;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--accent-color), transparent 92%);
+  transition: all 0.4s ease;
 }
 
-.service-details .service-features .feature-item .feature-icon i {
+.features .nav-tabs .nav-link .icon-box i {
   font-size: 24px;
+  color: var(--accent-color);
+  transition: all 0.4s ease;
+}
+
+.features .nav-tabs .nav-link h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+  color: var(--heading-color);
+  transition: all 0.4s ease;
+}
+
+.features .nav-tabs .nav-link p {
+  font-size: 14px;
+  margin: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  transition: all 0.4s ease;
+}
+
+.features .nav-tabs .nav-link:hover {
+  transform: translateY(-2px);
+}
+
+.features .nav-tabs .nav-link:hover .icon-box {
+  background: var(--accent-color);
+}
+
+.features .nav-tabs .nav-link:hover .icon-box i {
+  color: var(--contrast-color);
+}
+
+.features .nav-tabs .nav-link:hover h4 {
   color: var(--accent-color);
 }
 
-.service-details .service-features .feature-item .feature-content h5 {
+.features .nav-tabs .nav-link:hover p {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.features .nav-tabs .nav-link.active {
+  background: var(--accent-color);
+}
+
+.features .nav-tabs .nav-link.active .icon-box {
+  background: color-mix(in srgb, var(--contrast-color), transparent 85%);
+}
+
+.features .nav-tabs .nav-link.active .icon-box i {
+  color: var(--contrast-color);
+}
+
+.features .nav-tabs .nav-link.active h4 {
+  color: var(--contrast-color);
+}
+
+.features .nav-tabs .nav-link.active p {
+  color: color-mix(in srgb, var(--contrast-color), transparent 20%);
+}
+
+.features .tab-content .content-box {
+  background: var(--surface-color);
+  border-radius: 16px;
+  padding: 10px;
+  transition: all 0.4s ease;
+}
+
+.features .tab-content .content-box h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--heading-color-1);
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.features .tab-content .content-box h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-color);
+  border-radius: 3px;
+}
+
+.features .tab-content .content-box p {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.features .tab-content .content-box p.highlight {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--accent-color), transparent 92%),
+    color-mix(in srgb, var(--accent-color), transparent 95%)
+  );
+  padding: 20px;
+  border-radius: 12px;
+  position: relative;
+}
+
+.features-list li {
+  display: flex;
+  align-items: start;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+}
+
+.features-list li i {
+  color: var(--accent-color);
   font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: var(--heading-color);
+  margin-right: 10px;
 }
 
-.service-details .service-features .feature-item .feature-content p {
-  font-size: 14px;
-  margin: 0;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+.features-list li span {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
 
+.features-list li:hover span {
+  color: var(--default-color);
+}
+
+/* Sidebar: Our Services menu */
 .service-details .service-sidebar {
   margin-top: 40px;
 }
 
-/* Sidebar Menu */
-.service-details .service-sidebar .service-menu,
-.service-details .service-sidebar .service-info {
+.service-details .service-sidebar .service-menu {
   background: var(--surface-color);
   padding: 30px;
   border-radius: 10px;
@@ -113,8 +328,7 @@
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
-.service-details .service-sidebar .service-menu h4,
-.service-details .service-sidebar .service-info h4 {
+.service-details .service-sidebar .service-menu h4 {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 25px;
@@ -141,6 +355,11 @@
   padding-left: 10px;
 }
 
+.service-details .service-sidebar .service-menu .menu-list .menu-item:hover i,
+.service-details .service-sidebar .service-menu .menu-list .menu-item.active i {
+  color: var(--accent-color);
+}
+
 .service-details .service-sidebar .service-menu .menu-list .menu-item i {
   margin-right: 12px;
   font-size: 16px;
@@ -148,7 +367,11 @@
   transition: color 0.3s ease;
 }
 
-/* Contact Card */
+.service-details .service-sidebar .service-menu .menu-list .menu-item span {
+  font-weight: 500;
+}
+
+/* Sidebar: Contact Card */
 .service-details .service-sidebar .contact-card {
   background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #000 20%));
   padding: 30px;
@@ -157,185 +380,146 @@
   margin-bottom: 40px;
 }
 
-.service-details .service-sidebar .contact-card .contact-content h4,
-.feature-header .feature-title,
-.feature-header .feature-subtitle {
-  color: #ffffff !important; /* force white */
+.service-details .service-sidebar .contact-card .contact-content h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--contrast-color);
 }
 
-/*--------------------------------------------------------------
-# Features Section
---------------------------------------------------------------*/
-.features {
-  background-color: var(--surface-color);
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  border-radius: 10px;
-  margin-bottom: 50px;
+.service-details .service-sidebar .contact-card .contact-content p {
+  margin-bottom: 20px;
+  opacity: 0.9;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
-.features .nav-tabs {
-  border: none;
-  background: color-mix(in srgb, var(--surface-color), transparent 50%);
-  border-radius: 16px;
-  backdrop-filter: blur(8px);
+.service-details .service-sidebar .contact-card .contact-content .contact-info {
+  margin-bottom: 25px;
 }
 
-.features .nav-tabs .nav-link {
-  padding: 20px;
-  border: none;
-  border-radius: 12px;
-  background: var(--surface-color);
-  transition: all 0.4s ease;
-  position: relative;
-  cursor: pointer;
-}
-
-.features .nav-tabs .nav-link .icon-box {
-  width: 50px;
-  height: 50px;
+.service-details .service-sidebar .contact-card .contact-content .contact-info .contact-item {
   display: flex;
   align-items: center;
-  justify-content: center;
-  border-radius: 12px;
-  background: color-mix(in srgb, var(--accent-color), transparent 92%);
-  transition: all 0.4s ease;
+  margin-bottom: 10px;
 }
 
-.features .nav-tabs .nav-link .icon-box i {
-  font-size: 24px;
+.service-details .service-sidebar .contact-card .contact-content .contact-info .contact-item i {
+  margin-right: 10px;
+  opacity: 0.8;
+}
+
+.service-details .service-sidebar .contact-card .contact-content .contact-info .contact-item span {
+  font-size: 14px;
+}
+
+.service-details .service-sidebar .contact-card .contact-content .btn {
+  background: var(--contrast-color);
   color: var(--accent-color);
-  transition: all 0.4s ease;
-}
-
-.features .tab-content .content-box {
-  background: var(--surface-color);
-  border-radius: 16px;
-  padding: 10px;
-  transition: all 0.4s ease;
-}
-
-.features .tab-content .content-box h3 {
-  font-size: 28px;
-  font-weight: 700;
-  color: var(--heading-color-1);
-  margin-bottom: 20px;
-  position: relative;
-  padding-bottom: 15px;
-}
-
-.feature-box {
-  background: var(--surface-color);
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  border-radius: 12px;
-  overflow: hidden;
-  margin-bottom: 40px;
+  border: none;
+  padding: 12px 25px;
+  font-weight: 600;
+  border-radius: 6px;
   transition: all 0.3s ease;
 }
 
-.feature-box:hover {
-  box-shadow: 0 8px 25px color-mix(in srgb, var(--default-color), transparent 92%);
-  transform: translateY(-4px);
+.service-details .service-sidebar .contact-card .contact-content .btn:hover {
+  background: color-mix(in srgb, var(--contrast-color), transparent 10%);
+  transform: translateY(-2px);
 }
 
-/* Feature Header + Body */
-.feature-header {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  padding: 20px 25px;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid color-mix(in srgb, var(--contrast-color), transparent 80%);
+/* Scroll offset */
+.scroll-offset {
+  scroll-margin-top: 120px;
 }
 
-.feature-header .feature-icon {
-  background: color-mix(in srgb, var(--contrast-color), transparent 85%);
-  width: 50px;
-  height: 50px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 20px;
-}
-
-.feature-header .feature-icon i {
-  font-size: 22px;
-  color: var(--contrast-color);
-}
-
-.feature-body {
-  padding: 25px;
-}
-
-.feature-body h5 {
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--heading-color);
-  margin-bottom: 12px;
-}
-
-.feature-body p {
-  font-size: 15px;
-  line-height: 1.7;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-}
-
-.feature-body .highlight {
-  background: linear-gradient(
-    135deg,
-    color-mix(in srgb, var(--accent-color), transparent 92%),
-    color-mix(in srgb, var(--accent-color), transparent 95%)
-  );
-  padding: 16px;
-  border-left: 4px solid var(--accent-color);
-  border-radius: 10px;
-  margin: 20px 0;
-}
-
-/* List inside feature body */
-.features-list {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0 0;
-}
-
-.features-list li {
-  display: flex;
-  align-items: start;
-  margin-bottom: 12px;
-}
-
-.features-list li i {
-  color: var(--accent-color);
-  font-size: 18px;
-  margin-right: 10px;
-}
-
-.features-list li span {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-}
-
-.features-list li:hover span {
-  color: var(--default-color);
-}
-
-/* Media Queries */
+/* Responsive */
 @media (max-width: 991px) {
-  .features .nav-tabs .nav-link { padding: 15px; }
-  .features .nav-tabs .nav-link .icon-box { width: 40px; height: 40px; }
-  .features .nav-tabs .nav-link .icon-box i { font-size: 20px; }
-  .features .tab-content .content-box { padding: 30px; }
-  .features .tab-content .content-box h3 { font-size: 24px; }
-  .service-details .service-sidebar { margin-top: 0; }
-    .service-details .service-hero img {margin: 0};
+  .features {
+    margin-bottom: 0;
+  }
+
+  .features .nav-tabs {
+    margin-bottom: 30px;
+  }
+
+  .features .nav-tabs .nav-link {
+    padding: 15px;
+  }
+
+  .features .nav-tabs .nav-link .icon-box {
+    width: 40px;
+    height: 40px;
+  }
+
+  .features .nav-tabs .nav-link .icon-box i {
+    font-size: 20px;
+  }
+
+  .features .tab-content .content-box {
+    padding: 30px;
+  }
+
+  .features .tab-content .content-box h3 {
+    font-size: 24px;
+  }
+
+  .service-details .service-sidebar {
+    margin-top: 0;
+  }
+.service-details .service-hero {
+    margin: 0 !important;
+  }
 }
 
 @media (max-width: 767px) {
-  .features .nav-tabs .nav-link h4 { font-size: 15px; }
-  .features .nav-tabs .nav-link p { font-size: 13px; }
-  .features .tab-content .content-box { padding: 25px; }
-  .features .tab-content .content-box h3 { font-size: 22px; }
-  .features .tab-content .content-box p { font-size: 15px; }
-  .service-details .service-sidebar { margin-top: 0; }
-  .service-details .service-hero img {margin: 0};
+  .features {
+    margin-bottom: 0;
+  }
+
+  .features .nav-tabs .nav-item {
+    margin-bottom: 10px;
+  }
+
+  .features .nav-tabs .nav-link h4 {
+    font-size: 15px;
+  }
+
+  .features .nav-tabs .nav-link p {
+    font-size: 13px;
+  }
+
+  .features .tab-content .content-box {
+    padding: 25px;
+  }
+
+  .features .tab-content .content-box h3 {
+    font-size: 22px;
+  }
+
+  .features .tab-content .content-box p {
+    font-size: 15px;
+  }
+
+  .service-details .service-sidebar {
+    margin-top: 0;
+  }
+
+  .service-details .service-hero img {
+    height: 250px;
+  }
+
+  .service-details .service-hero .service-badge {
+    top: 15px;
+    right: 15px;
+    padding: 6px 15px;
+    font-size: 12px;
+  }
+
+  .service-details .service-content .service-header h2 {
+    font-size: 24px;
+  }
+  .service-details .service-hero {
+    margin: 0 !important;
+  }
 }

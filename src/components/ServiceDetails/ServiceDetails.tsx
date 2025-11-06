@@ -206,12 +206,7 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
 
                             {/* Body */}
                             <div className="feature-body p-4">
-                              {feature?.contentTitle && (
-                                <h5 className="feature-content-title mb-2">
-                                  {feature.contentTitle}
-                                </h5>
-                              )}
-
+                          
                               {feature?.content && (
                                 <p
                                   className="feature-content"
