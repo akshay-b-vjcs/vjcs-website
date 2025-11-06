@@ -306,7 +306,7 @@
     max-height: 80vh;
     overflow: hidden;
     margin: 0px 40px 0px 40px;
-    width: 70%;
+    width: 80%;
   }
 
   .navmenu .megamenu-2:hover>.desktop-megamenu {
@@ -400,6 +400,7 @@
     margin-bottom: 20px;
     padding-bottom: 10px;
     border-bottom: 2px solid var(--accent-color);
+    white-space: normal;
   }
 
   .navmenu .megamenu-2 .tab-content .content-grid .product-section .product-list {
@@ -594,6 +595,25 @@
     transition: 0.3s;
   }
 }
+
+@media (min-width: 1024) {
+  .navmenu .megamenu-2 .desktop-megamenu {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1440px) or (min-width: 1921px) {
+  .navmenu .megamenu-2 .desktop-megamenu {
+    width: 55%;
+  }
+}
+
+@media (min-width: 2560px) {
+  .navmenu .megamenu-2 .desktop-megamenu {
+    width: 45%;
+  }
+}
+
 
 /* Megamenu 2 - Mobile */
 @media (max-width: 768px) {
