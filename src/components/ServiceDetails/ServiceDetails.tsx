@@ -153,7 +153,7 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
                   alt={serviceName}
                   width={1200}
                   height={500}
-                  className="img-fluid rounded-4 shadow img mb-5 mb-md-0"
+                  className="img-fluid rounded-4 shadow img mb-4 mb-md-0"
                   style={{
                     objectFit: "cover",
                     width: "100%",
@@ -205,7 +205,7 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
                             </div>
 
                             {/* Body */}
-                            <div className="feature-body p-4">
+                            <div className="feature-body">
                           
                               {feature?.content && (
                                 <p
@@ -221,7 +221,7 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
                               )}
 
                               {feature?.points?.length > 0 && (
-                                <ul className="features-list list-unstyled mt-3">
+                                <ul className="features-list list-unstyled">
                                   {feature.points.map((point, i) => (
                                     <li
                                       key={i}
