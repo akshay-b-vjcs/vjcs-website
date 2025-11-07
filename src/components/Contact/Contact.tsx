@@ -13,6 +13,14 @@ import SEZ2 from "@image/contact/sez2.jpg"
 import { Toaster, toast } from "react-hot-toast";
 import "./Contact.css";
 
+const natureOfService = [
+  "CAx Software Services",
+  "PLM",
+  "Engineering Design Services",
+  "Digitization Services",
+  "Other",
+];
+
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -22,7 +30,10 @@ const Contact: React.FC = () => {
     companyNumber: "",
     city: "",
     natureOfService: [] as string[],
+    otherService : "",
   });
+
+  const [showOtherServiceInput, setShowOtherServiceInput] = useState({show: false, required: false});
 
   const [captchaToken, setCaptchaToken] = useState<string | null>(null);
   const [status, setStatus] = useState("");
@@ -36,9 +47,7 @@ const Contact: React.FC = () => {
     }
   }, []);
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
+  const handleChange = ( e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
@@ -52,6 +61,14 @@ const Contact: React.FC = () => {
       const updatedServices = checked
         ? [...prevFormData.natureOfService, value]
         : prevFormData.natureOfService.filter((item) => item !== value);
+
+        // Show or hide the "Other" input field based on selection and set the required flag
+        if( updatedServices.includes("Other")){
+          setShowOtherServiceInput({show: true, required: true});
+        } else {
+          prevFormData.otherService = ""
+          setShowOtherServiceInput({show: false, required: false});
+        }
 
       return {
         ...prevFormData,
@@ -93,6 +110,7 @@ const Contact: React.FC = () => {
           companyNumber: "",
           city: "",
           natureOfService: [],
+          otherService : "",
         });
         setCaptchaToken(null);
       } else {
@@ -101,6 +119,7 @@ const Contact: React.FC = () => {
       }
     } catch (error) {
       setStatus("error");
+      console.log(error);
       toast.error("Something went wrong. Please try again later.");
     }
   };
@@ -213,13 +232,7 @@ const Contact: React.FC = () => {
                   <div className="row">
                     <div className="col-md-6 form-group pt-3">
                       <label>Nature of Service</label>
-                      {[
-                        "CAx Software Services",
-                        "PLM",
-                        "Engineering Design Services",
-                        "Digitization Services",
-                        "Other",
-                      ].map((service) => (
+                      { natureOfService.map((service) => (
                         <div className="form-check" key={service}>
                           <input
                             className="form-check-input"
@@ -237,7 +250,20 @@ const Contact: React.FC = () => {
                             {service}
                           </label>
                         </div>
-                      ))}
+                      )) }
+                      { showOtherServiceInput.show && 
+                        <div className="form-group pt-3">
+                          <input
+                            type="text"
+                            className="form-control"
+                            name="otherService"
+                            placeholder="Other Service"
+                            value={formData?.otherService}
+                            onChange={handleChange}
+                            required={showOtherServiceInput.required}
+                          />
+                        </div>
+                       }
                     </div>
 
                     <div className="col-md-6 form-group pt-3 mt-md-0">
