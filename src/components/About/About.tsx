@@ -16,7 +16,7 @@ const About:React.FC = () => {
   const services = [
       {
       title: "MISSION",
-      desc: "To work on reasonable services for clients with precision ",
+      desc: "To work on reasonable services for clients with precision to enhance business processes.",
       image : missionImg,
     },
     {
@@ -26,7 +26,7 @@ const About:React.FC = () => {
     },
     {
       title: "VALUES",
-      desc: "To work on reasonable services for clients with precision ",
+      desc: "To provide exceptional service through a culture of collaboration, innovation and continuous learning.",
       image : valuesImg,
     },
   ];
