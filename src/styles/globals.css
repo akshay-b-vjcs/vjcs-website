@@ -27,13 +27,13 @@ body {
 }
 
 a {
-  color: var(--accent-color);
+  color: var(--accent-color-1);
   text-decoration: none;
   transition: 0.3s;
 }
 
 a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  color: color-mix(in srgb, var(--hover-color), transparent 10%);
   text-decoration: none;
 }
 
