@@ -219,6 +219,12 @@
   color: color-mix(in srgb, var(--default-dark-color), transparent 20%);
 }
 
+@media (max-width: 1200px) {
+  .image-wrapper {
+    margin: 0;
+  }
+}
+
 @media (max-width: 991.98px) {
   .career-head-section {
     padding-top : 48px;
@@ -230,6 +236,11 @@
 
   .image-wrapper .custom-career-img {
     max-width: 75%;
+  }
+
+  .mob-marg-y-5 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 }
 

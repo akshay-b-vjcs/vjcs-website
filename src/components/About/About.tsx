@@ -63,7 +63,7 @@ const About:React.FC = () => {
       </div>
     </section>
     
-    <section className="section light-background py-5">
+    <section className="section light-background">
       <div className="container-fluid pe-lg-0">
         <div className="management">
           <div className="management-wrapper row g-0 my-5">
@@ -104,7 +104,7 @@ const About:React.FC = () => {
       </div>
       <div className="container-fluid ps-lg-0">
         <div className="affiliates">
-          <div className="affiliate-wrapper row g-0">
+          <div className="affiliate-wrapper row g-0 mb-5">
               {/* Left Column */}
               <div className="col-lg-6">
                 <div className="affiliate-image-container position-relative me-lg-4">

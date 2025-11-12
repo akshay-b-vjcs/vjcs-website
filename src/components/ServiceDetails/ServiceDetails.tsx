@@ -246,7 +246,7 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
             {/* Right Column */}
             <div className="col-lg-4">
               <div className="service-sidebar">
-                <div className="service-menu">
+                {/* <div className="service-menu">
                   <h4>Our Services</h4>
                   <div className="menu-list">
                     {data.map((service, idx) => {
@@ -263,7 +263,7 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
                       );
                     })}
                   </div>
-                </div>
+                </div> */}
 
                 {/* Contact Card */}
                 <div className="contact-card">

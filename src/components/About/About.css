@@ -124,6 +124,15 @@
   /* background: linear-gradient(170deg, var(--background-color) 0%, color-mix(in srgb, var(--background-color), var(--accent-color) 5%) 100%); */
 }
 
+.affiliates a {
+  color: var(--accent-color-1);
+}
+
+.affiliates a:hover {
+  color: color-mix(in srgb, var(--hover-color), transparent 10%);
+  text-decoration: none;
+}
+
 .affiliates .affiliate-wrapper {
   position: relative;
   align-items: center;
@@ -298,7 +307,7 @@
   }
 
   .affiliates {
-    padding: 10px 0;
+    padding: 0px;
   }
 
   .affiliates .row {
@@ -346,7 +355,7 @@
 
 @media (max-width: 576px) {
   .affiliates {
-    padding: 50px 0;
+    padding: 0px;
   }
 
   .management .management-content, .affiliates .affiliate-content {

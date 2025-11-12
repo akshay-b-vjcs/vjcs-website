@@ -180,6 +180,8 @@
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
+    max-height: calc(100vh - 100px); 
+    height: fit-content;
   }
 
   .navmenu a,

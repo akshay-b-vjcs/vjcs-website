@@ -80,9 +80,9 @@ const Career: React.FC = () => {
     <>
       <PageBaner heading="Career" image={bannerImage} />
       <section className="section career-head-section light-background">
-        <div className="container">
+        <div className="container my-lg-3">
           <div className="row align-items-center">
-            <div className="col-lg-6 mb-5 mt-5 ">
+            <div className="col-lg-6 my-lg-5 ">
               <div className="career-content-wrapper dark-div-background">
                 <p>
                 VJ Coresoft Pvt. Ltd. leverages advanced CAx Technologies to tackle complex challenges, providing innovative solutions for our clients. We operate with a strong commitment to honesty and ethics, ensuring our clients receive exceptional value.
@@ -96,7 +96,7 @@ const Career: React.FC = () => {
               </div>
             </div>
 
-            <div className="col-lg-6">
+            <div className="col-lg-6 mob-marg-y-5">
               <div className="image-wrapper d-flex justify-content-center">
                 <Image
                   src={teamImage}

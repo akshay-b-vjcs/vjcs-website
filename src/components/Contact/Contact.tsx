@@ -130,6 +130,22 @@ const Contact: React.FC = () => {
       <Toaster position="bottom-center" reverseOrder={false} />
 
       <PageBaner heading="Contact" image={bannerImage} />
+      
+      <section id="sez-facility" className="light-background position-relative overflow-hidden mb-5">
+        <div className="container">
+          <div className="text-center mt-md-5 mt-4 section-title">
+            <h2 className="fw-bold mb-5">SEZ Facility</h2>
+            <div className="row image-wrapper">
+              <div className="col-lg-6">
+                <Image src={SEZ1.src} alt="SEZ Facility" height={900} width={500} layout="intrinsic"  className="custom-contact-img" />
+              </div>
+              <div className="col-lg-6">
+                <Image src={SEZ2.src} alt="SEZ Facility" height={900} width={500} layout="intrinsic"  className="custom-contact-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section id="contact" className="contact section py-5 dark-background section-with-lines">
         <div className="container">
@@ -285,22 +301,6 @@ const Contact: React.FC = () => {
           </div>
         </div>
       </section>
-
-      <section id="sez-facility" className="light-background position-relative overflow-hidden">
-        <div className="container">
-          <div className="text-center mt-5 section-title">
-            <h2 className="fw-bold mb-5">SEZ Facility</h2>
-            <div className="row image-wrapper">
-              <div className="col-lg-6">
-                <Image src={SEZ1.src} alt="SEZ Facility" height={900} width={500} layout="intrinsic"  className="custom-contact-img" />
-              </div>
-              <div className="col-lg-6">
-                <Image src={SEZ2.src} alt="SEZ Facility" height={900} width={500} layout="intrinsic"  className="custom-contact-img" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>.
 
       <section
         id="services"
