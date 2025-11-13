@@ -118,7 +118,7 @@ export const services = [
         content:
           "VJ Core soft offers companies a way to extend their NC Programming operations to help crunch through large projects, and start the chips flying. Our team has helped major manufacturers reach tight deadlines and expand their capabilities to bring in more work.\n\nWe have vast experience at in CNC programming for complex geometries and profiles. Our manufacturing engineering capabilities help us understand and optimize a variety of machining operations like multi-axis milling, drilling, turning, grinding, etc. For CNC program verification, we use industry standard tools and techniques such as VeriCut and NCVerify to reduce the likelihood of errors, eliminating production time losses.",
         highlight:
-          "capability to integrate various processor environments such as Fanuc, Siemens and Fagor. As a part of CNC programming and verification, we offer:",
+          "Capability to integrate various processor environments such as Fanuc, Siemens and Fagor. As a part of CNC programming and verification, we offer:",
         points: [
           "Tool path generation",
           "APT programming",

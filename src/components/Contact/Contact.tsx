@@ -38,15 +38,6 @@ const Contact: React.FC = () => {
   const [captchaToken, setCaptchaToken] = useState<string | null>(null);
   const [status, setStatus] = useState("");
 
-  const nameInputRef = useRef<HTMLInputElement>(null);
-
-  useEffect(() => {
-    // Focus the input when the page loads
-    if (nameInputRef.current) {
-      nameInputRef.current.focus();
-    }
-  }, []);
-
   const handleChange = ( e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -176,8 +167,6 @@ const Contact: React.FC = () => {
                   <div className="row">
                     <div className="col-md-6 form-group pt-3">
                       <input
-                        ref={nameInputRef}
-                        type="text"
                         name="name"
                         className="form-control"
                         id="name"
