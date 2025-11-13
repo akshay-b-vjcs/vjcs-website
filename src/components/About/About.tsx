@@ -123,7 +123,7 @@ const About:React.FC = () => {
                   <p className="mb-3">
                     CASI has been developing and licensing mission–critical solvers for solution of linear systems for over a decade. These are widely used in the areas of Engineering Analysis and VLSI Simulation. These solvers are used by over a million users worldwide.
                   </p>
-                  <p className="mb-3" >
+                  <p className="mb-3 highlight" >
                     For more information visit{" "}
                     <a href="http://www.casicorp.com" target="_blank" rel="noopener noreferrer">
                       www.casicorp.com
@@ -134,7 +134,7 @@ const About:React.FC = () => {
                   <p className="mb-3">
                     Primove Engineering Pvt. Ltd., a subsidiary of VJCS, is a nationally recognized technology company in the domain of gaseous fuels and energy. Primove has developed disruptive technology for the conversion of agricultural residue and waste into BioCNG for transportation and industrial applications.
                   </p>
-                  <p>
+                  <p className="highlight">
                     For more information visit{" "}
                     <a href="http://www.primove.in" target="_blank" rel="noopener noreferrer">
                       www.primove.in
