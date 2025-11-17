@@ -677,5 +677,6 @@
 
   .navmenu .megamenu-2 .mobile-megamenu.dropdown-active {
     display: block;
+    overflow-y: auto;
   }
 }

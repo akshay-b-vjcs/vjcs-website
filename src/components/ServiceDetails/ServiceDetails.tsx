@@ -1,53 +1,70 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import PageBaner from "@/components/PageBaner/PageBaner";
+
 import "./ServiceDetails.css";
 
 // Desktop images
-import imgCax from "@image/services/service-cax.png";
-import imgPlm from "@image/services/service-plm.png";
-import imgEds from "@image/services/service-eds.png";
-import imgEds1 from "@image/services/service-ds.png";
+import AIImage from "@image/services/sub-services/ai.png"
+import ARVRImage from "@image/services/sub-services/ar-vr.png"
+import BIMModelingImage from "@image/services/sub-services/bim-modeling.png"
+import CadCamImage from "@image/services/sub-services/cad-cam.png"
+import CaeImage from "@image/services/sub-services/cae.png"
+import CaxTestingImage from "@image/services/sub-services/cax-testing.png"
+import IIOTImage from "@image/services/sub-services/iiot.png"
+import MarineEnggImage from "@image/services/sub-services/marine-engg.png"
+import MobileWebImage from "@image/services/sub-services/mobile-web.png"
+import PLMImage from "@image/services/sub-services/plm.png"
+import ProductDesignImage from "@image/services/sub-services/product-design.png"
+import VirtualManufacturingImage from "@image/services/sub-services/virtual-manufacturing.png"
+
 
 // Mobile images
-import imgCaxMob from "@image/carousel/mobile/carousel-cax-Sq.png";
-import imgPlmMob from "@image/carousel/mobile/carousel-plm-Sq.png";
-import imgEdsMob from "@image/carousel/mobile/carousel-eds-Sq.png";
-import imgEds1Mob from "@image/carousel/mobile/carousel-ds-Sq.png";
+import AIImageMob from "@image/services/sub-services/mobile/ai.png"
+import ARVRImageMob from "@image/services/sub-services/mobile/ar-vr.png"
+import BIMModelingImageMob from "@image/services/sub-services/mobile/bim-modeling.png"
+import CadCamImageMob from "@image/services/sub-services/mobile/cad-cam.png"
+import CaeImageMob from "@image/services/sub-services/mobile/cae.png"
+import CaxTestingImageMob from "@image/services/sub-services/mobile/cax-testing.png"
+import IIOTImageMob from "@image/services/sub-services/mobile/iiot.png"
+import MarineEnggImageMob from "@image/services/sub-services/mobile/marine-engg.png"
+import MobileWebImageMob from "@image/services/sub-services/mobile/mobile-web.png"
+import PLMImageMob from "@image/services/sub-services/mobile/plm.png"
+import ProductDesignImageMob from "@image/services/sub-services/mobile/product-design.png"
+import VirtualManufacturingImageMob from "@image/services/sub-services/mobile/virtual-manufacturing.png"
 
 // Map desktop banners
 const serviceBannerMap: Record<string, StaticImageData> = {
-  "cad-cam-development": imgCax,
-  "cae-development": imgCax,
-  "cax-software-testing": imgCax,
-  plm: imgPlm,
-  "product-design": imgEds,
-  "bim-modelling": imgEds,
-  "marine-engineering": imgEds,
-  "virtual-manufacturing": imgEds1,
-  "industrial-iot": imgEds1,
-  "ai-solutions": imgEds1,
-  "enterprise-web-mobile": imgEds1,
-  "ar-vr-apps": imgEds1,
+  "cad-cam-development": CadCamImage,
+  "cae-development": CaeImage,
+  "cax-software-testing": CaxTestingImage,
+  plm: PLMImage,
+  "product-design": ProductDesignImage,
+  "bim-modelling": BIMModelingImage,
+  "marine-engineering": MarineEnggImage,
+  "virtual-manufacturing": VirtualManufacturingImage,
+  "industrial-iot": IIOTImage,
+  "ai-solutions": AIImage,
+  "enterprise-web-mobile": MobileWebImage,
+  "ar-vr-apps": ARVRImage,
 };
 
 // Map mobile banners
 const serviceBannerMapMob: Record<string, StaticImageData> = {
-  "cad-cam-development": imgCaxMob,
-  "cae-development": imgCaxMob,
-  "cax-software-testing": imgCaxMob,
-  plm: imgPlmMob,
-  "product-design": imgEdsMob,
-  "bim-modelling": imgEdsMob,
-  "marine-engineering": imgEdsMob,
-  "virtual-manufacturing": imgEds1Mob,
-  "industrial-iot": imgEds1Mob,
-  "ai-solutions": imgEds1Mob,
-  "enterprise-web-mobile": imgEds1Mob,
-  "ar-vr-apps": imgEds1Mob,
+  "cad-cam-development": CadCamImageMob,
+  "cae-development": CaeImageMob,
+  "cax-software-testing": CaxTestingImageMob,
+  plm: PLMImageMob,
+  "product-design": ProductDesignImageMob,
+  "bim-modelling": BIMModelingImageMob,
+  "marine-engineering": MarineEnggImageMob,
+  "virtual-manufacturing": VirtualManufacturingImageMob,
+  "industrial-iot": IIOTImageMob,
+  "ai-solutions": AIImageMob,
+  "enterprise-web-mobile": MobileWebImageMob,
+  "ar-vr-apps": ARVRImageMob,
 };
 
 interface Feature {
@@ -73,15 +90,12 @@ interface Props {
 }
 
 const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
-  const pathname = usePathname();
 
-  const [activeTab, setActiveTab] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
-  const featuresRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      setIsMobile(window.innerWidth <= 767);
     };
     handleResize();
     window.addEventListener("resize", handleResize);
@@ -94,53 +108,12 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
 
   if (!banner) return <p>Service not found</p>;
 
-  const scrollToFeatures = () => {
-    featuresRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
-
-  const data = [
-    {
-      name: "CAx Software Services",
-      href: "/service-details/cad-cam-development",
-      subservices: [
-        "/service-details/cad-cam-development",
-        "/service-details/cae-development",
-        "/service-details/cax-software-testing",
-      ],
-    },
-    {
-      name: "Engineering Design Services",
-      href: "/service-details/product-design",
-      subservices: [
-        "/service-details/product-design",
-        "/service-details/bim-modelling",
-        "/service-details/marine-engineering",
-      ],
-    },
-    {
-      name: "Digitization Services",
-      href: "/service-details/virtual-manufacturing",
-      subservices: [
-        "/service-details/virtual-manufacturing",
-        "/service-details/industrial-iot",
-        "/service-details/ai-solutions",
-        "/service-details/enterprise-web-mobile",
-        "/service-details/ar-vr-apps",
-      ],
-    },
-    {
-      name: "PLM",
-      href: "/service-details/plm",
-      subservices: ["/service-details/plm"],
-    },
-  ];
-
   return (
     <>
       <PageBaner heading={service.title} />
       <section
         id="service-details"
-        className="service-details section light-background pt-5"
+        className="service-details section light-background"
       >
         <div className="container">
           <div className="row gy-5">
@@ -151,15 +124,7 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
                 <Image
                   src={banner}
                   alt={serviceName}
-                  width={1200}
-                  height={500}
-                  className="img-fluid rounded-4 shadow img mb-4 mb-md-0"
-                  style={{
-                    objectFit: "cover",
-                    width: "100%",
-                    height: "auto",
-                  }}
-                  layout="intrinsic" // This will keep the aspect ratio
+                  className="img-fluid rounded-4 shadow img"
                   placeholder="blur"
                 />
               </div>
@@ -246,25 +211,6 @@ const ServiceDetails: React.FC<Props> = ({ serviceName, service }: Props) => {
             {/* Right Column */}
             <div className="col-lg-4">
               <div className="service-sidebar">
-                {/* <div className="service-menu">
-                  <h4>Our Services</h4>
-                  <div className="menu-list">
-                    {data.map((service, idx) => {
-                      const isActive = service.subservices.includes(pathname);
-                      return (
-                        <Link
-                          href={service.href}
-                          key={idx}
-                          className={`menu-item ${isActive ? "active" : ""}`}
-                        >
-                          <i className="bi bi-arrow-right"></i>
-                          <span>{service.name}</span>
-                        </Link>
-                      );
-                    })}
-                  </div>
-                </div> */}
-
                 {/* Contact Card */}
                 <div className="contact-card">
                   <div className="contact-content">

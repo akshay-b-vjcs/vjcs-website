@@ -91,3 +91,14 @@
     height: 85vh !important;
   }
 }
+
+/* for laptops having height 768px */
+@media only screen and (height: 768px) and (max-width: 1366px) {
+  .carousel-video-wrapper video {
+    height:75vh;
+    object-fit: cover;
+  }
+  .carousel-image-wrapper picture img{
+    height: 75vh !important;
+  }
+}

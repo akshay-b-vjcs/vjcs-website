@@ -156,15 +156,14 @@ const MegaMenu: React.FC<MegaMenuProps> = ({handleClickOnLink, pathname}) => {
       <ul className={`mobile-megamenu ${openDropdown === 1 ? "dropdown-active" : ""}`}>
         { data && data.map(service => {
             return (
-              <li key={service.id} className="dropdown">
+              <li key={service.id} className="dropdown" onClick={(e) => {
+                e.preventDefault();
+                toggleSubDropdown(service.id);
+              }}>
                 <Link href="#" className={`${openSubDropdown[service.id]  ? "active" : ""}`}>
                   <span>{service.name}</span>{" "}
                   <i 
                     className="bi bi-chevron-down toggle-dropdown" 
-                    onClick={(e) => {
-                      e.preventDefault();
-                      toggleSubDropdown(service.id);
-                    }}
                   ></i>
                 </Link>
                 <ul className={`${openSubDropdown[service.id]  ? "dropdown-active" : ""}`}>
