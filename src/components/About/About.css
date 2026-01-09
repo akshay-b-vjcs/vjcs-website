@@ -336,11 +336,21 @@
 
   .management .management-content, .affiliates .affiliate-content {
     padding: 2rem !important;
+    margin: 2rem;
   }
 
   .management .management-content h2, .affiliates .affiliate-content h2 {
     font-size: 2rem;
   }
+
+  .management .management-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+   }
+   .affiliates .affiliate-wrapper {
+    display: flex;
+    flex-direction: column;
+   }
 }
 
 @media (max-width: 768px) {
@@ -367,6 +377,7 @@
 
   .management .management-content, .affiliates .affiliate-content {
     padding: 1.5rem !important;
+    margin: 1rem;
   }
 
   .affiliates .affiliate-content h2 {
@@ -383,6 +394,10 @@
 
   .affiliates .shape {
     transform: scale(0.7);
+  }
+
+  .affiliates .affiliate-image-container, .management .management-image-container {
+    padding: 1rem 1rem 2rem 1rem;
   }
 
   .affiliates .affiliate-image-container .main-image, .management-image-container .main-image {

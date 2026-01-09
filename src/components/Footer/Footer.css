@@ -35,6 +35,7 @@
 .footer .footer-about p {
   font-size: 14px;
   font-family: var(--heading-font);
+  text-align: justify;
 }
 
 .footer .social-links a {

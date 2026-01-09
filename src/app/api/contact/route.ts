@@ -15,10 +15,6 @@ export async function POST(req: NextRequest) {
     otherService
   } = await req.json();
 
-  console.log("API hit:");
-  console.log("SMTP_USER:", process.env.SMTP_USER);
-  console.log("SMTP_PASS exists:", !!process.env.SMTP_PASS);
-
   if ( !name || !email || !message || !companyName || !companyNumber || !city || !natureOfService ) {
     return NextResponse.json({ message: "Missing fields" }, { status: 400 });
   }

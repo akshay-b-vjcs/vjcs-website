@@ -82,11 +82,8 @@ const Footer: React.FC = () => {
 
           <div className="col-lg-3 col-md-12 footer-contact text-center text-md-start">
             <h4>Contact Us</h4>
-            <p>Ground Floor, IT-6 Building</p>
-            <p>Qubix Business Park, Rajiv Gandhi Infotech Park, Phase-1</p>
-            <p>Hinjewadi, Pune, Maharashtra(india)</p>
-            <p>411057</p>
-            <p className="mt-4">
+            <p>Ground Floor, IT-6 Building, Qubix Business Park, Rajiv Gandhi Infotech Park, Phase-1, Hinjewadi, Pune, Maharashtra (India) - 411057</p>
+            <p className="mt-2">
               <strong>Phone:</strong> <span>+91-20-66840017</span>
             </p>
             <p>
